@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            background: #ADDCC8;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Esconde todas as seções por padrão - você pode mudar isso */
+        body > section {
+            display: none;
+        }
+
+        /* Mostra a primeira seção por padrão - você pode mudar isso */
+        body > section:first-of-type {
+            display: block;
+        }
+
+        /* --- Estilos da Tela 1 (Original: index.html) --- */
+        #tela1 #interface {
+            position: absolute; border: 10px solid #000000; border-radius: 10px; margin: auto;
+            width: 450px; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        }
+        #tela1 #login {
+            position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%);
+        }
+        #tela1 #usuario {
+            color: white; left: auto; border: none; width: 195px; height: 40px; font-size: 20px;
+        }
+        #tela1 #email {
+            color: white; margin-left: 20px; border: none; width: 195px; height: 40px; font-size: 20px;
+        }
+        #tela1 input, #tela1 select {
+            border-radius: 20px; height: 20px; border: none; padding: 10px; outline: double; font-size: 15px;
+        }
+        #tela1 #button {
+            position: relative; top: 10px; left: 100px; background-color: deepskyblue; border: none;
+            padding: 15px; width: 80px; color: black; font-size: 15px; cursor: pointer; border-radius: 10px;
+        }
+
+        /* --- Estilos da Tela 2 --- */
+        #tela2 #interface {
+            position: absolute; border: 10px solid #000000; border-radius: 10px; margin: auto;
+            width: 450px; height: 900px; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        }
+        #tela2 #login {
+            position: absolute; border: none; top: 40%; left: 50%; transform: translate(-50%, -50%);
+        }
+        #tela2 button {
+            border-color: black; padding: 20px; width: 300px; color: black;
+            font-family: 'Times New Roman'; font-size: 20px; border-radius: 50px; background-color: white;
+        }
+        #tela2 #caixa {
+            position: relative; border-color: black; padding: 20px; width: 200px; top: 310px;
+            left: 15%; color: black; font-family: 'Times New Roman'; font-size: 20px;
+            border-radius: 50px; background-color: white;
+        }
+
+        /* --- Estilos da Tela 3 --- */
+        #tela3 #interface {
+            position: absolute; border-radius: 10px; border: 10px solid #000000; margin: auto;
+            width: 450px; height: 900px; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        }
+        #tela3 #barra {
+            position: absolute; top: 05%; left: 50%; transform: translate(-50%, -50%);
+            color: white; font-size: 50px;
+        }
+        #tela3 #Ima {
+            position: absolute; top: 06%; left: 40%; transform: translate(-70%, -50%); width: 38px;
+        }
+        #tela3 input {
+            position: absolute; transform: translate(-45%, -26%); width: 392px; height: 32px;
+            background-color: transparent; border-color: white; color: white;
+        }
+        #tela3 #button {
+            position: absolute; top: 65%; left: 50%; transform: translate(-50%, -50%);
+            background-color: white; border: none; padding: 15px; width: 100px; height: 60px;
+            color: black; font-size: 20px; cursor: pointer; border-radius: 10px;
+        }
+        #tela3 #casinha {
+            position: absolute; top: 90%; left: 42%; transform: translate(-50%, -50%);
+            width: 80px; height: auto;
+        }
+
+        /* --- Estilos Comuns para Telas 4, 5, 6, 7, 10 --- */
+        .generic-button-screen #interface {
+            position: absolute; border-radius: 10px; border: 10px solid #FFFFFF; margin: auto;
+            width: 450px; height: 900px; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        }
+        .generic-button-screen button {
+            background-color: Transparent; background-repeat: no-repeat; border: 2px solid #FFFFFF;
+            overflow: hidden; padding: 15px; width: 350px; height: 60px; color: white;
+            font-size: 20px; border-radius: 10px;
+        }
+        .generic-button-screen .voltar {
+            position: absolute; background-color: white; color: black; width: 90px;
+            top: 80%; left: 50%; transform: translate(-50%, -50%);
+        }
+
+        #tela4 #button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        #tela4 #botão { position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); }
+        #tela4 #love { position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); }
+
+        #tela5 #interface { border-color: #000000; }
+        #tela5 #button { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); }
+        #tela5 #botão { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        #tela5 #love { position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); }
+
+        #tela6 #Orion { position: absolute; width: 300px; top: 40%; left: 50%; transform: translate(-50%, -50%); background-color: Transparent; }
+        #tela6 #Cruzeiro { position: absolute; width: 300px; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: Transparent; }
+        #tela6 #Andromeda { position: absolute; width: 300px; top: 60%; left: 50%; transform: translate(-50%, -50%); background-color: Transparent; }
+        #tela6 #Fênix { position: absolute; width: 300px; top: 70%; left: 50%; transform: translate(-50%, -50%); background-color: Transparent; }
+
+        #tela7 #interface { height: 800px; }
+        #tela7 #Sol { position: absolute; top: 15%; left: 50%; transform: translate(-50%, -50%); }
+        #tela7 #Mercúrio { position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%); }
+        #tela7 #Vênus { position: absolute; top: 31%; left: 50%; transform: translate(-50%, -50%); }
+        #tela7 #Terra { position: absolute; top: 39%; left: 50%; transform: translate(-50%, -50%); }
+        #tela7 #Marte { position: absolute; top: 47%; left: 50%; transform: translate(-50%, -50%); }
+        #tela7 #Júpiter { position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); }
+        #tela7 #Saturno { position: absolute; top: 63%; left: 50%; transform: translate(-50%, -50%); }
+        #tela7 #Urano { position: absolute; top: 71%; left: 50%; transform: translate(-50%, -50%); }
+        #tela7 #Netuno { position: absolute; top: 79%; left: 50%; transform: translate(-50%, -50%); }
+        #tela7 .voltar { top: 87%; left: 50%; transform: translate(-215%, -50%); }
+
+        /* --- Estilos para Telas de Detalhe 8, 9 --- */
+        .detail-screen #interface {
+            position: absolute; border-radius: 10px; border: 10px solid #FFFFFF; margin: auto;
+            width: 450px; height: 900px; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        }
+        .detail-screen .voltar {
+            position: absolute; background-color: white; color: black; width: 90px;
+            top: 80%; left: 50%; transform: translate(-50%, -50%); border: 2px solid #FFFFFF;
+            padding: 15px; font-size: 20px; border-radius: 10px;
+        }
+        .detail-screen .texto {
+            position: absolute; width: 430px; left: 50%; top: 55%; transform: translate(-50%, -50%);
+            z-index: 1; color: white; text-align: justify; font-size: 25px;
+        }
+        #tela8 #orion {
+            border-radius: 60%; width: 300px; height: 300px; position: absolute;
+            left: 50%; top: 25%; transform: translate(-50%, -50%);
+        }
+        #tela9 #gif {
+            width: 300px; height: 300px; position: absolute;
+            left: 50%; top: 25%; transform: translate(-50%, -50%);
+        }
+
+        /* --- Estilos para Telas 10, 11, 12 --- */
+        #tela10 #interface { height: 900px; }
+        #tela10 #Perfil { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); }
+        #tela10 #Criadores { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        #tela10 #Apagar_conta { position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); }
+        #tela10 .voltar { top: 80%; }
+
+        #tela11 #interface { height: 815px; }
+        #tela11 button {
+            background-color: Transparent; background-repeat: no-repeat; border: 2px solid #FFFFFF;
+            overflow: hidden; padding: 15px; width: 200px; color: white; font-size: 20px; border-radius: 10px;
+        }
+        #tela11 #Pergunta { position: absolute; top: 45%; left: 50%; width: 300px; transform: translate(-50%, -50%); }
+        #tela11 #Sim { position: absolute; top: 56%; left: 50%; transform: translate(-50%, -50%); }
+        #tela11 #Não { position: absolute; top: 66%; left: 50%; transform: translate(-50%, -50%); }
+
+        #tela12 #interface { height: 815px; }
+        #tela12 button {
+            background-color: Transparent; background-repeat: no-repeat; border: 2px solid #FFFFFF;
+            overflow: hidden; padding: 15px; width: 200px; color: white; font-size: 20px; border-radius: 10px;
+        }
+        #tela12 #Criadores { position: absolute; top: 15%; left: 50%; width: 300px; transform: translate(-50%, -50%); }
+        #tela12 #G { position: absolute; top: 32%; left: 50%; transform: translate(-25%, -50%); width: 270px; font-size: 15px; }
+        #tela12 #J { position: absolute; top: 67%; left: 50%; transform: translate(-30%, -50%); width: 270px; font-size: 15px; }
+        #tela12 #int {
+            border-radius: 70%; width: 160px; height: 200px; position: absolute;
+            left: 50%; top: 33%; transform: translate(-135%, -50%);
+        }
+        #tela12 #jaque {
+            border-radius: 110%; width: 160px; height: 280px; position: absolute;
+            left: 50%; top: 65%; transform: translate(-140%, -50%);
+        }
+        #tela12 .voltar {
+            position: absolute; background-color: white; color: black; width: 90px;
+            top: 87%; left: 50%; transform: translate(-215%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="tela1">
+        <div class="container">
+            <img src="./src/imagens/tela inicial.jpg" id="interface">
+            <div id="login">
+                <p><b><label for="username" id="usuario">Usuário:</label></b>
+                <input type="text" id="username" placeholder="digite o nome do usuário"/></p>
+                <p><b><label for="email" id="email">Email:</label></b>
+                <input type="text" placeholder="digite seu email"/></p>
+                <p><a href="#tela2"><button type="button" id="button">Entrar</button></a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tela2">
+        <img src="./src/imagens/tela2.jpg" id="interface">
+        <div id="login">
+            <p><a href="#tela3"><button type="button">Navegação Espacial</button></a></p>
+            <p><a href="#"><button type="button" id="caixa">Tutorial</button></a></p>
+        </div>
+    </section>
+
+    <section id="tela3">
+        <img src="./src/imagens/tela03.png" id="interface">
+        <div id="barra"><input type="text" name="Nome"/></div>
+        <img src="./src/imagens/lupa.jpg" id="Ima">
+        <p><a href="#tela4"><button type="button" id="button">Menu</button></a></p>
+        <div id="casinha"><a href="#tela2"><img src="./src/imagens/button.png" id="casinha"></a></div>
+    </section>
+
+    <section id="tela4" class="generic-button-screen">
+        <img src="./src/imagens/tela04.png" id="interface">
+        <p><a href="#tela5"><button type="button" id="button">Informações Astronômicas</button></a></p>
+        <p><a href="#tela7"><button type="button" id="botão">Informações Planetárias</button></a></p>
+        <p><a href="#tela10"><button type="button" id="love">Informações Extras</button></a></p>
+        <p><a href="#tela3"><button type="button" class="voltar">Voltar</button></a></p>
+    </section>
+
+    <section id="tela5" class="generic-button-screen">
+        <img src="./src/imagens/ae.jpg" id="interface">
+        <p><a href="#tela6"><button type="button" id="button">Constelações</button></a></p>
+        <p><a href="#"><button type="button" id="botão">Eventos Astronômicos</button></a></p>
+        <p><a href="#"><button type="button" id="love">Galáxia</button></a></p>
+        <p><a href="#tela4"><button type="button" class="voltar">Voltar</button></a></p>
+    </section>
+
+    <section id="tela6" class="generic-button-screen">
+        <img src="./src/imagens/tela06.png" id="interface">
+        <p><a href="#tela8"><button type="button" id="Orion">Orion</button></a></p>
+        <p><a href="#"><button type="button" id="Cruzeiro">Cruzeiro</button></a></p>
+        <p><a href="#"><button type="button" id="Andromeda">Andrômeda</button></a></p>
+        <p><a href="#"><button type="button" id="Fênix">Fênix</button></a></p>
+        <p><a href="#tela5"><button type="button" class="voltar">Voltar</button></a></p>
+    </section>
+
+    <section id="tela7" class="generic-button-screen">
+        <img src="./src/imagens/sistemasolar.jpg" id="interface">
+        <p><button type="button" id="Sol">Sol</button></p>
+        <p><button type="button" id="Mercúrio">Mercúrio</button></p>
+        <p><a href="#tela9"><button type="button" id="Vênus">Vênus</button></a></p>
+        <p><button type="button" id="Terra">Terra</button></p>
+        <p><button type="button" id="Marte">Marte</button></p>
+        <p><button type="button" id="Júpiter">Júpiter</button></p>
+        <p><button type="button" id="Saturno">Saturno</button></p>
+        <p><button type="button" id="Urano">Urano</button></p>
+        <p><button type="button" id="Netuno">Netuno</button></p>
+        <p><a href="#tela4"><button type="button" class="voltar">Voltar</button></a></p>
+    </section>
+
+    <section id="tela8" class="detail-screen">
+        <img src="./src/imagens/tela.jpg" id="interface">
+        <img src="./src/imagens/orion.jpg" id="orion">
+        <div class="texto"><p>Orion é uma das constelações moderna.Está localizada no equador celeste e, é visível em quase todas as regiões da Terra. A melhor época para sua observação e no verão do hemisfério sul, em dezembro e janeiro.</p></div>
+        <p><a href="#tela6"><button type="button" class="voltar">Voltar</button></a></p>
+    </section>
+
+    <section id="tela9" class="detail-screen">
+        <img src="./src/imagens/tela.jpg" id="interface">
+        <img src="./src/imagens/gif.gif" id="gif">
+        <div class="texto"><p>Vênus é o segundo planeta do Sistema Solar em ordem de distância a partir do Sol, orbitando-o a cada 224,7 dias. Seu nome e em homenagem à deusa romana do amor e da beleza ou a Afrodite.</p></div>
+        <p><a href="#tela7"><button type="button" class="voltar">Voltar</button></a></p>
+    </section>
+
+    <section id="tela10" class="generic-button-screen">
+        <img src="./src/imagens/Imagem1.jpg" id="interface">
+        <p><button type="button" id="Perfil">Perfil</button></p>
+        <p><a href="#tela12"><button type="button" id="Criadores">Criadores</button></a></p>
+        <p><a href="#tela11"><button type="button" id="Apagar_conta">Apagar conta</button></a></p>
+        <p><a href="#tela4"><button type="button" class="voltar">Voltar</button></a></p>
+    </section>
+
+    <section id="tela11">
+        <img src="./src/imagens/tella.png" id="interface">
+        <div class="container">
+            <p><button type="button" id="Pergunta">Depois de ver tanta coisa legal, você deseja mesmo apagar sua conta?</button></p>
+            <div id="Sim"><p><button type="button">Sim</button></p></div>
+            <p><a href="#tela10"><button type="button" id="Não">Não</button></a></p>
+        </div>
+    </section>
+
+    <section id="tela12">
+        <img src="./src/imagens/space.jpg" id="interface">
+        <div class="container">
+            <div id="Criadores"><p><button type="button">Criadores</button></p></div>
+            <div id="Gi"><p><button type="button" id="G"><p>Giliany:</p><p>Nasceu em 15/06/2005 na cidade de Eirunepé.</p><p>Finalista do Ensino médio técnico integrado em Informática(2024).</p><p>Amanteee de livros, gosta de anime, séries, atleta, programadora, gosta de gatos...</p></button></p></div>
+            <div id="Ja"><p><button type="button" id="J"><p>Jaqueline:</p><p>Nasceu em 21/04/2006 na cidade de Eirunepé.</p><p>Finalista do Ensino médio técnico integrado em Informática(2024).</p><p>Amante de livroooosss, Dorameira, programadora, adora cantar e dançar kpop, ama animais, compositora...</p></button></p></div>
+            <img src="./src/imagens/Giliany.jpg" id="int">
+            <img src="./src/imagens/jaqueline.png" id="jaque">
+            <p><a href="#tela10"><button type="button" class="voltar">Voltar</button></a></p>
+        </div>
+    </section>
+
+</body>
+</html>
