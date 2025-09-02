@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> 
 
 <head>
   <meta charset="UTF-8">
@@ -20,21 +20,28 @@
   <link rel="stylesheet" href="./src/css/tela12.css">
   <title>Universe</title>
 </head>
-
+ 
 <body>
-  <section id="tela1">
-    <div class="container">
-      <img src="./src/imagens/tela inicial.jpg" id="interface">
-      <div id="login">
-        <p><b><label for="username" id="usuario">Usuário:</label></b>
-          <input type="text" id="username" placeholder="digite o nome do usuário" />
-        </p>
-        <p><b><label for="email" id="email">Email:</label></b>
-          <input type="text" placeholder="digite seu email" />
-        </p>
-        <p><a href="#tela2"><button type="button" id="button">Entrar</button></a></p>
-      </div>
+  <section class="tela1">
+    <div class="welcome">
+      <img src="./src/imagens/astro2.png" alt="Astronauta">
+      <h1>Bem vindo(a) ao Universe!</h1>
     </div>
+    <!-- <div class="container"> -->
+      <!-- <img src="./src/imagens/tela-inicial.jpg" class="interface"> -->
+      <form class="login" id="formulario">
+        <p><label for="username" class="usuario">Usuário:</label>
+          <input type="text" id="username" placeholder="Digite seu nome" />
+        </p>
+        <p class="mensagem-erro">* campo obrigatório</p>
+
+        <p><label for="email" class="email">Email:</label>
+          <input type="text" id="email" placeholder="Digite seu email" />
+        </p>
+        <p class="mensagem-erro">* campo obrigatório</p>
+        <p><button type="submit" class="button">Entrar</button></p>
+      </form>
+    <!-- </div> -->
   </section>
 
   <section id="tela2">

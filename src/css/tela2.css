@@ -10,7 +10,7 @@
     transform: translate(-50%, -50%);
 }
 
-#tela2 #login {
+#tela2 #login { 
     position: absolute;
     border: none;
     top: 40%;

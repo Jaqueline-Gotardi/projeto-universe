@@ -1,59 +1,137 @@
-#tela1 #interface {
+/* #tela1 #interface {
     position: absolute;
     border: 10px solid #000000;
     border-radius: 10px;
     margin: auto;
     width: 450px;
-    top: 50%;
+    top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    height: 100vh;
 }
 
-#tela1 #login {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.tela1 {
+    background-image: url('../imagens/tela-login.png');
+    background-color: #9cbbe4;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Orbitron', sans-serif;
 }
 
-#tela1 #usuario {
-    color: white;
-    left: auto;
-    border: none;
-    width: 195px;
-    height: 40px;
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */ 
+    width: 350px; 
+    gap: 25px; 
+
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.login p {
+    font-weight: 550;
+    width: 100%; /* Make paragraphs take full width of .login */
+}
+
+.usuario {
+    color: black;
     font-size: 20px;
 }
 
-#tela1 #email {
-    color: white;
-    margin-left: 20px;
-    border: none;
-    width: 195px;
-    height: 40px;
+.email {
+    color: black;
     font-size: 20px;
 }
 
-#tela1 input,
-#tela1 select {
-    border-radius: 20px;
-    height: 20px;
+.tela1 input {
+    border-radius: 5px;
+    height: 50px;
+    width: 100%; 
     border: none;
     padding: 10px;
-    outline: double;
     font-size: 15px;
+    box-sizing: border-box; 
+    outline: double;
 }
 
-#tela1 #button {
-    position: relative;
-    top: 10px;
-    left: 100px;
+.button {
     background-color: deepskyblue;
     border: none;
     padding: 15px;
-    width: 80px;
+    width: 50%;
     color: black;
     font-size: 15px;
     cursor: pointer;
     border-radius: 10px;
+    transition: .2s ease-out;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Orbitron',sans-serif;
+}
+
+.button:hover{
+    background-color: rgb(71, 94, 89);
+}
+
+/* mudando o input na validação. . . */
+.mensagem-erro {
+    /* position: absolute;
+    left: 5px;  
+    bottom: -4px; */
+    color: #f52e25;
+    font-size: 13px;
+    display: none;
+  }
+  
+  #formulario .mensagem-erro.ativo {
+    display: block;
+  }
+  
+  #formulario input.erro {
+      border: 1.8px solid #f52e25;
+  }
+  
+  #formulario input.certo {
+      border: 1.8px solid #00c220;
+  } 
+
+/* --- Estilos do Cabeçalho de Boas-Vindas (Tela 2) --- */
+.welcome {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.welcome img {
+    width: 50%; 
+    /* margin-right: 15px; */
+}
+
+.welcome h1 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #000000;
 }
