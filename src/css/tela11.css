@@ -1,0 +1,37 @@
+#tela11 #interface {
+    height: 815px;
+}
+
+#tela11 button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 2px solid #FFFFFF;
+    overflow: hidden;
+    padding: 15px;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#tela11 #Pergunta {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+}
+
+#tela11 #Sim {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tela11 #Não {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,63 @@
+#tela3 #interface {
+    position: absolute;
+    border-radius: 10px;
+    border: 10px solid #000000;
+    margin: auto;
+    width: 450px;
+    height: 900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tela3 #barra {
+    position: absolute;
+    top: 05%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
+
+#tela3 #Ima {
+    position: absolute;
+    top: 06%;
+    left: 40%;
+    transform: translate(-70%, -50%);
+    width: 38px;
+}
+
+#tela3 input {
+    position: absolute;
+    transform: translate(-45%, -26%);
+    width: 392px;
+    height: 32px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+#tela3 #button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: none;
+    padding: 15px;
+    width: 100px;
+    height: 60px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#tela3 #casinha {
+    position: absolute;
+    top: 90%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: auto;
+}

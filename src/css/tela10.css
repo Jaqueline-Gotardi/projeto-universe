@@ -1,0 +1,28 @@
+#tela10 #interface {
+    height: 900px;
+}
+
+#tela10 #Perfil {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tela10 #Criadores {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tela10 #Apagar_conta {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tela10 .voltar {
+    top: 80%;
+}

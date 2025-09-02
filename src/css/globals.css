@@ -1,0 +1,84 @@
+/* Esconde todas as seções por padrão - você pode mudar isso */
+body>section {
+    display: none;
+}
+
+/* Mostra a primeira seção por padrão - você pode mudar isso */
+body>section:first-of-type {
+    display: block;
+} 
+
+/* --- Estilos Comuns para Telas 4, 5, 6, 7, 10 --- */
+.generic-button-screen #interface {
+    position: absolute;
+    border-radius: 10px;
+    border: 10px solid #FFFFFF;
+    margin: auto;
+    width: 450px;
+    height: 900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.generic-button-screen button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 2px solid #FFFFFF;
+    overflow: hidden;
+    padding: 15px;
+    width: 350px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.generic-button-screen .voltar {
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 90px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* --- Estilos para Telas de Detalhe 8, 9 --- */
+.detail-screen #interface {
+    position: absolute;
+    border-radius: 10px;
+    border: 10px solid #FFFFFF;
+    margin: auto;
+    width: 450px;
+    height: 900px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.detail-screen .voltar {
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 90px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #FFFFFF;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.detail-screen .texto {
+    position: absolute;
+    width: 430px;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: justify;
+    font-size: 25px;
+}

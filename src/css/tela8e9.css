@@ -1,0 +1,18 @@
+#tela8 #orion {
+    border-radius: 60%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+#tela9 #gif {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
