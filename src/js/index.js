@@ -5,12 +5,12 @@
  formulario.addEventListener('submit', function(event) {
     event.preventDefault();
     if (validarFormulario()) {
-        window.location.hash = 'tela2';
+        window.location.hash = 'tela-principal';
     }
  });
 
  function validarFormulario() {
-    let isFormularioValido = true;
+    let isFormularioValido = true; 
     campos.forEach((input, index) => {
         if(input.value.trim() === '') {
             input.classList.add('erro');

@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 /* Esconde todas as seções por padrão - você pode mudar isso */
+body {
+    height: 100vh;
+}
+
 body>section {
     display: none;
 }
@@ -12,7 +20,7 @@ body>section {
 .generic-button-screen #interface {
     position: absolute;
     border-radius: 10px;
-    border: 10px solid #FFFFFF;
+    border: 10px solid #FFFFFF; 
     margin: auto;
     width: 450px;
     height: 900px;

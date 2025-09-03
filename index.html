@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/globals.css">
-  <link rel="stylesheet" href="./src/css/tela1.css">
-  <link rel="stylesheet" href="./src/css/tela2.css">
+  <link rel="stylesheet" href="./src/css/tela-login.css">
+  <link rel="stylesheet" href="./src/css/tela-principal.css">
   <link rel="stylesheet" href="./src/css/tela3.css">
   <link rel="stylesheet" href="./src/css/tela4.css">
   <link rel="stylesheet" href="./src/css/tela5.css">
@@ -22,13 +22,11 @@
 </head>
  
 <body>
-  <section class="tela1">
+  <!-- <section class="tela-login">
     <div class="welcome">
-      <img src="./src/imagens/astro2.png" alt="Astronauta">
+      <img src="./src/imagens/astronauta.png" alt="Astronauta">
       <h1>Bem vindo(a) ao Universe!</h1>
     </div>
-    <!-- <div class="container"> -->
-      <!-- <img src="./src/imagens/tela-inicial.jpg" class="interface"> -->
       <form class="login" id="formulario">
         <p><label for="username" class="usuario">Usuário:</label>
           <input type="text" id="username" placeholder="Digite seu nome" />
@@ -41,14 +39,18 @@
         <p class="mensagem-erro">* campo obrigatório</p>
         <p><button type="submit" class="button">Entrar</button></p>
       </form>
-    <!-- </div> -->
-  </section>
+  </section> -->
 
-  <section id="tela2">
-    <img src="./src/imagens/tela2.jpg" id="interface">
-    <div id="login">
-      <p><a href="#tela3"><button type="button">Navegação Espacial</button></a></p>
-      <p><a href="#"><button type="button" id="caixa">Tutorial</button></a></p>
+  <section class="tela-principal">
+    <!-- <img src="./src/imagens/tela2.jpg" id="interface"> -->
+     <div class="text">
+      <h2>O que vamos explorar hoje?</h2>
+      <p>Selecione seu destino</p>
+     </div>
+     
+    <div class="guia">
+      <button type="button">Navegação Espacial</button>
+      <button type="button">Tutorial</button>
     </div>
   </section>
 
