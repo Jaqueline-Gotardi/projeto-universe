@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./src/css/globals.css">
   <link rel="stylesheet" href="./src/css/tela-login.css">
   <link rel="stylesheet" href="./src/css/tela-principal.css">
-  <link rel="stylesheet" href="./src/css/tela3.css">
+  <link rel="stylesheet" href="./src/css/tela-navegacao.css">
   <link rel="stylesheet" href="./src/css/tela4.css">
   <link rel="stylesheet" href="./src/css/tela5.css">
   <link rel="stylesheet" href="./src/css/tela6.css">
@@ -19,8 +19,8 @@
   <link rel="stylesheet" href="./src/css/tela11.css">
   <link rel="stylesheet" href="./src/css/tela12.css">
   <title>Universe</title>
-</head>
- 
+</head> 
+  
 <body>
   <!-- <section class="tela-login">
     <div class="welcome">
@@ -31,35 +31,39 @@
         <p><label for="username" class="usuario">Usuário:</label>
           <input type="text" id="username" placeholder="Digite seu nome" />
         </p>
-        <p class="mensagem-erro">* campo obrigatório</p>
+        <p class="mensagem-erro">* preencha este campo</p>
 
         <p><label for="email" class="email">Email:</label>
           <input type="text" id="email" placeholder="Digite seu email" />
         </p>
-        <p class="mensagem-erro">* campo obrigatório</p>
+        <p class="mensagem-erro">* preencha este campo</p>
         <p><button type="submit" class="button">Entrar</button></p>
       </form>
   </section> -->
 
-  <section class="tela-principal">
-    <!-- <img src="./src/imagens/tela2.jpg" id="interface"> -->
+  <!-- <section class="tela-principal">
      <div class="text">
       <h2>O que vamos explorar hoje?</h2>
       <p>Selecione seu destino</p>
      </div>
-     
     <div class="guia">
       <button type="button">Navegação Espacial</button>
       <button type="button">Tutorial</button>
     </div>
-  </section>
+  </section> -->
 
-  <section id="tela3">
-    <img src="./src/imagens/tela03.png" id="interface">
-    <div id="barra"><input type="text" name="Nome" /></div>
-    <img src="./src/imagens/lupa.jpg" id="Ima">
-    <p><a href="#tela4"><button type="button" id="button">Menu</button></a></p>
-    <div id="casinha"><a href="#tela2"><img src="./src/imagens/button.png" id="casinha"></a></div>
+  <section class="tela-navegacao">
+    <!-- <img src="./src/imagens/tela03.png" id="interface"> -->
+    <div class="barra">
+      <input type="text" name="Nome"/>
+      <img src="./src/imagens/lupa.jpg" class="lupa">
+    </div>
+
+    <img src="./src/imagens/astronauta.png" alt="Astronauta">
+    <button type="button" class="button">Menu</button>
+    <div class="casinha">
+      <img src="./src/imagens/casinha.png" class="casinha">
+    </div>
   </section>
 
   <section id="tela4" class="generic-button-screen">

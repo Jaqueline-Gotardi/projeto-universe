@@ -1,6 +1,6 @@
 .tela-principal {
     background-image: url('../imagens/2.png');
-    background-color: #9cbbe4;
+    /* background-color: #9cbbe4; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} 
 
 .guia {  
     display: flex;

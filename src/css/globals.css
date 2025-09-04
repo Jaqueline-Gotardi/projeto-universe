@@ -5,7 +5,7 @@
 /* Esconde todas as seções por padrão - você pode mudar isso */
 body {
     height: 100vh;
-}
+} 
 
 body>section {
     display: none;
@@ -14,7 +14,7 @@ body>section {
 /* Mostra a primeira seção por padrão - você pode mudar isso */
 /* body>section:first-of-type {
     display: block;
-}  */
+}  */ 
  
 /* --- Estilos Comuns para Telas 4, 5, 6, 7, 10 --- */
 .generic-button-screen #interface {
