@@ -1,0 +1,75 @@
+.tela-menu {
+    background-image: url('../imagens/1.1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.nauta-menu {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nauta-menu img {
+    width: 50%;
+    margin-bottom: 70%;
+}
+
+.tela-menu .guia-menu {
+    display: flex;
+    flex-direction: column;
+    width: 450px; 
+    gap: 25px; 
+    justify-self: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 191, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .tela-menu .guia-menu {
+        width: 350px;
+    }
+}
+
+@media (max-width: 365px) {
+    .tela-menu .guia-menu {
+        width: 250px;
+    }
+}
+
+.botao-opcao-menu {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    transition: 0.2s ease-out;
+    font-weight: 500; 
+    font-family: 'Orbitron', sans-serif;
+}
+
+.botao-opcao {
+    width: 100%;
+}
+
+.botao-voltar {
+    width: 70%;
+}
+
+.botao-opcao:hover,
+.botao-voltar:hover {
+    background-color: deepskyblue;
+    transform: scale(1.05);
+    color: black;
+}
