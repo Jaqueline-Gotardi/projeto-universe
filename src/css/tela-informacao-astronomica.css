@@ -1,0 +1,49 @@
+.informacao-astronomica {
+    background-image: url('../imagens/4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* justify-content: space-between; */
+    position: relative;
+}
+
+.informacao-astronomica .informacoes {
+    display: flex;
+    flex-direction: column;
+    width: 450px; 
+    gap: 25px; 
+    justify-self: center;
+   /*  align-items: center; */
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 191, 255, 0.6);
+}
+
+.opcao:hover {
+    background-color: rgb(163, 215, 233);
+    transform: scale(1.05);
+}
+
+.informacao-astronomica .botao-voltar {
+    width: 200px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.516);
+    transition: 0.2s ease-out;
+}
+
+.informacao-astronomica .botao-voltar:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+    background-color: #488AC7;
+}
