@@ -10,7 +10,7 @@
 }
 
 .nauta-menu {
-    position: absolute;
+    position: absolute; 
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%); 
@@ -63,12 +63,22 @@
     width: 100%;
 }
 
-.botao-voltar {
-    width: 70%;
+.tela-menu .botao-voltar {
+    /* width: 70%; */
+    width: 200px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(63, 63, 63, 0.516);
+    transition: 0.2s ease-out;
 }
 
-.botao-opcao:hover,
-.botao-voltar:hover {
+.tela-menu .botao-opcao:hover,
+.tela-menu .botao-voltar:hover {
     background-color: deepskyblue;
     transform: scale(1.05);
     color: black;

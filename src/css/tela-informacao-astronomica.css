@@ -9,7 +9,7 @@
     align-content: center;
     /* justify-content: space-between; */
     position: relative;
-}
+} 
 
 .informacao-astronomica .informacoes {
     display: flex;
@@ -38,7 +38,7 @@
     bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.516);
+    background-color: rgba(63, 63, 63, 0.516);
     transition: 0.2s ease-out;
 }
 

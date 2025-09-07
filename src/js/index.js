@@ -19,7 +19,7 @@
             isFormularioValido = false;
         } else {
             input.classList.add('certo');
-            input.classList.remove('erro');
+            input.classList.remove('erro');3
             mensagensErro[index].classList.remove('ativo');
         }   
     });
