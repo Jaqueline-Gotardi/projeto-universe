@@ -1,4 +1,5 @@
-.informacao-astronomica {
+.informacao-astronomica,
+.tela-constelacoes-categorias {
     background-image: url('../imagens/4.png');
     background-size: cover;
     background-position: center;
@@ -11,7 +12,7 @@
     position: relative;
 } 
 
-.informacao-astronomica .informacoes {
+.informacoes {
     display: flex;
     flex-direction: column;
     width: 450px; 
@@ -29,7 +30,7 @@
     transform: scale(1.05);
 }
 
-.informacao-astronomica .botao-voltar {
+.botao-voltar {
     width: 200px;
     display: flex;
     justify-self: center;
@@ -42,7 +43,7 @@
     transition: 0.2s ease-out;
 }
 
-.informacao-astronomica .botao-voltar:hover {
+ .botao-voltar:hover {
     transform: scale(1.05);
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
     background-color: #488AC7;

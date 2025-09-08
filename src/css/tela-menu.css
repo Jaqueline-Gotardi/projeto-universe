@@ -22,18 +22,18 @@
     margin-bottom: 70%;
 }
 
-.tela-menu .guia-menu {
+/* .tela-menu .guia-menu {
     display: flex;
     flex-direction: column;
     width: 450px; 
     gap: 25px; 
-    justify-self: center;
+    justify-self: center; 
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 191, 255, 0.6);
-}
+} */
 
 @media (max-width: 768px) {
     .tela-menu .guia-menu {
@@ -59,9 +59,9 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-.botao-opcao {
+/* .botao-opcao {
     width: 100%;
-}
+}  */
 
 .tela-menu .botao-voltar {
     /* width: 70%; */

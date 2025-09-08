@@ -14,9 +14,10 @@
   <link rel="stylesheet" href="./src/css/tutorial.css">
 
   <link rel="stylesheet" href="./src/css/tela-menu.css">
-
   <link rel="stylesheet" href="./src/css/tela-informacao-astronomica.css">
-  <link rel="stylesheet" href="./src/css/tela6.css">
+  <link rel="stylesheet" href="./src/css/tela-constelacoes.css">
+
+
   <link rel="stylesheet" href="./src/css/tela7.css">
   <link rel="stylesheet" href="./src/css/tela8e9.css">
   <link rel="stylesheet" href="./src/css/tela10.css">
@@ -74,38 +75,122 @@
     <div class="nauta-menu">
       <img src="./src/imagens/nautaemcimadalua.png" alt="Astronauta">
     </div>
-    <div class="guia-menu">
-    <button type="button" class="botao-opcao botao-opcao-menu">Informações Astronômicas</button>
-    <button type="button" class="botao-opcao botao-opcao-menu">Informações Planetárias</button>
-    <button type="button" class="botao-opcao botao-opcao-menu">Informações Extras</button>
+    <div class="informacoes">
+    <button type="button" class="botao-opcao-menu opcao">Informações Astronômicas</button>
+    <button type="button" class="botao-opcao-menu opcao">Informações Planetárias</button>
+    <button type="button" class="botao-opcao-menu opcao">Informações Extras</button>
   </div>
   <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section> -->
 
 
-
-  <section class="informacao-astronomica">
-     <div class="informacoes">
+  <!-- <section class="informacao-astronomica">
+    <div class="informacoes">
     <button type="button" class="botao-opcao-menu opcao">Constelações</button>
     <button type="button" class="botao-opcao-menu opcao">Eventos Astronômicos</button>
     <button type="button" class="botao-opcao-menu opcao">Galáxia</button>
   </div>
   <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+  </section> 
+    <section class="tela-constelacoes-categorias"> 
+    <div class="informacoes">
+      <button type="button" class="botao-opcao-menu opcao">Hemisfério Norte</button>
+      <button type="button" class="botao-opcao-menu opcao">Hemisfério Sul</button>
+      <button type="button" class="botao-opcao-menu opcao">As Famosas</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section> --> 
+
+  <!-- <section class="tela-constelacoes-lista hidden" id="hemisferio-norte">
+    <div class="informacoes">
+      <button type="button" class="botao-opcao-menu opcao">Ursa Maior</button>
+      <button type="button" class="botao-opcao-menu opcao">Ursa Menor</button>
+      <button type="button" class="botao-opcao-menu opcao">Andrômeda</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-
-
-
-
-
-  <section id="tela6" class="generic-button-screen">
-    <img src="./src/imagens/tela06.png" id="interface">
-    <p><a href="#tela8"><button type="button" id="Orion">Orion</button></a></p>
-    <p><a href="#"><button type="button" id="Cruzeiro">Cruzeiro</button></a></p>
-    <p><a href="#"><button type="button" id="Andromeda">Andrômeda</button></a></p>
-    <p><a href="#"><button type="button" id="Fênix">Fênix</button></a></p>
-    <p><a href="#tela5"><button type="button" class="voltar">Voltar</button></a></p>
+  <section class="tela-constelacoes-lista hidden" id="hemisferio-sul">
+    <div class="informacoes">
+      <button type="button" class="botao-opcao-menu opcao">Cruzeiro do Sul</button>
+      <button type="button" class="botao-opcao-menu opcao">Fênix</button>
+      <button type="button" class="botao-opcao-menu opcao">Centauro</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
+
+   <section class="tela-constelacoes-lista hidden" id="famosas">
+    <div class="informacoes">
+      <button type="button" class="botao-opcao-menu opcao">Órion</button>
+      <button type="button" class="botao-opcao-menu opcao">Cão Maior</button>
+      <button type="button" class="botao-opcao-menu opcao">Escorpião</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section> -->
+
+  <!-- Hemisfério Norte -->
+  <!-- <section class="tela-constelacao-detalhe hidden" id="detalhe-ursa-maior">
+    <img src="./src/imagens/ursa-maior.png" alt="Constelação Ursa Maior">
+    <p class="descricao-constelacao">A Ursa Maior é uma das constelações mais famosas do céu noturno, facilmente reconhecível pelo seu asterismo "O Grande Carro". É visível durante todo o ano no Hemisfério Norte.</p>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+
+  <section class="tela-constelacao-detalhe hidden" id="detalhe-ursa-menor">
+    <img src="./src/imagens/ursa-menor.png" alt="Constelação Ursa Menor">
+    <p class="descricao-constelacao">A Ursa Menor é crucial para a navegação, pois contém Polaris, a Estrela do Norte. Embora menos brilhante que a Ursa Maior, é de extrema importância para a orientação.</p>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+
+  <section class="tela-constelacao-detalhe hidden" id="detalhe-andromeda">
+    <img src="./src/imagens/andromeda.png" alt="Constelação Andrômeda">
+    <p class="descricao-constelacao">Andrômeda é mais conhecida por abrigar a Galáxia de Andrômeda (M31), o objeto mais distante que pode ser visto a olho nu, localizado a 2,5 milhões de anos-luz da Terra.</p>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+ -->
+  <!-- Hemisfério Sul -->
+  <!-- <section class="tela-constelacao-detalhe hidden" id="detalhe-cruzeiro-do-sul">
+    <img src="./src/imagens/cruzeiro-do-sul.png" alt="Constelação Cruzeiro do Sul">
+    <p class="descricao-constelacao">O Cruzeiro do Sul (ou Crux) é a menor de todas as 88 constelações, mas é uma das mais distintas do Hemisfério Sul, frequentemente usada para encontrar o polo sul celeste.</p>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+
+  <section class="tela-constelacao-detalhe hidden" id="detalhe-fenix">
+    <img src="./src/imagens/fenix.png" alt="Constelação Fênix">
+    <p class="descricao-constelacao">Fênix é uma constelação menor do sul, nomeada em homenagem à ave mítica que renasce das cinzas. Foi introduzida no final do século XVI pelo astrônomo Petrus Plancius.</p>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+
+  <section class="tela-constelacao-detalhe hidden" id="detalhe-centauro">
+    <img src="./src/imagens/centauro.png" alt="Constelação Centauro">
+    <p class="descricao-constelacao">Centauro é uma grande e brilhante constelação do sul que contém Alpha Centauri, o sistema estelar mais próximo do nosso Sol, e Omega Centauri, o maior aglomerado globular da Via Láctea.</p>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section> -->
+
+  <!-- As Famosas -->
+  <!-- <section class="tela-constelacao-detalhe hidden" id="detalhe-orion">
+    <img src="./src/imagens/orion.png" alt="Constelação Órion">
+    <p class="descricao-constelacao">Órion, o Caçador, é uma das constelações mais proeminentes e reconhecíveis do mundo. É famosa pelo seu "Cinturão de Órion" e pela Nebulosa de Órion, um berçário de estrelas.</p>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+
+  <section class="tela-constelacao-detalhe hidden" id="detalhe-cao-maior">
+    <img src="./src/imagens/cao-maior.png" alt="Constelação Cão Maior">
+    <p class="descricao-constelacao">Cão Maior é notável por conter Sirius, a estrela mais brilhante do céu noturno. Na mitologia, representa o maior dos dois cães que seguem o caçador Órion.</p>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+
+  <section class="tela-constelacao-detalhe hidden" id="detalhe-escorpiao">
+    <img src="./src/imagens/escorpiao.png" alt="Constelação Escorpião">
+    <p class="descricao-constelacao">Escorpião é uma das poucas constelações que realmente se parece com o seu nome. Seu coração é marcado pela estrela supergigante vermelha Antares.</p>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section> -->
+
+
+
+  
+
+
+
 
   <section id="tela7" class="generic-button-screen">
     <img src="./src/imagens/sistemasolar.jpg" id="interface">
