@@ -1,4 +1,4 @@
-#tela10 #interface {
+/* #tela10 #interface {
     height: 900px;
 }
 
@@ -25,4 +25,16 @@
 
 #tela10 .voltar {
     top: 80%;
+}  */
+
+.tela-informacoes-extras {
+    background-image: url('../imagens/1.1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
 }
