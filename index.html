@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/globals.css">
   <link rel="stylesheet" href="./src/css/tela-login.css">
@@ -16,13 +16,16 @@
   <link rel="stylesheet" href="./src/css/tela-menu.css">
   <link rel="stylesheet" href="./src/css/tela-informacao-astronomica.css">
   <link rel="stylesheet" href="./src/css/tela-constelacoes.css">
+  <link rel="stylesheet" href="./src/css/eventos-astronomicos.css">
 
 
   <link rel="stylesheet" href="./src/css/tela7.css">
   <link rel="stylesheet" href="./src/css/tela8e9.css">
 
+
   <link rel="stylesheet" href="./src/css/informacoes-extras.css">
 
+  
   <link rel="stylesheet" href="./src/css/tela11.css">
   <link rel="stylesheet" href="./src/css/tela12.css">
   <title>Universe</title>
@@ -87,14 +90,14 @@
 
 
   <!-- CONSTELAÇÕES -->
-  <!-- <section class="informacao-astronomica">
+   <!-- <section class="informacao-astronomica">
     <div class="informacoes">
     <button type="button" class="botao-opcao-menu opcao">Constelações</button>
     <button type="button" class="botao-opcao-menu opcao">Eventos Astronômicos</button>
     <button type="button" class="botao-opcao-menu opcao">Galáxia</button>
   </div>
   <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
-  </section>  -->
+  </section> -->  
   <!-- <section class="tela-constelacoes-categorias"> 
     <div class="informacoes">
       <button type="button" class="botao-opcao-menu opcao">Hemisfério Norte</button>
@@ -190,6 +193,169 @@
 
 
   <!-- EVENTOS ASTRONÔMICOS -->
+  <!-- <section class="tela-eventos-astronomicos ativo"> 
+    <div class="informacoes">
+      <button type="button" class="botao-opcao-menu opcao">Eclipses</button>
+      <button type="button" class="botao-opcao-menu opcao">Chuvas de Meteoros</button>
+      <button type="button" class="botao-opcao-menu opcao">Superluas e Conjuções</button>
+      <button type="button" class="botao-opcao-menu opcao">Cometas e Outros</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section> -->
+
+  <!-- ECLIPSES -->
+  <section class="tela-eventos-lista eclipse" id="lista-eclipses">
+    <div class="informacoes">
+      <button type="button" class="botao-opcao-menu opcao">Eclipse Solar</button>
+      <button type="button" class="botao-opcao-menu opcao">Eclipse Lunar</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <section class="tela-eventos-detalhe" id="detalhe-eclipse-solar">
+    <img src="./src/imagens/eclipse-solar.png" alt="Eclipse Solar">
+    <div class="informacoes-detalhe">
+      <h3>Eclipse Solar</h3>
+      <p class="descricao-evento">
+        Um eclipse solar acontece quando a Lua se move entre o Sol e a Terra, bloqueando a luz solar e projetando uma sombra na superfície do nosso planeta. É um evento espetacular, especialmente quando é um eclipse total, onde a Lua cobre completamente o Sol, revelando sua coroa brilhante.
+      </p>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <section class="tela-eventos-detalhe" id="detalhe-eclipse-lunar">
+    <img src="./src/imagens/eclipse-lunar.png" alt="Eclipse Lunar">
+    <div class="informacoes-detalhe">
+      <h3>Eclipse Lunar</h3>
+      <p class="descricao-evento">
+        Um eclipse lunar ocorre quando a Terra se posiciona entre o Sol e a Lua. A sombra da Terra cobre a Lua, que, em vez de desaparecer, adquire uma impressionante coloração avermelhada. Esse fenômeno é conhecido como "Lua de Sangue" e é visível de qualquer lugar do lado noturno do planeta.
+      </p>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <!-- CHUVA DE METEOROS -->
+  <section class="tela-eventos-lista meteoros" id="lista-chuvas-de-meteoros">
+    <div class="informacoes">
+      <button type="button" class="botao-opcao-menu opcao">Perseidas</button>
+      <button type="button" class="botao-opcao-menu opcao">Leonídeas</button>
+      <button type="button" class="botao-opcao-menu opcao">Geminídeas</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <section class="tela-eventos-detalhe" id="detalhe-perseidas">
+    <img src="./src/imagens/chuva-de-meteoros-perseidas.png" alt="Chuva de Meteoros Perseidas">
+    <div class="informacoes-detalhe">
+      <h3>Chuva de Meteoros Perseidas</h3>
+      <p class="descricao-evento">
+        A chuva de meteoros Perseidas é um dos eventos celestes mais famosos e aguardados, ocorrendo anualmente entre julho e agosto. É causada pelos detritos deixados para trás pelo Cometa Swift-Tuttle. Os meteoros são conhecidos por serem muito brilhantes e rápidos, criando um verdadeiro espetáculo no céu.
+      </p>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <section class="tela-eventos-detalhe" id="detalhe-leonideas">
+    <img src="./src/imagens/chuva-de-meteoros-leonideas.png" alt="Chuva de Meteoros Leonídeas">
+    <div class="informacoes-detalhe">
+      <h3>Chuva de Meteoros Leonídeas</h3>
+      <p class="descricao-evento">
+        Em novembro, a chuva de meteoros Leonídeas é o resultado da passagem da Terra pela órbita do Cometa Tempel-Tuttle. Embora seja uma chuva anual, a cada 33 anos ela se torna espetacular, produzindo uma quantidade massiva de "estrelas cadentes".
+      </p>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <section class="tela-eventos-detalhe" id="detalhe-geminideas">
+    <img src="./src/imagens/chuva-de-meteoros-geminideas.png" alt="Chuva de Meteoros Geminídeas">
+    <div class="informacoes-detalhe">
+      <h3>Chuva de Meteoros Geminídeas</h3>
+      <p class="descricao-evento">
+        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+      </p>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+
+  <!-- SUPERLUAS E CONJUNÇÕES -->
+  <section class="tela-eventos-lista superlua" id="lista-superluas-conjuncoes">
+    <div class="informacoes">
+      <button type="button" class="botao-opcao-menu opcao">Superlua</button>
+      <button type="button" class="botao-opcao-menu opcao">Conjunção Planetária</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <section class="tela-eventos-detalhe" id="detalhe-superlua">
+    <img src="./src/imagens/superlua.png" alt="Superlua">
+    <div class="informacoes-detalhe">
+      <h3>Superlua</h3>
+      <p class="descricao-evento">
+        Uma Superlua é a combinação perfeita entre a Lua Cheia e a sua maior aproximação da Terra. Como resultado, ela pode parecer até 14% maior e 30% mais brilhante do que uma lua cheia normal, criando uma vista impressionante e mágica no céu.
+      </p>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <section class="tela-eventos-detalhe" id="detalhe-conjuncao">
+    <img src="./src/imagens/conjuncao.png" alt="Conjunção Planetária">
+    <div class="informacoes-detalhe">
+      <h3>Conjunção Planetária</h3>
+      <p class="descricao-evento">
+        As conjunções são encontros celestes onde dois ou mais planetas parecem se alinhar e ficar muito próximos no céu noturno. Embora estejam a milhões de quilômetros de distância, o espetáculo de luz é fascinante. A "Grande Conjunção" de Júpiter e Saturno é um dos exemplos mais famosos e visualmente impressionantes.
+      </p>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+
+  <!-- COMETAS E OUTROS -->
+  <section class="tela-eventos-lista cometas" id="lista-cometas-outros">
+    <div class="informacoes">
+      <button type="button" class="botao-opcao-menu opcao">Cometas</button>
+      <button type="button" class="botao-opcao-menu opcao">Supernovas</button>
+      <button type="button" class="botao-opcao-menu opcao">Agrupamentos Estelares</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <section class="tela-eventos-detalhe" id="detalhe-cometas">
+    <img src="./src/imagens/cometas.png" alt="Cometas">
+    <div class="informacoes-detalhe">
+      <h3>Cometas</h3>
+      <p class="descricao-evento">
+        Cometas são corpos celestes compostos de gelo, rocha e poeira. Quando se aproximam do Sol, o calor faz com que o gelo sublime, criando uma atmosfera difusa (coma) e uma longa cauda brilhante. O Cometa Halley é o mais conhecido, visível da Terra a cada 76 anos.
+      </p>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <section class="tela-eventos-detalhe" id="detalhe-supernovas">
+    <img src="./src/imagens/supernovas.png" alt="Supernovas">
+    <div class="informacoes-detalhe">
+      <h3>Supernovas</h3>
+      <p class="descricao-evento">
+        Uma supernova é uma explosão estelar massiva no final da vida de uma estrela. Por um curto período, ela pode brilhar mais intensamente que uma galáxia inteira, liberando uma quantidade enorme de energia. Esses eventos são essenciais para a distribuição de elementos pesados no universo.
+      </p>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+  
+  <section class="tela-eventos-detalhe" id="detalhe-agrupamentos">
+    <img src="./src/imagens/agrupamentos-estelares.png" alt="Agrupamentos Estelares">
+    <div class="informacoes-detalhe">
+      <h3>Agrupamentos Estelares</h3>
+      <p class="descricao-evento">
+        São grupos de estrelas unidas pela força da gravidade. Existem dois tipos principais: os Aglomerados Abertos, que são mais jovens e espalhados (como as Plêiades), e os Aglomerados Globulares, que são mais velhos e densos, contendo milhares de estrelas.
+      </p>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+
+
+
+
 
 
 
@@ -236,14 +402,14 @@
   
 
   <!-- NFORMAÇÕES EXTRAS -->
-  <section class="tela-informacoes-extras"> 
+  <!-- <section class="tela-informacoes-extras"> 
     <div class="informacoes">
       <button type="button" class="botao-opcao-menu opcao">Perfil</button>
       <button type="button" class="botao-opcao-menu opcao">Criadores</button>
       <button type="button" class="botao-opcao-menu opcao">Apagar conta</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section>
+  </section> -->
 
 
 
