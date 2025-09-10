@@ -1,10 +1,10 @@
-#tela7 #interface {
+/* #tela7 #interface {
     height: 800px;
 }
 
 #tela7 #Sol {
     position: absolute;
-    top: 15%;
+    top: 15%; 
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -69,4 +69,42 @@
     top: 87%;
     left: 50%;
     transform: translate(-215%, -50%);
+} */
+
+.tela-informacoes-planetarias {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    background-image: url('../imagens/informacoes-planetarias.png');
+}
+
+.informacoes-planetarias {
+    display: flex;
+    flex-direction: column;
+    width: 450px; 
+    gap: 15px; 
+    /* justify-self: center; */
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 191, 255, 0.6);
+}
+
+.botao-planetario {
+    width: 200px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(63, 63, 63, 0.516);
+    transition: 0.2s ease-out;
 }
