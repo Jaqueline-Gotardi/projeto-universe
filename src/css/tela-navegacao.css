@@ -53,7 +53,7 @@
     box-shadow: 0px 0px 20px rgba(0, 191, 255, 0.6);
 }
 
-.tela-navegacao button {
+.tela-navegacao .opcao {
     background-color: white;
     border: 2px solid rgba(255, 255, 255, 0.7);
     font-size: 20px;
@@ -78,4 +78,4 @@
 .casinha:hover {
     transform: scale(1.1);
     background-color: rgb(143, 141, 240);
-}
+} 

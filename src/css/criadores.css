@@ -1,0 +1,71 @@
+/* #tela12 #interface {
+    height: 815px;
+}
+
+#tela12 button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 2px solid #FFFFFF;
+    overflow: hidden;
+    padding: 15px;
+    width: 200px; 
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#tela12 #Criadores {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+}
+
+#tela12 #G {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+    width: 270px;
+    font-size: 15px;
+}
+
+#tela12 #J {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    width: 270px;
+    font-size: 15px;
+}
+
+#tela12 #int {
+    border-radius: 70%;
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    transform: translate(-135%, -50%);
+}
+
+#tela12 #jaque {
+    border-radius: 110%;
+    width: 160px;
+    height: 280px;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-140%, -50%);
+}
+
+#tela12 .voltar {
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 90px;
+    top: 87%;
+    left: 50%;
+    transform: translate(-215%, -50%);
+} */

@@ -83,7 +83,7 @@
     position: relative;
     background-image: url('../imagens/informacoes-planetarias.png');
 }
-
+ 
 .informacoes-planetarias {
     display: flex;
     flex-direction: column;
@@ -109,4 +109,16 @@
     transform: translateX(-50%);
     background-color: rgba(63, 63, 63, 0.516);
     transition: 0.2s ease-out;
+}
+
+.tela-eventos-detalhe .terralua img {
+    max-width: 50%; 
+    max-height: 200px; 
+    height: auto;
+    object-fit: contain; 
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 20px; 
+    display: flex;
+    flex-direction: row;
 }

@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/globals.css">
   <link rel="stylesheet" href="./src/css/tela-login.css">
   <link rel="stylesheet" href="./src/css/tela-principal.css">
   <link rel="stylesheet" href="./src/css/tela-navegacao.css">
- 
+
   <link rel="stylesheet" href="./src/css/tutorial.css">
 
   <link rel="stylesheet" href="./src/css/tela-menu.css">
@@ -20,15 +20,12 @@
   <link rel="stylesheet" href="./src/css/galaxias.css">
   <link rel="stylesheet" href="./src/css/tela-informacoes-planetarias.css">
   <link rel="stylesheet" href="./src/css/informacoes-extras.css">
+  <link rel="stylesheet" href="./src/css/criadores.css">
   <link rel="stylesheet" href="./src/css/tela-apagar-conta.css">
-
-
   <!-- <link rel="stylesheet" href="./src/css/tela7.css"> -->
   <!-- <link rel="stylesheet" href="./src/css/tela8e9.css"> -->
-  <link rel="stylesheet" href="./src/css/tela12.css">
-  <title>Universe</title>
+   <title>Universe</title>
 </head>
-
 <body>
   <!-- <section class="tela-login">
     <div class="welcome">
@@ -67,7 +64,7 @@
     </div>
     <img src="./src/imagens/astronauta.png" class="nauta-navegacao" alt="Astronauta">
     <div class="botao">
-    <button type="button" class="button">Menu</button>
+    <button type="button" class="botao-opcao-menu opcao">Menu</button>
     </div>
     <div class="casinha">
       <img src="./src/imagens/casinha.png" class="casinha">
@@ -88,14 +85,14 @@
 
 
   <!-- CONSTELAÇÕES -->
-   <!-- <section class="informacao-astronomica">
+  <!-- <section class="informacao-astronomica">
     <div class="informacoes">
     <button type="button" class="botao-opcao-menu opcao">Constelações</button>
     <button type="button" class="botao-opcao-menu opcao">Eventos Astronômicos</button>
     <button type="button" class="botao-opcao-menu opcao">Galáxia</button>
   </div>
   <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
-  </section> -->  
+  </section> -->
   <!-- <section class="tela-constelacoes-categorias"> 
     <div class="informacoes">
       <button type="button" class="botao-opcao-menu opcao">Hemisfério Norte</button>
@@ -231,7 +228,7 @@
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section> -->
-  
+
   <!-- CHUVA DE METEOROS -->
   <!-- <section class="tela-eventos-lista meteoros" id="lista-chuvas-de-meteoros">
     <div class="informacoes">
@@ -274,7 +271,7 @@
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section> -->
-  
+
 
   <!-- SUPERLUAS E CONJUNÇÕES -->
   <!-- <section class="tela-eventos-lista superlua" id="lista-superluas-conjuncoes">
@@ -306,7 +303,7 @@
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section> -->
-  
+
 
   <!-- COMETAS E OUTROS -->
   <!-- <section class="tela-eventos-lista cometas" id="lista-cometas-outros">
@@ -447,7 +444,7 @@
 
 
   <!-- INFORMAÇÕES PLANETÁRIAS -->
-  <!-- <section class="tela-informacoes-planetarias">
+  <section class="tela-informacoes-planetarias">
     <div class="informacoes-planetarias">
     <button type="button" class="botao-opcao-menu opcao">Sol</button>
     <button type="button" class="botao-opcao-menu opcao">Mercúrio</button>
@@ -468,7 +465,9 @@
     <div class="informacoes-detalhe">
       <h3>Sol</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        O Sol é a estrela no centro do nosso Sistema Solar e a principal fonte de luz e energia para a vida na Terra.
+        <br>É uma imensa esfera de plasma superaquecido, com uma superfície dinâmica que possui manchas solares e explosões energéticas como as erupções solares.
+        <br>Ele é tão massivo que sua gravidade mantém todos os planetas, incluindo a Terra, em órbita ao seu redor, sendo essencial para a existência do nosso sistema.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
@@ -479,7 +478,8 @@
     <div class="informacoes-detalhe">
       <h3>Mercurio</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        Sua superfície é um ambiente inóspito, repleto de crateras de impacto, o que o faz parecer muito com a Lua. A ausência de uma atmosfera significativa faz com que as temperaturas variem drasticamente, podendo chegar a mais de 400°C durante o dia e cair para centenas de graus negativos à noite.
+        <br>Curiosamente, Mercúrio é o planeta que orbita o Sol mais rapidamente, completando uma volta em apenas 88 dias terrestres.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
@@ -490,18 +490,26 @@
     <div class="informacoes-detalhe">
       <h3>Vênus</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        Vênus é o segundo planeta a partir do Sol e o mais próximo da Terra. É conhecido como a "estrela da manhã" ou "estrela da tarde" por seu brilho intenso no céu.
+        <br>Apesar de ser vizinho da Terra, sua atmosfera densa, composta principalmente de dióxido de carbono, cria um efeito estufa extremo, tornando-o o planeta mais quente do nosso sistema. A temperatura em sua superfície é suficiente para derreter chumbo.
+        <br>Vênus é também único por girar em sentido horário em seu eixo, o oposto da maioria dos outros planetas.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <img src="./src/imagens/terra.png" alt="Terra">
+    <div class="terra-lua-container">
+      <img src="./src/imagens/terra.png" class="terralua" alt="Terra">
+      <img src="./src/imagens/lua.png" class="terralua" alt="Lua">
+    </div>
     <div class="informacoes-detalhe">
       <h3>Terra</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        A Terra é o terceiro planeta a partir do Sol e o único lugar no universo onde a vida existe. 
+        <br>Composta em sua maioria por água, nossa casa é um planeta dinâmico, com continentes, oceanos, vastas florestas, cadeias de montanhas e complexos sistemas climáticos. 
+        <br>A atmosfera terrestre é essencial, pois nos protege da radiação solar e de meteoroides, além de manter uma temperatura estável que permite a existência de água líquida em sua superfície.
+        <br>A Terra possui um satélite natural, a Lua, que influencia as marés e desempenha um papel importante na estabilização do nosso planeta.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
@@ -512,7 +520,9 @@
     <div class="informacoes-detalhe">
       <h3>Marte</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        Marte é o quarto planeta a partir do Sol e é amplamente conhecido como o "planeta vermelho" por sua coloração avermelhada, causada pela ferrugem de minerais ricos em ferro em sua superfície.
+        <br>É um planeta rochoso, com imensos desfiladeiros, vastas planícies e as maiores montanhas vulcânicas do nosso sistema.
+        <br>Apesar de sua atmosfera ser fina e fria, Marte possui calotas polares de gelo e evidências de que já abrigou água em seu passado, o que o torna um dos principais alvos de busca por vida no espaço.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
@@ -523,7 +533,9 @@
     <div class="informacoes-detalhe">
       <h3>Júpiter</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        Júpiter, o maior planeta do Sistema Solar, um gigante gasoso com mais que o dobro da massa de todos os outros planetas juntos.
+        <br>Possui uma marcante faixas de nuvens de cores vibrantes, causadas por tempestades e ventos extremamente fortes. A mais famosa delas é a Grande Mancha Vermelha, uma tempestade colossal, maior que a Terra, que existe há séculos.
+        <br>Júpiter tem dezenas de luas, incluindo as quatro grandes luas galileanas (Io, Europa, Ganímedes e Calisto), que são visíveis com pequenos telescópios. Ele atua como um "aspirador de pó" cósmico, protegendo o sistema interior de cometas e asteroides.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
@@ -534,7 +546,9 @@
     <div class="informacoes-detalhe">
       <h3>Saturno</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        Saturno é o sexto planeta a partir do Sol, e o segundo maior do nosso Sistema Solar. Ele é famoso por seu espetacular sistema de anéis, que o torna um dos objetos mais bonitos e facilmente reconhecíveis no espaço.
+        <br>Os anéis são compostos por bilhões de partículas de gelo e rocha, que variam de pequenos grãos de poeira a pedaços do tamanho de montanhas.
+        <br>Saturno é um gigante gasoso, com uma atmosfera de hidrogênio e hélio. Além dos anéis, ele possui dezenas de luas, sendo Titã a maior delas e a única no Sistema Solar com uma atmosfera densa.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
@@ -545,7 +559,9 @@
     <div class="informacoes-detalhe">
       <h3>Urano</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        Urano é o sétimo planeta a partir do Sol, um gigante de gelo que se destaca por sua cor azul-esverdeada, causada pelo gás metano na sua atmosfera.
+        <br>Seu aspecto mais incomum é o fato de que ele gira de lado. Seu eixo de rotação é inclinado em quase 98 graus, fazendo com que ele pareça rolar em sua órbita.
+        <br>Urano tem um sistema de anéis finos e escuros, e sua atmosfera é a mais fria do Sistema Solar.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
@@ -556,7 +572,9 @@
     <div class="informacoes-detalhe">
       <h3>Netuno</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        Netuno é o oitavo e último planeta do nosso Sistema Solar, um gigante de gelo conhecido por sua cor azul-escura e ventos incrivelmente rápidos.
+        <br>Ele é um planeta dinâmico, com tempestades em sua superfície, como a Grande Mancha Escura, um sistema de tempestades que se assemelha à Grande Mancha Vermelha de Júpiter.
+        <br>Netuno é o planeta mais distante do Sol, por isso sua órbita leva quase 165 anos terrestres para ser concluída.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
@@ -567,11 +585,13 @@
     <div class="informacoes-detalhe">
       <h3>Plutão</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        Plutão é um planeta anão localizado na região distante do Cinturão de Kuiper. Por ser tão pequeno e distante, foi reclassificado, mas continua a ser um dos corpos celestes mais fascinantes do Sistema Solar.
+        <br>Sua superfície é um mundo gelado, com montanhas e planícies de gelo de metano e nitrogênio, incluindo a famosa região em formato de coração.
+        <br>Plutão tem cinco luas, e a maior delas, Caronte, é tão grande em relação a ele que, juntos, eles formam um sistema binário. Eles giram um em torno do outro como uma dança cósmica.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
 
   <!-- NFORMAÇÕES EXTRAS -->
@@ -590,62 +610,7 @@
 
 
   <!-- CRIADORES -->
-
-
-
-
-  <!-- APAGAR CONTA -->
-   <section class="tela-apagar-conta">
-    <img src="./src/imagens/nauta-triste.png" alt="Astronauta triste">
-    <!-- <img src="./src/imagens/tella.png" id="interface"> -->
-    <!-- <button type="button" class="pergunta">Depois de ver tanta coisa legal, você deseja mesmo apagar sua
-          conta?</button> -->
-          <div class="informacoes-detalhe">
-          <div id="pergunta">
-          <p style="font-family:Orbitron; font-weight: 500;">Depois de tudo o que exploramos, você quer mesmo apagar sua conta?</p>
-          </div>
-        <div class="informacoes">
-        <button type="button" class="botao-opcao-menu opcao">Sim</button>
-        <button type="button" class="botao-opcao-menu opcao">Não</button>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-  <!-- <section id="tela8" class="detail-screen">
-    <img src="./src/imagens/tela.jpg" id="interface">
-    <img src="./src/imagens/orion.jpg" id="orion">
-    <div class="texto">
-      <p>Orion é uma das constelações moderna.Está localizada no equador celeste e, é visível em quase todas as regiões
-        da Terra. A melhor época para sua observação e no verão do hemisfério sul, em dezembro e janeiro.</p>
-    </div>
-    <p><a href="#tela6"><button type="button" class="voltar">Voltar</button></a></p>
-  </section> -->
-
-  <!-- <section id="tela9" class="detail-screen">
-    <img src="./src/imagens/tela.jpg" id="interface">
-    <img src="./src/imagens/gif.gif" id="gif">
-    <div class="texto">
-      <p>Vênus é o segundo planeta do Sistema Solar em ordem de distância a partir do Sol, orbitando-o a cada 224,7
-        dias. Seu nome e em homenagem à deusa romana do amor e da beleza ou a Afrodite.</p>
-    </div>
-    <p><a href="#tela7"><button type="button" class="voltar">Voltar</button></a></p>
-  </section> -->
-
-   
-
-
-
-
-
-
-  
-
-  <!-- <section id="tela12">
+<!-- <section id="tela-criadores">
     <img src="./src/imagens/space.jpg" id="interface">
     <div class="container">
       <div id="Criadores">
@@ -673,6 +638,22 @@
       <p><a href="#tela10"><button type="button" class="voltar">Voltar</button></a></p>
     </div>
   </section> -->
+
+
+
+  <!-- APAGAR CONTA -->
+  <section class="tela-apagar-conta">
+    <img src="./src/imagens/nauta-triste.png" alt="Astronauta triste">
+    <div class="informacoes-detalhe">
+      <p style="font-family:Orbitron; font-weight: 500;">Atenção, Agente Espacial. Sua jornada de exploração está em risco de ser encerrada. Nossos sensores indicam que você ainda tem 9 planetas, 5 galáxias e incontáveis estrelas a descobrir.
+        <br><br>Confirme: quer mesmo desativar sua nave-mãe?</p>
+      <button type="button" class="botao-opcao-menu opcao">Sim</button>
+      <button type="button" class="botao-opcao-menu opcao">Não</button>
+    </div>
+    <button type="button" class="botao-casinha">
+      <img src="./src/imagens/casinha.png" class="casinha" alt="botao-casinha">
+    </button>
+  </section>
 
   <script src="./src/js/index.js"></script>
 </body>

@@ -12,9 +12,9 @@ body>section {
 } 
 
 /* Mostra a primeira seção por padrão - você pode mudar isso */
-body>section:first-of-type {
+/* body>section:first-of-type {
     display: block;
-}    
+}  */   
 
 
 
