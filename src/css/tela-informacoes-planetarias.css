@@ -97,7 +97,7 @@
     box-shadow: 0px 0px 20px rgba(0, 191, 255, 0.6);
 }
 
-.botao-planetario {
+.botao-planetario { 
     width: 200px;
     padding: 10px;
     display: flex;
