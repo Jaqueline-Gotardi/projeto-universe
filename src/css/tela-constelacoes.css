@@ -14,7 +14,7 @@
     gap: 12px;
 } */
  
-.tela-constelacoes-categorias,
+/* .tela-constelacoes-categorias,
 .tela-constelacoes-lista,
 .tela-constelacao-detalhe {
     background-size: cover;
@@ -25,6 +25,22 @@
     flex-direction: column;
     align-content: center;
     position: relative;
+} */
+
+.tela-constelacoes-categorias,
+.tela-constelacoes-lista,
+.tela-constelacao-detalhe {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    text-align: center;
 }
 
 .tela-constelacao-detalhe {
@@ -46,7 +62,7 @@
     max-width: 500px;
     margin-bottom: 10vh; 
 } */
-
+ 
 /* .botao-opcao-menu.opcao {
     width: 100%;
     padding: 15px;

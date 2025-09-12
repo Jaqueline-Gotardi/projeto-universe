@@ -1,4 +1,4 @@
-/*.tela-login {
+/*/* .tela-login {
     background-image: url('../imagens/tela-login.png');
     background-color: #9cbbe4;
     background-size: contain;
@@ -9,7 +9,17 @@
     justify-content: center;
     align-items: center;
     font-family: 'Orbitron', sans-serif; 
+} */
+
+.tela-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
 }
+ 
 
 .login {
     display: flex;
@@ -71,7 +81,7 @@
 }
 
 /* mudando o input na validação. . . */
-/*.mensagem-erro {
+.mensagem-erro {
     color: #f52e25;
     font-size: 13px;
     display: none;
@@ -87,7 +97,7 @@
   
   #formulario input.certo {
       border: 1.8px solid #00c220;
-  } */
+  }
 
 /* --- Estilos do Cabeçalho de Boas-Vindas --- */
 /*.welcome {
@@ -120,20 +130,7 @@
     font-weight: 700;
   }
   
-  /* Screens */
-  .screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    overflow: hidden;
-  }
-  
-  .screen.active {
-    display: block;
-  }
+
   
   /* Space Backgrounds */
   .space-background {
@@ -285,7 +282,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
   
-  .error-message {
+  .mensagem-erro {
     color: #ff6b6b;
     font-size: 0.8rem;
     margin-top: 0.25rem;

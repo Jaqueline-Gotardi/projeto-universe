@@ -1,9 +1,21 @@
-.tela-principal {
+/* .tela-principal {
     background-image: url('../imagens/2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+} */
+
+.tela-principal {
+    background-image: url('../imagens/2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

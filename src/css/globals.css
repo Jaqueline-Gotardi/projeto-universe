@@ -5,16 +5,11 @@
 /* Esconde todas as seções por padrão - você pode mudar isso */
 body {
     height: 100vh;
-} 
+}  
 
 body>section {  
-    display: none;
-} 
-
-/* Mostra a primeira seção por padrão - você pode mudar isso */
-body>section:first-of-type {
     display: block;
-}    
+} 
 
  
 

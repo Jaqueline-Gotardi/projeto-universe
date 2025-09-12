@@ -22,13 +22,13 @@
   <link rel="stylesheet" href="./src/css/informacoes-extras.css">
   <link rel="stylesheet" href="./src/css/criadores.css">
   <link rel="stylesheet" href="./src/css/tela-apagar-conta.css">
-  <!-- <link rel="stylesheet" href="./src/css/tela7.css"> -->
+
   <!-- <link rel="stylesheet" href="./src/css/tela8e9.css"> -->
    <title>Universe</title>
 </head>
 <body>
   <!-- Tela de Login -->
-  <section id="tela-login" class="screen active">
+  <section class="tela-login" class="screen active">
     <div class="space-background login-bg">
       <div class="stars"></div>
       <div class="planets"></div>
@@ -44,13 +44,13 @@
           <div class="form-group">
             <label for="username" class="form-label">Usuário:</label>
             <input type="text" id="username" placeholder="Digite seu nome" class="form-input">
-            <p class="error-message">* preencha este campo</p>
+            <p class="mensagem-erro">* preencha este campo</p>
           </div>
           
           <div class="form-group">
             <label for="email" class="form-label">Email:</label>
             <input type="email" id="email" placeholder="Digite seu email" class="form-input">
-            <p class="error-message">* preencha este campo</p>
+            <p class="mensagem-erro">* preencha este campo</p>
           </div>
           
           <button type="submit" class="btn-primary">Entrar</button>
@@ -78,7 +78,7 @@
       </form>
   </section> -->
 
-  <!-- <section class="tela-principal">
+  <section class="tela-principal">
      <div class="text">
       <h2>O que vamos explorar hoje?</h2>
       <p>Selecione seu destino</p>
@@ -87,9 +87,9 @@
       <button type="button">Navegação Espacial</button>
       <button type="button">Tutorial</button>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="tela-navegacao">
+  <section class="tela-navegacao">
     <div class="barra">
       <input type="text" name="Nome"/>
       <img src="./src/imagens/lupa.jpg" class="lupa">
@@ -101,9 +101,9 @@
     <div class="casinha">
       <img src="./src/imagens/casinha.png" class="casinha">
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="tela-menu">
+  <section class="tela-menu">
     <div class="nauta-menu">
       <img src="./src/imagens/nautaemcimadalua.png" alt="Astronauta">
     </div>
@@ -113,114 +113,114 @@
     <button type="button" class="botao-opcao-menu opcao">Informações Extras</button>
   </div>
   <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
 
   <!-- CONSTELAÇÕES -->
-  <!-- <section class="informacao-astronomica">
-    <div class="informacoes">
+  <section class="informacao-astronomica">
+    <div class="informacoes-extras">
     <button type="button" class="botao-opcao-menu opcao">Constelações</button>
     <button type="button" class="botao-opcao-menu opcao">Eventos Astronômicos</button>
     <button type="button" class="botao-opcao-menu opcao">Galáxia</button>
   </div>
   <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
-  </section> -->
-  <!-- <section class="tela-constelacoes-categorias"> 
+  </section>
+  <section class="tela-constelacoes-categorias"> 
     <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Hemisfério Norte</button>
       <button type="button" class="botao-opcao-menu opcao">Hemisfério Sul</button>
       <button type="button" class="botao-opcao-menu opcao">As Famosas</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
-  <!-- <section class="tela-constelacoes-lista hidden" id="hemisferio-norte">
+  <section class="tela-constelacoes-lista" id="hemisferio-norte">
     <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Ursa Maior</button>
       <button type="button" class="botao-opcao-menu opcao">Ursa Menor</button>
       <button type="button" class="botao-opcao-menu opcao">Andrômeda</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
-  <!-- <section class="tela-constelacoes-lista hidden" id="hemisferio-sul">
+  <section class="tela-constelacoes-lista" id="hemisferio-sul">
     <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Cruzeiro do Sul</button>
       <button type="button" class="botao-opcao-menu opcao">Fênix</button>
       <button type="button" class="botao-opcao-menu opcao">Centauro</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
-   <!-- <section class="tela-constelacoes-lista hidden" id="famosas">
+   <section class="tela-constelacoes-lista" id="famosas">
     <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Órion</button>
       <button type="button" class="botao-opcao-menu opcao">Cão Maior</button>
       <button type="button" class="botao-opcao-menu opcao">Escorpião</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
   <!-- Hemisfério Norte -->
-  <!-- <section class="tela-constelacao-detalhe hidden" id="detalhe-ursa-maior">
+  <section class="tela-constelacao-detalhe" id="detalhe-ursa-maior">
     <img src="./src/imagens/ursa-maior.png" alt="Constelação Ursa Maior">
     <p class="descricao-constelacao">A Ursa Maior é uma das constelações mais famosas do céu noturno, facilmente reconhecível pelo seu asterismo "O Grande Carro". É visível durante todo o ano no Hemisfério Norte.</p>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe hidden" id="detalhe-ursa-menor">
+  <section class="tela-constelacao-detalhe" id="detalhe-ursa-menor">
     <img src="./src/imagens/ursa-menor.png" alt="Constelação Ursa Menor">
     <p class="descricao-constelacao">A Ursa Menor é crucial para a navegação, pois contém Polaris, a Estrela do Norte. Embora menos brilhante que a Ursa Maior, é de extrema importância para a orientação.</p>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe hidden" id="detalhe-andromeda">
+  <section class="tela-constelacao-detalhe" id="detalhe-andromeda">
     <img src="./src/imagens/andromeda.png" alt="Constelação Andrômeda">
     <p class="descricao-constelacao">Andrômeda é mais conhecida por abrigar a Galáxia de Andrômeda (M31), o objeto mais distante que pode ser visto a olho nu, localizado a 2,5 milhões de anos-luz da Terra.</p>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
   <!-- Hemisfério Sul -->
-  <!-- <section class="tela-constelacao-detalhe hidden" id="detalhe-cruzeiro-do-sul">
+  <section class="tela-constelacao-detalhe" id="detalhe-cruzeiro-do-sul">
     <img src="./src/imagens/cruzeiro-do-sul.png" alt="Constelação Cruzeiro do Sul">
     <p class="descricao-constelacao">O Cruzeiro do Sul (ou Crux) é a menor de todas as 88 constelações, mas é uma das mais distintas do Hemisfério Sul, frequentemente usada para encontrar o polo sul celeste.</p>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe hidden" id="detalhe-fenix">
+  <section class="tela-constelacao-detalhe" id="detalhe-fenix">
     <img src="./src/imagens/fenix.png" alt="Constelação Fênix">
     <p class="descricao-constelacao">Fênix é uma constelação menor do sul, nomeada em homenagem à ave mítica que renasce das cinzas. Foi introduzida no final do século XVI pelo astrônomo Petrus Plancius.</p>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe hidden" id="detalhe-centauro">
+  <section class="tela-constelacao-detalhe" id="detalhe-centauro">
     <img src="./src/imagens/centauro.png" alt="Constelação Centauro">
     <p class="descricao-constelacao">Centauro é uma grande e brilhante constelação do sul que contém Alpha Centauri, o sistema estelar mais próximo do nosso Sol, e Omega Centauri, o maior aglomerado globular da Via Láctea.</p>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
   <!-- As Famosas -->
-  <!-- <section class="tela-constelacao-detalhe hidden" id="detalhe-orion">
+  <section class="tela-constelacao-detalhe" id="detalhe-orion">
     <img src="./src/imagens/orion.png" alt="Constelação Órion">
     <p class="descricao-constelacao">Órion, o Caçador, é uma das constelações mais proeminentes e reconhecíveis do mundo. É famosa pelo seu "Cinturão de Órion" e pela Nebulosa de Órion, um berçário de estrelas.</p>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe hidden" id="detalhe-cao-maior">
+  <section class="tela-constelacao-detalhe" id="detalhe-cao-maior">
     <img src="./src/imagens/cao-maior.png" alt="Constelação Cão Maior">
     <p class="descricao-constelacao">Cão Maior é notável por conter Sirius, a estrela mais brilhante do céu noturno. Na mitologia, representa o maior dos dois cães que seguem o caçador Órion.</p>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe hidden" id="detalhe-escorpiao">
+  <section class="tela-constelacao-detalhe" id="detalhe-escorpiao">
     <img src="./src/imagens/escorpiao.png" alt="Constelação Escorpião">
     <p class="descricao-constelacao">Escorpião é uma das poucas constelações que realmente se parece com o seu nome. Seu coração é marcado pela estrela supergigante vermelha Antares.</p>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
 
   <!-- EVENTOS ASTRONÔMICOS -->
-  <!-- <section class="tela-eventos-astronomicos"> 
+  <section class="tela-eventos-astronomicos"> 
     <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Eclipses</button>
       <button type="button" class="botao-opcao-menu opcao">Chuvas de Meteoros</button>
@@ -228,11 +228,11 @@
       <button type="button" class="botao-opcao-menu opcao">Cometas e Outros</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
   <!-- ECLIPSES -->
-  <!-- <section class="tela-eventos-lista eclipse" id="lista-eclipses">
-    <div class="informacoes">
+  <section class="tela-eventos-lista eclipse" id="lista-eclipses">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Eclipse Solar</button>
       <button type="button" class="botao-opcao-menu opcao">Eclipse Lunar</button>
     </div>
@@ -259,11 +259,11 @@
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
   <!-- CHUVA DE METEOROS -->
-  <!-- <section class="tela-eventos-lista meteoros" id="lista-chuvas-de-meteoros">
-    <div class="informacoes">
+  <section class="tela-eventos-lista meteoros" id="lista-chuvas-de-meteoros">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Perseidas</button>
       <button type="button" class="botao-opcao-menu opcao">Leonídeas</button>
       <button type="button" class="botao-opcao-menu opcao">Geminídeas</button>
@@ -302,11 +302,11 @@
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
 
   <!-- SUPERLUAS E CONJUNÇÕES -->
-  <!-- <section class="tela-eventos-lista superlua" id="lista-superluas-conjuncoes">
+  <section class="tela-eventos-lista superlua" id="lista-superluas-conjuncoes">
     <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Superlua</button>
       <button type="button" class="botao-opcao-menu opcao">Conjunção Planetária</button>
@@ -334,12 +334,12 @@
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
 
   <!-- COMETAS E OUTROS -->
-  <!-- <section class="tela-eventos-lista cometas" id="lista-cometas-outros">
-    <div class="informacoes">
+  <section class="tela-eventos-lista cometas" id="lista-cometas-outros">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Cometas</button>
       <button type="button" class="botao-opcao-menu opcao">Supernovas</button>
       <button type="button" class="botao-opcao-menu opcao">Agrupamentos Estelares</button>
@@ -378,11 +378,11 @@
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
 
   <!-- GALÁXIA -->
-  <!-- <section class="tela-galaxias hidden" id="tela-galaxias"> 
+  <section class="tela-galaxias hidden" id="tela-galaxias"> 
     <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao" data-target="lista-tipos-galaxias">Tipos de Galáxias</button>
       <button type="button" class="botao-opcao-menu opcao" data-target="lista-galaxias-famosas">Galáxias Famosas</button>
@@ -472,11 +472,11 @@
       </p>
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
-  </section> -->
+  </section>
 
 
   <!-- INFORMAÇÕES PLANETÁRIAS -->
-  <!-- <section class="tela-informacoes-planetarias">
+  <section class="tela-informacoes-planetarias">
     <div class="informacoes-planetarias">
     <button type="button" class="botao-opcao-menu opcao">Sol</button>
     <button type="button" class="botao-opcao-menu opcao">Mercúrio</button>
@@ -489,7 +489,7 @@
     <button type="button" class="botao-opcao-menu opcao">Netuno</button>
     <button type="button" class="botao-opcao-menu opcao">Plutão</button>
     </div>
-    <button type="button" class="botao-opcao-menu botao-planetario">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
@@ -623,18 +623,18 @@
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
 
   <!-- NFORMAÇÕES EXTRAS -->
-  <!-- <section class="tela-informacoes-extras"> 
+  <section class="tela-informacoes-extras" style="display: flex; justify-content: center; align-items: center; flex-direction: column;"> 
     <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Perfil</button>
       <button type="button" class="botao-opcao-menu opcao">Criadores</button>
       <button type="button" class="botao-opcao-menu opcao">Apagar conta</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section> -->
+  </section>
 
 
 
@@ -644,7 +644,7 @@
 
 
   <!-- CRIADORES -->
-   <!-- <section id="tela-criadores" class="tela-criadores">
+   <section id="tela-criadores" class="tela-criadores">
     <div class="background-overlay"></div> <h1 class="titulo-criadores">Nossos Agentes Especiais</h1>
 
     <div class="container-criadores">
@@ -685,41 +685,14 @@
         <img src="./src/imagens/casinha.png" alt="Ícone de casa">
         <span>Voltar</span>
     </a>
-</section> -->
+</section>
 
-<!--    <section id="tela-criadores">
-    <img src="./src/imagens/space.jpg" id="interface">
-    <div class="container">
-      <div id="Criadores">
-        <p><button type="button">Criadores</button></p>
-      </div>
-      <div id="Gi">
-        <p><button type="button" id="G">
-            <p>Giliany:</p>
-            <p>Nasceu em 15/06/2005 na cidade de Eirunepé.</p>
-            <p>Finalista do Ensino médio técnico integrado em Informática(2024).</p>
-            <p>Amanteee de livros, gosta de anime, séries, atleta, programadora, gosta de gatos...</p>
-          </button></p>
-      </div>
-      <div id="Ja">
-        <p><button type="button" id="J">
-            <p>Jaqueline:</p>
-            <p>Nasceu em 21/04/2006 na cidade de Eirunepé.</p>
-            <p>Finalista do Ensino médio técnico integrado em Informática(2024).</p>
-            <p>Amante de livroooosss, Dorameira, programadora, adora cantar e dançar kpop, ama animais, compositora...
-            </p>
-          </button></p>
-      </div>
-      <img src="./src/imagens/Giliany.jpg" id="int">
-      <img src="./src/imagens/jaqueline.png" id="jaque">
-      <p><a href="#tela10"><button type="button" class="voltar">Voltar</button></a></p>
-    </div>
-  </section> -->
+   
 
 
 
   <!-- APAGAR CONTA -->
-   <!-- <section class="tela-apagar-conta">
+   <section class="tela-apagar-conta">
     <div class="container-conteudo">
         <figure class="astronauta">
             <img src="./src/imagens/nauta-triste.png" alt="Astronauta triste, pensando em você">
@@ -736,24 +709,7 @@
     <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
         <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal">
     </button>
-</section> -->
-
-
-
-
-  <!-- section class="tela-apagar-conta">
-    <img src="./src/imagens/nauta-triste.png" alt="Astronauta triste">
-    <div class="informacoes-detalhe">
-      <p style="font-family:Orbitron; font-weight: 500;">Atenção, Agente Espacial. Sua jornada de exploração está em risco de ser encerrada. Nossos sensores indicam que você ainda tem 9 planetas, 5 galáxias e incontáveis estrelas a descobrir.
-        <br><br>Confirme: quer mesmo desativar sua nave-mãe?</p>
-      <button type="button" class="botao-opcao-menu opcao">Sim</button>
-      <button type="button" class="botao-opcao-menu opcao">Não</button>
-    </div>
-    <button type="button" class="botao-casinha">
-      <img src="./src/imagens/casinha.png" class="casinha" alt="botao-casinha">
-    </button>
-  </section> -->
-
+</section>
   <script src="./src/js/index.js"></script>
 </body>
 

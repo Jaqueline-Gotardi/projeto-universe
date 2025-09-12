@@ -1,4 +1,4 @@
-.tela-eventos-astronomicos,
+/* .tela-eventos-astronomicos,
 .tela-eventos-lista,
 .tela-eventos-detalhe {
     background-size: cover;
@@ -7,9 +7,25 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; 
+    justify-content: center; 
     position: relative;
+} */
+
+.tela-eventos-astronomicos,
+.tela-eventos-lista,
+.tela-eventos-detalhe {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .tela-eventos-astronomicos {

@@ -1,4 +1,4 @@
-.informacao-astronomica,
+/* .informacao-astronomica,
 .tela-constelacoes-categorias {
     background-image: url('../imagens/4.png');
     background-size: cover;
@@ -8,8 +8,22 @@
     display: flex;
     flex-direction: column; 
     align-content: center;
-    /* justify-content: space-between; */
     position: relative;
+} */
+
+.informacao-astronomica,
+.tela-constelacoes-categorias {
+    background-image: url('../imagens/4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
 } 
  
 
@@ -19,7 +33,7 @@
     transform: scale(1.05);
 }
 
-.botao-voltar {
+/* .botao-voltar {
     width: 200px;
     display: flex;
     justify-self: center;
@@ -28,6 +42,12 @@
     bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: rgba(63, 63, 63, 0.516);
+    transition: 0.2s ease-out;
+} */
+
+.botao-voltar {
+    width: 200px;
     background-color: rgba(63, 63, 63, 0.516);
     transition: 0.2s ease-out;
 }

@@ -1,4 +1,4 @@
-.tela-galaxias,
+/* .tela-galaxias,
 .tela-galaxias-lista,
 .tela-galaxia-detalhe {
     background-size: cover;
@@ -10,6 +10,22 @@
     align-items: center; 
     justify-content: center;
     position: relative;
+} */
+
+.tela-galaxias,
+.tela-galaxias-lista,
+.tela-galaxia-detalhe {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .tela-galaxias,

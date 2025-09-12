@@ -13,7 +13,7 @@
     let isFormularioValido = true; 
     campos.forEach((input, index) => {
         if(input.value.trim() === '') {
-            input.classList.add('erro');
+            input.classList.add('erro'); 
             input.classList.remove('certo');
             mensagensErro[index].classList.add('ativo');
             isFormularioValido = false;

@@ -6,7 +6,8 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .nauta-menu {
@@ -15,7 +16,7 @@
     left: 50%;
     transform: translate(-50%, -50%); 
     text-align: center;
-} 
+}  
 
 .nauta-menu img {
     width: 50%; 
