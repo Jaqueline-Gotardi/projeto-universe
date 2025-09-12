@@ -1,4 +1,4 @@
-.tela-login {
+/*.tela-login {
     background-image: url('../imagens/tela-login.png');
     background-color: #9cbbe4;
     background-size: contain;
@@ -71,7 +71,7 @@
 }
 
 /* mudando o input na validação. . . */
-.mensagem-erro {
+/*.mensagem-erro {
     color: #f52e25;
     font-size: 13px;
     display: none;
@@ -87,10 +87,10 @@
   
   #formulario input.certo {
       border: 1.8px solid #00c220;
-  } 
+  } */
 
 /* --- Estilos do Cabeçalho de Boas-Vindas --- */
-.welcome {
+/*.welcome {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -110,4 +110,211 @@
     color: white;
     font-size: 30px;
     text-shadow: 2px 2px 4px #000000;
-}
+}*/
+
+
+
+  
+   .welcome-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Screens */
+  .screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .screen.active {
+    display: block;
+  }
+  
+  /* Space Backgrounds */
+  .space-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  /* Login Background */
+  .login-bg {
+    background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #2d1b69 100%);
+  }
+  
+  /* Main Menu Background */
+  /* .main-bg {
+    background: linear-gradient(135deg, #1a1a3e 0%, #2d1b69 30%, #4a148c 70%, #6a1b9a 100%);
+  } */
+  
+  /* Navigation Background */
+  /* .navigation-bg {
+    background: linear-gradient(135deg, #0d47a1 0%, #1565c0 30%, #1976d2 70%, #42a5f5 100%);
+  } */
+  
+  /* Menu Background */
+  /* .menu-bg {
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 30%, #388e3c 70%, #66bb6a 100%);
+  } */
+  
+  /* Astronomical Background */
+/*   .astronomical-bg {
+    background: linear-gradient(135deg, #4a148c 0%, #6a1b9a 30%, #8e24aa 70%, #ba68c8 100%);
+  } */
+  
+  /* Events Background */
+  /* .events-bg {
+    background: linear-gradient(135deg, #e65100 0%, #f57c00 30%, #ff9800 70%, #ffb74d 100%);
+  } */
+  
+  /* Galaxy Background */
+  /* .galaxy-bg {
+    background: linear-gradient(135deg, #1a237e 0%, #303f9f 30%, #3f51b5 70%, #7986cb 100%);
+  } */
+  
+  /* Planetary Background */
+  /* .planetary-bg {
+    background: linear-gradient(135deg, #b71c1c 0%, #d32f2f 30%, #f44336 70%, #ef5350 100%);
+  } */
+  
+  /* Constellation Background */
+  /* .constellation-bg {
+    background: linear-gradient(135deg, #263238 0%, #37474f 30%, #455a64 70%, #78909c 100%);
+  } */
+  
+  /* Stars Animation */
+  .stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+      radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
+      radial-gradient(2px 2px at 160px 30px, #ddd, transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: sparkle 3s linear infinite;
+  }
+  
+  @keyframes sparkle {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100px); }
+  }
+  
+  
+  /* Content Wrapper */
+  .content-wrapper {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  /* Login Styles */
+  .login-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .welcome-section {
+    margin-bottom: 2rem;
+  }
+  
+  .astronaut-hero {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .welcome-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .form-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .error-message {
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    display: none;
+  }
+  
+  /* Buttons */
+  .btn-primary, .btn-space, .btn-cosmic, .btn-menu, .btn-home, .btn-option, .btn-back {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  }
+  

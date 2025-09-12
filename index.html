@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
+<head> 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +27,38 @@
    <title>Universe</title>
 </head>
 <body>
+  <!-- Tela de Login -->
+  <section id="tela-login" class="screen active">
+    <div class="space-background login-bg">
+      <div class="stars"></div>
+      <div class="planets"></div>
+    </div>
+    <div class="content-wrapper">
+      <div class="login-container">
+        <div class="welcome-section">
+          <img src="src/imagens/astronaut-hero.png" alt="Astronauta" class="astronaut-hero">
+          <h1 class="welcome-title">Bem vindo(a) ao Universe!</h1>
+        </div>
+        
+        <form class="login-form" id="formulario">
+          <div class="form-group">
+            <label for="username" class="form-label">Usuário:</label>
+            <input type="text" id="username" placeholder="Digite seu nome" class="form-input">
+            <p class="error-message">* preencha este campo</p>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email" class="form-input">
+            <p class="error-message">* preencha este campo</p>
+          </div>
+          
+          <button type="submit" class="btn-primary">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- <section class="tela-login">
     <div class="welcome">
       <img src="./src/imagens/astronauta.png" alt="Astronauta">
@@ -75,7 +107,7 @@
     <div class="nauta-menu">
       <img src="./src/imagens/nautaemcimadalua.png" alt="Astronauta">
     </div>
-    <div class="informacoes">
+    <div class="informacoes-extras">
     <button type="button" class="botao-opcao-menu opcao">Informações Astronômicas</button>
     <button type="button" class="botao-opcao-menu opcao">Informações Planetárias</button>
     <button type="button" class="botao-opcao-menu opcao">Informações Extras</button>
@@ -94,7 +126,7 @@
   <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section> -->
   <!-- <section class="tela-constelacoes-categorias"> 
-    <div class="informacoes">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Hemisfério Norte</button>
       <button type="button" class="botao-opcao-menu opcao">Hemisfério Sul</button>
       <button type="button" class="botao-opcao-menu opcao">As Famosas</button>
@@ -103,25 +135,25 @@
   </section> -->
 
   <!-- <section class="tela-constelacoes-lista hidden" id="hemisferio-norte">
-    <div class="informacoes">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Ursa Maior</button>
       <button type="button" class="botao-opcao-menu opcao">Ursa Menor</button>
       <button type="button" class="botao-opcao-menu opcao">Andrômeda</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section>
+  </section> -->
 
-  <section class="tela-constelacoes-lista hidden" id="hemisferio-sul">
-    <div class="informacoes">
+  <!-- <section class="tela-constelacoes-lista hidden" id="hemisferio-sul">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Cruzeiro do Sul</button>
       <button type="button" class="botao-opcao-menu opcao">Fênix</button>
       <button type="button" class="botao-opcao-menu opcao">Centauro</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section>
+  </section> -->
 
-   <section class="tela-constelacoes-lista hidden" id="famosas">
-    <div class="informacoes">
+   <!-- <section class="tela-constelacoes-lista hidden" id="famosas">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Órion</button>
       <button type="button" class="botao-opcao-menu opcao">Cão Maior</button>
       <button type="button" class="botao-opcao-menu opcao">Escorpião</button>
@@ -146,8 +178,8 @@
     <img src="./src/imagens/andromeda.png" alt="Constelação Andrômeda">
     <p class="descricao-constelacao">Andrômeda é mais conhecida por abrigar a Galáxia de Andrômeda (M31), o objeto mais distante que pode ser visto a olho nu, localizado a 2,5 milhões de anos-luz da Terra.</p>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section>
- -->
+  </section> -->
+
   <!-- Hemisfério Sul -->
   <!-- <section class="tela-constelacao-detalhe hidden" id="detalhe-cruzeiro-do-sul">
     <img src="./src/imagens/cruzeiro-do-sul.png" alt="Constelação Cruzeiro do Sul">
@@ -188,8 +220,8 @@
 
 
   <!-- EVENTOS ASTRONÔMICOS -->
-  <!-- <section class="tela-eventos-astronomicos ativo"> 
-    <div class="informacoes">
+  <!-- <section class="tela-eventos-astronomicos"> 
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Eclipses</button>
       <button type="button" class="botao-opcao-menu opcao">Chuvas de Meteoros</button>
       <button type="button" class="botao-opcao-menu opcao">Superluas e Conjuções</button>
@@ -275,7 +307,7 @@
 
   <!-- SUPERLUAS E CONJUNÇÕES -->
   <!-- <section class="tela-eventos-lista superlua" id="lista-superluas-conjuncoes">
-    <div class="informacoes">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao">Superlua</button>
       <button type="button" class="botao-opcao-menu opcao">Conjunção Planetária</button>
     </div>
@@ -351,7 +383,7 @@
 
   <!-- GALÁXIA -->
   <!-- <section class="tela-galaxias hidden" id="tela-galaxias"> 
-    <div class="informacoes">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao" data-target="lista-tipos-galaxias">Tipos de Galáxias</button>
       <button type="button" class="botao-opcao-menu opcao" data-target="lista-galaxias-famosas">Galáxias Famosas</button>
     </div>
@@ -359,7 +391,7 @@
   </section>
   
   <section class="tela-galaxias-lista hidden" id="lista-tipos-galaxias">
-    <div class="informacoes">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-espiral">Espiral</button>
       <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-eliptica">Elíptica</button>
       <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-irregular">Irregular</button>
@@ -401,7 +433,7 @@
   </section>
   
   <section class="tela-galaxias-lista hidden" id="lista-galaxias-famosas">
-    <div class="informacoes">
+    <div class="informacoes-extras">
       <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-via-lactea">Via Láctea</button>
       <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-andromeda-galaxia">Andrômeda</button>
       <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-triangulo">Triângulo (M33)</button>
@@ -612,7 +644,50 @@
 
 
   <!-- CRIADORES -->
-<!-- <section id="tela-criadores">
+   <!-- <section id="tela-criadores" class="tela-criadores">
+    <div class="background-overlay"></div> <h1 class="titulo-criadores">Nossos Agentes Especiais</h1>
+
+    <div class="container-criadores">
+        <div class="card-criador">
+            <div class="imagem-perfil">
+                <img src="./src/imagens/Giliany.jpg" alt="Foto de Perfil de Giliany">
+            </div>
+            <div class="informacoes-perfil">
+                <h2 class="nome-criador">Giliany</h2>
+                <p class="data-nascimento">Nasceu em 15/06/2005 em Eirunepé.</p>
+                <p class="formacao">Finalista do Ensino Médio Técnico Integrado em Informática (2024).</p>
+                <ul class="interesses-criador">
+                    <li>Amante de livros e animes</li>
+                    <li>Gosta de séries e é atleta</li>
+                    <li>Programadora e adora gatos</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-criador">
+            <div class="imagem-perfil">
+                <img src="./src/imagens/jaqueline.png" alt="Foto de Perfil de Jaqueline">
+            </div>
+            <div class="informacoes-perfil">
+                <h2 class="nome-criador">Jaqueline</h2>
+                <p class="data-nascimento">Nasceu em 21/04/2006 em Eirunepé.</p>
+                <p class="formacao">Finalista do Ensino Médio Técnico Integrado em Informática (2024).</p>
+                <ul class="interesses-criador">
+                    <li>Amante de livros e dorameira</li>
+                    <li>Programadora e adora cantar e dançar K-pop</li>
+                    <li>Ama animais e é compositora</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="#tela10" class="botao-voltar" aria-label="Voltar para a tela anterior">
+        <img src="./src/imagens/casinha.png" alt="Ícone de casa">
+        <span>Voltar</span>
+    </a>
+</section> -->
+
+<!--    <section id="tela-criadores">
     <img src="./src/imagens/space.jpg" id="interface">
     <div class="container">
       <div id="Criadores">
@@ -644,7 +719,7 @@
 
 
   <!-- APAGAR CONTA -->
-   <section class="tela-apagar-conta">
+   <!-- <section class="tela-apagar-conta">
     <div class="container-conteudo">
         <figure class="astronauta">
             <img src="./src/imagens/nauta-triste.png" alt="Astronauta triste, pensando em você">
@@ -661,7 +736,7 @@
     <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
         <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal">
     </button>
-</section>
+</section> -->
 
 
 

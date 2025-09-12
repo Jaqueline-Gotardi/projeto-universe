@@ -15,7 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%); 
     text-align: center;
-}
+} 
 
 .nauta-menu img {
     width: 50%; 
@@ -82,4 +82,4 @@
     background-color: deepskyblue;
     transform: scale(1.05);
     color: black;
-}
+} 
