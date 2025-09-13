@@ -1,44 +1,5 @@
-/* #tela11 #interface {
-    height: 815px;
-}
-
-#tela11 button {
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: 2px solid #FFFFFF;
-    overflow: hidden;
-    padding: 15px;
-    width: 200px;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-}
-
-#tela11 #Pergunta {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    width: 300px;
-    transform: translate(-50%, -50%); 
-}
-
-#tela11 #Sim {
-    position: absolute;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#tela11 #Não {
-    position: absolute;
-    top: 66%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-
-
-/* .tela-apagar-conta {
+/* Estilos Gerais da Tela de Apagar Conta */
+.tela-apagar-conta {
     background-image: url('../imagens/1.1.png');
     background-size: cover;
     background-position: center;
@@ -46,56 +7,10 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    position: relative;
-}
-
-.tela-apagar-conta img {
-    max-width: 50%; 
-    max-height: 250px; 
-    height: auto;
-    object-fit: contain; 
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto 20px;
+    justify-content: space-between;
     align-items: center;
-    display: flex;
-}
-
-.botao-casinha {
-    background: none;
-    border: none;
-}
-
-button img {
-    width: 80px;
-    cursor: pointer;
-    background-color: rgb(81, 76, 87);
-    transition: 0.2s ease-out;
-} */
-
-
-
-
-
-
-
-
-
-
-/* Estilos Gerais da Tela de Apagar Conta */
-.tela-apagar-conta {
-    background-image: url('../imagens/1.1.png'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; 
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 20px; 
-    box-sizing: border-box; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Container principal para o astronauta e o painel de confirmação */
@@ -103,55 +18,54 @@ button img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px; 
-    width: 100%; 
-    max-width: 600px; 
-    margin-top: 50px; 
+    gap: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 50px;
 }
 
 /* Estilização do Astronauta */
 .astronauta img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
-    max-height: 250px; 
-    object-fit: contain; 
+    max-height: 250px;
+    object-fit: contain;
     border-radius: 15px;
-    /* Remover box-shadow se a imagem já tiver um fundo integrado para evitar borda extra */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .astronauta img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 /* Estilização do Painel de Confirmação */
 .painel-confirmacao {
-    background-color: rgba(255, 255, 255, 0.95); 
-    border-radius: 20px; 
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     text-align: center;
     width: 100%;
-    max-width: 450px; 
+    max-width: 450px;
     position: relative;
-    animation: fadeIn 1s ease-out forwards; 
+    animation: fadeIn 1s ease-out forwards;
 }
 
-/* Estilo da Mensagem Persuasiva */
+/* Estilo da Mensagem */
 .mensagem-persuasiva {
-    font-family: 'Orbitron', sans-serif; 
+    font-family: 'Orbitron', sans-serif;
     font-weight: 500;
-    font-size: 1.1em; 
-    color: #333; 
-    line-height: 1.6; 
-    margin-bottom: 25px; 
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 25px;
 }
 
 /* Estilos para o grupo de botões "Sim" e "Não" */
 .opcoes-confirmacao {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
@@ -163,35 +77,35 @@ button img {
     font-size: 1.05em;
     padding: 12px 25px;
     border: none;
-    border-radius: 50px; 
+    border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out; 
-    text-transform: uppercase; 
-    letter-spacing: 1px; 
-    min-width: 120px; 
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 120px;
 }
 
 .botao-sim {
-    background-color: #4CAF50; /* Verde vibrante */
+    background-color: #4CAF50;
     color: white;
     box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
 }
 
 .botao-sim:hover {
-    background-color: #45a049; 
+    background-color: #45a049;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
 }
 
 .botao-nao {
-    background-color: #f44336; 
+    background-color: #f44336;
     color: white;
     box-shadow: 0 4px 15px rgba(244, 67, 54, 0.4);
 }
 
 .botao-nao:hover {
-    background-color: #da190b; 
-    transform: translateY(-3px); 
+    background-color: #da190b;
+    transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(244, 67, 54, 0.6);
 }
 
@@ -200,21 +114,21 @@ button img {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0; 
-    margin-bottom: 30px; 
+    padding: 0;
+    margin-bottom: 30px;
     transition: transform 0.3s ease-in-out;
 }
 
 .icone-home {
-    width: 70px; 
+    width: 70px;
     height: auto;
-    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3)); 
-    background-color: transparent; 
-    border-radius: 0; 
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+    background-color: transparent;
+    border-radius: 0;
 }
 
 .botao-retorno-home:hover {
-    transform: scale(1.1) rotate(5deg); 
+    transform: scale(1.1) rotate(5deg);
 }
 
 /* Animações */
@@ -223,6 +137,7 @@ button img {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -234,20 +149,25 @@ button img {
     .painel-confirmacao {
         padding: 20px;
     }
+
     .mensagem-persuasiva {
         font-size: 1em;
     }
+
     .opcoes-confirmacao {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 15px;
     }
+
     .botao-confirmacao {
-        width: 80%; 
-        margin: 0 auto; 
+        width: 80%;
+        margin: 0 auto;
     }
+
     .astronauta img {
         max-height: 200px;
     }
+
     .icone-home {
         width: 60px;
     }

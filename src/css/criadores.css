@@ -1,83 +1,3 @@
-/* #tela12 #interface {
-    height: 815px;
-}
-
-#tela12 button {
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: 2px solid #FFFFFF;
-    overflow: hidden;
-    padding: 15px;
-    width: 200px; 
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-}
-
-#tela12 #Criadores {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    width: 300px;
-    transform: translate(-50%, -50%);
-}
-
-#tela12 #G {
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate(-25%, -50%);
-    width: 270px;
-    font-size: 15px;
-}
-
-#tela12 #J {
-    position: absolute;
-    top: 67%;
-    left: 50%;
-    transform: translate(-30%, -50%);
-    width: 270px;
-    font-size: 15px;
-}
-
-#tela12 #int {
-    border-radius: 70%;
-    width: 160px;
-    height: 200px;
-    position: absolute;
-    left: 50%;
-    top: 33%;
-    transform: translate(-135%, -50%);
-}
-
-#tela12 #jaque {
-    border-radius: 110%;
-    width: 160px;
-    height: 280px;
-    position: absolute;
-    left: 50%;
-    top: 65%;
-    transform: translate(-140%, -50%);
-}
-
-#tela12 .voltar {
-    position: absolute;
-    background-color: white;
-    color: black;
-    width: 90px;
-    top: 87%;
-    left: 50%;
-    transform: translate(-215%, -50%);
-} */
-
-
-
-
-
-
-
-
-
 /* Estilos da Tela de Criadores */
 .tela-criadores {
     background-image: url('../imagens/fundo-tela-criadores.png');
@@ -86,12 +6,12 @@
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
-    flex-direction: column; /* Organiza os elementos verticalmente */
-    align-items: center; /* Centraliza horizontalmente os itens */
-    justify-content: space-between; /* Espaçamento entre o título, cards e botão */
-    padding: 40px 20px; /* Padding interno para respiro */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
     position: relative;
-    overflow: auto; /* Permite scroll se o conteúdo for maior que a tela */
+    overflow: auto;
 }
 
 /* Camada de sobreposição para melhorar a legibilidade do texto */
@@ -101,57 +21,57 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)); /* Gradiente escuro */
-    z-index: 1; /* Garante que fique acima do background e abaixo do conteúdo */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    z-index: 1;
 }
 
 /* Título principal da seção */
 .titulo-criadores {
     font-family: 'Orbitron', sans-serif;
-    font-size: 3.2em; /* Tamanho maior para destaque */
+    font-size: 3.2em;
     font-weight: 700;
-    color: #e0f2f7; /* Um azul claro quase branco */
+    color: #e0f2f7;
     text-align: center;
     margin-bottom: 40px;
     letter-spacing: 2px;
-    text-shadow: 0 0 15px rgba(125, 200, 255, 0.7); /* Efeito de brilho */
-    z-index: 2; /* Acima do overlay */
-    animation: slideInTop 1s ease-out forwards; /* Animação de entrada */
+    text-shadow: 0 0 15px rgba(125, 200, 255, 0.7);
+    z-index: 2;
+    animation: slideInTop 1s ease-out forwards;
 }
 
 /* Container para os cards dos criadores */
 .container-criadores {
     display: flex;
-    flex-wrap: wrap; /* Permite que os cards quebrem linha */
-    justify-content: center; /* Centraliza os cards */
-    gap: 50px; /* Espaço entre os cards */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
     width: 100%;
-    max-width: 1200px; /* Largura máxima para os cards */
-    z-index: 2; /* Acima do overlay */
-    flex-grow: 1; /* Permite que o container ocupe o espaço disponível */
-    padding: 20px 0; /* Padding interno */
+    max-width: 1200px;
+    z-index: 2;
+    flex-grow: 1;
+    padding: 20px 0;
 }
 
 /* Estilo individual do Card do Criador */
 .card-criador {
-    background: linear-gradient(135deg, rgba(30, 30, 50, 0.9), rgba(50, 50, 80, 0.9)); /* Gradiente elegante */
-    border: 1px solid rgba(125, 200, 255, 0.3); /* Borda sutil */
-    border-radius: 25px; /* Bordas mais arredondadas */
+    background: linear-gradient(135deg, rgba(30, 30, 50, 0.9), rgba(50, 50, 80, 0.9));
+    border: 1px solid rgba(125, 200, 255, 0.3);
+    border-radius: 25px;
     padding: 30px;
     width: 100%;
-    max-width: 450px; /* Largura máxima para cada card */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(125, 200, 255, 0.2); /* Sombra e brilho */
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(125, 200, 255, 0.2);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transição suave */
-    animation: fadeInScale 1s ease-out forwards; /* Animação de entrada */
-    opacity: 0; /* Começa invisível para a animação */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeInScale 1s ease-out forwards;
+    opacity: 0;
 }
 
 .card-criador:hover {
-    transform: translateY(-10px) scale(1.02); /* Efeito de "levantar" e pequeno zoom */
+    transform: translateY(-10px) scale(1.02);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(125, 200, 255, 0.4);
 }
 
@@ -159,12 +79,12 @@
 .imagem-perfil {
     width: 160px;
     height: 160px;
-    border-radius: 50%; /* Torna a imagem circular */
-    overflow: hidden; /* Garante que a imagem seja cortada em círculo */
-    border: 4px solid #7dc8ff; /* Borda azul clara */
-    box-shadow: 0 0 15px rgba(125, 200, 255, 0.6); /* Brilho ao redor da imagem */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #7dc8ff;
+    box-shadow: 0 0 15px rgba(125, 200, 255, 0.6);
     margin-bottom: 25px;
-    display: flex; /* Para centralizar a imagem dentro do div */
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -172,14 +92,14 @@
 .imagem-perfil img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
-    display: block; /* Remove espaço extra abaixo da imagem */
+    object-fit: cover;
+    display: block;
 }
 
 /* Informações de Texto do Perfil */
 .informacoes-perfil {
-    flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
-    color: #c9e0ed; /* Cor de texto suave */
+    flex-grow: 1;
+    color: #c9e0ed;
 }
 
 .nome-criador {
@@ -191,36 +111,37 @@
     text-shadow: 0 0 8px rgba(125, 200, 255, 0.5);
 }
 
-.data-nascimento, .formacao {
+.data-nascimento,
+.formacao {
     font-size: 1.05em;
     margin-bottom: 8px;
     line-height: 1.4;
 }
 
 .interesses-criador {
-    list-style: none; /* Remove marcadores de lista padrão */
+    list-style: none;
     padding: 0;
     margin-top: 20px;
-    text-align: left; /* Alinha os itens da lista à esquerda */
+    text-align: left;
     font-size: 0.95em;
     line-height: 1.5;
-    background-color: rgba(0, 0, 0, 0.2); /* Fundo sutil para a lista */
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 15px 20px;
     border-radius: 10px;
-    border-left: 3px solid #7dc8ff; /* Borda lateral para destaque */
+    border-left: 3px solid #7dc8ff;
 }
 
 .interesses-criador li {
     margin-bottom: 5px;
     position: relative;
-    padding-left: 20px; /* Espaço para o ícone */
+    padding-left: 20px;
 }
 
 .interesses-criador li::before {
-    content: '⭐'; /* Ícone de estrela como marcador */
+    content: '⭐';
     position: absolute;
     left: 0;
-    color: #ffcc00; /* Cor da estrela */
+    color: #ffcc00;
 }
 
 /* Botão Voltar */
@@ -228,32 +149,32 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: #2a3a5a; /* Azul escuro mais profissional */
+    background-color: #2a3a5a;
     color: #e0f2f7;
     font-family: 'Orbitron', sans-serif;
     font-size: 1.1em;
     font-weight: 500;
     padding: 12px 25px;
     border: none;
-    border-radius: 50px; /* Formato de pílula */
+    border-radius: 50px;
     cursor: pointer;
-    text-decoration: none; /* Remove sublinhado do link */
+    text-decoration: none;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4), 0 0 10px rgba(125, 200, 255, 0.3);
     transition: all 0.3s ease-in-out;
-    z-index: 2; /* Acima do overlay */
-    margin-top: 40px; /* Espaço acima do botão */
+    z-index: 2;
+    margin-top: 40px;
 }
 
 .botao-voltar:hover {
-    background-color: #3b4e72; /* Azul um pouco mais claro no hover */
-    transform: translateY(-5px); /* Efeito de "levantar" */
+    background-color: #3b4e72;
+    transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(125, 200, 255, 0.5);
 }
 
 .botao-voltar img {
-    width: 30px; /* Tamanho do ícone da casinha */
+    width: 30px;
     height: auto;
-    filter: invert(1) drop-shadow(0 0 5px rgba(125, 200, 255, 0.5)); /* Inverte a cor da imagem para branca e adiciona brilho */
+    filter: invert(1) drop-shadow(0 0 5px rgba(125, 200, 255, 0.5));
 }
 
 /* Animações */
@@ -262,6 +183,7 @@
         opacity: 0;
         transform: translateY(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -273,6 +195,7 @@
         opacity: 0;
         transform: scale(0.9);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -287,13 +210,13 @@
     }
 
     .container-criadores {
-        flex-direction: column; /* Cards empilhados em telas menores */
+        flex-direction: column;
         gap: 40px;
         padding: 10px 0;
     }
 
     .card-criador {
-        max-width: 90%; /* Ocupa mais largura em telas menores */
+        max-width: 90%;
         padding: 25px;
     }
 
@@ -307,7 +230,9 @@
         font-size: 1.8em;
     }
 
-    .data-nascimento, .formacao, .interesses-criador {
+    .data-nascimento,
+    .formacao,
+    .interesses-criador {
         font-size: 0.9em;
     }
 
@@ -316,6 +241,7 @@
         padding: 10px 20px;
         margin-top: 30px;
     }
+
     .botao-voltar img {
         width: 25px;
     }
@@ -325,21 +251,26 @@
     .tela-criadores {
         padding: 20px 10px;
     }
+
     .titulo-criadores {
         font-size: 2em;
         margin-bottom: 25px;
     }
+
     .card-criador {
         padding: 20px;
         border-radius: 20px;
     }
+
     .imagem-perfil {
         width: 120px;
         height: 120px;
     }
+
     .nome-criador {
         font-size: 1.5em;
     }
+
     .interesses-criador {
         padding: 10px 15px;
     }

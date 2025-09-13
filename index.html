@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head> 
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +23,9 @@
   <link rel="stylesheet" href="./src/css/criadores.css">
   <link rel="stylesheet" href="./src/css/tela-apagar-conta.css">
 
-  <!-- <link rel="stylesheet" href="./src/css/tela8e9.css"> -->
-   <title>Universe</title>
-</head>
+  <title>Universe</title>
+</head> 
+
 <body>
   <!-- Tela de Login -->
   <section class="tela-login" class="screen active">
@@ -39,64 +39,45 @@
           <img src="src/imagens/astronaut-hero.png" alt="Astronauta" class="astronaut-hero">
           <h1 class="welcome-title">Bem vindo(a) ao Universe!</h1>
         </div>
-        
+
         <form class="login-form" id="formulario">
           <div class="form-group">
             <label for="username" class="form-label">Usuário:</label>
             <input type="text" id="username" placeholder="Digite seu nome" class="form-input">
             <p class="mensagem-erro">* preencha este campo</p>
           </div>
-          
+
           <div class="form-group">
             <label for="email" class="form-label">Email:</label>
             <input type="email" id="email" placeholder="Digite seu email" class="form-input">
             <p class="mensagem-erro">* preencha este campo</p>
           </div>
-          
+
           <button type="submit" class="btn-primary">Entrar</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- <section class="tela-login">
-    <div class="welcome">
-      <img src="./src/imagens/astronauta.png" alt="Astronauta">
-      <h1>Bem vindo(a) ao Universe!</h1>
-    </div>
-      <form class="login" id="formulario">
-        <p><label for="username" class="usuario">Usuário:</label>
-          <input type="text" id="username" placeholder="Digite seu nome" />
-        </p>
-        <p class="mensagem-erro">* preencha este campo</p>
-
-        <p><label for="email" class="email">Email:</label>
-          <input type="text" id="email" placeholder="Digite seu email" />
-        </p>
-        <p class="mensagem-erro">* preencha este campo</p>
-        <p><button type="submit" class="button-entrar">Entrar</button></p>
-      </form>
-  </section> -->
-
   <section class="tela-principal">
-     <div class="text">
+    <div class="text">
       <h2>O que vamos explorar hoje?</h2>
       <p>Selecione seu destino</p>
-     </div>
-    <div class="guia">
-      <button type="button">Navegação Espacial</button>
-      <button type="button">Tutorial</button>
+    </div>
+    <div class="informacoes-extras">
+      <button type="button" class="btn-cosmic">Navegação Espacial</button>
+      <button type="button" class="btn-cosmic">Tutorial</button>
     </div>
   </section>
 
   <section class="tela-navegacao">
     <div class="barra">
-      <input type="text" name="Nome"/>
+      <input type="text" name="Nome" />
       <img src="./src/imagens/lupa.jpg" class="lupa">
     </div>
     <img src="./src/imagens/astronauta.png" class="nauta-navegacao" alt="Astronauta">
-    <div class="botao">
-    <button type="button" class="botao-opcao-menu opcao">Menu</button>
+    <div class="informacoes-extras">
+      <button type="button" class="btn-cosmic">Menu</button>
     </div>
     <div class="casinha">
       <img src="./src/imagens/casinha.png" class="casinha">
@@ -108,124 +89,161 @@
       <img src="./src/imagens/nautaemcimadalua.png" alt="Astronauta">
     </div>
     <div class="informacoes-extras">
-    <button type="button" class="botao-opcao-menu opcao">Informações Astronômicas</button>
-    <button type="button" class="botao-opcao-menu opcao">Informações Planetárias</button>
-    <button type="button" class="botao-opcao-menu opcao">Informações Extras</button>
-  </div>
-  <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+      <button type="button" class="btn-cosmic">Informações Astronômicas</button>
+      <button type="button" class="btn-cosmic">Informações Planetárias</button>
+      <button type="button" class="btn-cosmic">Informações Extras</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
 
   <!-- CONSTELAÇÕES -->
   <section class="informacao-astronomica">
     <div class="informacoes-extras">
-    <button type="button" class="botao-opcao-menu opcao">Constelações</button>
-    <button type="button" class="botao-opcao-menu opcao">Eventos Astronômicos</button>
-    <button type="button" class="botao-opcao-menu opcao">Galáxia</button>
-  </div>
-  <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+      <button type="button" class="btn-cosmic">Constelações</button>
+      <button type="button" class="btn-cosmic">Eventos Astronômicos</button>
+      <button type="button" class="btn-cosmic">Galáxia</button>
+    </div>
+    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
-  <section class="tela-constelacoes-categorias"> 
+  <section class="tela-constelacoes-categorias">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao">Hemisfério Norte</button>
-      <button type="button" class="botao-opcao-menu opcao">Hemisfério Sul</button>
-      <button type="button" class="botao-opcao-menu opcao">As Famosas</button>
+      <button type="button" class="btn-cosmic">Hemisfério Norte</button>
+      <button type="button" class="btn-cosmic">Hemisfério Sul</button>
+      <button type="button" class="btn-cosmic">As Famosas</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-constelacoes-lista" id="hemisferio-norte">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao">Ursa Maior</button>
-      <button type="button" class="botao-opcao-menu opcao">Ursa Menor</button>
-      <button type="button" class="botao-opcao-menu opcao">Andrômeda</button>
+      <button type="button" class="btn-cosmic">Ursa Maior</button>
+      <button type="button" class="btn-cosmic">Ursa Menor</button>
+      <button type="button" class="btn-cosmic">Andrômeda</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-constelacoes-lista" id="hemisferio-sul">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao">Cruzeiro do Sul</button>
-      <button type="button" class="botao-opcao-menu opcao">Fênix</button>
-      <button type="button" class="botao-opcao-menu opcao">Centauro</button>
+      <button type="button" class="btn-cosmic">Cruzeiro do Sul</button>
+      <button type="button" class="btn-cosmic">Fênix</button>
+      <button type="button" class="btn-cosmic">Centauro</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section>
+  </section> 
 
-   <section class="tela-constelacoes-lista" id="famosas">
+  <section class="tela-constelacoes-lista" id="famosas">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao">Órion</button>
-      <button type="button" class="botao-opcao-menu opcao">Cão Maior</button>
-      <button type="button" class="botao-opcao-menu opcao">Escorpião</button>
+      <button type="button" class="btn-cosmic">Órion</button>
+      <button type="button" class="btn-cosmic">Cão Maior</button>
+      <button type="button" class="btn-cosmic">Escorpião</button>
+    </div>
+    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+  </section>
+ 
+  <!-- Hemisfério Norte -->
+  <section class="tela-eventos-detalhe" id="detalhe-ursa-maior">
+    <div class="info-card">
+    <img src="./src/imagens/ursa-maior.png" alt="Constelação Ursa Maior" class="celestial-image">
+    <h3>Constelação de Ursa Maior</h3>
+    <p class="descricao">A Ursa Maior é uma das constelações mais famosas do céu noturno, facilmente
+      reconhecível pelo seu asterismo "O Grande Carro". É visível durante todo o ano no Hemisfério Norte.</p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <!-- Hemisfério Norte -->
-  <section class="tela-constelacao-detalhe" id="detalhe-ursa-maior">
-    <img src="./src/imagens/ursa-maior.png" alt="Constelação Ursa Maior">
-    <p class="descricao-constelacao">A Ursa Maior é uma das constelações mais famosas do céu noturno, facilmente reconhecível pelo seu asterismo "O Grande Carro". É visível durante todo o ano no Hemisfério Norte.</p>
+  <section class="tela-eventos-detalhe" id="detalhe-ursa-menor">
+    <div class="info-card">
+    <img src="./src/imagens/ursa-menor.png" alt="Constelação Ursa Menor" class="celestial-image">
+    <h3>Constelação de Ursa Menor</h3>
+    <p class="descricao">A Ursa Menor é crucial para a navegação, pois contém Polaris, a Estrela do Norte.
+      Embora menos brilhante que a Ursa Maior, é de extrema importância para a orientação.</p>
+      </div>
+
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe" id="detalhe-ursa-menor">
-    <img src="./src/imagens/ursa-menor.png" alt="Constelação Ursa Menor">
-    <p class="descricao-constelacao">A Ursa Menor é crucial para a navegação, pois contém Polaris, a Estrela do Norte. Embora menos brilhante que a Ursa Maior, é de extrema importância para a orientação.</p>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
-  </section>
-
-  <section class="tela-constelacao-detalhe" id="detalhe-andromeda">
-    <img src="./src/imagens/andromeda.png" alt="Constelação Andrômeda">
-    <p class="descricao-constelacao">Andrômeda é mais conhecida por abrigar a Galáxia de Andrômeda (M31), o objeto mais distante que pode ser visto a olho nu, localizado a 2,5 milhões de anos-luz da Terra.</p>
+  <section class="tela-eventos-detalhe" id="detalhe-andromeda">
+    <div class="info-card">
+    <img src="./src/imagens/andromeda.png" alt="Constelação Andrômeda" class="celestial-image">
+    <h3>Constelação de Andrômeda</h3>
+    <p class="descricao">Andrômeda é mais conhecida por abrigar a Galáxia de Andrômeda (M31), o objeto mais
+      distante que pode ser visto a olho nu, localizado a 2,5 milhões de anos-luz da Terra.</p>
+    </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <!-- Hemisfério Sul -->
-  <section class="tela-constelacao-detalhe" id="detalhe-cruzeiro-do-sul">
-    <img src="./src/imagens/cruzeiro-do-sul.png" alt="Constelação Cruzeiro do Sul">
-    <p class="descricao-constelacao">O Cruzeiro do Sul (ou Crux) é a menor de todas as 88 constelações, mas é uma das mais distintas do Hemisfério Sul, frequentemente usada para encontrar o polo sul celeste.</p>
+  <section class="tela-eventos-detalhe" id="detalhe-cruzeiro-do-sul">
+    <div class="info-card">
+    <img src="./src/imagens/cruzeiro-do-sul.png" alt="Constelação Cruzeiro do Sul" class="celestial-image">
+    <h3>Constelação de Cruzeiro Do Sul</h3>
+    <p class="descricao">O Cruzeiro do Sul (ou Crux) é a menor de todas as 88 constelações, mas é uma das
+      mais distintas do Hemisfério Sul, frequentemente usada para encontrar o polo sul celeste.</p>
+    </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe" id="detalhe-fenix">
-    <img src="./src/imagens/fenix.png" alt="Constelação Fênix">
-    <p class="descricao-constelacao">Fênix é uma constelação menor do sul, nomeada em homenagem à ave mítica que renasce das cinzas. Foi introduzida no final do século XVI pelo astrônomo Petrus Plancius.</p>
+  <section class="tela-eventos-detalhe" id="detalhe-fenix">
+    <div class="info-card">
+    <img src="./src/imagens/fenix.png" alt="Constelação Fênix" class="celestial-image">
+    <h3>Constelação de Fênix</h3>
+    <p class="descricao">Fênix é uma constelação menor do sul, nomeada em homenagem à ave mítica que renasce
+      das cinzas. Foi introduzida no final do século XVI pelo astrônomo Petrus Plancius.</p>
+    </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe" id="detalhe-centauro">
-    <img src="./src/imagens/centauro.png" alt="Constelação Centauro">
-    <p class="descricao-constelacao">Centauro é uma grande e brilhante constelação do sul que contém Alpha Centauri, o sistema estelar mais próximo do nosso Sol, e Omega Centauri, o maior aglomerado globular da Via Láctea.</p>
+  <section class="tela-eventos-detalhe" id="detalhe-centauro">
+    <div class="info-card">
+    <img src="./src/imagens/centauro.png" alt="Constelação Centauro" class="celestial-image">
+    <h3>Constelação de Centauro</h3>
+    <p class="descricao">Centauro é uma grande e brilhante constelação do sul que contém Alpha Centauri, o
+      sistema estelar mais próximo do nosso Sol, e Omega Centauri, o maior aglomerado globular da Via Láctea.</p>
+    </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <!-- As Famosas -->
-  <section class="tela-constelacao-detalhe" id="detalhe-orion">
-    <img src="./src/imagens/orion.png" alt="Constelação Órion">
-    <p class="descricao-constelacao">Órion, o Caçador, é uma das constelações mais proeminentes e reconhecíveis do mundo. É famosa pelo seu "Cinturão de Órion" e pela Nebulosa de Órion, um berçário de estrelas.</p>
+  <section class="tela-eventos-detalhe" id="detalhe-orion">
+    <div class="info-card">
+    <img src="./src/imagens/orion.png" alt="Constelação Órion" class="celestial-image">
+    <h3>Constelação de Órion</h3>
+    <p class="descricao">Órion, o Caçador, é uma das constelações mais proeminentes e reconhecíveis do
+      mundo. É famosa pelo seu "Cinturão de Órion" e pela Nebulosa de Órion, um berçário de estrelas.</p>
+    </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe" id="detalhe-cao-maior">
-    <img src="./src/imagens/cao-maior.png" alt="Constelação Cão Maior">
-    <p class="descricao-constelacao">Cão Maior é notável por conter Sirius, a estrela mais brilhante do céu noturno. Na mitologia, representa o maior dos dois cães que seguem o caçador Órion.</p>
+  <section class="tela-eventos-detalhe" id="detalhe-cao-maior">
+    <div class="info-card">
+    <img src="./src/imagens/cao-maior.png" alt="Constelação Cão Maior" class="celestial-image">
+    <h3>Constelação de Cão Maior</h3>
+    <p class="descricao">Cão Maior é notável por conter Sirius, a estrela mais brilhante do céu noturno. Na
+      mitologia, representa o maior dos dois cães que seguem o caçador Órion.</p>
+    </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacao-detalhe" id="detalhe-escorpiao">
-    <img src="./src/imagens/escorpiao.png" alt="Constelação Escorpião">
-    <p class="descricao-constelacao">Escorpião é uma das poucas constelações que realmente se parece com o seu nome. Seu coração é marcado pela estrela supergigante vermelha Antares.</p>
+  <section class="tela-eventos-detalhe" id="detalhe-escorpiao">
+    <div class="info-card">
+    <img src="./src/imagens/escorpiao.png" alt="Constelação Escorpião" class="celestial-image">
+    <h3>Constelação de Escorpião</h3>
+    <p class="descricao">Escorpião é uma das poucas constelações que realmente se parece com o seu nome. Seu
+      coração é marcado pela estrela supergigante vermelha Antares.</p>
+    </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
 
   <!-- EVENTOS ASTRONÔMICOS -->
-  <section class="tela-eventos-astronomicos"> 
+  <section class="tela-eventos-astronomicos">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao">Eclipses</button>
-      <button type="button" class="botao-opcao-menu opcao">Chuvas de Meteoros</button>
-      <button type="button" class="botao-opcao-menu opcao">Superluas e Conjuções</button>
-      <button type="button" class="botao-opcao-menu opcao">Cometas e Outros</button>
+      <button type="button" class="btn-cosmic">Eclipses</button>
+      <button type="button" class="btn-cosmic">Chuvas de Meteoros</button>
+      <button type="button" class="btn-cosmic">Superluas e Conjuções</button>
+      <button type="button" class="btn-cosmic">Cometas e Outros</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
@@ -233,30 +251,38 @@
   <!-- ECLIPSES -->
   <section class="tela-eventos-lista eclipse" id="lista-eclipses">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao">Eclipse Solar</button>
-      <button type="button" class="botao-opcao-menu opcao">Eclipse Lunar</button>
+      <button type="button" class="btn-cosmic">Eclipse Solar</button>
+      <button type="button" class="btn-cosmic">Eclipse Lunar</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
-  
+
   <section class="tela-eventos-detalhe" id="detalhe-eclipse-solar">
-    <img src="./src/imagens/eclipse-solar.png" alt="Eclipse Solar">
-    <div class="informacoes-detalhe">
+   <div class="info-card">
+    <img src="./src/imagens/eclipse-solar.png" alt="Eclipse Solar" class="celestial-image">
+    
       <h3>Eclipse Solar</h3>
       <p class="descricao">
-        Um eclipse solar acontece quando a Lua se move entre o Sol e a Terra, bloqueando a luz solar e projetando uma sombra na superfície do nosso planeta. É um evento espetacular, especialmente quando é um eclipse total, onde a Lua cobre completamente o Sol, revelando sua coroa brilhante.
+        Um eclipse solar acontece quando a Lua se move entre o Sol e a Terra, bloqueando a luz solar e projetando uma
+        sombra na superfície do nosso planeta. É um evento espetacular, especialmente quando é um eclipse total, onde a
+        Lua cobre completamente o Sol, revelando sua coroa brilhante.
       </p>
+    
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
-  
+
   <section class="tela-eventos-detalhe" id="detalhe-eclipse-lunar">
-    <img src="./src/imagens/eclipse-lunar.png" alt="Eclipse Lunar">
-    <div class="informacoes-detalhe">
+   <div class="info-card">
+    <img src="./src/imagens/eclipse-lunar.png" alt="Eclipse Lunar" class="celestial-image">
+    
       <h3>Eclipse Lunar</h3>
       <p class="descricao">
-        Um eclipse lunar ocorre quando a Terra se posiciona entre o Sol e a Lua. A sombra da Terra cobre a Lua, que, em vez de desaparecer, adquire uma impressionante coloração avermelhada. Esse fenômeno é conhecido como "Lua de Sangue" e é visível de qualquer lugar do lado noturno do planeta.
+        Um eclipse lunar ocorre quando a Terra se posiciona entre o Sol e a Lua. A sombra da Terra cobre a Lua, que, em
+        vez de desaparecer, adquire uma impressionante coloração avermelhada. Esse fenômeno é conhecido como "Lua de
+        Sangue" e é visível de qualquer lugar do lado noturno do planeta.
       </p>
+    
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
@@ -264,42 +290,54 @@
   <!-- CHUVA DE METEOROS -->
   <section class="tela-eventos-lista meteoros" id="lista-chuvas-de-meteoros">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao">Perseidas</button>
-      <button type="button" class="botao-opcao-menu opcao">Leonídeas</button>
-      <button type="button" class="botao-opcao-menu opcao">Geminídeas</button>
+      <button type="button" class="btn-cosmic">Perseidas</button>
+      <button type="button" class="btn-cosmic">Leonídeas</button>
+      <button type="button" class="btn-cosmic">Geminídeas</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
-  
+
   <section class="tela-eventos-detalhe" id="detalhe-perseidas">
-    <img src="./src/imagens/chuva-de-meteoros-perseidas.png" alt="Chuva de Meteoros Perseidas">
-    <div class="informacoes-detalhe">
+   <div class="info-card">
+    <img src="./src/imagens/chuva-de-meteoros-perseidas.png" alt="Chuva de Meteoros Perseidas" class="celestial-image">
+    
       <h3>Chuva de Meteoros Perseidas</h3>
       <p class="descricao">
-        A chuva de meteoros Perseidas é um dos eventos celestes mais famosos e aguardados, ocorrendo anualmente entre julho e agosto. É causada pelos detritos deixados para trás pelo Cometa Swift-Tuttle. Os meteoros são conhecidos por serem muito brilhantes e rápidos, criando um verdadeiro espetáculo no céu.
+        A chuva de meteoros Perseidas é um dos eventos celestes mais famosos e aguardados, ocorrendo anualmente entre
+        julho e agosto. É causada pelos detritos deixados para trás pelo Cometa Swift-Tuttle. Os meteoros são conhecidos
+        por serem muito brilhantes e rápidos, criando um verdadeiro espetáculo no céu.
       </p>
+    
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
-  
+
   <section class="tela-eventos-detalhe" id="detalhe-leonideas">
-    <img src="./src/imagens/chuva-de-meteoros-leonideas.png" alt="Chuva de Meteoros Leonídeas">
-    <div class="informacoes-detalhe">
+   <div class="info-card">
+    <img src="./src/imagens/chuva-de-meteoros-leonideas.png" alt="Chuva de Meteoros Leonídeas" class="celestial-image">
+    
       <h3>Chuva de Meteoros Leonídeas</h3>
       <p class="descricao">
-        Em novembro, a chuva de meteoros Leonídeas é o resultado da passagem da Terra pela órbita do Cometa Tempel-Tuttle. Embora seja uma chuva anual, a cada 33 anos ela se torna espetacular, produzindo uma quantidade massiva de "estrelas cadentes".
+        Em novembro, a chuva de meteoros Leonídeas é o resultado da passagem da Terra pela órbita do Cometa
+        Tempel-Tuttle. Embora seja uma chuva anual, a cada 33 anos ela se torna espetacular, produzindo uma quantidade
+        massiva de "estrelas cadentes".
       </p>
+    
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
-  
+
   <section class="tela-eventos-detalhe" id="detalhe-geminideas">
-    <img src="./src/imagens/chuva-de-meteoros-geminideas.png" alt="Chuva de Meteoros Geminídeas">
-    <div class="informacoes-detalhe">
+   <div class="info-card">
+    <img src="./src/imagens/chuva-de-meteoros-geminideas.png" alt="Chuva de Meteoros Geminídeas" class="celestial-image">
+    
       <h3>Chuva de Meteoros Geminídeas</h3>
       <p class="descricao">
-        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos para a observação.
+        Uma das chuvas mais intensas e confiáveis, as Geminídeas ocorrem em dezembro. O que a torna única é que ela é
+        causada por um asteroide, o 3200 Phaethon, e não por um cometa. Seus meteoros são lentos e brilhantes, perfeitos
+        para a observação.
       </p>
+    
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
@@ -308,30 +346,38 @@
   <!-- SUPERLUAS E CONJUNÇÕES -->
   <section class="tela-eventos-lista superlua" id="lista-superluas-conjuncoes">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao">Superlua</button>
-      <button type="button" class="botao-opcao-menu opcao">Conjunção Planetária</button>
+      <button type="button" class="btn-cosmic">Superlua</button>
+      <button type="button" class="btn-cosmic">Conjunção Planetária</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
-  
+
   <section class="tela-eventos-detalhe" id="detalhe-superlua">
-    <img src="./src/imagens/superlua.png" alt="Superlua">
-    <div class="informacoes-detalhe">
+   <div class="info-card">
+    <img src="./src/imagens/superlua.png" alt="Superlua" class="celestial-image">
+    
       <h3>Superlua</h3>
       <p class="descricao">
-        Uma Superlua é a combinação perfeita entre a Lua Cheia e a sua maior aproximação da Terra. Como resultado, ela pode parecer até 14% maior e 30% mais brilhante do que uma lua cheia normal, criando uma vista impressionante e mágica no céu.
+        Uma Superlua é a combinação perfeita entre a Lua Cheia e a sua maior aproximação da Terra. Como resultado, ela
+        pode parecer até 14% maior e 30% mais brilhante do que uma lua cheia normal, criando uma vista impressionante e
+        mágica no céu.
       </p>
+    
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
-  
+
   <section class="tela-eventos-detalhe" id="detalhe-conjuncao">
-    <img src="./src/imagens/conjuncao.png" alt="Conjunção Planetária">
-    <div class="informacoes-detalhe">
+   <div class="info-card">
+    <img src="./src/imagens/conjuncao.png" alt="Conjunção Planetária" class="celestial-image">
+    
       <h3>Conjunção Planetária</h3>
       <p class="descricao">
-        As conjunções são encontros celestes onde dois ou mais planetas parecem se alinhar e ficar muito próximos no céu noturno. Embora estejam a milhões de quilômetros de distância, o espetáculo de luz é fascinante. A "Grande Conjunção" de Júpiter e Saturno é um dos exemplos mais famosos e visualmente impressionantes.
+        As conjunções são encontros celestes onde dois ou mais planetas parecem se alinhar e ficar muito próximos no céu
+        noturno. Embora estejam a milhões de quilômetros de distância, o espetáculo de luz é fascinante. A "Grande
+        Conjunção" de Júpiter e Saturno é um dos exemplos mais famosos e visualmente impressionantes.
       </p>
+    
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
@@ -340,135 +386,170 @@
   <!-- COMETAS E OUTROS -->
   <section class="tela-eventos-lista cometas" id="lista-cometas-outros">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao">Cometas</button>
-      <button type="button" class="botao-opcao-menu opcao">Supernovas</button>
-      <button type="button" class="botao-opcao-menu opcao">Agrupamentos Estelares</button>
+      <button type="button" class="btn-cosmic">Cometas</button>
+      <button type="button" class="btn-cosmic">Supernovas</button>
+      <button type="button" class="btn-cosmic">Agrupamentos Estelares</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
-  
+
   <section class="tela-eventos-detalhe" id="detalhe-cometas">
-    <img src="./src/imagens/cometas.png" alt="Cometas">
-    <div class="informacoes-detalhe">
+   <div class="info-card">
+    <img src="./src/imagens/cometas.png" alt="Cometas" class="celestial-image">
+    
       <h3>Cometas</h3>
       <p class="descricao">
-        Cometas são corpos celestes compostos de gelo, rocha e poeira. Quando se aproximam do Sol, o calor faz com que o gelo sublime, criando uma atmosfera difusa (coma) e uma longa cauda brilhante. O Cometa Halley é o mais conhecido, visível da Terra a cada 76 anos.
+        Cometas são corpos celestes compostos de gelo, rocha e poeira. Quando se aproximam do Sol, o calor faz com que o
+        gelo sublime, criando uma atmosfera difusa (coma) e uma longa cauda brilhante. O Cometa Halley é o mais
+        conhecido, visível da Terra a cada 76 anos.
       </p>
+    
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
-  
+
   <section class="tela-eventos-detalhe" id="detalhe-supernovas">
-    <img src="./src/imagens/supernovas.png" alt="Supernovas">
-    <div class="informacoes-detalhe">
+   <div class="info-card">
+    <img src="./src/imagens/supernovas.png" alt="Supernovas" class="celestial-image">
+    
       <h3>Supernovas</h3>
       <p class="descricao">
-        Uma supernova é uma explosão estelar massiva no final da vida de uma estrela. Por um curto período, ela pode brilhar mais intensamente que uma galáxia inteira, liberando uma quantidade enorme de energia. Esses eventos são essenciais para a distribuição de elementos pesados no universo.
+        Uma supernova é uma explosão estelar massiva no final da vida de uma estrela. Por um curto período, ela pode
+        brilhar mais intensamente que uma galáxia inteira, liberando uma quantidade enorme de energia. Esses eventos são
+        essenciais para a distribuição de elementos pesados no universo.
       </p>
+    
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
-  
+
   <section class="tela-eventos-detalhe" id="detalhe-agrupamentos">
-    <img src="./src/imagens/agrupamentos-estelares.png" alt="Agrupamentos Estelares">
-    <div class="informacoes-detalhe">
+   <div class="info-card">
+    <img src="./src/imagens/agrupamentos-estelares.png" alt="Agrupamentos Estelares" class="celestial-image">
+    
       <h3>Agrupamentos Estelares</h3>
       <p class="descricao">
-        São grupos de estrelas unidas pela força da gravidade. Existem dois tipos principais: os Aglomerados Abertos, que são mais jovens e espalhados (como as Plêiades), e os Aglomerados Globulares, que são mais velhos e densos, contendo milhares de estrelas.
+        São grupos de estrelas unidas pela força da gravidade. Existem dois tipos principais: os Aglomerados Abertos,
+        que são mais jovens e espalhados (como as Plêiades), e os Aglomerados Globulares, que são mais velhos e densos,
+        contendo milhares de estrelas.
       </p>
+    
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
 
   <!-- GALÁXIA -->
-  <section class="tela-galaxias hidden" id="tela-galaxias"> 
+  <section class="tela-galaxias hidden" id="tela-galaxias">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao" data-target="lista-tipos-galaxias">Tipos de Galáxias</button>
-      <button type="button" class="botao-opcao-menu opcao" data-target="lista-galaxias-famosas">Galáxias Famosas</button>
+      <button type="button" class="btn-cosmic" data-target="lista-tipos-galaxias">Tipos de Galáxias</button>
+      <button type="button" class="btn-cosmic" data-target="lista-galaxias-famosas">Galáxias
+        Famosas</button>
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
-  
+
   <section class="tela-galaxias-lista hidden" id="lista-tipos-galaxias">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-espiral">Espiral</button>
-      <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-eliptica">Elíptica</button>
-      <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-irregular">Irregular</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-espiral">Espiral</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-eliptica">Elíptica</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-irregular">Irregular</button>
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
-  
-  <section class="tela-galaxia-detalhe hidden" id="detalhe-espiral">
-    <img src="./src/imagens/galaxia-espiral.png" alt="Galáxia Espiral">
-    <div class="informacoes-detalhe">
+
+  <section class="tela-eventos-detalhe hidden" id="detalhe-espiral">
+   <div class="info-card">
+    <img src="./src/imagens/galaxia-espiral.png" alt="Galáxia Espiral" class="celestial-image">
+    
       <h3>Galáxia Espiral</h3>
       <p class="descricao">
-        As galáxias espirais são as mais conhecidas, caracterizadas por um bojo central e braços que se enrolam em forma de espiral. Nesses braços, novas estrelas nascem em grande quantidade. A Via Láctea, nossa galáxia, é um exemplo clássico.
+        As galáxias espirais são as mais conhecidas, caracterizadas por um bojo central e braços que se enrolam em forma
+        de espiral. Nesses braços, novas estrelas nascem em grande quantidade. A Via Láctea, nossa galáxia, é um exemplo
+        clássico.
       </p>
+    
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
-  
-  <section class="tela-galaxia-detalhe hidden" id="detalhe-eliptica">
-    <img src="./src/imagens/galaxia-eliptica.png" alt="Galáxia Elíptica">
-    <div class="informacoes-detalhe">
+
+  <section class="tela-eventos-detalhe hidden" id="detalhe-eliptica">
+   <div class="info-card">
+    <img src="./src/imagens/galaxia-eliptica.png" alt="Galáxia Elíptica" class="celestial-image">
+    
       <h3>Galáxia Elíptica</h3>
       <p class="descricao">
-        Galáxias elípticas possuem uma forma oval ou esférica e geralmente contêm estrelas mais velhas, com pouca formação estelar ativa. Variam em tamanho, desde anãs até gigantes, e são encontradas com frequência no centro de aglomerados de galáxias.
+        Galáxias elípticas possuem uma forma oval ou esférica e geralmente contêm estrelas mais velhas, com pouca
+        formação estelar ativa. Variam em tamanho, desde anãs até gigantes, e são encontradas com frequência no centro
+        de aglomerados de galáxias.
       </p>
+    
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
-  
-  <section class="tela-galaxia-detalhe hidden" id="detalhe-irregular">
-    <img src="./src/imagens/galaxia-irregular.png" alt="Galáxia Irregular">
-    <div class="informacoes-detalhe">
+
+  <section class="tela-eventos-detalhe hidden" id="detalhe-irregular">
+   <div class="info-card">
+    <img src="./src/imagens/galaxia-irregular.png" alt="Galáxia Irregular" class="celestial-image">
+    
       <h3>Galáxia Irregular</h3>
       <p class="descricao">
-        As galáxias irregulares não têm uma forma definida, como espirais ou elípticas. Essa forma muitas vezes resulta de colisões ou interações gravitacionais com outras galáxias. Apesar da aparência caótica, são ricas em gás e poeira, com intensa formação de estrelas jovens.
+        As galáxias irregulares não têm uma forma definida, como espirais ou elípticas. Essa forma muitas vezes resulta
+        de colisões ou interações gravitacionais com outras galáxias. Apesar da aparência caótica, são ricas em gás e
+        poeira, com intensa formação de estrelas jovens.
       </p>
+    
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
-  
+
   <section class="tela-galaxias-lista hidden" id="lista-galaxias-famosas">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-via-lactea">Via Láctea</button>
-      <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-andromeda-galaxia">Andrômeda</button>
-      <button type="button" class="botao-opcao-menu opcao" data-target="detalhe-triangulo">Triângulo (M33)</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-via-lactea">Via Láctea</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-andromeda-galaxia">Andrômeda</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-triangulo">Triângulo (M33)</button>
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
-  
-  <section class="tela-galaxia-detalhe hidden" id="detalhe-via-lactea">
-    <img src="./src/imagens/galaxia-via-lactea.png" alt="Galáxia Via Láctea">
-    <div class="informacoes-detalhe">
+
+  <section class="tela-eventos-detalhe hidden" id="detalhe-via-lactea">
+   <div class="info-card">
+    <img src="./src/imagens/galaxia-via-lactea.png" alt="Galáxia Via Láctea" class="celestial-image">
+    
       <h3>Via Láctea</h3>
       <p class="descricao">
-        É a nossa casa cósmica, uma galáxia espiral barrada que contém o nosso Sistema Solar. Estima-se que abrigue entre 100 e 400 bilhões de estrelas, incluindo o nosso Sol. Vista da Terra, aparece como uma faixa brilhante no céu noturno.
+        É a nossa casa cósmica, uma galáxia espiral barrada que contém o nosso Sistema Solar. Estima-se que abrigue
+        entre 100 e 400 bilhões de estrelas, incluindo o nosso Sol. Vista da Terra, aparece como uma faixa brilhante no
+        céu noturno.
       </p>
+    
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
-  
-  <section class="tela-galaxia-detalhe hidden" id="detalhe-andromeda-galaxia">
-    <img src="./src/imagens/galaxia-andromeda.png" alt="Galáxia de Andrômeda">
-    <div class="informacoes-detalhe">
+
+  <section class="tela-eventos-detalhe hidden" id="detalhe-andromeda-galaxia">
+   <div class="info-card">
+    <img src="./src/imagens/galaxia-andromeda.png" alt="Galáxia de Andrômeda" class="celestial-image">
+    
       <h3>Galáxia de Andrômeda</h3>
       <p class="descricao">
-        A Galáxia de Andrômeda (M31) é a galáxia espiral mais próxima da Via Láctea e a maior do Grupo Local. É visível a olho nu em noites escuras e está em rota de colisão com a Via Láctea, um encontro que ocorrerá em bilhões de anos.
+        A Galáxia de Andrômeda (M31) é a galáxia espiral mais próxima da Via Láctea e a maior do Grupo Local. É visível
+        a olho nu em noites escuras e está em rota de colisão com a Via Láctea, um encontro que ocorrerá em bilhões de
+        anos.
       </p>
+    
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
-  
-  <section class="tela-galaxia-detalhe hidden" id="detalhe-triangulo">
-    <img src="./src/imagens/galaxia-triangulo.png" alt="Galáxia do Triângulo (M33)">
-    <div class="informacoes-detalhe">
+
+  <section class="tela-eventos-detalhe hidden" id="detalhe-triangulo">
+    <div class="info-card">
+    <img src="./src/imagens/galaxia-triangulo.png" alt="Galáxia do Triângulo (M33)" class="celestial-image">
       <h3>Galáxia do Triângulo (M33)</h3>
       <p class="descricao">
-        A Galáxia do Triângulo é a terceira maior galáxia do Grupo Local, depois da Via Láctea e de Andrômeda. É uma galáxia espiral sem barra, conhecida por sua abundância de regiões de formação estelar, sendo um espetáculo para astrônomos amadores.
+        A Galáxia do Triângulo é a terceira maior galáxia do Grupo Local, depois da Via Láctea e de Andrômeda. É uma
+        galáxia espiral sem barra, conhecida por sua abundância de regiões de formação estelar, sendo um espetáculo para
+        astrônomos amadores.
       </p>
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
@@ -477,53 +558,61 @@
 
   <!-- INFORMAÇÕES PLANETÁRIAS -->
   <section class="tela-informacoes-planetarias">
-    <div class="informacoes-planetarias">
-    <button type="button" class="botao-opcao-menu opcao">Sol</button>
-    <button type="button" class="botao-opcao-menu opcao">Mercúrio</button>
-    <button type="button" class="botao-opcao-menu opcao">Vênus</button>
-    <button type="button" class="botao-opcao-menu opcao">Terra</button>
-    <button type="button" class="botao-opcao-menu opcao">Marte</button>
-    <button type="button" class="botao-opcao-menu opcao">Júpiter</button>
-    <button type="button" class="botao-opcao-menu opcao">Saturno</button>
-    <button type="button" class="botao-opcao-menu opcao">Urano</button>
-    <button type="button" class="botao-opcao-menu opcao">Netuno</button>
-    <button type="button" class="botao-opcao-menu opcao">Plutão</button>
+    <div class="informacoes-extras">
+      <button type="button" class="btn-cosmic">Sol</button>
+      <button type="button" class="btn-cosmic">Mercúrio</button>
+      <button type="button" class="btn-cosmic">Vênus</button>
+      <button type="button" class="btn-cosmic">Terra</button>
+      <button type="button" class="btn-cosmic">Marte</button>
+      <button type="button" class="btn-cosmic">Júpiter</button>
+      <button type="button" class="btn-cosmic">Saturno</button>
+      <button type="button" class="btn-cosmic">Urano</button>
+      <button type="button" class="btn-cosmic">Netuno</button>
+      <button type="button" class="btn-cosmic">Plutão</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <img src="./src/imagens/sol.png" alt="Sol">
-    <div class="informacoes-detalhe">
+    <div class="info-card">
+    <img src="./src/imagens/sol.png" alt="Sol" class="celestial-image">
       <h3>Sol</h3>
       <p class="descricao">
         O Sol é a estrela no centro do nosso Sistema Solar e a principal fonte de luz e energia para a vida na Terra.
-        <br>É uma imensa esfera de plasma superaquecido, com uma superfície dinâmica que possui manchas solares e explosões energéticas como as erupções solares.
-        <br>Ele é tão massivo que sua gravidade mantém todos os planetas, incluindo a Terra, em órbita ao seu redor, sendo essencial para a existência do nosso sistema.
+        <br>É uma imensa esfera de plasma superaquecido, com uma superfície dinâmica que possui manchas solares e
+        explosões energéticas como as erupções solares.
+        <br>Ele é tão massivo que sua gravidade mantém todos os planetas, incluindo a Terra, em órbita ao seu redor,
+        sendo essencial para a existência do nosso sistema.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <img src="./src/imagens/mercurio.png" alt="Mercurio">
-    <div class="informacoes-detalhe">
+    <div class="info-card">
+    <img src="./src/imagens/mercurio.png" alt="Mercurio" class="celestial-image">
       <h3>Mercurio</h3>
       <p class="descricao">
-        Sua superfície é um ambiente inóspito, repleto de crateras de impacto, o que o faz parecer muito com a Lua. A ausência de uma atmosfera significativa faz com que as temperaturas variem drasticamente, podendo chegar a mais de 400°C durante o dia e cair para centenas de graus negativos à noite.
-        <br>Curiosamente, Mercúrio é o planeta que orbita o Sol mais rapidamente, completando uma volta em apenas 88 dias terrestres.
+        Sua superfície é um ambiente inóspito, repleto de crateras de impacto, o que o faz parecer muito com a Lua. A
+        ausência de uma atmosfera significativa faz com que as temperaturas variem drasticamente, podendo chegar a mais
+        de 400°C durante o dia e cair para centenas de graus negativos à noite.
+        <br>Curiosamente, Mercúrio é o planeta que orbita o Sol mais rapidamente, completando uma volta em apenas 88
+        dias terrestres.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <img src="./src/imagens/venus.png" alt="Venus">
-    <div class="informacoes-detalhe">
+    <div class="info-card">
+    <img src="./src/imagens/venus.png" alt="Venus" class="celestial-image">
       <h3>Vênus</h3>
       <p class="descricao">
-        Vênus é o segundo planeta a partir do Sol e o mais próximo da Terra. É conhecido como a "estrela da manhã" ou "estrela da tarde" por seu brilho intenso no céu.
-        <br>Apesar de ser vizinho da Terra, sua atmosfera densa, composta principalmente de dióxido de carbono, cria um efeito estufa extremo, tornando-o o planeta mais quente do nosso sistema. A temperatura em sua superfície é suficiente para derreter chumbo.
+        Vênus é o segundo planeta a partir do Sol e o mais próximo da Terra. É conhecido como a "estrela da manhã" ou
+        "estrela da tarde" por seu brilho intenso no céu.
+        <br>Apesar de ser vizinho da Terra, sua atmosfera densa, composta principalmente de dióxido de carbono, cria um
+        efeito estufa extremo, tornando-o o planeta mais quente do nosso sistema. A temperatura em sua superfície é
+        suficiente para derreter chumbo.
         <br>Vênus é também único por girar em sentido horário em seu eixo, o oposto da maioria dos outros planetas.
       </p>
     </div>
@@ -531,68 +620,84 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
+    <div class="info-card">
     <div class="terra-lua-container">
-      <img src="./src/imagens/terra.png" class="terralua" alt="Terra">
-      <img src="./src/imagens/lua.png" class="terralua" alt="Lua">
+      <img src="./src/imagens/terra.png" class="celestial-image" alt="Terra">
+      <img src="./src/imagens/lua.png" class="celestial-image" alt="Lua">
     </div>
-    <div class="informacoes-detalhe">
       <h3>Terra</h3>
       <p class="descricao">
-        A Terra é o terceiro planeta a partir do Sol e o único lugar no universo onde a vida existe. 
-        <br>Composta em sua maioria por água, nossa casa é um planeta dinâmico, com continentes, oceanos, vastas florestas, cadeias de montanhas e complexos sistemas climáticos. 
-        <br>A atmosfera terrestre é essencial, pois nos protege da radiação solar e de meteoroides, além de manter uma temperatura estável que permite a existência de água líquida em sua superfície.
-        <br>A Terra possui um satélite natural, a Lua, que influencia as marés e desempenha um papel importante na estabilização do nosso planeta.
+        A Terra é o terceiro planeta a partir do Sol e o único lugar no universo onde a vida existe.
+        <br>Composta em sua maioria por água, nossa casa é um planeta dinâmico, com continentes, oceanos, vastas
+        florestas, cadeias de montanhas e complexos sistemas climáticos.
+        <br>A atmosfera terrestre é essencial, pois nos protege da radiação solar e de meteoroides, além de manter uma
+        temperatura estável que permite a existência de água líquida em sua superfície.
+        <br>A Terra possui um satélite natural, a Lua, que influencia as marés e desempenha um papel importante na
+        estabilização do nosso planeta.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <img src="./src/imagens/marte.png" alt="Marte">
-    <div class="informacoes-detalhe">
+    <div class="info-card">
+    <img src="./src/imagens/marte.png" alt="Marte" class="celestial-image">
       <h3>Marte</h3>
       <p class="descricao">
-        Marte é o quarto planeta a partir do Sol e é amplamente conhecido como o "planeta vermelho" por sua coloração avermelhada, causada pela ferrugem de minerais ricos em ferro em sua superfície.
-        <br>É um planeta rochoso, com imensos desfiladeiros, vastas planícies e as maiores montanhas vulcânicas do nosso sistema.
-        <br>Apesar de sua atmosfera ser fina e fria, Marte possui calotas polares de gelo e evidências de que já abrigou água em seu passado, o que o torna um dos principais alvos de busca por vida no espaço.
+        Marte é o quarto planeta a partir do Sol e é amplamente conhecido como o "planeta vermelho" por sua coloração
+        avermelhada, causada pela ferrugem de minerais ricos em ferro em sua superfície.
+        <br>É um planeta rochoso, com imensos desfiladeiros, vastas planícies e as maiores montanhas vulcânicas do nosso
+        sistema.
+        <br>Apesar de sua atmosfera ser fina e fria, Marte possui calotas polares de gelo e evidências de que já abrigou
+        água em seu passado, o que o torna um dos principais alvos de busca por vida no espaço.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <img src="./src/imagens/jupiter.png" alt="Jupiter">
-    <div class="informacoes-detalhe">
+    <div class="info-card">
+    <img src="./src/imagens/jupiter.png" alt="Jupiter" class="celestial-image">
       <h3>Júpiter</h3>
       <p class="descricao">
-        Júpiter, o maior planeta do Sistema Solar, um gigante gasoso com mais que o dobro da massa de todos os outros planetas juntos.
-        <br>Possui uma marcante faixas de nuvens de cores vibrantes, causadas por tempestades e ventos extremamente fortes. A mais famosa delas é a Grande Mancha Vermelha, uma tempestade colossal, maior que a Terra, que existe há séculos.
-        <br>Júpiter tem dezenas de luas, incluindo as quatro grandes luas galileanas (Io, Europa, Ganímedes e Calisto), que são visíveis com pequenos telescópios. Ele atua como um "aspirador de pó" cósmico, protegendo o sistema interior de cometas e asteroides.
+        Júpiter, o maior planeta do Sistema Solar, um gigante gasoso com mais que o dobro da massa de todos os outros
+        planetas juntos.
+        <br>Possui uma marcante faixas de nuvens de cores vibrantes, causadas por tempestades e ventos extremamente
+        fortes. A mais famosa delas é a Grande Mancha Vermelha, uma tempestade colossal, maior que a Terra, que existe
+        há séculos.
+        <br>Júpiter tem dezenas de luas, incluindo as quatro grandes luas galileanas (Io, Europa, Ganímedes e Calisto),
+        que são visíveis com pequenos telescópios. Ele atua como um "aspirador de pó" cósmico, protegendo o sistema
+        interior de cometas e asteroides.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <img src="./src/imagens/saturno.png" alt="Saturno">
-    <div class="informacoes-detalhe">
+    <div class="info-card">
+    <img src="./src/imagens/saturno.png" alt="Saturno" class="celestial-image">
       <h3>Saturno</h3>
       <p class="descricao">
-        Saturno é o sexto planeta a partir do Sol, e o segundo maior do nosso Sistema Solar. Ele é famoso por seu espetacular sistema de anéis, que o torna um dos objetos mais bonitos e facilmente reconhecíveis no espaço.
-        <br>Os anéis são compostos por bilhões de partículas de gelo e rocha, que variam de pequenos grãos de poeira a pedaços do tamanho de montanhas.
-        <br>Saturno é um gigante gasoso, com uma atmosfera de hidrogênio e hélio. Além dos anéis, ele possui dezenas de luas, sendo Titã a maior delas e a única no Sistema Solar com uma atmosfera densa.
+        Saturno é o sexto planeta a partir do Sol, e o segundo maior do nosso Sistema Solar. Ele é famoso por seu
+        espetacular sistema de anéis, que o torna um dos objetos mais bonitos e facilmente reconhecíveis no espaço.
+        <br>Os anéis são compostos por bilhões de partículas de gelo e rocha, que variam de pequenos grãos de poeira a
+        pedaços do tamanho de montanhas.
+        <br>Saturno é um gigante gasoso, com uma atmosfera de hidrogênio e hélio. Além dos anéis, ele possui dezenas de
+        luas, sendo Titã a maior delas e a única no Sistema Solar com uma atmosfera densa.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <img src="./src/imagens/urano.png" alt="Urano">
-    <div class="informacoes-detalhe">
+    <div class="info-card">
+    <img src="./src/imagens/urano.png" alt="Urano" class="celestial-image">
       <h3>Urano</h3>
       <p class="descricao">
-        Urano é o sétimo planeta a partir do Sol, um gigante de gelo que se destaca por sua cor azul-esverdeada, causada pelo gás metano na sua atmosfera.
-        <br>Seu aspecto mais incomum é o fato de que ele gira de lado. Seu eixo de rotação é inclinado em quase 98 graus, fazendo com que ele pareça rolar em sua órbita.
+        Urano é o sétimo planeta a partir do Sol, um gigante de gelo que se destaca por sua cor azul-esverdeada, causada
+        pelo gás metano na sua atmosfera.
+        <br>Seu aspecto mais incomum é o fato de que ele gira de lado. Seu eixo de rotação é inclinado em quase 98
+        graus, fazendo com que ele pareça rolar em sua órbita.
         <br>Urano tem um sistema de anéis finos e escuros, e sua atmosfera é a mais fria do Sistema Solar.
       </p>
     </div>
@@ -600,38 +705,46 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <img src="./src/imagens/netuno.png" alt="Netuno">
-    <div class="informacoes-detalhe">
+    <div class="info-card">
+    <img src="./src/imagens/netuno.png" alt="Netuno" class="celestial-image">
       <h3>Netuno</h3>
       <p class="descricao">
-        Netuno é o oitavo e último planeta do nosso Sistema Solar, um gigante de gelo conhecido por sua cor azul-escura e ventos incrivelmente rápidos.
-        <br>Ele é um planeta dinâmico, com tempestades em sua superfície, como a Grande Mancha Escura, um sistema de tempestades que se assemelha à Grande Mancha Vermelha de Júpiter.
-        <br>Netuno é o planeta mais distante do Sol, por isso sua órbita leva quase 165 anos terrestres para ser concluída.
+        Netuno é o oitavo e último planeta do nosso Sistema Solar, um gigante de gelo conhecido por sua cor azul-escura
+        e ventos incrivelmente rápidos.
+        <br>Ele é um planeta dinâmico, com tempestades em sua superfície, como a Grande Mancha Escura, um sistema de
+        tempestades que se assemelha à Grande Mancha Vermelha de Júpiter.
+        <br>Netuno é o planeta mais distante do Sol, por isso sua órbita leva quase 165 anos terrestres para ser
+        concluída.
       </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <img src="./src/imagens/plutao.png" alt="Plutão">
-    <div class="informacoes-detalhe">
-      <h3>Plutão</h3>
-      <p class="descricao">
-        Plutão é um planeta anão localizado na região distante do Cinturão de Kuiper. Por ser tão pequeno e distante, foi reclassificado, mas continua a ser um dos corpos celestes mais fascinantes do Sistema Solar.
-        <br>Sua superfície é um mundo gelado, com montanhas e planícies de gelo de metano e nitrogênio, incluindo a famosa região em formato de coração.
-        <br>Plutão tem cinco luas, e a maior delas, Caronte, é tão grande em relação a ele que, juntos, eles formam um sistema binário. Eles giram um em torno do outro como uma dança cósmica.
-      </p>
+  <section class="tela-eventos-detalhe" class="screen active" id="detalhe-planetas">
+    <div class="space-background">
+      <div class="stars"></div>
+      <div class="planets"></div>
+    </div>
+    <div class="info-card">
+      <img src="./src/imagens/plutao.png" alt="Plutão" class="celestial-image">
+        <h3>Plutão</h3>
+        <p class="descricao">
+          Plutão foi considerado o nono planeta do Sistema Solar por 76 anos, mas foi reclassificado como um planeta anão em 2006.
+          <br>É um mundo gelado, com uma atmosfera fina e montanhas de gelo. Sua lua, Caronte, é tão grande em comparação com ele que ambos formam um sistema binário.
+          <br>Plutão está localizado no Cinturão de Kuiper, uma região além de Netuno, repleta de objetos gelados.
+        </p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
 
   <!-- NFORMAÇÕES EXTRAS -->
-  <section class="tela-informacoes-extras" style="display: flex; justify-content: center; align-items: center; flex-direction: column;"> 
+  <section class="tela-informacoes-extras"
+    style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <div class="informacoes-extras">
-      <button type="button" class="botao-opcao-menu opcao">Perfil</button>
-      <button type="button" class="botao-opcao-menu opcao">Criadores</button>
-      <button type="button" class="botao-opcao-menu opcao">Apagar conta</button>
+      <button type="button" class="btn-cosmic">Perfil</button>
+      <button type="button" class="btn-cosmic">Criadores</button>
+      <button type="button" class="btn-cosmic">Apagar conta</button>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
@@ -644,72 +757,76 @@
 
 
   <!-- CRIADORES -->
-   <section id="tela-criadores" class="tela-criadores">
-    <div class="background-overlay"></div> <h1 class="titulo-criadores">Nossos Agentes Especiais</h1>
+  <section id="tela-criadores" class="tela-criadores">
+    <div class="background-overlay"></div>
+    <h1 class="titulo-criadores">Nossos Agentes Especiais</h1>
 
     <div class="container-criadores">
-        <div class="card-criador">
-            <div class="imagem-perfil">
-                <img src="./src/imagens/Giliany.jpg" alt="Foto de Perfil de Giliany">
-            </div>
-            <div class="informacoes-perfil">
-                <h2 class="nome-criador">Giliany</h2>
-                <p class="data-nascimento">Nasceu em 15/06/2005 em Eirunepé.</p>
-                <p class="formacao">Finalista do Ensino Médio Técnico Integrado em Informática (2024).</p>
-                <ul class="interesses-criador">
-                    <li>Amante de livros e animes</li>
-                    <li>Gosta de séries e é atleta</li>
-                    <li>Programadora e adora gatos</li>
-                </ul>
-            </div>
+      <div class="card-criador">
+        <div class="imagem-perfil">
+          <img src="./src/imagens/Giliany.jpg" alt="Foto de Perfil de Giliany">
         </div>
+        <div class="informacoes-perfil">
+          <h2 class="nome-criador">Giliany</h2>
+          <p class="data-nascimento">Nasceu em 15/06/2005 em Eirunepé.</p>
+          <p class="formacao">Finalista do Ensino Médio Técnico Integrado em Informática (2024).</p>
+          <ul class="interesses-criador">
+            <li>Amante de livros e animes</li>
+            <li>Gosta de séries e é atleta</li>
+            <li>Programadora e adora gatos</li>
+          </ul>
+        </div>
+      </div>
 
-        <div class="card-criador">
-            <div class="imagem-perfil">
-                <img src="./src/imagens/jaqueline.png" alt="Foto de Perfil de Jaqueline">
-            </div>
-            <div class="informacoes-perfil">
-                <h2 class="nome-criador">Jaqueline</h2>
-                <p class="data-nascimento">Nasceu em 21/04/2006 em Eirunepé.</p>
-                <p class="formacao">Finalista do Ensino Médio Técnico Integrado em Informática (2024).</p>
-                <ul class="interesses-criador">
-                    <li>Amante de livros e dorameira</li>
-                    <li>Programadora e adora cantar e dançar K-pop</li>
-                    <li>Ama animais e é compositora</li>
-                </ul>
-            </div>
+      <div class="card-criador">
+        <div class="imagem-perfil">
+          <img src="./src/imagens/jaqueline.png" alt="Foto de Perfil de Jaqueline">
         </div>
+        <div class="informacoes-perfil">
+          <h2 class="nome-criador">Jaqueline</h2>
+          <p class="data-nascimento">Nasceu em 21/04/2006 em Eirunepé.</p>
+          <p class="formacao">Finalista do Ensino Médio Técnico Integrado em Informática (2024).</p>
+          <ul class="interesses-criador">
+            <li>Amante de livros e dorameira</li>
+            <li>Programadora e adora cantar e dançar K-pop</li>
+            <li>Ama animais e é compositora</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <a href="#tela10" class="botao-voltar" aria-label="Voltar para a tela anterior">
-        <img src="./src/imagens/casinha.png" alt="Ícone de casa">
-        <span>Voltar</span>
+      <img src="./src/imagens/casinha.png" alt="Ícone de casa">
+      <span>Voltar</span>
     </a>
-</section>
+  </section>
 
-   
+
 
 
 
   <!-- APAGAR CONTA -->
-   <section class="tela-apagar-conta">
+  <section class="tela-apagar-conta">
     <div class="container-conteudo">
-        <figure class="astronauta">
-            <img src="./src/imagens/nauta-triste.png" alt="Astronauta triste, pensando em você">
-        </figure>
-        <div class="painel-confirmacao">
-            <p class="mensagem-persuasiva">Atenção, Agente Espacial. Sua jornada de exploração está em risco de ser encerrada. Nossos sensores indicam que você ainda tem 9 planetas, 5 galáxias e incontáveis estrelas a descobrir.
-                <br><br>Confirme: quer mesmo desativar sua nave-mãe?</p>
-            <div class="opcoes-confirmacao">
-                <button type="button" class="botao-confirmacao botao-sim">Sim</button>
-                <button type="button" class="botao-confirmacao botao-nao">Não</button>
-            </div>
+      <figure class="astronauta">
+        <img src="./src/imagens/nauta-triste.png" alt="Astronauta triste, pensando em você">
+      </figure>
+      <div class="painel-confirmacao">
+        <p class="mensagem-persuasiva">Atenção, Agente Espacial. Sua jornada de exploração está em risco de ser
+          encerrada. Nossos sensores indicam que você ainda tem 9 planetas, 5 galáxias e incontáveis estrelas a
+          descobrir.
+          <br><br>Confirme: quer mesmo desativar sua nave-mãe?
+        </p>
+        <div class="opcoes-confirmacao">
+          <button type="button" class="botao-confirmacao botao-sim">Sim</button>
+          <button type="button" class="botao-confirmacao botao-nao">Não</button>
         </div>
+      </div>
     </div>
     <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
-        <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal">
+      <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal">
     </button>
-</section>
+  </section>
   <script src="./src/js/index.js"></script>
 </body>
 

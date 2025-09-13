@@ -1,76 +1,3 @@
-/* #tela7 #interface {
-    height: 800px;
-}
-
-#tela7 #Sol {
-    position: absolute;
-    top: 15%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#tela7 #Mercúrio { 
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#tela7 #Vênus {
-    position: absolute;
-    top: 31%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#tela7 #Terra {
-    position: absolute;
-    top: 39%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#tela7 #Marte {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#tela7 #Júpiter {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#tela7 #Saturno {
-    position: absolute;
-    top: 63%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#tela7 #Urano {
-    position: absolute;
-    top: 71%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#tela7 #Netuno {
-    position: absolute;
-    top: 79%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#tela7 .voltar {
-    top: 87%;
-    left: 50%;
-    transform: translate(-215%, -50%);
-} */
-
 .tela-informacoes-planetarias {
     background-size: cover;
     background-position: center;
@@ -78,30 +5,39 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     position: relative;
     background-image: url('../imagens/informacoes-planetarias.png');
 }
- 
+
+/* 
+
 .informacoes-planetarias {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    width: 450px; 
-    /* height: 810px; */
-    gap: 9px; 
-    /* justify-self: center; */
+    width: 450px;
+    gap: 9px;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 191, 255, 0.6); 
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    max-width: 90%;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 191, 255, 0.6);
 }
 
-.botao-planetario { 
+.botao-planetario {
     width: 200px;
     padding: 10px;
     display: flex;
-    justify-self: center; 
+    justify-self: center;
     justify-content: center;
     position: absolute;
     bottom: 10px;
@@ -112,13 +48,81 @@
 }
 
 .tela-eventos-detalhe .terralua img {
-    max-width: 50%; 
-    max-height: 200px; 
+    max-width: 50%;
+    max-height: 200px;
     height: auto;
-    object-fit: contain; 
+    object-fit: contain;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto 20px; 
+    margin: 0 auto 20px;
     display: flex;
     flex-direction: row;
+}  */
+
+.tela-eventos-detalhe {
+    background-color: #1a1a3e;
 }
+
+  /* Animação de Fundo Padrão (para todas as telas redesenhadas) */
+  .background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../imagens/background-space.jpg'); /* Nova imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: bgPulse 20s ease-in-out infinite alternate;
+  }
+  
+  @keyframes bgPulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+  }
+  
+ 
+  
+  
+  
+  .celestial-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid #e0f2f7;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .info-card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e0f2f7;
+    max-width: 700px;
+    width: 90%;
+  }
+  
+  .info-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #c9e0ed;
+  }
+  
+  .descricao {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0f2f7;
+  }

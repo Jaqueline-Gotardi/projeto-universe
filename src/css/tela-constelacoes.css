@@ -1,32 +1,3 @@
-/* Centralização da lista de constelações */
-/* .tela-constelacoes-lista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-}
-
-.tela-constelacoes-lista .informacoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-} */
- 
-/* .tela-constelacoes-categorias,
-.tela-constelacoes-lista,
-.tela-constelacao-detalhe {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    position: relative;
-} */
-
 .tela-constelacoes-categorias,
 .tela-constelacoes-lista,
 .tela-constelacao-detalhe {
@@ -52,40 +23,11 @@
     background-image: url('../imagens/fundo2-constelaçoes.png');
 }
 
-/* .tela-constelacoes-categorias .informacoes, */
-/* .tela-constelacoes-lista .informacoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 10vh; 
-} */
- 
-/* .botao-opcao-menu.opcao {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.2rem;
-    border-radius: 10px;
-} */
-
-/* .botao-voltar {
-    width: 100%;
-    max-width: 500px;
-    padding: 15px;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 5vh;
-} */
-
 .hidden {
     display: none;
 }
 
 /* --- Estilos para a tela de detalhe da constelação --- */
-
 .tela-constelacao-detalhe {
     text-align: center;
     gap: 25px;
@@ -103,8 +45,8 @@
     color: #ffffff;
     font-size: 1.3rem;
     line-height: 1.6;
-     max-width: 80ch; 
-     margin: 0 auto;   
+    max-width: 80ch;
+    margin: 0 auto;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     text-align: center;
 }

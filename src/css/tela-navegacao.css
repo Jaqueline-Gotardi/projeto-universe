@@ -1,17 +1,3 @@
-/* .tela-navegacao {
-    background-image: url('../imagens/4.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-} */
-
 .tela-navegacao {
     background-image: url('../imagens/4.png');
     background-size: cover;
@@ -22,9 +8,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Adiciona espaço entre os elementos */
-    padding: 20px; /* Adiciona um preenchimento geral */
-}  
+    gap: 40px;
+    padding: 20px;
+}
 
 .tela-navegacao .barra {
     position: static;
@@ -54,10 +40,6 @@
     height: 20px;
 }
 
-/* .tela-navegacao .nauta-navegacao:hover {
-    transition: translateX(-50%, 40%);
-} */
-
 .tela-navegacao .botao {
     width: 350px;
     margin-bottom: 50px;
@@ -73,7 +55,7 @@
     font-size: 20px;
     cursor: pointer;
     border-radius: 10px;
-    width: 300px; 
+    width: 300px;
     padding: 20px;
 }
 
@@ -92,4 +74,4 @@
 .casinha:hover {
     transform: scale(1.1);
     background-color: rgb(143, 141, 240);
-} 
+}

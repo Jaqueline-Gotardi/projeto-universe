@@ -1,17 +1,3 @@
-/* .tela-eventos-astronomicos,
-.tela-eventos-lista,
-.tela-eventos-detalhe {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    position: relative;
-} */
-
 .tela-eventos-astronomicos,
 .tela-eventos-lista,
 .tela-eventos-detalhe {
@@ -22,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     gap: 20px;
     padding: 20px;
     text-align: center;
@@ -48,113 +34,15 @@
     background-image: url('../imagens/cometas-e-outros.png');
 }
 
-
-
-
-
-
-
-
- 
-/* Estilos para as Telas de Lista de Eventos (Eclipses, Chuvas de Meteoros, etc.) */
-/* .tela-eventos-lista { */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    padding: 20px;
-    box-sizing: border-box; */
-
-   /*  background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    position: relative;
-    background-image: url('../imagens/eclipse.png');
-} */
-
-/* .tela-eventos-lista .informacoes {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-    width: 90%;
-    margin: 20px auto;
-} */
-
-/* .tela-eventos-lista .botao-opcao-menu.opcao {
-    background-color: rgba(106, 90, 205, 0.8);
-    border: none;
-    padding: 15px 30px;
-    margin: 10px 0;
-    border-radius: 50px;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-    text-align: center;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-} */
-
-/* .tela-eventos-lista .botao-opcao-menu.opcao:hover {
-    background-color: rgba(72, 61, 139, 0.9);
-    transform: translateY(-3px);
-} */
-
-/* .tela-eventos-lista .botao-voltar {
-    background-color: rgba(106, 90, 205, 0.6);
-    border: none;
-    padding: 12px 25px;
-    border-radius: 50px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    margin-top: 20px;
-} */
-
-/* .tela-eventos-lista .botao-voltar:hover {
-    transform: translateY(-3px);
-} */
-
-
-
-
-/* Estilos para as Telas de Detalhes dos Eventos Individuais */
-/* 
-.tela-eventos-detalhe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    padding: 20px;
-    box-sizing: border-box;
-} */
-
 .informacoes-detalhe {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     max-width: 600px;
     width: 90%;
-    margin: 20px auto;
+    margin: 20px auto; 
     position: relative;
     display: flex;
     flex-direction: column;
@@ -162,15 +50,15 @@
 }
 
 .tela-eventos-detalhe img {
-    max-width: 50%; 
-    max-height: 200px; 
+    max-width: 50%;
+    max-height: 200px;
     height: auto;
-    object-fit: contain; 
+    object-fit: contain;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto 20px; 
+    margin: 0 auto 20px;
 }
- 
+
 .tela-eventos-detalhe h3 {
     font-size: 2.2rem;
     color: #4B0082;
@@ -186,24 +74,6 @@
     margin: 10px 0;
 }
 
-/* .tela-eventos-detalhe .botao-voltar {
-    background-color: rgba(106, 90, 205, 0.6);
-    border: none;
-    padding: 12px 25px;
-    border-radius: 50px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    margin-top: 20px;
-} */
-
-/* .tela-eventos-detalhe .botao-voltar:hover {
-    transform: translateY(-3px);
-} */
-
-/* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .tela-eventos-lista .informacoes {
         padding: 20px;
