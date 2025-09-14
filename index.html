@@ -67,12 +67,12 @@
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Navegação Espacial</button>
       <button type="button" class="btn-cosmic">Tutorial</button>
-    </div>
+    </div> 
   </section>
 
   <section class="tela-navegacao">
     <div class="barra">
-      <input type="text" name="Nome" />
+      <input type="text" placeholder="Pesquisar no Universo..." name="Nome" />
       <img src="./src/imagens/lupa.jpg" class="lupa">
     </div>
     <img src="./src/imagens/astronauta.png" class="nauta-navegacao" alt="Astronauta">
@@ -85,9 +85,9 @@
   </section>
 
   <section class="tela-menu">
-    <div class="nauta-menu">
+    <!-- <div class="nauta-menu">
       <img src="./src/imagens/nautaemcimadalua.png" alt="Astronauta">
-    </div>
+    </div> -->
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Informações Astronômicas</button>
       <button type="button" class="btn-cosmic">Informações Planetárias</button>
@@ -144,16 +144,22 @@
  
   <!-- Hemisfério Norte -->
   <section class="tela-eventos-detalhe" id="detalhe-ursa-maior">
+    <!-- Efeito de estrelas passando ao fundo -->
+    <div class="space-background">
+      <div class="stars"></div>
+    </div>
+    <!-- Estrutura original da constelação Ursa Maior -->
     <div class="info-card">
-    <img src="./src/imagens/ursa-maior.png" alt="Constelação Ursa Maior" class="celestial-image">
-    <h3>Constelação de Ursa Maior</h3>
-    <p class="descricao">A Ursa Maior é uma das constelações mais famosas do céu noturno, facilmente
-      reconhecível pelo seu asterismo "O Grande Carro". É visível durante todo o ano no Hemisfério Norte.</p>
+      <img src="./src/imagens/ursa-maior.png" alt="Constelação Ursa Maior" class="celestial-image">
+      <h3>Constelação de Ursa Maior</h3>
+      <p class="descricao">A Ursa Maior é uma das constelações mais famosas do céu noturno, facilmente
+        reconhecível pelo seu asterismo "O Grande Carro". É visível durante todo o ano no Hemisfério Norte.</p>
     </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-ursa-menor">
+    <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/ursa-menor.png" alt="Constelação Ursa Menor" class="celestial-image">
     <h3>Constelação de Ursa Menor</h3>
@@ -165,6 +171,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-andromeda">
+    <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/andromeda.png" alt="Constelação Andrômeda" class="celestial-image">
     <h3>Constelação de Andrômeda</h3>
@@ -176,6 +183,7 @@
 
   <!-- Hemisfério Sul -->
   <section class="tela-eventos-detalhe" id="detalhe-cruzeiro-do-sul">
+    <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/cruzeiro-do-sul.png" alt="Constelação Cruzeiro do Sul" class="celestial-image">
     <h3>Constelação de Cruzeiro Do Sul</h3>
@@ -186,6 +194,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-fenix">
+    <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/fenix.png" alt="Constelação Fênix" class="celestial-image">
     <h3>Constelação de Fênix</h3>
@@ -196,6 +205,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-centauro">
+    <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/centauro.png" alt="Constelação Centauro" class="celestial-image">
     <h3>Constelação de Centauro</h3>
@@ -207,6 +217,7 @@
 
   <!-- As Famosas -->
   <section class="tela-eventos-detalhe" id="detalhe-orion">
+    <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/orion.png" alt="Constelação Órion" class="celestial-image">
     <h3>Constelação de Órion</h3>
@@ -217,6 +228,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-cao-maior">
+    <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/cao-maior.png" alt="Constelação Cão Maior" class="celestial-image">
     <h3>Constelação de Cão Maior</h3>
@@ -227,6 +239,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-escorpiao">
+    <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/escorpiao.png" alt="Constelação Escorpião" class="celestial-image">
     <h3>Constelação de Escorpião</h3>
@@ -258,6 +271,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-eclipse-solar">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/eclipse-solar.png" alt="Eclipse Solar" class="celestial-image">
     
@@ -273,6 +287,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-eclipse-lunar">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/eclipse-lunar.png" alt="Eclipse Lunar" class="celestial-image">
     
@@ -298,6 +313,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-perseidas">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/chuva-de-meteoros-perseidas.png" alt="Chuva de Meteoros Perseidas" class="celestial-image">
     
@@ -313,6 +329,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-leonideas">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/chuva-de-meteoros-leonideas.png" alt="Chuva de Meteoros Leonídeas" class="celestial-image">
     
@@ -328,6 +345,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-geminideas">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/chuva-de-meteoros-geminideas.png" alt="Chuva de Meteoros Geminídeas" class="celestial-image">
     
@@ -353,6 +371,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-superlua">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/superlua.png" alt="Superlua" class="celestial-image">
     
@@ -368,6 +387,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-conjuncao">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/conjuncao.png" alt="Conjunção Planetária" class="celestial-image">
     
@@ -394,6 +414,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-cometas">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/cometas.png" alt="Cometas" class="celestial-image">
     
@@ -409,6 +430,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-supernovas">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/supernovas.png" alt="Supernovas" class="celestial-image">
     
@@ -424,6 +446,7 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-agrupamentos">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/agrupamentos-estelares.png" alt="Agrupamentos Estelares" class="celestial-image">
     
@@ -459,6 +482,7 @@
   </section>
 
   <section class="tela-eventos-detalhe hidden" id="detalhe-espiral">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-espiral.png" alt="Galáxia Espiral" class="celestial-image">
     
@@ -474,6 +498,7 @@
   </section>
 
   <section class="tela-eventos-detalhe hidden" id="detalhe-eliptica">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-eliptica.png" alt="Galáxia Elíptica" class="celestial-image">
     
@@ -489,6 +514,7 @@
   </section>
 
   <section class="tela-eventos-detalhe hidden" id="detalhe-irregular">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-irregular.png" alt="Galáxia Irregular" class="celestial-image">
     
@@ -513,6 +539,7 @@
   </section>
 
   <section class="tela-eventos-detalhe hidden" id="detalhe-via-lactea">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-via-lactea.png" alt="Galáxia Via Láctea" class="celestial-image">
     
@@ -528,6 +555,7 @@
   </section>
 
   <section class="tela-eventos-detalhe hidden" id="detalhe-andromeda-galaxia">
+    <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-andromeda.png" alt="Galáxia de Andrômeda" class="celestial-image">
     
@@ -543,6 +571,7 @@
   </section>
 
   <section class="tela-eventos-detalhe hidden" id="detalhe-triangulo">
+    <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/galaxia-triangulo.png" alt="Galáxia do Triângulo (M33)" class="celestial-image">
       <h3>Galáxia do Triângulo (M33)</h3>
@@ -557,8 +586,11 @@
 
 
   <!-- INFORMAÇÕES PLANETÁRIAS -->
-  <section class="tela-informacoes-planetarias">
-    <div class="informacoes-extras">
+  <section class="tela-eventos-detalhe">
+    <div class="space-background"><div class="stars"></div></div>
+    <div class="aurora-background"></div>
+    <div class="info-planetas">
+    <div class="informacoes-dos-planetas">
       <button type="button" class="btn-cosmic">Sol</button>
       <button type="button" class="btn-cosmic">Mercúrio</button>
       <button type="button" class="btn-cosmic">Vênus</button>
@@ -570,11 +602,13 @@
       <button type="button" class="btn-cosmic">Netuno</button>
       <button type="button" class="btn-cosmic">Plutão</button>
     </div>
+    </div>
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <div class="info-card">
+    <div class="aurora-background"></div>
+    <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/sol.png" alt="Sol" class="celestial-image">
       <h3>Sol</h3>
       <p class="descricao">
@@ -589,7 +623,8 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <div class="info-card">
+    <div class="aurora-background"></div>
+    <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/mercurio.png" alt="Mercurio" class="celestial-image">
       <h3>Mercurio</h3>
       <p class="descricao">
@@ -604,7 +639,8 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <div class="info-card">
+    <div class="aurora-background"></div>
+    <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/venus.png" alt="Venus" class="celestial-image">
       <h3>Vênus</h3>
       <p class="descricao">
@@ -619,12 +655,13 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <div class="info-card">
-    <div class="terra-lua-container">
-      <img src="./src/imagens/terra.png" class="celestial-image" alt="Terra">
-      <img src="./src/imagens/lua.png" class="celestial-image" alt="Lua">
-    </div>
+  <section class="tela-eventos-detalhe" id="detalhe-planetas" style="position:relative;">
+    <div class="aurora-background"></div>
+    <div class="info-card" style="position:relative; z-index:1;">
+      <div class="terra-lua-container">
+        <img src="./src/imagens/terra.png" class="celestial-image" alt="Terra">
+        <img src="./src/imagens/lua.png" class="celestial-image" alt="Lua">
+      </div>
       <h3>Terra</h3>
       <p class="descricao">
         A Terra é o terceiro planeta a partir do Sol e o único lugar no universo onde a vida existe.
@@ -640,7 +677,8 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <div class="info-card">
+    <div class="aurora-background"></div>
+    <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/marte.png" alt="Marte" class="celestial-image">
       <h3>Marte</h3>
       <p class="descricao">
@@ -656,7 +694,8 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <div class="info-card">
+    <div class="aurora-background"></div>
+    <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/jupiter.png" alt="Jupiter" class="celestial-image">
       <h3>Júpiter</h3>
       <p class="descricao">
@@ -674,7 +713,8 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <div class="info-card">
+    <div class="aurora-background"></div>
+    <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/saturno.png" alt="Saturno" class="celestial-image">
       <h3>Saturno</h3>
       <p class="descricao">
@@ -690,7 +730,8 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <div class="info-card">
+    <div class="aurora-background"></div>
+    <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/urano.png" alt="Urano" class="celestial-image">
       <h3>Urano</h3>
       <p class="descricao">
@@ -705,7 +746,8 @@
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
-    <div class="info-card">
+    <div class="aurora-background"></div>
+    <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/netuno.png" alt="Netuno" class="celestial-image">
       <h3>Netuno</h3>
       <p class="descricao">
@@ -721,11 +763,8 @@
   </section>
 
   <section class="tela-eventos-detalhe" class="screen active" id="detalhe-planetas">
-    <div class="space-background">
-      <div class="stars"></div>
-      <div class="planets"></div>
-    </div>
-    <div class="info-card">
+    <div class="aurora-background"></div>
+    <div class="info-card" style="position:relative; z-index:1;">
       <img src="./src/imagens/plutao.png" alt="Plutão" class="celestial-image">
         <h3>Plutão</h3>
         <p class="descricao">

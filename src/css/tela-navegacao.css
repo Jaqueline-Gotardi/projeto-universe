@@ -1,21 +1,28 @@
 .tela-navegacao {
-    background-image: url('../imagens/4.png');
+    /* background-image: url('../imagens/Fundo_Roxo_Ultramoderno_Clean-fotor-enhance-20250914103400.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: #0f2549;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: flex-start;
     align-items: center;
-    gap: 40px;
+    gap: 80px; 
     padding: 20px;
+    position: relative;
+    /* margin-top: 20px; */
+    color: #e0f2f7;
 }
 
 .tela-navegacao .barra {
+    justify-content: flex-start;
     position: static;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    margin-top: 20px;
     align-items: center;
     background-color: white;
     border: 1px solid #ccc;
@@ -59,19 +66,28 @@
     padding: 20px;
 }
 
-.tela-navegacao button:hover {
+/* .tela-navegacao button:hover {
     background-color: rgb(143, 141, 240);
     transform: scale(1.05);
+} */
+
+.menu-centralizado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .casinha {
+    position: absolute;
+    bottom: 40px;
     width: 80px;
     cursor: pointer;
-    background-color: rgb(81, 76, 87);
+    background-color: #3d214e;
     transition: 0.2s ease-out;
 }
 
 .casinha:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: rgb(143, 141, 240);
 }

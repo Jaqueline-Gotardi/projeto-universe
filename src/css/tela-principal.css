@@ -1,5 +1,5 @@
 .tela-principal {
-  background-image: url('../imagens/2.png');
+  background-image: url('../imagens/Fundo_Universo_Puro_Escuro-fotor-enhance-2025091323703.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #e0f2f7;
 }
 
 .guia {
@@ -48,7 +49,7 @@
 .text h2 {
   font-family: 'Orbitron', sans-serif;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .intro-text p {
