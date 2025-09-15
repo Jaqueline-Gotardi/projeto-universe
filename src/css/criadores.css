@@ -1,10 +1,32 @@
-/* Estilos da Tela de Criadores */
-.tela-criadores {
+.botao-voltar {
+    font-family: 'Orbitron', sans-serif; 
+    background-color: #5D3FD3;
+    border: 1px solid #A020F0; 
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #A020F0;
+    transition: all 0.3s ease-in-out;
+    margin-top: 40px;
+    color: #e0f2f7;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.botao-voltar:hover {
+    background: #A020F0;
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px #A020F0;
+}
+
+/* .tela-criadores {
     background-image: url('../imagens/fundo-tela-criadores.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +36,6 @@
     overflow: auto;
 }
 
-/* Camada de sobreposição para melhorar a legibilidade do texto */
 .background-overlay {
     position: absolute;
     top: 0;
@@ -25,7 +46,6 @@
     z-index: 1;
 }
 
-/* Título principal da seção */
 .titulo-criadores {
     font-family: 'Orbitron', sans-serif;
     font-size: 3.2em;
@@ -39,7 +59,6 @@
     animation: slideInTop 1s ease-out forwards;
 }
 
-/* Container para os cards dos criadores */
 .container-criadores {
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +71,6 @@
     padding: 20px 0;
 }
 
-/* Estilo individual do Card do Criador */
 .card-criador {
     background: linear-gradient(135deg, rgba(30, 30, 50, 0.9), rgba(50, 50, 80, 0.9));
     border: 1px solid rgba(125, 200, 255, 0.3);
@@ -75,7 +93,6 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(125, 200, 255, 0.4);
 }
 
-/* Imagem de Perfil dentro do Card */
 .imagem-perfil {
     width: 160px;
     height: 160px;
@@ -96,7 +113,6 @@
     display: block;
 }
 
-/* Informações de Texto do Perfil */
 .informacoes-perfil {
     flex-grow: 1;
     color: #c9e0ed;
@@ -144,31 +160,27 @@
     color: #ffcc00;
 }
 
-/* Botão Voltar */
 .botao-voltar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: #2a3a5a;
-    color: #e0f2f7;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.1em;
-    font-weight: 500;
+    font-family: 'Orbitron', sans-serif; 
+    background-color: #5D3FD3;
+    border: 1px solid #A020F0; 
     padding: 12px 25px;
-    border: none;
-    border-radius: 50px;
+    border-radius: 12px;
     cursor: pointer;
-    text-decoration: none;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4), 0 0 10px rgba(125, 200, 255, 0.3);
+    box-shadow: 0 0 10px #A020F0;
     transition: all 0.3s ease-in-out;
-    z-index: 2;
     margin-top: 40px;
+    color: #e0f2f7;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .botao-voltar:hover {
-    background-color: #3b4e72;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(125, 200, 255, 0.5);
+    background: #A020F0;
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px #A020F0;
 }
 
 .botao-voltar img {
@@ -177,7 +189,6 @@
     filter: invert(1) drop-shadow(0 0 5px rgba(125, 200, 255, 0.5));
 }
 
-/* Animações */
 @keyframes slideInTop {
     from {
         opacity: 0;
@@ -202,7 +213,6 @@
     }
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .titulo-criadores {
         font-size: 2.5em;
@@ -273,5 +283,154 @@
 
     .interesses-criador {
         padding: 10px 15px;
+    }
+} */
+
+.tela-criadores {
+    background-image: url('../imagens/tela-criadores.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1) saturate(1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e0f2f7;
+    padding: 60px 20px;
+}
+
+.titulo-criadores {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 0 0 15px #A020F0, 0 0 25px #A020F0;
+    letter-spacing: 2px;
+}
+
+.container-criadores {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card-criador {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #5D3FD3;
+    border-radius: 20px;
+    padding: 30px;
+    width: 450px;
+    max-width: 90%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px #A020F0;
+}
+
+.card-criador:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 25px #A020F0, 0 0 40px #A020F0;
+}
+
+.imagem-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    border: 3px solid #e0f2f7;
+    box-shadow: 0 0 10px #e0f2f7;
+}
+
+.imagem-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.informacoes-perfil {
+    text-align: left;
+}
+
+.nome-criador {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: #e0f2f7;
+    text-shadow: 0 0 8px #e0f2f7;
+    margin-bottom: 5px;
+}
+
+.role-projeto {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: #A020F0;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.contribuicoes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', sans-serif;
+}
+
+.contribuicoes li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.marcador-neon {
+    width: 8px;
+    height: 8px;
+    background-color: #A020F0;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #A020F0;
+    flex-shrink: 0; 
+    margin-top: 8px; 
+    margin-right: 15px;
+}
+
+.botao-retorno-home {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #e0f2f7;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 15px #e0f2f7;
+    transition: all 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+.botao-retorno-home:hover {
+    transform: scale(1.1);
+    background-color: rgba(224, 242, 247, 0.2);
+    box-shadow: 0 0 25px #e0f2f7, 0 0 40px #e0f2f7;
+}
+
+.icone-home {
+    filter: invert(1);
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 900px) {
+    .container-criadores {
+        flex-direction: column;
+    }
+    .card-criador {
+        margin-bottom: 30px;
     }
 }

@@ -1,5 +1,5 @@
 .tela-menu {
-    background-image: url('../imagens/Horizonte_Cosmico_Minimalista-fotor-enhance-20250913224604.jpg');
+    background-image: url('../imagens/Fundo_Universo_Puro_Escuro-fotor-enhance-2025091323703.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 .nauta-menu {
     /* position: relative;  */
     /* top: 20%; */
-    /* left: 50%; */
+    /* left: 50%; */ 
     text-align: center;
     /* transform: translate(-50%, -50%); */
 }
@@ -24,7 +24,7 @@
     margin-bottom: 20%; /* Already set to 20px */
 }
 
-.tela-menu .informacoes-extras {
+.informacoes-extras {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +74,36 @@
     color: black;
 }  */
 
-.tela-navegacao .btn-menu:hover {
+/* .tela-navegacao .btn-menu:hover {
     background-color: rgb(227, 248, 255);
     transform: scale(1.05);
-}
+} */
+
+/* .botao-voltar {
+    font-family: 'Orbitron', sans-serif; 
+    padding: 15px 25px; 
+    width: 200px; 
+    max-width: 70%;
+    font-size: 1rem;
+    border-radius: 10px; 
+    cursor: pointer;
+    background: #3D214E; 
+    border: 1px solid #A020F0;
+    color: #e0f2f7;
+    transition: all 0.3s ease-in-out;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;   
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #A020F0; 
+    margin-top: auto; 
+} */
+
+/* .botao-voltar:hover {
+    background: #A020F0; 
+    transform: translateY(-2px) scale(1.02); 
+    box-shadow: 0 0 18px #A020F0; 
+    border-color: #e0f2f7;
+} */

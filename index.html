@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+ 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="./src/css/criadores.css">
   <link rel="stylesheet" href="./src/css/tela-apagar-conta.css">
 
-  <title>Universe</title>
+  <title>Universe</title> 
 </head> 
 
 <body>
@@ -75,16 +75,16 @@
       <input type="text" placeholder="Pesquisar no Universo..." name="Nome" />
       <img src="./src/imagens/lupa.jpg" class="lupa">
     </div>
-    <img src="./src/imagens/astronauta.png" class="nauta-navegacao" alt="Astronauta">
+    <!-- <img src="./src/imagens/astronauta.png" class="nauta-navegacao" alt="Astronauta"> -->
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Menu</button>
     </div>
-    <div class="casinha">
-      <img src="./src/imagens/casinha.png" class="casinha">
+    <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
+      <img src="./src/imagens/casinha.png" class="icone-home">
     </div>
   </section>
 
-  <section class="tela-menu">
+  <section class="tela-principal">
     <!-- <div class="nauta-menu">
       <img src="./src/imagens/nautaemcimadalua.png" alt="Astronauta">
     </div> -->
@@ -93,29 +93,29 @@
       <button type="button" class="btn-cosmic">Informações Planetárias</button>
       <button type="button" class="btn-cosmic">Informações Extras</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar">Voltar</button>
   </section>
 
 
   <!-- CONSTELAÇÕES -->
-  <section class="informacao-astronomica">
+  <section class="tela-principal">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Constelações</button>
       <button type="button" class="btn-cosmic">Eventos Astronômicos</button>
       <button type="button" class="btn-cosmic">Galáxia</button>
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-voltar">Voltar</button>
   </section>
-  <section class="tela-constelacoes-categorias">
+  <section class="tela-principal">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Hemisfério Norte</button>
       <button type="button" class="btn-cosmic">Hemisfério Sul</button>
       <button type="button" class="btn-cosmic">As Famosas</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-constelacoes-lista" id="hemisferio-norte">
+  <section class="tela-principal" id="hemisferio-norte">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Ursa Maior</button>
       <button type="button" class="btn-cosmic">Ursa Menor</button>
@@ -124,7 +124,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-constelacoes-lista" id="hemisferio-sul">
+  <section class="tela-principal" id="hemisferio-sul">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Cruzeiro do Sul</button>
       <button type="button" class="btn-cosmic">Fênix</button>
@@ -133,7 +133,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section> 
 
-  <section class="tela-constelacoes-lista" id="famosas">
+  <section class="tela-principal" id="famosas">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Órion</button>
       <button type="button" class="btn-cosmic">Cão Maior</button>
@@ -251,7 +251,7 @@
 
 
   <!-- EVENTOS ASTRONÔMICOS -->
-  <section class="tela-eventos-astronomicos">
+  <section class="tela-principal">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Eclipses</button>
       <button type="button" class="btn-cosmic">Chuvas de Meteoros</button>
@@ -262,7 +262,7 @@
   </section>
 
   <!-- ECLIPSES -->
-  <section class="tela-eventos-lista eclipse" id="lista-eclipses">
+  <section class="tela-principal" id="lista-eclipses">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Eclipse Solar</button>
       <button type="button" class="btn-cosmic">Eclipse Lunar</button>
@@ -303,7 +303,7 @@
   </section>
 
   <!-- CHUVA DE METEOROS -->
-  <section class="tela-eventos-lista meteoros" id="lista-chuvas-de-meteoros">
+  <section class="tela-principal" id="lista-chuvas-de-meteoros">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Perseidas</button>
       <button type="button" class="btn-cosmic">Leonídeas</button>
@@ -362,7 +362,7 @@
 
 
   <!-- SUPERLUAS E CONJUNÇÕES -->
-  <section class="tela-eventos-lista superlua" id="lista-superluas-conjuncoes">
+  <section class="tela-principal" id="lista-superluas-conjuncoes">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Superlua</button>
       <button type="button" class="btn-cosmic">Conjunção Planetária</button>
@@ -404,7 +404,7 @@
 
 
   <!-- COMETAS E OUTROS -->
-  <section class="tela-eventos-lista cometas" id="lista-cometas-outros">
+  <section class="tela-principal" id="lista-cometas-outros">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Cometas</button>
       <button type="button" class="btn-cosmic">Supernovas</button>
@@ -463,7 +463,7 @@
 
 
   <!-- GALÁXIA -->
-  <section class="tela-galaxias hidden" id="tela-galaxias">
+  <section class="tela-principal" id="tela-galaxias">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" data-target="lista-tipos-galaxias">Tipos de Galáxias</button>
       <button type="button" class="btn-cosmic" data-target="lista-galaxias-famosas">Galáxias
@@ -472,7 +472,7 @@
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-galaxias-lista hidden" id="lista-tipos-galaxias">
+  <section class="tela-principal" id="lista-tipos-galaxias">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" data-target="detalhe-espiral">Espiral</button>
       <button type="button" class="btn-cosmic" data-target="detalhe-eliptica">Elíptica</button>
@@ -529,7 +529,7 @@
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-galaxias-lista hidden" id="lista-galaxias-famosas">
+  <section class="tela-principal" id="lista-galaxias-famosas">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" data-target="detalhe-via-lactea">Via Láctea</button>
       <button type="button" class="btn-cosmic" data-target="detalhe-andromeda-galaxia">Andrômeda</button>
@@ -586,9 +586,9 @@
 
 
   <!-- INFORMAÇÕES PLANETÁRIAS -->
-  <section class="tela-eventos-detalhe">
-    <div class="space-background"><div class="stars"></div></div>
-    <div class="aurora-background"></div>
+  <section class="tela-planetas">
+    <!-- <div class="space-background"><div class="stars"></div></div>
+    <div class="aurora-background"></div> -->
     <div class="info-planetas">
     <div class="informacoes-dos-planetas">
       <button type="button" class="btn-cosmic">Sol</button>
@@ -603,7 +603,7 @@
       <button type="button" class="btn-cosmic">Plutão</button>
     </div>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
@@ -619,7 +619,7 @@
         sendo essencial para a existência do nosso sistema.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
@@ -778,7 +778,7 @@
 
 
   <!-- NFORMAÇÕES EXTRAS -->
-  <section class="tela-informacoes-extras"
+  <section class="tela-principal"
     style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Perfil</button>
@@ -791,12 +791,15 @@
 
 
   <!-- PERFIL -->
-
+ 
 
 
 
   <!-- CRIADORES -->
-  <section id="tela-criadores" class="tela-criadores">
+<!-- giloiany eu fizemos o prototipo inical desse proejto em 2022 (ja que er aum trabalho escolar do isntituio federal campus eiruenepe (if), estavamos no segundo ano... ai eu decici seguri com a ideia do proejto ja afz duas semanas... eu refiz todo o desing , nossos opbejto sntes era afzer um deisng com toque ifnatiol (como eu msm ja mandeia qui os prints d e alguams telas com desnheos) e acabei mduandadno paeaamanter um deisng mdoerno . no nosso protptioi trabalkhmos osmnete com thml ecss, agora q alterei o deisng vou acrescentara js (ainda naof iz mas vou afzer), e a diefnernca e que atmbem vai ser um sigte e nao um prtpitoipo... -->
+
+
+  <!-- <section id="tela-criadores" class="tela-criadores">
     <div class="background-overlay"></div>
     <h1 class="titulo-criadores">Nossos Agentes Especiais</h1>
 
@@ -816,7 +819,6 @@
           </ul>
         </div>
       </div>
-
       <div class="card-criador">
         <div class="imagem-perfil">
           <img src="./src/imagens/jaqueline.png" alt="Foto de Perfil de Jaqueline">
@@ -833,13 +835,69 @@
         </div>
       </div>
     </div>
-
-    <a href="#tela10" class="botao-voltar" aria-label="Voltar para a tela anterior">
-      <img src="./src/imagens/casinha.png" alt="Ícone de casa">
-      <span>Voltar</span>
-    </a>
+    <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
+      <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal">
+    </button>
   </section>
+ -->
 
+ <section id="tela-criadores" class="tela-criadores">
+  <div class="background-overlay"></div>
+  <h1 class="titulo-criadores">Agentes Especiais do Projeto</h1>
+  <div class="container-criadores">
+    
+    <div class="card-criador">
+      <div class="imagem-perfil">
+        <img src="./src/imagens/Giliany.jpg" alt="Foto de Perfil de Giliany">
+      </div>
+      <div class="informacoes-perfil">
+        <h2 class="nome-criador">Giliany Do Carmo</h2>
+        <p class="role-projeto">Líder do Protótipo Original (2022)</p>
+        <ul class="contribuicoes">
+          <li>
+            <span class="marcador-neon"></span>
+            Liderou a criação do protótipo original do projeto em 2022, como uma atividade escolar.
+          </li>
+          <li>
+            <span class="marcador-neon"></span>
+            Responsável pela concepção e arquitetura do design inicial do protótipo.
+          </li>
+          <li>
+            <span class="marcador-neon"></span>
+            Desenvolveu a estrutura de design e UI/UX do protótipo.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-criador">
+      <div class="imagem-perfil">
+        <img src="./src/imagens/jaqueline.png" alt="Foto de Perfil de Jaqueline">
+      </div>
+      <div class="informacoes-perfil">
+        <h2 class="nome-criador">Jaqueline Gotardi</h2>
+        <p class="role-projeto">Líder do Protótipo e Designer (2025)</p>
+        <ul class="contribuicoes">
+          <li>
+            <span class="marcador-neon"></span>
+            Liderou a criação do protótipo original do projeto em 2022, como uma atividade escolar.
+          </li>
+          <li>
+            <span class="marcador-neon"></span>
+            Liderou a evolução do design, transformando a estética original para uma interface moderna e profissional.
+          </li>
+          <li>
+            <span class="marcador-neon"></span>
+            Atualmente responsável pela codificação e implementação de novas funcionalidades.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
+    <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal">
+  </button>
+</section>
 
 
 

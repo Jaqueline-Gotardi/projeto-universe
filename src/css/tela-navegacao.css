@@ -1,14 +1,14 @@
 .tela-navegacao {
-    /* background-image: url('../imagens/Fundo_Roxo_Ultramoderno_Clean-fotor-enhance-20250914103400.jpg');
+    background-image: url('../imagens/Fundo_Espacial_UI_Astronauta-fotor-enhance-20250914133357.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; */
-    background-color: #0f2549;
+    background-repeat: no-repeat;
+    /* background-color: #0f2549; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     gap: 80px; 
     padding: 20px;
@@ -21,7 +21,43 @@
     justify-content: flex-start;
     position: static;
     display: flex;
-    /* justify-content: center; */
+    margin-top: 20px;
+    align-items: center;
+    /* MUDANÇAS AQUI: Transformando a barra em um elemento futurista */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro semi-transparente */
+    border: 2px solid #5D3FD3; /* Borda roxa, mais grossa para destacar */
+    border-radius: 50px;
+    padding: 8px 15px;
+    width: 400px;
+    max-width: 90%;
+    /* Adicionando o brilho neon para combinar com os botões */
+    box-shadow: 0 0 15px #A020F0;
+}
+
+.tela-navegacao input {
+    height: 35px;
+    outline: none;
+    width: 350px;
+    max-width: 90%;
+    border: none;
+    /* MUDANÇA AQUI: Alterando a cor do texto para claro e o fundo do input para transparente */
+    background-color: transparent;
+    color: #e0f2f7; /* Cor do texto claro */
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+.barra .lupa {
+    position: static;
+    width: 20px;
+    height: 20px;
+    /* MUDANÇA AQUI: Cor da lupa para combinar com o tema */
+    filter: invert(1) brightness(1.2); /* Inverte a cor do ícone para branco/claro */
+}
+/* .tela-navegacao .barra {
+    justify-content: flex-start;
+    position: static;
+    display: flex;
     margin-top: 20px;
     align-items: center;
     background-color: white;
@@ -31,7 +67,7 @@
     width: 400px;
     max-width: 90%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
+} 
 
 .tela-navegacao input {
     height: 35px;
@@ -45,7 +81,7 @@
     position: static;
     width: 20px;
     height: 20px;
-}
+} */
 
 .tela-navegacao .botao {
     width: 350px;
@@ -78,16 +114,18 @@
     transform: translate(-50%, -50%);
 }
 
-.casinha {
+/* .casinha {
     position: absolute;
     bottom: 40px;
     width: 80px;
     cursor: pointer;
-    background-color: #3d214e;
-    transition: 0.2s ease-out;
+    background-color: #2b1638;
+    transition: 0.3s ease-out;
 }
 
 .casinha:hover {
     transform: scale(1.05);
-    background-color: rgb(143, 141, 240);
-}
+    background-color: transparent; 
+    box-shadow: 0 0 20px 5px #A020F0;
+    border-radius: 10px;
+} */

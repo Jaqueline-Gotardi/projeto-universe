@@ -1,6 +1,6 @@
 /* Estilos Gerais da Tela de Apagar Conta */
 .tela-apagar-conta {
-    background-image: url('../imagens/1.1.png');
+    background-image: url('../imagens/Fundo_Espacial_UI_Astronauta_2-fotor-enhance-20250914141403.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 }
 
 /* Container principal para o astronauta e o painel de confirmação */
-.container-conteudo {
+.container-conteudo { 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,7 +115,7 @@
     border: none;
     cursor: pointer;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -129,6 +129,7 @@
 
 .botao-retorno-home:hover {
     transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 20px 5px #A020F0;
 }
 
 /* Animações */
