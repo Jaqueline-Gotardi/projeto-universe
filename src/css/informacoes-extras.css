@@ -38,19 +38,19 @@
   font-size: 1.1rem;
   border-radius: 12px;
   cursor: pointer;
-  background: #3D214E; /* Cor de fundo sólida para consistência */
-  border: 2px solid #A020F0; /* COR NEON QUE COMBINA COM O HOVER */
+  background: #3D214E; 
+  border: 2px solid #A020F0; 
   color: #e0f2f7;
   transition: all 0.3s ease-in-out;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 0 15px #A020F0; /* BRILHO NEON ELEGANTE */
+  box-shadow: 0 0 15px #A020F0; 
 }
 
 .btn-cosmic:hover {
-  background: #A020F0; /* Cor de hover sólida */
+  background: #A020F0; 
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 0 25px #A020F0; /* Aumenta o brilho no hover */
+  box-shadow: 0 0 25px #A020F0; 
   border-color: #e0f2f7;
 }

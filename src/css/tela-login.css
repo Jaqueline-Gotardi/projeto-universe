@@ -100,48 +100,8 @@
 }
 
 .login-bg {
-  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #2d1b69 100%);
+  background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #2d1b69 100%); 
 }
-
-/* Main Menu Background */
-/* .main-bg {
-    background: linear-gradient(135deg, #1a1a3e 0%, #2d1b69 30%, #4a148c 70%, #6a1b9a 100%);
-  } */
-
-/* Navigation Background */
-/* .navigation-bg {
-    background: linear-gradient(135deg, #0d47a1 0%, #1565c0 30%, #1976d2 70%, #42a5f5 100%);
-  } */
-
-/* Menu Background */
-/* .menu-bg {
-    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 30%, #388e3c 70%, #66bb6a 100%);
-  } */
-
-/* Astronomical Background */
-/*   .astronomical-bg {
-    background: linear-gradient(135deg, #4a148c 0%, #6a1b9a 30%, #8e24aa 70%, #ba68c8 100%);
-  } */
-
-/* Events Background */
-/* .events-bg {
-    background: linear-gradient(135deg, #e65100 0%, #f57c00 30%, #ff9800 70%, #ffb74d 100%);
-  } */
-
-/* Galaxy Background */
-/* .galaxy-bg {
-    background: linear-gradient(135deg, #1a237e 0%, #303f9f 30%, #3f51b5 70%, #7986cb 100%);
-  } */
-
-/* Planetary Background */
-/* .planetary-bg {
-    background: linear-gradient(135deg, #b71c1c 0%, #d32f2f 30%, #f44336 70%, #ef5350 100%);
-  } */
-
-/* Constellation Background */
-/* .constellation-bg {
-    background: linear-gradient(135deg, #263238 0%, #37474f 30%, #455a64 70%, #78909c 100%);
-  } */
 
 /* Stars Animation */
 .stars {
@@ -200,7 +160,7 @@
   width: 80px;
   height: 80px;
   margin-bottom: 1rem;
-  animation: float 3s ease-in-out infinite;
+  animation: float 1.6s ease-in-out infinite;
 }
 
 .welcome-title {
@@ -249,12 +209,7 @@
 
 /* Buttons */
 .btn-primary,
-.btn-space,
-.btn-cosmic,
-.btn-menu,
-.btn-home,
-.btn-option,
-.btn-back {
+.btn-cosmic {
   padding: 0.75rem 2rem;
   border: none;
   border-radius: 12px;

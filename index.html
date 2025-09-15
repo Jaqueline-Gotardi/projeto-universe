@@ -65,7 +65,7 @@
       <p>Selecione seu destino</p>
     </div>
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Navegação Espacial</button>
+      <button type="button" class="btn-cosmic">Iniciar Exploração</button>
       <button type="button" class="btn-cosmic">Tutorial</button>
     </div> 
   </section>
@@ -83,6 +83,52 @@
       <img src="./src/imagens/casinha.png" class="icone-home">
     </div>
   </section>
+
+
+  <!-- TELA DE TUTORIAL -->
+  <section id="tela-tutorial" class="tela-tutorial">
+    <div class="background-overlay"></div>
+    <div class="container-conteudo">
+        <h1 class="titulo-tutorial">Uma Jornada que Começou Sob as Estrelas</h1>
+        
+        <div class="jornada-projeto">
+          <p>
+            Toda grande jornada tem um ponto de partida. A nossa começou em 2022, no IF Campus - Eirunepé. Eu e minha colega de classe, Giliany Do Carmo, desenvolvemos um protótipo de aplicativo (com pegada infantil) como um projeto escolar, cheias de ideias e a paixão pelo espaço. Foi uma aventura de aprendizado e muita empolgação com cada conquista.✨
+          </p>
+          <p>
+            Em 2025, o projeto foi reativado. Por conta própria, decidi retomá-lo para reescrever seu código e sua identidade. O objetivo era transformar a estética original (infantil) para um design moderno e profissional, e ir além: implementar novas tecnologias (na época só tinha html e css), como JavaScript e inteligência artificial (uma fronteira que ainda estou explorando!), para expandir nosso universo de possibilidades. . . 👩‍💻
+          </p>
+          <p>
+            Mas o combustível por trás de tudo é algo mais profundo. É a lembrança de algo simples: quando a luz acabava, eu e meu cachorro nos sentávamos do lado de fora para admirar as estrelas e o brilho da lua. Este projeto é a minha forma de eternizar essa paixão e convidar você para se juntar a nós nessa tripulação. 💜🚀
+          </p>
+        </div>
+
+        <div class="secao-missao">
+            <h2 class="titulo-missao">Sua Missão</h2>
+            <ul class="lista-passos">
+                <li>
+                    <span class="marcador-neon"></span>
+                    <p>Navegue pelo Espaço: Use a barra de pesquisa para encontrar astros ou clique no menu para acessar as áreas de exploração.</p>
+                </li>
+                <li>
+                    <span class="marcador-neon"></span>
+                    <p>Conheça os Astros: Explore planetas, galáxias e constelações. Cada um esconde informações fascinantes.</p>
+                </li>
+                <li>
+                    <span class="marcador-neon"></span>
+                    <p>Volte à Base: Use o botão de voltar ou o ícone da casinha para retornar à tela principal sempre que precisar.</p>
+                </li>
+            </ul>
+        </div>
+        
+        <button type="button" class="botao-iniciar-jornada">
+            Iniciar Exploração
+        </button>
+    </div>
+</section>
+
+
+
 
   <section class="tela-principal">
     <!-- <div class="nauta-menu">
@@ -587,6 +633,7 @@
 
   <!-- INFORMAÇÕES PLANETÁRIAS -->
   <section class="tela-planetas">
+    
     <!-- <div class="space-background"><div class="stars"></div></div>
     <div class="aurora-background"></div> -->
     <div class="info-planetas">
@@ -619,7 +666,7 @@
         sendo essencial para a existência do nosso sistema.
       </p>
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
@@ -635,7 +682,7 @@
         dias terrestres.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
@@ -652,7 +699,7 @@
         <br>Vênus é também único por girar em sentido horário em seu eixo, o oposto da maioria dos outros planetas.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas" style="position:relative;">
@@ -673,7 +720,7 @@
         estabilização do nosso planeta.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
@@ -690,7 +737,7 @@
         água em seu passado, o que o torna um dos principais alvos de busca por vida no espaço.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
@@ -709,7 +756,7 @@
         interior de cometas e asteroides.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
@@ -726,7 +773,7 @@
         luas, sendo Titã a maior delas e a única no Sistema Solar com uma atmosfera densa.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
@@ -742,7 +789,7 @@
         <br>Urano tem um sistema de anéis finos e escuros, e sua atmosfera é a mais fria do Sistema Solar.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-planetas">
@@ -759,7 +806,7 @@
         concluída.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" class="screen active" id="detalhe-planetas">
@@ -773,7 +820,7 @@
           <br>Plutão está localizado no Cinturão de Kuiper, uma região além de Netuno, repleta de objetos gelados.
         </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
 
@@ -796,51 +843,6 @@
 
 
   <!-- CRIADORES -->
-<!-- giloiany eu fizemos o prototipo inical desse proejto em 2022 (ja que er aum trabalho escolar do isntituio federal campus eiruenepe (if), estavamos no segundo ano... ai eu decici seguri com a ideia do proejto ja afz duas semanas... eu refiz todo o desing , nossos opbejto sntes era afzer um deisng com toque ifnatiol (como eu msm ja mandeia qui os prints d e alguams telas com desnheos) e acabei mduandadno paeaamanter um deisng mdoerno . no nosso protptioi trabalkhmos osmnete com thml ecss, agora q alterei o deisng vou acrescentara js (ainda naof iz mas vou afzer), e a diefnernca e que atmbem vai ser um sigte e nao um prtpitoipo... -->
-
-
-  <!-- <section id="tela-criadores" class="tela-criadores">
-    <div class="background-overlay"></div>
-    <h1 class="titulo-criadores">Nossos Agentes Especiais</h1>
-
-    <div class="container-criadores">
-      <div class="card-criador">
-        <div class="imagem-perfil">
-          <img src="./src/imagens/Giliany.jpg" alt="Foto de Perfil de Giliany">
-        </div>
-        <div class="informacoes-perfil">
-          <h2 class="nome-criador">Giliany</h2>
-          <p class="data-nascimento">Nasceu em 15/06/2005 em Eirunepé.</p>
-          <p class="formacao">Finalista do Ensino Médio Técnico Integrado em Informática (2024).</p>
-          <ul class="interesses-criador">
-            <li>Amante de livros e animes</li>
-            <li>Gosta de séries e é atleta</li>
-            <li>Programadora e adora gatos</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card-criador">
-        <div class="imagem-perfil">
-          <img src="./src/imagens/jaqueline.png" alt="Foto de Perfil de Jaqueline">
-        </div>
-        <div class="informacoes-perfil">
-          <h2 class="nome-criador">Jaqueline</h2>
-          <p class="data-nascimento">Nasceu em 21/04/2006 em Eirunepé.</p>
-          <p class="formacao">Finalista do Ensino Médio Técnico Integrado em Informática (2024).</p>
-          <ul class="interesses-criador">
-            <li>Amante de livros e dorameira</li>
-            <li>Programadora e adora cantar e dançar K-pop</li>
-            <li>Ama animais e é compositora</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
-      <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal">
-    </button>
-  </section>
- -->
-
  <section id="tela-criadores" class="tela-criadores">
   <div class="background-overlay"></div>
   <h1 class="titulo-criadores">Agentes Especiais do Projeto</h1>
@@ -926,5 +928,4 @@
   </section>
   <script src="./src/js/index.js"></script>
 </body>
-
 </html>
