@@ -1,4 +1,5 @@
- const formulario = document.getElementById('formulario');
+/* VALIDANDO FORMULÁRIO */
+const formulario = document.getElementById('formulario');
  const campos = document.querySelectorAll('#formulario input');
  const mensagensErro = document.querySelectorAll('#formulario .mensagem-erro');
 
@@ -22,6 +23,8 @@
             input.classList.remove('erro');3
             mensagensErro[index].classList.remove('ativo');
         }   
-    });
+    }); 
     return isFormularioValido;
  };
+
+/*  TROCANDO AS TELAS AO CLICK DOS BOTÕES */

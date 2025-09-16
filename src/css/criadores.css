@@ -36,7 +36,7 @@
 
 .titulo-criadores {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
@@ -53,7 +53,7 @@
     flex-wrap: wrap;
 }
 
-.card-criador {
+/* .card-criador {
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #5D3FD3;
     border-radius: 20px;
@@ -63,9 +63,9 @@
     text-align: center;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 15px #A020F0;
-}
+} */
 
-.card-criador:hover {
+.card:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 0 25px #A020F0, 0 0 40px #A020F0;
 }
@@ -155,11 +155,11 @@
     box-shadow: 0 0 25px #e0f2f7, 0 0 40px #e0f2f7;
 }
 
-.icone-home {
+/* .icone-home {
     filter: invert(1);
     width: 30px;
     height: 30px;
-}
+} */
 
 @media (max-width: 900px) {
     .container-criadores {
