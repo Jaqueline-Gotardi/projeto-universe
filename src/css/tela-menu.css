@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -12,16 +12,12 @@
 }
  
 .nauta-menu {
-    /* position: relative;  */
-    /* top: 20%; */
-    /* left: 50%; */ 
     text-align: center;
-    /* transform: translate(-50%, -50%); */
 }
 
 .nauta-menu img {
     width: 50%; 
-    margin-bottom: 20%; /* Already set to 20px */
+    margin-bottom: 20%; 
 }
 
 .informacoes-extras {

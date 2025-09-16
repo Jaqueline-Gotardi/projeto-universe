@@ -20,11 +20,37 @@ const formulario = document.getElementById('formulario');
             isFormularioValido = false;
         } else {
             input.classList.add('certo');
-            input.classList.remove('erro');3
+            input.classList.remove('erro');
             mensagensErro[index].classList.remove('ativo');
         }   
     }); 
     return isFormularioValido;
  };
 
+
+
+
 /*  TROCANDO AS TELAS AO CLICK DOS BOTÕES */
+/* const btnAvancar = document.getElementById("btn-primary");
+const secoes = document.querySelectorAll(".secao");
+let secaoAtual = 0;
+
+secoes.forEach(secao => {
+    secao.addEventListener("click", function() {
+        if (secaoAtual === secoes.length -1) return;
+
+        esconderSecaoSelecionada();
+
+        secaoAtual++;
+        mostrarSecao(secaoAtual);
+    })
+})
+
+function mostrarSecao(secaoAtual) {
+    secoes[secaoAtual].classList.add("selecionado");
+}
+
+function esconderSecaoSelecionada() {
+    const secaoSelecionada = document.querySelector(".selecionado");
+    secaoSelecionada.classList.remove("selecionado");
+} */

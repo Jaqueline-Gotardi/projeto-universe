@@ -28,11 +28,11 @@
 
 <body>
   <!-- Tela de Login -->
-  <section class="tela-login" class="screen active">
+  <section class="tela-login secao selecionado">
     <div class="space-background login-bg">
       <div class="stars"></div>
       <div class="planets"></div>
-    </div>
+    </div> 
     <div class="content-wrapper">
       <div class="login-container">
         <div class="welcome-section">
@@ -53,13 +53,13 @@
             <p class="mensagem-erro">* preencha este campo</p>
           </div>
 
-          <button type="submit" class="btn-primary">Entrar</button>
+          <button type="submit" class="btn-primary" id="btn-primary">Entrar</button>
         </form>
       </div>
     </div>
   </section>
 
-  <section class="tela-principal">
+  <section class="tela-principal secao">
     <div class="text">
       <h2>O que vamos explorar hoje?</h2>
       <p>Selecione seu destino</p>
@@ -70,12 +70,11 @@
     </div> 
   </section>
 
-  <section class="tela-navegacao">
+  <section class="tela-navegacao secao">
     <div class="barra">
       <input type="text" placeholder="Pesquisar no Universo..." name="Nome" />
       <img src="./src/imagens/lupa.jpg" class="lupa">
     </div>
-    <!-- <img src="./src/imagens/astronauta.png" class="nauta-navegacao" alt="Astronauta"> -->
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Menu</button>
     </div>
@@ -86,7 +85,7 @@
 
 
   <!-- TELA DE TUTORIAL -->
-  <section id="tela-tutorial" class="tela-tutorial">
+  <section id="tela-tutorial" class="tela-tutorial secao">
     <div class="background-overlay"></div>
     <div class="container-conteudo">
         <h1 class="titulo-criadores">Uma Jornada que Começou Sob as Estrelas</h1>
@@ -125,13 +124,7 @@
     </div>
 </section>
 
-
-
-
-  <section class="tela-principal">
-    <!-- <div class="nauta-menu">
-      <img src="./src/imagens/nautaemcimadalua.png" alt="Astronauta">
-    </div> -->
+  <section class="tela-principal secao">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Informações Astronômicas</button>
       <button type="button" class="btn-cosmic">Informações Planetárias</button>
@@ -142,7 +135,7 @@
 
 
   <!-- CONSTELAÇÕES -->
-  <section class="tela-principal">
+  <section class="tela-principal secao">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Constelações</button>
       <button type="button" class="btn-cosmic">Eventos Astronômicos</button>
@@ -150,7 +143,8 @@
     </div>
     <button type="button" class="botao-voltar">Voltar</button>
   </section>
-  <section class="tela-principal">
+
+  <section class="tela-principal secao">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Hemisfério Norte</button>
       <button type="button" class="btn-cosmic">Hemisfério Sul</button>
@@ -159,7 +153,7 @@
     <button type="button" class="botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-principal" id="hemisferio-norte">
+  <section class="tela-principal secao" id="hemisferio-norte">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Ursa Maior</button>
       <button type="button" class="btn-cosmic">Ursa Menor</button>
@@ -168,7 +162,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-principal" id="hemisferio-sul">
+  <section class="tela-principal secao" id="hemisferio-sul">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Cruzeiro do Sul</button>
       <button type="button" class="btn-cosmic">Fênix</button>
@@ -177,7 +171,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section> 
 
-  <section class="tela-principal" id="famosas">
+  <section class="tela-principal secao" id="famosas">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Órion</button>
       <button type="button" class="btn-cosmic">Cão Maior</button>
@@ -187,7 +181,7 @@
   </section>
  
   <!-- Hemisfério Norte -->
-  <section class="tela-eventos-detalhe" id="detalhe-ursa-maior">
+  <section class="tela-eventos-detalhe secao" id="detalhe-ursa-maior">
     <div class="space-background">
       <div class="stars"></div>
     </div>
@@ -205,7 +199,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-ursa-menor">
+  <section class="tela-eventos-detalhe secao" id="detalhe-ursa-menor">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/ursa-menor.png" alt="Constelação Ursa Menor" class="celestial-image">
@@ -222,7 +216,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-andromeda">
+  <section class="tela-eventos-detalhe secao" id="detalhe-andromeda">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/andromeda.png" alt="Constelação Andrômeda" class="celestial-image">
@@ -238,7 +232,7 @@
   </section>
 
   <!-- Hemisfério Sul -->
-  <section class="tela-eventos-detalhe" id="detalhe-cruzeiro-do-sul">
+  <section class="tela-eventos-detalhe secao" id="detalhe-cruzeiro-do-sul">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/cruzeiro-do-sul.png" alt="Constelação Cruzeiro do Sul" class="celestial-image">
@@ -254,7 +248,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-fenix">
+  <section class="tela-eventos-detalhe secao" id="detalhe-fenix">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/fenix.png" alt="Constelação Fênix" class="celestial-image">
@@ -269,7 +263,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-centauro">
+  <section class="tela-eventos-detalhe secao" id="detalhe-centauro">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/centauro.png" alt="Constelação Centauro" class="celestial-image">
@@ -288,7 +282,7 @@
   </section>
 
   <!-- As Famosas -->
-  <section class="tela-eventos-detalhe" id="detalhe-orion">
+  <section class="tela-eventos-detalhe secao" id="detalhe-orion">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/orion.png" alt="Constelação Órion" class="celestial-image">
@@ -306,7 +300,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-cao-maior">
+  <section class="tela-eventos-detalhe secao" id="detalhe-cao-maior">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/cao-maior.png" alt="Constelação Cão Maior" class="celestial-image">
@@ -325,7 +319,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-escorpiao">
+  <section class="tela-eventos-detalhe secao" id="detalhe-escorpiao">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/escorpiao.png" alt="Constelação Escorpião" class="celestial-image">
@@ -347,7 +341,7 @@
 
 
   <!-- EVENTOS ASTRONÔMICOS -->
-  <section class="tela-principal">
+  <section class="tela-principal secao">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Eclipses</button>
       <button type="button" class="btn-cosmic">Chuvas de Meteoros</button>
@@ -358,7 +352,7 @@
   </section>
 
   <!-- ECLIPSES -->
-  <section class="tela-principal" id="lista-eclipses">
+  <section class="tela-principal secao" id="lista-eclipses">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Eclipse Solar</button>
       <button type="button" class="btn-cosmic">Eclipse Lunar</button>
@@ -366,7 +360,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-eclipse-solar">
+  <section class="tela-eventos-detalhe secao" id="detalhe-eclipse-solar">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/eclipse-solar.png" alt="Eclipse Solar" class="celestial-image">
@@ -383,7 +377,7 @@ Este alinhamento cósmico perfeito transforma o dia em uma escuridão momentâne
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-eclipse-lunar">
+  <section class="tela-eventos-detalhe secao" id="detalhe-eclipse-lunar">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/eclipse-lunar.png" alt="Eclipse Lunar" class="celestial-image">
@@ -403,7 +397,7 @@ Observar um eclipse lunar é uma missão que te conecta a um fenômeno de pura e
   </section>
 
   <!-- CHUVA DE METEOROS -->
-  <section class="tela-principal" id="lista-chuvas-de-meteoros">
+  <section class="tela-principal secao" id="lista-chuvas-de-meteoros">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Perseidas</button>
       <button type="button" class="btn-cosmic">Leonídeas</button>
@@ -412,7 +406,7 @@ Observar um eclipse lunar é uma missão que te conecta a um fenômeno de pura e
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-perseidas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-perseidas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/chuva-de-meteoros-perseidas.png" alt="Chuva de Meteoros Perseidas" class="celestial-image">
@@ -431,7 +425,7 @@ Observar as Perseidas é como assistir a fogos de artifício cósmicos, com rast
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-leonideas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-leonideas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/chuva-de-meteoros-leonideas.png" alt="Chuva de Meteoros Leonídeas" class="celestial-image">
@@ -450,7 +444,7 @@ Observar as Leônidas é como testemunhar uma tempestade de partículas cósmica
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-geminideas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-geminideas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/chuva-de-meteoros-geminideas.png" alt="Chuva de Meteoros Geminídeas" class="celestial-image">
@@ -471,7 +465,7 @@ Observar as Geminídeas é como testemunhar uma tempestade de partículas cósmi
 
 
   <!-- SUPERLUAS E CONJUNÇÕES -->
-  <section class="tela-principal" id="lista-superluas-conjuncoes">
+  <section class="tela-principal secao" id="lista-superluas-conjuncoes">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Superlua</button>
       <button type="button" class="btn-cosmic">Conjunção Planetária</button>
@@ -479,7 +473,7 @@ Observar as Geminídeas é como testemunhar uma tempestade de partículas cósmi
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-superlua">
+  <section class="tela-eventos-detalhe secao" id="detalhe-superlua">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/superlua.png" alt="Superlua" class="celestial-image">
@@ -497,7 +491,7 @@ Observar as Geminídeas é como testemunhar uma tempestade de partículas cósmi
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-conjuncao">
+  <section class="tela-eventos-detalhe secao" id="detalhe-conjuncao">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/conjuncao.png" alt="Conjunção Planetária" class="celestial-image">
@@ -516,7 +510,7 @@ Evento que convida os exploradores a se conectar com o movimento e a beleza do n
 
 
   <!-- COMETAS E OUTROS -->
-  <section class="tela-principal" id="lista-cometas-outros">
+  <section class="tela-principal secao" id="lista-cometas-outros">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Cometas</button>
       <button type="button" class="btn-cosmic">Supernovas</button>
@@ -525,7 +519,7 @@ Evento que convida os exploradores a se conectar com o movimento e a beleza do n
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-cometas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-cometas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/cometas.png" alt="Cometas" class="celestial-image">
@@ -543,7 +537,7 @@ Observá-los te conecta a um pedaço de história cósmica em movimento, um verd
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-supernovas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-supernovas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/supernovas.png" alt="Supernovas" class="celestial-image">
@@ -561,7 +555,7 @@ Observá-la te conecta com o ciclo da vida e morte de uma estrela, um evento que
     <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-agrupamentos">
+  <section class="tela-eventos-detalhe secao" id="detalhe-agrupamentos">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/agrupamentos-estelares.png" alt="Agrupamentos Estelares" class="celestial-image">
@@ -583,7 +577,7 @@ Observar isto te conecta com uma união de populações cósmicas.
 
 
   <!-- GALÁXIA -->
-  <section class="tela-principal" id="tela-galaxias">
+  <section class="tela-principal secao" id="tela-galaxias">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" data-target="lista-tipos-galaxias">Tipos de Galáxias</button>
       <button type="button" class="btn-cosmic" data-target="lista-galaxias-famosas">Galáxias
@@ -592,7 +586,7 @@ Observar isto te conecta com uma união de populações cósmicas.
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-principal" id="lista-tipos-galaxias">
+  <section class="tela-principal secao" id="lista-tipos-galaxias">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" data-target="detalhe-espiral">Espiral</button>
       <button type="button" class="btn-cosmic" data-target="detalhe-eliptica">Elíptica</button>
@@ -601,7 +595,7 @@ Observar isto te conecta com uma união de populações cósmicas.
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe hidden" id="detalhe-espiral">
+  <section class="tela-eventos-detalhe secao" id="detalhe-espiral">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-espiral.png" alt="Galáxia Espiral" class="celestial-image">
@@ -617,7 +611,7 @@ Observar isto te conecta com a história de estrelas jovens e vibrantes que form
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe hidden" id="detalhe-eliptica">
+  <section class="tela-eventos-detalhe secao" id="detalhe-eliptica">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-eliptica.png" alt="Galáxia Elíptica" class="celestial-image">
@@ -632,12 +626,12 @@ Observar isto te conecta com a história de estrelas antigas e maduras que forma
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe hidden" id="detalhe-irregular">
+  <section class="tela-eventos-detalhe secao" id="detalhe-irregular">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-irregular.png" alt="Galáxia Irregular" class="celestial-image">
     
-      <h3>Galáxia Irregular</h3>
+      <h3 class="titulo-criadores">Galáxia Irregular</h3>
       <p class="descricao">
         Galáxias irregulares <strong>não possuem uma forma definida, parecendo 'nuvens' de estrelas, gás e poeira. </strong>Essa aparência caótica é muitas vezes causada por colisões galácticas ou interações gravitacionais, que dão origem a uma intensa formação estelar. Embora representem apenas cerca de 20% das galáxias conhecidas, elas são cruciais para a ciência, pois seu formato caótico oferece pistas sobre como as galáxias evoluem e interagem ao longo do tempo.
         <br><br>
@@ -648,7 +642,7 @@ Observar isto te conecta com a história de estrelas antigas e maduras que forma
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-principal" id="lista-galaxias-famosas">
+  <section class="tela-principal secao" id="lista-galaxias-famosas">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" data-target="detalhe-via-lactea">Via Láctea</button>
       <button type="button" class="btn-cosmic" data-target="detalhe-andromeda-galaxia">Andrômeda</button>
@@ -657,12 +651,12 @@ Observar isto te conecta com a história de estrelas antigas e maduras que forma
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe hidden" id="detalhe-via-lactea">
+  <section class="tela-eventos-detalhe secao" id="detalhe-via-lactea">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-via-lactea.png" alt="Galáxia Via Láctea" class="celestial-image">
     
-      <h3>Via Láctea</h3>
+      <h3 class="titulo-criadores">Via Láctea</h3>
       <p class="descricao">
         A Via Láctea <strong>é a galáxia espiral onde o nosso Sistema Solar reside.</strong> Ela tem um diâmetro de cerca de 100.000 anos-luz e contém de 100 a 400 bilhões de estrelas, sendo o nosso Sol apenas uma delas. O nosso Sistema Solar está localizado em um dos seus braços espirais, o que nos coloca em um ponto privilegiado para explorar o nosso próprio lar cósmico.
 <br><br>
@@ -672,12 +666,12 @@ Observar isto te conecta com a sua missão mais importante: desvendar os segredo
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe hidden" id="detalhe-andromeda-galaxia">
+  <section class="tela-eventos-detalhe secao" id="detalhe-andromeda-galaxia">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-andromeda.png" alt="Galáxia de Andrômeda" class="celestial-image">
     
-      <h3>Galáxia de Andrômeda</h3>
+      <h3 class="titulo-criadores">Galáxia de Andrômeda</h3>
       <p class="descricao">
         A Galáxia de Andrômeda <strong>é nossa vizinha galáctica mais próxima e o objeto mais distante que você pode ver a olho nu.</strong> Localizada a cerca de 2,5 milhões de anos-luz de distância, a luz que vemos hoje dela saiu de lá quando os primeiros ancestrais humanos já caminhavam na Terra. Ela é uma galáxia espiral ainda maior que a nossa, com um diâmetro de 220.000 anos-luz e cerca de 1 trilhão de estrelas.
 <br><br>
@@ -687,11 +681,11 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe hidden" id="detalhe-triangulo">
+  <section class="tela-eventos-detalhe secao" id="detalhe-triangulo">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/galaxia-triangulo.png" alt="Galáxia do Triângulo (M33)" class="celestial-image">
-      <h3>Galáxia do Triângulo (M33)</h3>
+      <h3 class="titulo-criadores">Galáxia do Triângulo (M33)</h3>
       <p class="descricao">
         A Galáxia do Triângulo <strong>é a terceira maior da nossa família de galáxias e uma das maiores fábricas de estrelas do universo local.</strong> Ela é uma galáxia espiral menor e compacta, com um diâmetro de cerca de 60.000 anos-luz e cerca de 40 bilhões de estrelas. Sua alta taxa de nascimento de novas estrelas a torna um dos alvos mais fascinantes para a sua missão de exploração.
         <br><br>
@@ -703,7 +697,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
 
 
   <!-- INFORMAÇÕES PLANETÁRIAS -->
-  <section class="tela-planetas">
+  <section class="tela-planetas secao">
     
     <!-- <div class="space-background"><div class="stars"></div></div>
     <div class="aurora-background"></div> -->
@@ -724,11 +718,11 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/sol.png" alt="Sol" class="celestial-image">
-      <h3>Sol</h3>
+      <h3 class="titulo-missao">Sol</h3>
       <p class="descricao">
         O Sol é a estrela no centro do nosso Sistema Solar e a principal fonte de luz e energia para a vida na Terra.
         <br>É uma imensa esfera de plasma superaquecido, com uma superfície dinâmica que possui manchas solares e
@@ -740,11 +734,11 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/mercurio.png" alt="Mercurio" class="celestial-image">
-      <h3>Mercurio</h3>
+      <h3 class="titulo-missao">Mercurio</h3>
       <p class="descricao">
         Sua superfície é um ambiente inóspito, repleto de crateras de impacto, o que o faz parecer muito com a Lua. A
         ausência de uma atmosfera significativa faz com que as temperaturas variem drasticamente, podendo chegar a mais
@@ -756,11 +750,11 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/venus.png" alt="Venus" class="celestial-image">
-      <h3>Vênus</h3>
+      <h3 class="titulo-missao">Vênus</h3>
       <p class="descricao">
         Vênus é o segundo planeta a partir do Sol e o mais próximo da Terra. É conhecido como a "estrela da manhã" ou
         "estrela da tarde" por seu brilho intenso no céu.
@@ -773,14 +767,14 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas" style="position:relative;">
+  <section class="tela-eventos-detalhe secao" id="detalhe-planetas" style="position:relative;">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
       <div class="terra-lua-container">
         <img src="./src/imagens/terra.png" class="celestial-image" alt="Terra">
         <img src="./src/imagens/lua.png" class="celestial-image" alt="Lua">
       </div>
-      <h3>Terra</h3>
+      <h3 class="titulo-missao">Terra</h3>
       <p class="descricao">
         A Terra é o terceiro planeta a partir do Sol e o único lugar no universo onde a vida existe.
         <br>Composta em sua maioria por água, nossa casa é um planeta dinâmico, com continentes, oceanos, vastas
@@ -794,11 +788,11 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/marte.png" alt="Marte" class="celestial-image">
-      <h3>Marte</h3>
+      <h3 class="titulo-missao">Marte</h3>
       <p class="descricao">
         Marte é o quarto planeta a partir do Sol e é amplamente conhecido como o "planeta vermelho" por sua coloração
         avermelhada, causada pela ferrugem de minerais ricos em ferro em sua superfície.
@@ -811,11 +805,11 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/jupiter.png" alt="Jupiter" class="celestial-image">
-      <h3>Júpiter</h3>
+      <h3 class="titulo-missao">Júpiter</h3>
       <p class="descricao">
         Júpiter, o maior planeta do Sistema Solar, um gigante gasoso com mais que o dobro da massa de todos os outros
         planetas juntos.
@@ -830,11 +824,11 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/saturno.png" alt="Saturno" class="celestial-image">
-      <h3>Saturno</h3>
+      <h3 class="titulo-missao">Saturno</h3>
       <p class="descricao">
         Saturno é o sexto planeta a partir do Sol, e o segundo maior do nosso Sistema Solar. Ele é famoso por seu
         espetacular sistema de anéis, que o torna um dos objetos mais bonitos e facilmente reconhecíveis no espaço.
@@ -847,11 +841,11 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/urano.png" alt="Urano" class="celestial-image">
-      <h3>Urano</h3>
+      <h3 class="titulo-missao">Urano</h3>
       <p class="descricao">
         Urano é o sétimo planeta a partir do Sol, um gigante de gelo que se destaca por sua cor azul-esverdeada, causada
         pelo gás metano na sua atmosfera.
@@ -863,11 +857,11 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/netuno.png" alt="Netuno" class="celestial-image">
-      <h3>Netuno</h3>
+      <h3 class="titulo-missao">Netuno</h3>
       <p class="descricao">
         Netuno é o oitavo e último planeta do nosso Sistema Solar, um gigante de gelo conhecido por sua cor azul-escura
         e ventos incrivelmente rápidos.
@@ -880,11 +874,11 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <button type="button" class="botao-voltar-planeta">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe" class="screen active" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe secao" class="screen active" id="detalhe-planetas">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
       <img src="./src/imagens/plutao.png" alt="Plutão" class="celestial-image">
-        <h3>Plutão</h3>
+        <h3 class="titulo-missao">Plutão</h3>
         <p class="descricao">
           Plutão foi considerado o nono planeta do Sistema Solar por 76 anos, mas foi reclassificado como um planeta anão em 2006.
           <br>É um mundo gelado, com uma atmosfera fina e montanhas de gelo. Sua lua, Caronte, é tão grande em comparação com ele que ambos formam um sistema binário.
@@ -896,8 +890,8 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
 
 
   <!-- NFORMAÇÕES EXTRAS -->
-  <section class="tela-principal"
-    style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+  <section class="tela-principal secao"
+    style="justify-content: center; align-items: center; flex-direction: column;">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic">Perfil</button>
       <button type="button" class="btn-cosmic">Criadores</button>
@@ -914,7 +908,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
 
 
   <!-- CRIADORES -->
- <section id="tela-criadores" class="tela-criadores">
+ <section id="tela-criadores" class="tela-criadores secao">
   <div class="background-overlay"></div>
   <h1 class="titulo-criadores">Agentes Especiais do Projeto</h1>
   <div class="container-criadores">
@@ -976,7 +970,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
 
 
   <!-- APAGAR CONTA -->
-  <section class="tela-apagar-conta">
+  <section class="tela-apagar-conta secao">
     <div class="container-conteudo">
       <figure class="astronauta">
         <img src="./src/imagens/nauta-triste.png" alt="Astronauta triste, pensando em você">
@@ -997,6 +991,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
       <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal">
     </button>
   </section>
+  
   <script src="./src/js/index.js"></script>
 </body>
 </html>

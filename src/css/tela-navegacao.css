@@ -5,15 +5,13 @@
     background-repeat: no-repeat;
     /* background-color: #0f2549; */
     min-height: 100vh;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    /* justify-content: center; */
     justify-content: space-between;
     align-items: center;
     gap: 80px; 
     padding: 20px;
     position: relative;
-    /* margin-top: 20px; */
     color: #e0f2f7;
 }
 

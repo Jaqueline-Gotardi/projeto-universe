@@ -5,7 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -23,9 +23,6 @@
     background-image: url('../imagens/Fundo_Constelacoes_Moderno-fotor-enhance-20250913234429.jpg');
 }
 
-.hidden {
-    display: none;
-}
 
 /* --- Estilos para a tela de detalhe da constelação --- */
 .tela-constelacao-detalhe {

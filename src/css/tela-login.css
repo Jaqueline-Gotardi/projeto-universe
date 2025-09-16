@@ -6,7 +6,7 @@
   min-height: 100vh;
   text-align: center;
 }
-
+ 
 .login {
   display: flex;
   flex-direction: column;

@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     color: #e0f2f7;
@@ -12,42 +12,7 @@
     font-family: 'Space Mono', monospace;
 }
 
-/* .background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); 
-    z-index: 1;
-} */
-
-/* .container-conteudo {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-    max-width: 800px; 
-    margin-top: 50px;
-} */
-
-/* .titulo-tutorial {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    text-shadow: 0 0 15px #A020F0, 0 0 25px #A020F0;
-    letter-spacing: 2px;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-} */
-
 .jornada-projeto p {
-    /* font-family: 'Space Mono', monospace; */
     font-size: 1rem;
     line-height: 1.7;
     text-align: justify;
@@ -75,35 +40,12 @@
     text-align: center;
 }
 
-/* .lista-passos {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-} */
-
 .lista-passos li {
     font-size: 1rem;
     line-height: 1.6;
     display: flex;
-    /* align-items: flex-start; */
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px;   
 }
-
-/* .lista-passos p {
-    margin: 0;
-} */
-
-/* .marcador-neon {
-    width: 8px;
-    height: 8px;
-    background-color: #A020F0;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #A020F0;
-    flex-shrink: 0; 
-    margin-top: 8px; 
-    margin-right: 15px;
-} */
 
 .botao-iniciar-jornada {
     font-family: 'Orbitron', sans-serif;

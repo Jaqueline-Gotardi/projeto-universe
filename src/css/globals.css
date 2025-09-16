@@ -6,6 +6,13 @@ body {
     height: 100vh;
 }
 
-body>section {
-    display: block;
+section {
+    display: none;
+} 
+
+section.selecionado {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
