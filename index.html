@@ -28,7 +28,7 @@
 
 <body>
   <!-- Tela de Login -->
-  <section class="tela-login secao selecionado">
+  <section class="tela-login selecionado" id="tela-login">
     <div class="space-background login-bg">
       <div class="stars"></div>
       <div class="planets"></div>
@@ -59,33 +59,33 @@
     </div>
   </section>
 
-  <section class="tela-principal secao">
+  <section class="tela-principal" id="tela-principal-inicial" >
     <div class="text">
       <h2>O que vamos explorar hoje?</h2>
       <p>Selecione seu destino</p>
     </div>
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Iniciar Exploração</button>
-      <button type="button" class="btn-cosmic">Tutorial</button>
+      <button type="button" class="btn-cosmic" id="btn-iniciar-exploracao">Iniciar Exploração</button>
+      <button type="button" class="btn-cosmic" id="btn-tutorial">Tutorial</button>
     </div> 
   </section>
 
-  <section class="tela-navegacao secao">
+  <section class="tela-navegacao" id="menu">
     <div class="barra">
       <input type="text" placeholder="Pesquisar no Universo..." name="Nome" />
       <img src="./src/imagens/lupa.jpg" class="lupa">
     </div>
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Menu</button>
+      <button type="button" class="btn-cosmic" id="btn-menu">Menu</button>
     </div>
     <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
-      <img src="./src/imagens/casinha.png" class="icone-home">
+      <img src="./src/imagens/casinha.png" class="icone-home" id="home-do-menu">
     </div>
   </section>
 
 
   <!-- TELA DE TUTORIAL -->
-  <section id="tela-tutorial" class="tela-tutorial secao">
+  <section id="tela-tutorial" class="tela-tutorial">
     <div class="background-overlay"></div>
     <div class="container-conteudo">
         <h1 class="titulo-criadores">Uma Jornada que Começou Sob as Estrelas</h1>
@@ -120,13 +120,13 @@
             </ul>
         </div>
         
-        <button type="button" class="botao-iniciar-jornada">Iniciar Exploração</button>
+        <button type="button" class="botao-iniciar-jornada" id="iniciar-exploracao">Iniciar Exploração</button>
     </div>
 </section>
 
-  <section class="tela-principal secao">
+  <section class="tela-principal" id="informacoes-do-menu">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Informações Astronômicas</button>
+      <button type="button" class="btn-cosmic" id="btn-informacoes-astronomicas">Informações Astronômicas</button>
       <button type="button" class="btn-cosmic">Informações Planetárias</button>
       <button type="button" class="btn-cosmic">Informações Extras</button>
     </div>
@@ -135,40 +135,40 @@
 
 
   <!-- CONSTELAÇÕES -->
-  <section class="tela-principal secao">
+  <section class="tela-principal" id="tela-info-astros">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Constelações</button>
+      <button type="button" class="btn-cosmic" id="btn-constelacoes">Constelações</button>
       <button type="button" class="btn-cosmic">Eventos Astronômicos</button>
       <button type="button" class="btn-cosmic">Galáxia</button>
     </div>
     <button type="button" class="botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-principal secao">
+  <section class="tela-principal" id="tela-constelacoes">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Hemisfério Norte</button>
-      <button type="button" class="btn-cosmic">Hemisfério Sul</button>
+      <button type="button" class="btn-cosmic" id="hemisferio-norte">Hemisfério Norte</button>
+      <button type="button" class="btn-cosmic" id="hemisferio-sul">Hemisfério Sul</button>
       <button type="button" class="btn-cosmic">As Famosas</button>
     </div>
     <button type="button" class="botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-principal secao" id="hemisferio-norte">
+  <section class="tela-principal" id="constelacoes-norte">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Ursa Maior</button>
-      <button type="button" class="btn-cosmic">Ursa Menor</button>
-      <button type="button" class="btn-cosmic">Andrômeda</button>
+      <button type="button" class="btn-cosmic" id="btn-ursa-maior">Ursa Maior</button>
+      <button type="button" class="btn-cosmic" id="btn-ursa-menor">Ursa Menor</button>
+      <button type="button" class="btn-cosmic" id="btn-andromeda">Andrômeda</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-constelacao-norte">Voltar</button>
   </section>
 
-  <section class="tela-principal secao" id="hemisferio-sul">
+  <section class="tela-principal secao" id="constelacoes-sul">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Cruzeiro do Sul</button>
-      <button type="button" class="btn-cosmic">Fênix</button>
-      <button type="button" class="btn-cosmic">Centauro</button>
+      <button type="button" class="btn-cosmic" id="btn-cruzeiro-do-sul">Cruzeiro do Sul</button>
+      <button type="button" class="btn-cosmic" id="btn-fenix">Fênix</button>
+      <button type="button" class="btn-cosmic" id="btn-centauro">Centauro</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-constelacao-sul">Voltar</button>
   </section> 
 
   <section class="tela-principal secao" id="famosas">
@@ -181,7 +181,7 @@
   </section>
  
   <!-- Hemisfério Norte -->
-  <section class="tela-eventos-detalhe secao" id="detalhe-ursa-maior">
+  <section class="tela-eventos-detalhe" id="detalhe-ursa-maior">
     <div class="space-background">
       <div class="stars"></div>
     </div>
@@ -196,10 +196,10 @@
         Explorar a Ursa Maior é o primeiro passo para se familiarizar com a vastidão do universo. Ela é a porta de entrada para uma jornada de descobertas que se estende por todo o céu.</p>
       </div>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-ursa-maior">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-ursa-menor">
+  <section class="tela-eventos-detalhe" id="detalhe-ursa-menor">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/ursa-menor.png" alt="Constelação Ursa Menor" class="celestial-image">
@@ -213,10 +213,10 @@
       </div>
     </div>
 
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-ursa-menor">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-andromeda">
+  <section class="tela-eventos-detalhe" id="detalhe-andromeda">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/andromeda.png" alt="Constelação Andrômeda" class="celestial-image">
@@ -228,11 +228,11 @@
       Explorar Andrômeda é mais do que observar estrelas; é uma viagem no tempo. É a prova de que, com a orientação certa, você pode ver a história do universo se desdobrando diante dos seus olhos.
     </div>
   </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-andromeda">Voltar</button>
   </section>
 
   <!-- Hemisfério Sul -->
-  <section class="tela-eventos-detalhe secao" id="detalhe-cruzeiro-do-sul">
+  <section class="tela-eventos-detalhe" id="detalhe-cruzeiro-do-sul">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/cruzeiro-do-sul.png" alt="Constelação Cruzeiro do Sul" class="celestial-image">
@@ -245,7 +245,7 @@
       Observar o Cruzeiro do Sul é um rito de passagem para qualquer agente especial que explore os céus do Hemisfério Sul. Ela é a prova de que até mesmo os menores agrupamentos de estrelas podem ter a maior utilidade.</p>
     </div>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-cruzeiro-do-sul">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe secao" id="detalhe-fenix">
