@@ -28,8 +28,6 @@ const formulario = document.getElementById('formulario');
  }; 
 
 
-
-
 /*  TROCANDO AS TELAS AO CLICK DOS BOTÕES */
 const botaoEntrar = document.querySelector('.btn-primary');
 const btnIniciarExploracao = document.getElementById('btn-iniciar-exploracao');
@@ -98,6 +96,52 @@ const btnGalaxias = document.getElementById('btn-galaxias');
 const btnTiposDeGalaxia = document.getElementById('tipos-de-galaxias');
 const btnEspiral = document.getElementById('btn-espiral');
 const btnVoltarEspiral = document.getElementById('btn-voltar-espiral');
+const btnEliptica = document.getElementById('btn-eliptica');
+const btnVoltarEliptica = document.getElementById('btn-voltar-eliptica');
+const btnIrregular = document.getElementById('btn-irregular');
+const btnVoltarIrregular = document.getElementById('btn-voltar-irregular');
+const btnVoltarTiposDeGalaxia = document.getElementById('btn-voltar-tipos-de-galaxia');
+const btnGalaxiasFamosas = document.getElementById('galaxias-famosas');
+const btnViaLactea = document.getElementById('btn-via-lactea');
+const btnVoltarViaLactea = document.getElementById('btn-voltar-via-lactea');
+const btnGalaxiaAndromeda = document.getElementById('btn-galaxia-andromeda');
+const btnVoltarGalaxiaAndromeda = document.getElementById('btn-voltar-galaxia-andromeda');
+const btnTriangulo = document.getElementById('btn-triangulo-m33');
+const btnVoltarTriangulo = document.getElementById('btn-voltar-triangulo');
+const btnVoltarGalaxiasFamosas = document.getElementById('btn-voltar-galaxias-famosas');
+const btnVoltarGalaxias = document.getElementById('btn-voltar-galaxias');
+const btnVoltarInfoAstros = document.getElementById('btn-voltar-info-astros');
+const btnInformacoesPlanetarias = document.getElementById('btn-informacoes-planetarias');
+const btnSol = document.getElementById('btn-sol');
+const btnVoltarSol = document.getElementById('btn-voltar-sol');
+const btnMercurio = document.getElementById('btn-mercurio');
+const btnVoltarMercurio = document.getElementById('btn-voltar-mercurio');
+const btnVenus = document.getElementById('btn-venus');
+const btnVoltarVenus = document.getElementById('btn-voltar-venus');
+const btnTerra = document.getElementById('btn-terra');
+const btnVoltarTerra = document.getElementById('btn-voltar-terra');
+const btnMarte = document.getElementById('btn-marte');
+const btnVoltarMarte = document.getElementById('btn-voltar-marte');
+const btnJupiter = document.getElementById('btn-jupiter');
+const btnVoltarJupiter = document.getElementById('btn-voltar-jupiter');
+const btnSaturno = document.getElementById('btn-saturno');
+const btnVoltarSaturno = document.getElementById('btn-voltar-saturno');
+const btnUrano = document.getElementById('btn-urano');
+const btnVoltarUrano = document.getElementById('btn-voltar-urano');
+const btnNetuno = document.getElementById('btn-netuno');
+const btnVoltarNetuno = document.getElementById('btn-voltar-netuno');
+const btnPlutao = document.getElementById('btn-plutao');
+const btnVoltarPlutao = document.getElementById('btn-voltar-plutao');
+const btnVoltarPlanetas = document.getElementById('btn-voltar-planetas');
+const btnInformacoeExtras = document.getElementById('btn-informacoes-extras');
+/* const btnPerfil = document.getElementById('btn-perfil'); */
+const btnCriadores = document.getElementById('btn-criadores')
+const btnVoltarCriadores = document.getElementById('btn-voltar-criadores');
+const btnApagarConta = document.getElementById('btn-apagar-conta');
+const btnVoltarApagarConta = document.getElementById('btn-voltar-apagar-conta');
+const btnNao = document.getElementById('btn-nao');
+const btnVoltarInfoExtras = document.getElementById('btn-voltar-info-extras');
+const btnVoltarInfoMenu = document.getElementById('btn-voltar-info-menu');
 
 const telaLogin = document.getElementById('tela-login');
 const telaApresentacao = document.getElementById('tela-principal-inicial');
@@ -136,6 +180,26 @@ const detalheAgrupamentosEstrelares = document.getElementById('detalhe-agrupamen
 const telaGalaxias = document.getElementById('tela-galaxias');
 const listaTiposDeGalaxias = document.getElementById('lista-tipos-galaxias');
 const detalheEspiral = document.getElementById('detalhe-espiral');
+const detalheEliptica = document.getElementById('detalhe-eliptica');
+const detalheIrregular = document.getElementById('detalhe-irregular');
+const listaGalaxiasFamosas = document.getElementById('lista-galaxias-famosas')
+const detalheViaLactea = document.getElementById('detalhe-via-lactea');
+const detalheGalaxiaAndromeda = document.getElementById('detalhe-andromeda-galaxia');
+const detalheTriangulo = document.getElementById('detalhe-triangulo');
+const telaInfoPlanetas = document.getElementById('tela-info-planetas');
+const detalheSol = document.getElementById('detalhe-sol');
+const detalheMercurio = document.getElementById('detalhe-mercurio');
+const detalheVenus = document.getElementById('detalhe-venus');
+const detalheTerra = document.getElementById('detalhe-terra');
+const detalheMarte = document.getElementById('detalhe-marte');
+const detalheJupiter = document.getElementById('detalhe-jupiter');
+const detalheSaturno = document.getElementById('detalhe-saturno');
+const detalheUrano = document.getElementById('detalhe-urano');
+const detalheNetuno = document.getElementById('detalhe-netuno');
+const detalhePlutao = document.getElementById('detalhe-plutao');
+const telaInfoExtras = document.getElementById('tela-info-extras');
+const detalheCriadores = document.getElementById('detalhe-criadores');
+const detalheApagarConta = document.getElementById('detalhe-apagar-conta');
 
 
     botaoEntrar.addEventListener('click', (event) => {
@@ -144,11 +208,11 @@ const detalheEspiral = document.getElementById('detalhe-espiral');
         const podeProsseguir = validarFormulario();
 
         if (podeProsseguir) {
-            alert("Login feito com sucesso. Bem vindo(a) explorador! 🛸💜✨");
+            console.log("Login feito com sucesso. Bem vindo(a) explorador! 🛸💜✨");
             telaLogin.classList.remove('selecionado');
             telaApresentacao.classList.add('selecionado');
         } else {
-            alert("Faça seu login! 🛸");
+            console.log("Faça seu login! 🛸");
         }
     });
     
@@ -485,12 +549,227 @@ const detalheEspiral = document.getElementById('detalhe-espiral');
         listaTiposDeGalaxias.classList.add('selecionado');
     });
 
+    btnEliptica.addEventListener('click', (event) => {
+        listaTiposDeGalaxias.classList.remove('selecionado');
+        detalheEliptica.classList.add('selecionado');
+    });
 
-/* function mostrarSecao(secaoAtual) {
-    secoes[secaoAtual].classList.add("selecionado");
-}
+    btnVoltarEliptica.addEventListener('click', (event) => {
+        detalheEliptica.classList.remove('selecionado');
+        listaTiposDeGalaxias.classList.add('selecionado');
+    });
 
-function esconderSecaoSelecionada() {
-    const secaoSelecionada = document.querySelector(".selecionado");
-    secaoSelecionada.classList.remove("selecionado");
-} */
+    btnIrregular.addEventListener('click', (event) => {
+        listaTiposDeGalaxias.classList.remove('selecionado');
+        detalheIrregular.classList.add('selecionado');
+    });
+
+    btnVoltarIrregular.addEventListener('click', (event) => {
+        detalheIrregular.classList.remove('selecionado');
+        listaTiposDeGalaxias.classList.add('selecionado');
+    });
+
+    btnVoltarTiposDeGalaxia.addEventListener('click', (event) => {
+        listaTiposDeGalaxias.classList.remove('selecionado');
+        telaGalaxias.classList.add('selecionado');
+    });
+
+    btnGalaxiasFamosas.addEventListener('click', (event) => {
+        telaGalaxias.classList.remove('selecionado');
+        listaGalaxiasFamosas.classList.add('selecionado');
+    });
+
+    btnViaLactea.addEventListener('click', (event) => {
+        listaGalaxiasFamosas.classList.remove('selecionado');
+        detalheViaLactea.classList.add('selecionado');
+    });
+
+    btnVoltarViaLactea.addEventListener('click', (event) => {
+        detalheViaLactea.classList.remove('selecionado');
+        listaGalaxiasFamosas.classList.add('selecionado');
+    });
+
+    btnGalaxiaAndromeda.addEventListener('click', (event) => {
+        listaGalaxiasFamosas.classList.remove('selecionado');
+        detalheGalaxiaAndromeda.classList.add('selecionado');
+    });
+
+    btnVoltarGalaxiaAndromeda.addEventListener('click', (event) => {
+        detalheGalaxiaAndromeda.classList.remove('selecionado');
+        listaGalaxiasFamosas.classList.add('selecionado');
+    });
+
+    btnTriangulo.addEventListener('click', (event) => {
+        listaGalaxiasFamosas.classList.remove('selecionado');
+        detalheTriangulo.classList.add('selecionado');
+    });
+
+    btnVoltarTriangulo.addEventListener('click', (event) => {
+        detalheTriangulo.classList.remove('selecionado');
+        listaGalaxiasFamosas.classList.add('selecionado');
+    });
+
+    btnVoltarGalaxiasFamosas.addEventListener('click', (event) => {
+        listaGalaxiasFamosas.classList.remove('selecionado');
+        telaGalaxias.classList.add('selecionado');
+    });
+
+    btnVoltarGalaxias.addEventListener('click', (event) => {
+        telaGalaxias.classList.remove('selecionado');
+        telaInfoAstros.classList.add('selecionado');
+    });
+
+    btnVoltarInfoAstros.addEventListener('click', (event) => {
+        telaInfoAstros.classList.remove('selecionado');
+        informacoesDoMenu.classList.add('selecionado');
+    });
+
+    btnInformacoesPlanetarias.addEventListener('click', (event) => {
+        informacoesDoMenu.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+    
+    btnSol.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado')
+        detalheSol.classList.add('selecionado');
+    });
+
+    btnVoltarSol.addEventListener('click', (event) => {
+        detalheSol.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+
+    btnMercurio.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado');
+        detalheMercurio.classList.add('selecionado');
+    });
+
+    btnVoltarMercurio.addEventListener('click', (event) => {
+        detalheMercurio.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+
+    btnVenus.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado');
+        detalheVenus.classList.add('selecionado');
+    });
+
+    btnVoltarVenus.addEventListener('click', (event) => {
+        detalheVenus.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+
+    btnTerra.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado');
+        detalheTerra.classList.add('selecionado');
+    });
+
+    btnVoltarTerra.addEventListener('click', (event) => {
+        detalheTerra.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+
+    btnMarte.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado');
+        detalheMarte.classList.add('selecionado');
+    });
+
+    btnVoltarMarte.addEventListener('click', (event) => {
+        detalheMarte.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+
+    btnJupiter.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado');
+        detalheJupiter.classList.add('selecionado');
+    });
+
+    btnVoltarJupiter.addEventListener('click', (event) => {
+        detalheJupiter.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+
+    btnSaturno.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado');
+        detalheSaturno.classList.add('selecionado');
+    });
+
+    btnVoltarSaturno.addEventListener('click', (event) => {
+        detalheSaturno.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+
+    btnUrano.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado');
+        detalheUrano.classList.add('selecionado');
+    });
+
+    btnVoltarUrano.addEventListener('click', (event) => {
+        detalheUrano.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+
+    btnNetuno.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado');
+        detalheNetuno.classList.add('selecionado');
+    });
+
+    btnVoltarNetuno.addEventListener('click', (event) => {
+        detalheNetuno.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+
+    btnPlutao.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado');
+        detalhePlutao.classList.add('selecionado');
+    });
+
+    btnVoltarPlutao.addEventListener('click', (event) => {
+        detalhePlutao.classList.remove('selecionado');
+        telaInfoPlanetas.classList.add('selecionado');
+    });
+
+    btnVoltarPlanetas.addEventListener('click', (event) => {
+        telaInfoPlanetas.classList.remove('selecionado');
+        informacoesDoMenu.classList.add('selecionado');
+    });
+
+    btnInformacoeExtras.addEventListener('click', (event) => {
+        informacoesDoMenu.classList.remove('selecionado');
+        telaInfoExtras.classList.add('selecionado');
+    });
+
+    btnCriadores.addEventListener('click', (event) => {
+        telaInfoExtras.classList.remove('selecionado');
+        detalheCriadores.classList.add('selecionado');
+    });
+
+    btnVoltarCriadores.addEventListener('click', (event) => {
+        detalheCriadores.classList.remove('selecionado');
+        telaInfoExtras.classList.add('selecionado');
+    });
+
+    btnApagarConta.addEventListener('click', (event) => {
+        telaInfoExtras.classList.remove('selecionado');
+        detalheApagarConta.classList.add('selecionado');
+    });
+
+    btnVoltarApagarConta.addEventListener('click', (event) => {
+        detalheApagarConta.classList.remove('selecionado');
+        telaApresentacao.classList.add('selecionado');
+    });
+
+    btnNao.addEventListener('click', (event) => {
+        detalheApagarConta.classList.remove('selecionado');
+        telaInfoExtras.classList.add('selecionado');
+    });
+
+    btnVoltarInfoExtras.addEventListener('click', (event) => {
+        telaInfoExtras.classList.remove('selecionado');
+        informacoesDoMenu.classList.add('selecionado');
+    });
+
+    btnVoltarInfoMenu.addEventListener('click', (event) => {
+        informacoesDoMenu.classList.remove('selecionado');
+        telaMenu.classList.add('selecionado');
+    });

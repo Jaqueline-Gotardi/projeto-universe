@@ -10,9 +10,7 @@
   <link rel="stylesheet" href="./src/css/tela-login.css">
   <link rel="stylesheet" href="./src/css/tela-principal.css">
   <link rel="stylesheet" href="./src/css/tela-navegacao.css">
-
   <link rel="stylesheet" href="./src/css/tutorial.css">
-
   <link rel="stylesheet" href="./src/css/tela-menu.css">
   <link rel="stylesheet" href="./src/css/tela-informacao-astronomica.css">
   <link rel="stylesheet" href="./src/css/tela-constelacoes.css">
@@ -54,6 +52,7 @@
           </div>
 
           <button type="submit" class="btn-primary" id="btn-primary">Entrar</button>
+          <p class="cadastro-link">Não tem uma conta? <a href="#">Cadastre-se</a></p>
         </form>
       </div>
     </div>
@@ -127,10 +126,10 @@
   <section class="tela-principal" id="informacoes-do-menu">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" id="btn-informacoes-astronomicas">Informações Astronômicas</button>
-      <button type="button" class="btn-cosmic">Informações Planetárias</button>
-      <button type="button" class="btn-cosmic">Informações Extras</button>
+      <button type="button" class="btn-cosmic" id="btn-informacoes-planetarias">Informações Planetárias</button>
+      <button type="button" class="btn-cosmic" id="btn-informacoes-extras">Informações Extras</button>
     </div>
-    <button type="button" class="botao-voltar">Voltar</button>
+    <button type="button" class="botao-voltar" id="btn-voltar-info-menu">Voltar</button>
   </section>
 
 
@@ -141,7 +140,7 @@
       <button type="button" class="btn-cosmic" id="btn-eventos-astronomicos">Eventos Astronômicos</button>
       <button type="button" class="btn-cosmic" id="btn-galaxias">Galáxia</button>
     </div>
-    <button type="button" class="botao-voltar">Voltar</button>
+    <button type="button" class="botao-voltar" id="btn-voltar-info-astros">Voltar</button>
   </section>
 
   <section class="tela-principal" id="tela-constelacoes">
@@ -579,19 +578,19 @@ Observar isto te conecta com uma união de populações cósmicas.
   <section class="tela-principal" id="tela-galaxias">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" data-target="lista-tipos-galaxias" id="tipos-de-galaxias">Tipos de Galáxias</button>
-      <button type="button" class="btn-cosmic" data-target="lista-galaxias-famosas">Galáxias
+      <button type="button" class="btn-cosmic" data-target="lista-galaxias-famosas" id= "galaxias-famosas">Galáxias
         Famosas</button>
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-galaxias">Voltar</button>
   </section>
 
   <section class="tela-principal" id="lista-tipos-galaxias">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" data-target="detalhe-espiral" id="btn-espiral">Espiral</button>
-      <button type="button" class="btn-cosmic" data-target="detalhe-eliptica">Elíptica</button>
-      <button type="button" class="btn-cosmic" data-target="detalhe-irregular">Irregular</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-eliptica" id="btn-eliptica">Elíptica</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-irregular" id="btn-irregular">Irregular</button>
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-tipos-de-galaxia">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe" id="detalhe-espiral">
@@ -610,7 +609,7 @@ Observar isto te conecta com a história de estrelas jovens e vibrantes que form
     <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-espiral">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-eliptica">
+  <section class="tela-eventos-detalhe" id="detalhe-eliptica">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-eliptica.png" alt="Galáxia Elíptica" class="celestial-image">
@@ -622,10 +621,10 @@ Observar isto te conecta com a história de estrelas jovens e vibrantes que form
 Observar isto te conecta com a história de estrelas antigas e maduras que formam os vastos e calmos impérios do cosmos.
       </p>
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-eliptica">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-irregular">
+  <section class="tela-eventos-detalhe" id="detalhe-irregular">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-irregular.png" alt="Galáxia Irregular" class="celestial-image">
@@ -638,19 +637,19 @@ Observar isto te conecta com a história de estrelas antigas e maduras que forma
       </p>
     
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-irregular">Voltar</button>
   </section>
 
-  <section class="tela-principal secao" id="lista-galaxias-famosas">
+  <section class="tela-principal" id="lista-galaxias-famosas">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic" data-target="detalhe-via-lactea">Via Láctea</button>
-      <button type="button" class="btn-cosmic" data-target="detalhe-andromeda-galaxia">Andrômeda</button>
-      <button type="button" class="btn-cosmic" data-target="detalhe-triangulo">Triângulo (M33)</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-via-lactea" id="btn-via-lactea">Via Láctea</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-andromeda-galaxia" id="btn-galaxia-andromeda">Andrômeda</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-triangulo" id="btn-triangulo-m33">Triângulo (M33)</button>
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-galaxias-famosas">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-via-lactea">
+  <section class="tela-eventos-detalhe" id="detalhe-via-lactea">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-via-lactea.png" alt="Galáxia Via Láctea" class="celestial-image">
@@ -662,10 +661,10 @@ Observar isto te conecta com a história de estrelas antigas e maduras que forma
 Observar isto te conecta com a sua missão mais importante: desvendar os segredos de nossa própria galáxia.
       </p>
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-via-lactea">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-andromeda-galaxia">
+  <section class="tela-eventos-detalhe" id="detalhe-andromeda-galaxia">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-andromeda.png" alt="Galáxia de Andrômeda" class="celestial-image">
@@ -677,10 +676,10 @@ Observar isto te conecta com a sua missão mais importante: desvendar os segredo
 Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro que acontecerá com a nossa galáxia em bilhões de anos.
       </p>
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-galaxia-andromeda">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-triangulo">
+  <section class="tela-eventos-detalhe" id="detalhe-triangulo">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/galaxia-triangulo.png" alt="Galáxia do Triângulo (M33)" class="celestial-image">
@@ -691,33 +690,30 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         Observar isto te conecta com o universo em ação, criando e evoluindo diante de seus olhos.
       </p>
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-triangulo">Voltar</button>
   </section>
 
 
   <!-- INFORMAÇÕES PLANETÁRIAS -->
-  <section class="tela-planetas secao">
-    
-    <!-- <div class="space-background"><div class="stars"></div></div>
-    <div class="aurora-background"></div> -->
+  <section class="tela-planetas" id="tela-info-planetas">
     <div class="info-planetas">
     <div class="informacoes-dos-planetas">
-      <button type="button" class="btn-cosmic">Sol</button>
-      <button type="button" class="btn-cosmic">Mercúrio</button>
-      <button type="button" class="btn-cosmic">Vênus</button>
-      <button type="button" class="btn-cosmic">Terra</button>
-      <button type="button" class="btn-cosmic">Marte</button>
-      <button type="button" class="btn-cosmic">Júpiter</button>
-      <button type="button" class="btn-cosmic">Saturno</button>
-      <button type="button" class="btn-cosmic">Urano</button>
-      <button type="button" class="btn-cosmic">Netuno</button>
-      <button type="button" class="btn-cosmic">Plutão</button>
+      <button type="button" class="btn-cosmic" id="btn-sol">Sol</button>
+      <button type="button" class="btn-cosmic" id="btn-mercurio">Mercúrio</button>
+      <button type="button" class="btn-cosmic" id="btn-venus">Vênus</button>
+      <button type="button" class="btn-cosmic" id="btn-terra">Terra</button>
+      <button type="button" class="btn-cosmic" id="btn-marte">Marte</button>
+      <button type="button" class="btn-cosmic" id="btn-jupiter">Júpiter</button>
+      <button type="button" class="btn-cosmic" id="btn-saturno">Saturno</button>
+      <button type="button" class="btn-cosmic" id="btn-urano">Urano</button>
+      <button type="button" class="btn-cosmic" id="btn-netuno">Netuno</button>
+      <button type="button" class="btn-cosmic" id="btn-plutao">Plutão</button>
     </div>
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-planetas">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe" id="detalhe-sol">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/sol.png" alt="Sol" class="celestial-image">
@@ -730,10 +726,10 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         sendo essencial para a existência do nosso sistema.
       </p>
     </div>
-    <button type="button" class="botao-voltar-planeta">Voltar</button>
+    <button type="button" class="botao-voltar-planeta" id="btn-voltar-sol">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe" id="detalhe-mercurio">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/mercurio.png" alt="Mercurio" class="celestial-image">
@@ -746,10 +742,10 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         dias terrestres.
       </p>
     </div>
-    <button type="button" class="botao-voltar-planeta">Voltar</button>
+    <button type="button" class="botao-voltar-planeta" id="btn-voltar-mercurio">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe" id="detalhe-venus">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/venus.png" alt="Venus" class="celestial-image">
@@ -763,10 +759,10 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         <br>Vênus é também único por girar em sentido horário em seu eixo, o oposto da maioria dos outros planetas.
       </p>
     </div>
-    <button type="button" class="botao-voltar-planeta">Voltar</button>
+    <button type="button" class="botao-voltar-planeta" id="btn-voltar-venus">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-planetas" style="position:relative;">
+  <section class="tela-eventos-detalhe" id="detalhe-terra" style="position:relative;">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
       <div class="terra-lua-container">
@@ -784,10 +780,10 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         estabilização do nosso planeta.
       </p>
     </div>
-    <button type="button" class="botao-voltar-planeta">Voltar</button>
+    <button type="button" class="botao-voltar-planeta" id="btn-voltar-terra">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe" id="detalhe-marte">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/marte.png" alt="Marte" class="celestial-image">
@@ -801,10 +797,10 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         água em seu passado, o que o torna um dos principais alvos de busca por vida no espaço.
       </p>
     </div>
-    <button type="button" class="botao-voltar-planeta">Voltar</button>
+    <button type="button" class="botao-voltar-planeta" id="btn-voltar-marte">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe" id="detalhe-jupiter">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/jupiter.png" alt="Jupiter" class="celestial-image">
@@ -820,10 +816,10 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         interior de cometas e asteroides.
       </p>
     </div>
-    <button type="button" class="botao-voltar-planeta">Voltar</button>
+    <button type="button" class="botao-voltar-planeta" id="btn-voltar-jupiter">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe" id="detalhe-saturno">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/saturno.png" alt="Saturno" class="celestial-image">
@@ -837,10 +833,10 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         luas, sendo Titã a maior delas e a única no Sistema Solar com uma atmosfera densa.
       </p>
     </div>
-    <button type="button" class="botao-voltar-planeta">Voltar</button>
+    <button type="button" class="botao-voltar-planeta" id="btn-voltar-saturno">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe" id="detalhe-urano">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/urano.png" alt="Urano" class="celestial-image">
@@ -853,10 +849,10 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         <br>Urano tem um sistema de anéis finos e escuros, e sua atmosfera é a mais fria do Sistema Solar.
       </p>
     </div>
-    <button type="button" class="botao-voltar-planeta">Voltar</button>
+    <button type="button" class="botao-voltar-planeta" id="btn-voltar-urano">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe" id="detalhe-netuno">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
     <img src="./src/imagens/netuno.png" alt="Netuno" class="celestial-image">
@@ -870,10 +866,10 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         concluída.
       </p>
     </div>
-    <button type="button" class="botao-voltar-planeta">Voltar</button>
+    <button type="button" class="botao-voltar-planeta" id="btn-voltar-netuno">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" class="screen active" id="detalhe-planetas">
+  <section class="tela-eventos-detalhe" class="screen active" id="detalhe-plutao">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
       <img src="./src/imagens/plutao.png" alt="Plutão" class="celestial-image">
@@ -884,21 +880,20 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
           <br>Plutão está localizado no Cinturão de Kuiper, uma região além de Netuno, repleta de objetos gelados.
         </p>
     </div>
-    <button type="button" class="botao-voltar-planeta">Voltar</button>
+    <button type="button" class="botao-voltar-planeta" id="btn-voltar-plutao">Voltar</button>
   </section>
 
 
   <!-- NFORMAÇÕES EXTRAS -->
-  <section class="tela-principal secao"
-    style="justify-content: center; align-items: center; flex-direction: column;">
+  <section class="tela-principal"
+    style="justify-content: center; align-items: center; flex-direction: column;" id="tela-info-extras">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Perfil</button>
-      <button type="button" class="btn-cosmic">Criadores</button>
-      <button type="button" class="btn-cosmic">Apagar conta</button>
+      <button type="button" class="btn-cosmic" id="btn-perfil">Perfil</button>
+      <button type="button" class="btn-cosmic" id="btn-criadores">Criadores</button>
+      <button type="button" class="btn-cosmic" id="btn-apagar-conta">Apagar conta</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-info-extras">Voltar</button>
   </section>
-
 
 
   <!-- PERFIL -->
@@ -907,7 +902,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
 
 
   <!-- CRIADORES -->
- <section id="tela-criadores" class="tela-criadores secao">
+ <section class="tela-criadores" id="detalhe-criadores">
   <div class="background-overlay"></div>
   <h1 class="titulo-criadores">Agentes Especiais do Projeto</h1>
   <div class="container-criadores">
@@ -926,11 +921,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
           </li>
           <li>
             <span class="marcador-neon"></span>
-            Responsável pela concepção e arquitetura do design inicial do protótipo.
-          </li>
-          <li>
-            <span class="marcador-neon"></span>
-            Desenvolveu a estrutura de design e UI/UX do protótipo.
+            Desenvolveu a estrutura de design e UI/UX do protótipo inicial.
           </li>
         </ul>
       </div>
@@ -938,7 +929,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
 
     <div class="card">
       <div class="imagem-perfil">
-        <img src="./src/imagens/jaqueline.png" alt="Foto de Perfil de Jaqueline">
+        <img src="./src/imagens/jaque.jpg" alt="Foto de Perfil de Jaqueline">
       </div>
       <div class="informacoes-perfil">
         <h2 class="nome-criador">Jaqueline Gotardi</h2>
@@ -961,15 +952,13 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     </div>
   </div>
   <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
-    <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal">
+    <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal" id="btn-voltar-criadores">
   </button>
 </section>
 
 
-
-
   <!-- APAGAR CONTA -->
-  <section class="tela-apagar-conta secao">
+  <section class="tela-apagar-conta" id="detalhe-apagar-conta">
     <div class="container-conteudo">
       <figure class="astronauta">
         <img src="./src/imagens/nauta-triste.png" alt="Astronauta triste, pensando em você">
@@ -982,15 +971,16 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         </p>
         <div class="opcoes-confirmacao">
           <button type="button" class="botao-confirmacao botao-sim">Sim</button>
-          <button type="button" class="botao-confirmacao botao-nao">Não</button>
+          <button type="button" class="botao-confirmacao botao-nao" id="btn-nao">Não</button>
         </div>
       </div>
     </div>
     <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
-      <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal">
+      <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal" id="btn-voltar-apagar-conta">
     </button>
   </section>
   
+
   <script src="./src/js/index.js"></script>
 </body>
 </html>

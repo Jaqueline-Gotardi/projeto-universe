@@ -7,7 +7,7 @@ body {
 }
 
 section {
-    display: none;
+    display: none; 
 } 
 
 section.selecionado {
