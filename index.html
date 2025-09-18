@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- 
+  
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -138,8 +138,8 @@
   <section class="tela-principal" id="tela-info-astros">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" id="btn-constelacoes">Constelações</button>
-      <button type="button" class="btn-cosmic">Eventos Astronômicos</button>
-      <button type="button" class="btn-cosmic">Galáxia</button>
+      <button type="button" class="btn-cosmic" id="btn-eventos-astronomicos">Eventos Astronômicos</button>
+      <button type="button" class="btn-cosmic" id="btn-galaxias">Galáxia</button>
     </div>
     <button type="button" class="botao-voltar">Voltar</button>
   </section>
@@ -148,9 +148,9 @@
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" id="hemisferio-norte">Hemisfério Norte</button>
       <button type="button" class="btn-cosmic" id="hemisferio-sul">Hemisfério Sul</button>
-      <button type="button" class="btn-cosmic">As Famosas</button>
+      <button type="button" class="btn-cosmic" id="hemisferio-principal">As Famosas</button>
     </div>
-    <button type="button" class="botao-voltar">Voltar</button>
+    <button type="button" class="botao-voltar" id="btn-voltar-constelacoes">Voltar</button>
   </section>
 
   <section class="tela-principal" id="constelacoes-norte">
@@ -162,7 +162,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-constelacao-norte">Voltar</button>
   </section>
 
-  <section class="tela-principal secao" id="constelacoes-sul">
+  <section class="tela-principal" id="constelacoes-sul">
     <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" id="btn-cruzeiro-do-sul">Cruzeiro do Sul</button>
       <button type="button" class="btn-cosmic" id="btn-fenix">Fênix</button>
@@ -171,13 +171,13 @@
     <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-constelacao-sul">Voltar</button>
   </section> 
 
-  <section class="tela-principal secao" id="famosas">
+  <section class="tela-principal" id="constelacoes-famosas">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Órion</button>
-      <button type="button" class="btn-cosmic">Cão Maior</button>
-      <button type="button" class="btn-cosmic">Escorpião</button>
+      <button type="button" class="btn-cosmic" id="btn-orion">Órion</button>
+      <button type="button" class="btn-cosmic" id="btn-cao-maior">Cão Maior</button>
+      <button type="button" class="btn-cosmic" id="btn-escorpiao">Escorpião</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-constelacoes-famosas">Voltar</button>
   </section>
  
   <!-- Hemisfério Norte -->
@@ -248,7 +248,7 @@
     <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-cruzeiro-do-sul">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-fenix">
+  <section class="tela-eventos-detalhe" id="detalhe-fenix">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/fenix.png" alt="Constelação Fênix" class="celestial-image">
@@ -260,10 +260,10 @@
       Observar a Fênix no céu noturno é uma missão que convida a uma reflexão sobre a capacidade de seguir em frente, uma história de perseverança contada pelas estrelas para os verdadeiros agentes espaciais.</p>
     </div>
   </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-fenix">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-centauro">
+  <section class="tela-eventos-detalhe" id="detalhe-centauro">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/centauro.png" alt="Constelação Centauro" class="celestial-image">
@@ -278,11 +278,11 @@
       Observar Centauro é uma missão que te conecta a dois extremos do universo: o ponto mais próximo de nós e uma das maiores concentrações de estrelas em nossa própria galáxia.</p>
     </div>
   </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-centauro">Voltar</button>
   </section>
 
   <!-- As Famosas -->
-  <section class="tela-eventos-detalhe secao" id="detalhe-orion">
+  <section class="tela-eventos-detalhe" id="detalhe-orion">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/orion.png" alt="Constelação Órion" class="celestial-image">
@@ -297,10 +297,10 @@
       Ao explorar Órion, você está olhando para o berço de futuras estrelas.</p>
     </div>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-orion">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-cao-maior">
+  <section class="tela-eventos-detalhe" id="detalhe-cao-maior">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/cao-maior.png" alt="Constelação Cão Maior" class="celestial-image">
@@ -316,10 +316,10 @@
       Ao explorar Cão Maior, você está seguindo a luz da estrela mais brilhante de nossa galáxia.
     </div>
   </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-cao-maior">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-escorpiao">
+  <section class="tela-eventos-detalhe" id="detalhe-escorpiao">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
     <img src="./src/imagens/escorpiao.png" alt="Constelação Escorpião" class="celestial-image">
@@ -336,31 +336,31 @@
     </div>
     </div>
   </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-escorpiao">Voltar</button>
   </section>
 
 
   <!-- EVENTOS ASTRONÔMICOS -->
-  <section class="tela-principal secao">
+  <section class="tela-principal" id="tela-eventos-astronomicos">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Eclipses</button>
-      <button type="button" class="btn-cosmic">Chuvas de Meteoros</button>
-      <button type="button" class="btn-cosmic">Superluas e Conjuções</button>
-      <button type="button" class="btn-cosmic">Cometas e Outros</button>
+      <button type="button" class="btn-cosmic" id="eclipses">Eclipses</button>
+      <button type="button" class="btn-cosmic" id="chuva-de-meteoros">Chuvas de Meteoros</button>
+      <button type="button" class="btn-cosmic" id="superluas-e-conjuncoes">Superluas e Conjuções</button>
+      <button type="button" class="btn-cosmic" id="cometas-e-outros">Cometas e Outros</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-eventos-astronomicos">Voltar</button>
   </section>
 
   <!-- ECLIPSES -->
-  <section class="tela-principal secao" id="lista-eclipses">
+  <section class="tela-principal" id="lista-eclipses">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Eclipse Solar</button>
-      <button type="button" class="btn-cosmic">Eclipse Lunar</button>
+      <button type="button" class="btn-cosmic" id="btn-eclipse-solar">Eclipse Solar</button>
+      <button type="button" class="btn-cosmic" id="btn-eclipse-lunar">Eclipse Lunar</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-eclipses">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-eclipse-solar">
+  <section class="tela-eventos-detalhe" id="detalhe-eclipse-solar">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/eclipse-solar.png" alt="Eclipse Solar" class="celestial-image">
@@ -374,10 +374,10 @@ Este alinhamento cósmico perfeito transforma o dia em uma escuridão momentâne
       </p>
       </div>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-eclipse-solar">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-eclipse-lunar">
+  <section class="tela-eventos-detalhe" id="detalhe-eclipse-lunar">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/eclipse-lunar.png" alt="Eclipse Lunar" class="celestial-image">
@@ -393,20 +393,20 @@ Observar um eclipse lunar é uma missão que te conecta a um fenômeno de pura e
       </p>
     </div>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-eclipse-lunar">Voltar</button>
   </section>
 
   <!-- CHUVA DE METEOROS -->
-  <section class="tela-principal secao" id="lista-chuvas-de-meteoros">
+  <section class="tela-principal" id="lista-chuvas-de-meteoros">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Perseidas</button>
-      <button type="button" class="btn-cosmic">Leonídeas</button>
-      <button type="button" class="btn-cosmic">Geminídeas</button>
+      <button type="button" class="btn-cosmic" id="btn-perseidas">Perseidas</button>
+      <button type="button" class="btn-cosmic" id="btn-leonideas">Leonídeas</button>
+      <button type="button" class="btn-cosmic" id="btn-geminideas">Geminídeas</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-chuva-de-meteoros">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-perseidas">
+  <section class="tela-eventos-detalhe" id="detalhe-perseidas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/chuva-de-meteoros-perseidas.png" alt="Chuva de Meteoros Perseidas" class="celestial-image">
@@ -422,10 +422,10 @@ Observar as Perseidas é como assistir a fogos de artifício cósmicos, com rast
       </p>
     </div>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-perseida">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-leonideas">
+  <section class="tela-eventos-detalhe" id="detalhe-leonideas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/chuva-de-meteoros-leonideas.png" alt="Chuva de Meteoros Leonídeas" class="celestial-image">
@@ -441,10 +441,10 @@ Observar as Leônidas é como testemunhar uma tempestade de partículas cósmica
       </p>
    </div>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-leonidea">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-geminideas">
+  <section class="tela-eventos-detalhe" id="detalhe-geminideas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/chuva-de-meteoros-geminideas.png" alt="Chuva de Meteoros Geminídeas" class="celestial-image">
@@ -460,20 +460,20 @@ Observar as Geminídeas é como testemunhar uma tempestade de partículas cósmi
       </p>
       </div>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-geminidea">Voltar</button>
   </section>
 
 
   <!-- SUPERLUAS E CONJUNÇÕES -->
-  <section class="tela-principal secao" id="lista-superluas-conjuncoes">
+  <section class="tela-principal" id="lista-superluas-conjuncoes">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Superlua</button>
-      <button type="button" class="btn-cosmic">Conjunção Planetária</button>
+      <button type="button" class="btn-cosmic" id="btn-superlua">Superlua</button>
+      <button type="button" class="btn-cosmic" id="btn-conjuncao-planetaria">Conjunção Planetária</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-superluas-e-conjuncoes">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-superlua">
+  <section class="tela-eventos-detalhe" id="detalhe-superlua">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/superlua.png" alt="Superlua" class="celestial-image">
@@ -488,10 +488,10 @@ Observar as Geminídeas é como testemunhar uma tempestade de partículas cósmi
         É uma missão que te conecta a um fenômeno de pura escala e beleza.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-superlua">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-conjuncao">
+  <section class="tela-eventos-detalhe" id="detalhe-conjuncao">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/conjuncao.png" alt="Conjunção Planetária" class="celestial-image">
@@ -505,25 +505,24 @@ Observar uma conjunção é como testemunhar uma dança cósmica, onde os planet
 Evento que convida os exploradores a se conectar com o movimento e a beleza do nosso universo.
       </p>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-conjuncao-planetaria">Voltar</button>
   </section>
 
 
   <!-- COMETAS E OUTROS -->
-  <section class="tela-principal secao" id="lista-cometas-outros">
+  <section class="tela-principal" id="lista-cometas-outros">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic">Cometas</button>
-      <button type="button" class="btn-cosmic">Supernovas</button>
-      <button type="button" class="btn-cosmic">Agrupamentos Estelares</button>
+      <button type="button" class="btn-cosmic" id="btn-cometas">Cometas</button>
+      <button type="button" class="btn-cosmic" id="btn-supernovas">Supernovas</button>
+      <button type="button" class="btn-cosmic" id="btn-agrupamentos-estrelares">Agrupamentos Estelares</button>
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-cometas-e-outros">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-cometas">
+  <section class="tela-eventos-detalhe" id="detalhe-cometas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/cometas.png" alt="Cometas" class="celestial-image">
-    
       <h3 class="titulo-missao">Cometas</h3>
       <p class="descricao">
         Os cometas são objetos fascinantes, verdadeiras "bolas de neve sujas" compostas por gelo, poeira e rocha. <strong>Eles viajam por longas órbitas a partir das regiões mais frias e distantes do nosso sistema solar. O espetáculo de um cometa acontece quando ele se aproxima do Sol e o calor faz com que seu gelo evapore, criando uma vasta atmosfera e uma cauda brilhante de gás e poeira.</strong>
@@ -534,10 +533,10 @@ Observá-los te conecta a um pedaço de história cósmica em movimento, um verd
       </p>
     
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-cometas">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-supernovas">
+  <section class="tela-eventos-detalhe" id="detalhe-supernovas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/supernovas.png" alt="Supernovas" class="celestial-image">
@@ -552,10 +551,10 @@ Observá-la te conecta com o ciclo da vida e morte de uma estrela, um evento que
       </p>
     
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-supernovas">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-agrupamentos">
+  <section class="tela-eventos-detalhe" id="detalhe-agrupamentos">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/agrupamentos-estelares.png" alt="Agrupamentos Estelares" class="celestial-image">
@@ -572,30 +571,30 @@ Observar isto te conecta com uma união de populações cósmicas.
       </p>
     
     </div>
-    <button type="button" class="botao-voltar botao-opcao-menu">Voltar</button>
+    <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-agrupamentos">Voltar</button>
   </section>
 
 
   <!-- GALÁXIA -->
-  <section class="tela-principal secao" id="tela-galaxias">
+  <section class="tela-principal" id="tela-galaxias">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic" data-target="lista-tipos-galaxias">Tipos de Galáxias</button>
+      <button type="button" class="btn-cosmic" data-target="lista-tipos-galaxias" id="tipos-de-galaxias">Tipos de Galáxias</button>
       <button type="button" class="btn-cosmic" data-target="lista-galaxias-famosas">Galáxias
         Famosas</button>
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-principal secao" id="lista-tipos-galaxias">
+  <section class="tela-principal" id="lista-tipos-galaxias">
     <div class="informacoes-extras">
-      <button type="button" class="btn-cosmic" data-target="detalhe-espiral">Espiral</button>
+      <button type="button" class="btn-cosmic" data-target="detalhe-espiral" id="btn-espiral">Espiral</button>
       <button type="button" class="btn-cosmic" data-target="detalhe-eliptica">Elíptica</button>
       <button type="button" class="btn-cosmic" data-target="detalhe-irregular">Irregular</button>
     </div>
     <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
   </section>
 
-  <section class="tela-eventos-detalhe secao" id="detalhe-espiral">
+  <section class="tela-eventos-detalhe" id="detalhe-espiral">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
     <img src="./src/imagens/galaxia-espiral.png" alt="Galáxia Espiral" class="celestial-image">
@@ -608,7 +607,7 @@ Observar isto te conecta com a história de estrelas jovens e vibrantes que form
       </p>
     
     </div>
-    <button type="button" class="botao-opcao-menu botao-voltar">Voltar</button>
+    <button type="button" class="botao-opcao-menu botao-voltar" id="btn-voltar-espiral">Voltar</button>
   </section>
 
   <section class="tela-eventos-detalhe secao" id="detalhe-eliptica">
