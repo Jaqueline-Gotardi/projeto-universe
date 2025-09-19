@@ -19,7 +19,7 @@ const formulario = document.getElementById('formulario');
             mensagensErro[index].classList.add('ativo');
             isFormularioValido = false;
         } else {
-            input.classList.add('certo');
+            input.classList.add('certo'); 
             input.classList.remove('erro');
             mensagensErro[index].classList.remove('ativo');
         }   
@@ -134,7 +134,8 @@ const btnPlutao = document.getElementById('btn-plutao');
 const btnVoltarPlutao = document.getElementById('btn-voltar-plutao');
 const btnVoltarPlanetas = document.getElementById('btn-voltar-planetas');
 const btnInformacoeExtras = document.getElementById('btn-informacoes-extras');
-/* const btnPerfil = document.getElementById('btn-perfil'); */
+const btnPerfil = document.getElementById('btn-perfil');
+const btnVoltarPerfil = document.getElementById('btn-voltar-perfil');
 const btnCriadores = document.getElementById('btn-criadores')
 const btnVoltarCriadores = document.getElementById('btn-voltar-criadores');
 const btnApagarConta = document.getElementById('btn-apagar-conta');
@@ -142,7 +143,6 @@ const btnVoltarApagarConta = document.getElementById('btn-voltar-apagar-conta');
 const btnNao = document.getElementById('btn-nao');
 const btnVoltarInfoExtras = document.getElementById('btn-voltar-info-extras');
 const btnVoltarInfoMenu = document.getElementById('btn-voltar-info-menu');
-
 const telaLogin = document.getElementById('tela-login');
 const telaApresentacao = document.getElementById('tela-principal-inicial');
 const telaMenu = document.getElementById('menu');
@@ -198,6 +198,7 @@ const detalheUrano = document.getElementById('detalhe-urano');
 const detalheNetuno = document.getElementById('detalhe-netuno');
 const detalhePlutao = document.getElementById('detalhe-plutao');
 const telaInfoExtras = document.getElementById('tela-info-extras');
+const telaPerfilUsuario = document.getElementById('tela-perfil-usuario');
 const detalheCriadores = document.getElementById('detalhe-criadores');
 const detalheApagarConta = document.getElementById('detalhe-apagar-conta');
 
@@ -739,6 +740,16 @@ const detalheApagarConta = document.getElementById('detalhe-apagar-conta');
         telaInfoExtras.classList.add('selecionado');
     });
 
+    btnPerfil.addEventListener('click', (event) => {
+        telaInfoExtras.classList.remove('selecionado');
+        telaPerfilUsuario.classList.add('selecionado');
+    });
+
+    btnVoltarPerfil.addEventListener('click', (event) => {
+        telaPerfilUsuario.classList.remove('selecionado');
+        telaInfoExtras.classList.add('selecionado');
+    });
+
     btnCriadores.addEventListener('click', (event) => {
         telaInfoExtras.classList.remove('selecionado');
         detalheCriadores.classList.add('selecionado');
@@ -753,7 +764,7 @@ const detalheApagarConta = document.getElementById('detalhe-apagar-conta');
         telaInfoExtras.classList.remove('selecionado');
         detalheApagarConta.classList.add('selecionado');
     });
-
+ 
     btnVoltarApagarConta.addEventListener('click', (event) => {
         detalheApagarConta.classList.remove('selecionado');
         telaApresentacao.classList.add('selecionado');
