@@ -1,4 +1,7 @@
-.tela-perfil {
+/* PERFIL DO AGENTE */
+.tela-perfil,
+.perfil-edicao,
+.secao-trocar-senha {
     background-image: url('../imagens/fundo-perfil.jpg');
     background-size: cover;
     background-position: center;
@@ -43,9 +46,7 @@
     margin: 0;
 }
 
-.btn-editar-perfil,
-.btn-salvar-perfil,
-.btn-cancelar-perfil {
+.btn-editar-perfil {
     padding: 0.6rem 1.3rem;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -54,39 +55,16 @@
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Orbitron', sans-serif;
-}
-
-.btn-editar-perfil {
     background: transparent;
     color: #c1c1e0;
     border-color: #763bdb;
 }
+
 .btn-editar-perfil:hover {
     background: #763bdb;
     color: #fff;
     transform: scale(1.05);
     box-shadow: 0 0 15px #763bdb;
-}
-
-.btn-salvar-perfil {
-    background: linear-gradient(90deg, #6c4af5, #9356f9);
-    color: #fff;
-}
-.btn-salvar-perfil:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #6c4af5;
-}
-
-.btn-cancelar-perfil {
-    background: transparent;
-    color: #ff7b9f;
-    border-color: #ff4081;
-}
-.btn-cancelar-perfil:hover {
-    background: #ff4081;
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #ff4081;
 }
 
 .conteudo-perfil {
@@ -141,11 +119,60 @@
     line-height: 1.5;
 }
 
+
+/* TELA DE EDITAR PERFIL */
+.btn-salvar,
+.btn-cancelar {
+    padding: 0.6rem 1.3rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+    max-width: 300px;
+    align-self: center;
+}
+
+.btn-salvar,
+.campo-foto-edicao button {
+    background: linear-gradient(90deg, #6c4af5, #9356f9);
+    color: #fff;
+}
+.btn-salvar:hover,
+.campo-foto-edicao button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #6c4af5;
+}
+
+.btn-cancelar {
+    background: transparent;
+    color: #ff7b9f;
+    border-color: #ff4081;
+}
+.btn-cancelar:hover {
+    background: #ff4081;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff4081;
+}
+
 .form-perfil {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     text-align: left;
+
+    background: rgba(13, 11, 28, 0.75);
+    backdrop-filter: blur(19px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 40px rgba(118, 59, 219, 0.6);
+    text-align: center;
 }
 
 .campo-foto-edicao {
@@ -153,16 +180,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.label-foto {
-    cursor: pointer;
-    font-size: 1rem;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-.label-foto:hover {
-    color: #9356f9;
 }
 
 .foto-perfil-preview {
@@ -173,6 +190,24 @@
     box-shadow: 0 0 15px rgba(118, 59, 219, 0.8);
     object-fit: cover;
     margin-bottom: 0.5rem;
+}
+
+.label-foto img {
+    cursor: pointer;
+    font-size: 1rem;
+    /* color: #fff; */
+    transition: color 0.3s ease;
+}
+.label-foto img:hover {
+    color: #9356f9;
+}
+
+.campo-foto-edicao button {
+    padding: 5px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 5px;
 }
 
 .campo-input label {
@@ -213,6 +248,49 @@
 .botoes-edicao > button {
     flex-grow: 1;
 }
+
+.secao-seguranca {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn-troca-senha {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #9356f9;
+}
+
+.btn-troca-senha:hover {
+    background: #9356f9;
+    box-shadow: 0 0 15px #9356f9;
+    transform: scale(1.05);
+}
+
+
+/* TELA DE TROCAR SENHA */
+.form-trocar-senha {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.captcha-container {
+        display: flex;
+        gap: 0.8rem;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+}
+
 
 /* --- Media Queries para Responsividade --- */
 @media (max-width: 768px) {

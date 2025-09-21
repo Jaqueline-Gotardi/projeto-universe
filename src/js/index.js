@@ -1,7 +1,7 @@
 /* VALIDANDO FORMULÁRIO */
 const formulario = document.getElementById('formulario');
- const campos = document.querySelectorAll('#formulario input');
- const mensagensErro = document.querySelectorAll('#formulario .mensagem-erro');
+const campos = document.querySelectorAll('#formulario input');
+const mensagensErro = document.querySelectorAll('#formulario .mensagem-erro');
 
  formulario.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -143,6 +143,8 @@ const btnVoltarApagarConta = document.getElementById('btn-voltar-apagar-conta');
 const btnNao = document.getElementById('btn-nao');
 const btnVoltarInfoExtras = document.getElementById('btn-voltar-info-extras');
 const btnVoltarInfoMenu = document.getElementById('btn-voltar-info-menu');
+
+
 const telaLogin = document.getElementById('tela-login');
 const telaApresentacao = document.getElementById('tela-principal-inicial');
 const telaMenu = document.getElementById('menu');
@@ -201,7 +203,6 @@ const telaInfoExtras = document.getElementById('tela-info-extras');
 const telaPerfilUsuario = document.getElementById('tela-perfil-usuario');
 const detalheCriadores = document.getElementById('detalhe-criadores');
 const detalheApagarConta = document.getElementById('detalhe-apagar-conta');
-
 
     botaoEntrar.addEventListener('click', (event) => {
         event.preventDefault();
@@ -783,4 +784,99 @@ const detalheApagarConta = document.getElementById('detalhe-apagar-conta');
     btnVoltarInfoMenu.addEventListener('click', (event) => {
         informacoesDoMenu.classList.remove('selecionado');
         telaMenu.classList.add('selecionado');
+    }); 
+
+
+    /* TROCA DA TELA DE EDIÇÃO DE PERFIL */
+    document.addEventListener('DOMContentLoaded', () => {
+    const btnEditarPerfil = document.getElementById('btn-editar-perfil');
+    const btnSalvarPerfil = document.getElementById('btn-salvar-perfil');
+    const btnCancelarPerfil = document.getElementById('btn-cancelar-perfil');
+
+    const secaoVisualizacao = document.getElementById('secao-visualizacao');
+    const secaoEdicao = document.getElementById('secao-edicao');
+
+    const inputFotoPerfil = document.getElementById('input-foto-perfil-edicao');
+    const fotoPerfilPreview = document.getElementById('foto-perfil-preview-edicao');
+
+    btnEditarPerfil.addEventListener('click', () => {
+        secaoVisualizacao.style.display = 'none';
+        secaoEdicao.style.display = 'block';
     });
+
+    btnCancelarPerfil.addEventListener('click', () => {
+        secaoEdicao.style.display = 'none';
+        secaoVisualizacao.style.display = 'block';
+    });
+
+    /* const btnVoltarPerfil = document.getElementById('btn-voltar-perfil');
+    btnVoltarPerfil.addEventListener('click', () => {
+        secaoEdicao.classList.remove('selecionado');
+        telaPerfilUsuario.classList.add('selecionado');
+    }); */
+
+
+    
+    /* VISUALIZAR A FOTO TROCADA */
+    inputFotoPerfil.addEventListener('change', (event) => {
+        const arquivo = event.target.files[0];
+        if (arquivo) {
+            const reader = new FileReader();
+
+            reader.onload = (e) => {
+                fotoPerfilPreview.src = e.target.result;
+            };
+
+            reader.readAsDataURL(arquivo);
+        }
+    });
+
+    btnSalvarPerfil.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        console.log("Perfil salvo com sucesso!");
+        
+        /* COLETA DADOS DOS INPUTS */
+        const novoNome = document.getElementById('nome-agente-edicao').value;
+        const novoSobre = document.getElementById('sobre-voce-edicao').value;
+        const novosInteresses = document.getElementById('interesses-edicao').value;
+        
+        /* ATUALIZA OS DADOS DO USUÁRIO */
+        document.getElementById('perfil-nome').textContent = novoNome;
+        document.getElementById('perfil-sobre').textContent = novoSobre;
+        document.getElementById('perfil-interesses').textContent = novosInteresses;
+
+        /* QUANDO O USUÁRIO CLICAR EM 'SALVAR ATERAÇÕES', OS NOVOS DADOS IRÃO APARECER NO PERFIL DELE */
+        secaoEdicao.style.display = 'none';
+        secaoVisualizacao.style.display = 'block';
+    });
+
+    /* MUDANDO A TELA PARA TROCAR A SENHA */
+    const trocarSenha = document.getElementById('btn-troca-senha');
+    const secaoTrocarSenha = document.getElementById('secao-trocar-senha');
+
+    trocarSenha.addEventListener('click', () => {
+        telaPerfilUsuario.classList.remove('selecionado');
+        secaoTrocarSenha.classList.add('selecionado');
+    });
+
+    const btnSalvarSenha = document.getElementById('btn-salvar-senha');
+    btnSalvarSenha.addEventListener('click', () => {
+        event.preventDefault();
+
+        secaoTrocarSenha.classList.remove('selecionado');
+        telaPerfilUsuario.classList.add('selecionado');
+    });
+
+    const btnCancelarTrocaSenha = document.getElementById('btn-cancelar-troca-senha');
+    btnCancelarTrocaSenha.addEventListener('click', () => {
+        secaoTrocarSenha.classList.remove('selecionado');
+        telaPerfilUsuario.classList.add('selecionado');
+    });
+
+    const btnVoltarTrocaSenha = document.getElementById('btn-voltar-troca-senha');
+    btnVoltarTrocaSenha.addEventListener('click', () => {
+        secaoTrocarSenha.classList.remove('selecionado');
+        telaPerfilUsuario.classList.add('selecionado');
+    });
+});
