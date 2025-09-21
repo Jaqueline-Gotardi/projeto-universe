@@ -3,12 +3,12 @@ const formulario = document.getElementById('formulario');
 const campos = document.querySelectorAll('#formulario input');
 const mensagensErro = document.querySelectorAll('#formulario .mensagem-erro');
 
- formulario.addEventListener('submit', function(event) {
+ /* formulario.addEventListener('submit', function(event) {
     event.preventDefault();
     if (validarFormulario()) {
         window.location.hash = 'tela-principal';
     }
- });
+ }); */
 
  function validarFormulario() {
     let isFormularioValido = true; 
@@ -25,10 +25,9 @@ const mensagensErro = document.querySelectorAll('#formulario .mensagem-erro');
         }   
     }); 
     return isFormularioValido;
- }; 
+ };  
 
 
-/*  TROCANDO AS TELAS AO CLICK DOS BOTÕES */
 const botaoEntrar = document.querySelector('.btn-primary');
 const btnIniciarExploracao = document.getElementById('btn-iniciar-exploracao');
 const btnHomeDoMenu = document.getElementById('home-do-menu');
@@ -217,7 +216,34 @@ const detalheApagarConta = document.getElementById('detalhe-apagar-conta');
             console.log("Faça seu login! 🛸");
         }
     });
-    
+
+    /* MUDANDO A TELA PARA A TELA DE CADASTRO DO USUÁRIO */
+    const cadastroLink = document.getElementById('cadastro-link');
+    const telaCadastro = document.getElementById('tela-cadastro');
+
+    cadastroLink.addEventListener('click', () => {
+        event.preventDefault();
+        telaLogin.classList.remove('selecionado');
+        telaCadastro.classList.add('selecionado');
+    });
+
+
+    /* VOLTANDO A TELA DE CADASTRO DO USUÁRIO PARA A TELA DE LOGIN */
+    const linkLogin = document.getElementById('link-login');
+    linkLogin.addEventListener('click', () => {
+        telaCadastro.classList.remove('selecionado');
+        telaLogin.classList.add('selecionado');
+    });
+
+    const btnCadastrar = document.getElementById('btn-cadastrar');
+    btnCadastrar.addEventListener('click', () => {
+        event.preventDefault(); /* impede que a tela recarregue */
+        telaCadastro.classList.remove('selecionado');
+        telaApresentacao.classList.add('selecionado');
+    });
+
+
+    /*  TROCANDO AS TELAS AO CLICK DOS BOTÕES */
     btnIniciarExploracao.addEventListener('click', (event) => {
         event.preventDefault();
             telaApresentacao.classList.remove('selecionado');
@@ -808,13 +834,6 @@ const detalheApagarConta = document.getElementById('detalhe-apagar-conta');
         secaoEdicao.style.display = 'none';
         secaoVisualizacao.style.display = 'block';
     });
-
-    /* const btnVoltarPerfil = document.getElementById('btn-voltar-perfil');
-    btnVoltarPerfil.addEventListener('click', () => {
-        secaoEdicao.classList.remove('selecionado');
-        telaPerfilUsuario.classList.add('selecionado');
-    }); */
-
 
     
     /* VISUALIZAR A FOTO TROCADA */

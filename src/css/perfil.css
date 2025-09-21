@@ -1,7 +1,8 @@
 /* PERFIL DO AGENTE */
 .tela-perfil,
 .perfil-edicao,
-.secao-trocar-senha {
+.secao-trocar-senha,
+.tela-cadastro {
     background-image: url('../imagens/fundo-perfil.jpg');
     background-size: cover;
     background-position: center;
@@ -46,7 +47,8 @@
     margin: 0;
 }
 
-.btn-editar-perfil {
+.btn-editar-perfil,
+.btn-cadastrar-conta {
     padding: 0.6rem 1.3rem;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -60,7 +62,8 @@
     border-color: #763bdb;
 }
 
-.btn-editar-perfil:hover {
+.btn-editar-perfil:hover,
+.btn-cadastrar-conta:hover {
     background: #763bdb;
     color: #fff;
     transform: scale(1.05);

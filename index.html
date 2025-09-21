@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/globals.css">
   <link rel="stylesheet" href="./src/css/tela-login.css">
+  <link rel="stylesheet" href="./src/css/cadastro.css">
   <link rel="stylesheet" href="./src/css/tela-principal.css">
   <link rel="stylesheet" href="./src/css/tela-navegacao.css">
   <link rel="stylesheet" href="./src/css/tutorial.css">
@@ -29,7 +30,7 @@
 </head>  
 
 <body>
-  <!-- Tela de Login -->
+  <!-- TELA DE LOGIN -->
   <section class="tela-login selecionado" id="tela-login">
     <div class="space-background login-bg">
       <div class="stars"></div>
@@ -44,8 +45,8 @@
 
         <form class="login-form" id="formulario">
           <div class="form-group">
-            <label for="username" class="form-label">Usuário:</label>
-            <input type="text" id="username" placeholder="Digite seu nome" class="form-input">
+            <label for="senha" class="form-label">Senha:</label>
+            <input type="text" id="senha" placeholder="Digite seu nome" class="form-input">
             <p class="mensagem-erro">* preencha este campo</p>
           </div>
 
@@ -56,11 +57,54 @@
           </div>
 
           <button type="submit" class="btn-primary" id="btn-primary">Entrar</button>
-          <p class="cadastro-link">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+          <p class="cadastro-link">Não tem uma conta? <a href="#" id="cadastro-link">Cadastre-se</a></p>
         </form>
       </div>
     </div>
   </section>
+
+
+  <!-- TELA DE CADASTRO -->
+  <section class="tela-cadastro" id="tela-cadastro">
+    <div class="container-cadastro">
+      <h2 class="titulo-secao">Crie sua conta de Agente</h2>
+      <form class="form-cadastro">
+
+        <div class="campo-input">
+          <label for="nome-cadastro">Nome de Agente</label>
+          <input type="text" id="nome-cadastro" placeholder="Ex: Capitã Estelar">
+        </div>
+  
+        <div class="campo-input">
+          <label for="email-cadastro">E-mail</label>
+          <input type="email" id="email-cadastro" placeholder="seu-email@universo.com">
+        </div>
+  
+        <div class="campo-input">
+          <label for="senha-cadastro">Senha</label>
+          <input type="password" id="senha-cadastro" placeholder="Crie uma senha forte">
+        </div>
+
+        <div class="campo-input">
+          <label for="cofirma-senha-cadastro">Confirmar Senha</label>
+          <input type="password" id="cofirma-senha-cadastro" placeholder="Confirme sua senha">
+        </div>
+
+        <div class="captcha-container">
+          <input type="checkbox" id="nao-sou-robo-cadastro">
+          <label for="nao-sou-robo-cadastro">Eu não sou um robô</label>
+        </div>
+  
+        <div class="botoes-cadastro">
+          <button type="submit" class="btn-cadastrar-conta" id="btn-cadastrar">Criar conta</button>
+        </div>
+
+        <p class="link-ja-tem-conta">Já tem uma conta? <a href="#" id="link-login">Faça seu login</a></p>
+  
+      </form>
+    </div>
+  </section>
+
 
   <section class="tela-principal" id="tela-principal-inicial" >
     <div class="text">
@@ -1012,11 +1056,10 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
         </div>
   
       </form>
-      <button type="button" class="botao-voltar" id="btn-voltar-troca-senha">Voltar</button>
+      <!-- <button type="button" class="botao-voltar" id="btn-voltar-troca-senha">Voltar</button> -->
     </div>
   </section>
  
-
 
   <!-- CRIADORES -->
  <section class="tela-criadores" id="detalhe-criadores">
