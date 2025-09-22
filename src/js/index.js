@@ -1,34 +1,9 @@
-/* VALIDANDO FORMULÁRIO */
-const formulario = document.getElementById('formulario');
-const campos = document.querySelectorAll('#formulario input');
-const mensagensErro = document.querySelectorAll('#formulario .mensagem-erro');
+/* ATENÇÃO ---> Pense no seu código como uma casa: Se você deixa suas chaves (variáveis) em cada cômodo (bloco de código), quando estiver em outro cômodo, não conseguirá encontrá-las. A solução é deixar todas as chaves em um lugar central, como um chaveiro na entrada da casa.
+ */
 
- /* formulario.addEventListener('submit', function(event) {
-    event.preventDefault();
-    if (validarFormulario()) {
-        window.location.hash = 'tela-principal';
-    }
- }); */
-
- function validarFormulario() {
-    let isFormularioValido = true; 
-    campos.forEach((input, index) => {
-        if(input.value.trim() === '') {
-            input.classList.add('erro'); 
-            input.classList.remove('certo');
-            mensagensErro[index].classList.add('ativo');
-            isFormularioValido = false;
-        } else {
-            input.classList.add('certo'); 
-            input.classList.remove('erro');
-            mensagensErro[index].classList.remove('ativo');
-        }   
-    }); 
-    return isFormularioValido;
- };  
-
-
+/* VARIÁVEIS DE BOTÕES E ELEMENTOS GERAIS */
 const botaoEntrar = document.querySelector('.btn-primary');
+const cadastroLink = document.getElementById('cadastro-link');
 const btnIniciarExploracao = document.getElementById('btn-iniciar-exploracao');
 const btnHomeDoMenu = document.getElementById('home-do-menu');
 const btnTutorial = document.getElementById('btn-tutorial');
@@ -144,7 +119,9 @@ const btnVoltarInfoExtras = document.getElementById('btn-voltar-info-extras');
 const btnVoltarInfoMenu = document.getElementById('btn-voltar-info-menu');
 
 
+/* VARIÁVEIS DE TELA */
 const telaLogin = document.getElementById('tela-login');
+const telaCadastro = document.getElementById('tela-cadastro');
 const telaApresentacao = document.getElementById('tela-principal-inicial');
 const telaMenu = document.getElementById('menu');
 const telaTutorial = document.getElementById('tela-tutorial');
@@ -203,44 +180,109 @@ const telaPerfilUsuario = document.getElementById('tela-perfil-usuario');
 const detalheCriadores = document.getElementById('detalhe-criadores');
 const detalheApagarConta = document.getElementById('detalhe-apagar-conta');
 
-    botaoEntrar.addEventListener('click', (event) => {
-        event.preventDefault();
 
-        const podeProsseguir = validarFormulario();
+ /* VALIDANDO OS DADOS DO LOGIN */
+ const formulario = document.getElementById('formulario');
+ const campos = document.querySelectorAll('#formulario input');
+ const mensagensErro = document.querySelectorAll('#formulario .mensagem-erro');
 
-        if (podeProsseguir) {
-            console.log("Login feito com sucesso. Bem vindo(a) explorador! 🛸💜✨");
-            telaLogin.classList.remove('selecionado');
-            telaApresentacao.classList.add('selecionado');
-        } else {
-            console.log("Faça seu login! 🛸");
-        }
-    });
+ function validarFormulario() {
+ let isFormularioValido = true; 
+ campos.forEach((input, index) => {
+     if(input.value.trim() === '') {
+         input.classList.add('erro'); 
+         input.classList.remove('certo');
+         mensagensErro[index].classList.add('ativo');
+         isFormularioValido = false;
+     } else {
+         input.classList.add('certo'); 
+         input.classList.remove('erro');
+         mensagensErro[index].classList.remove('ativo');
+     }   
+ }); 
+ return isFormularioValido;
+};  
 
-    /* MUDANDO A TELA PARA A TELA DE CADASTRO DO USUÁRIO */
-    const cadastroLink = document.getElementById('cadastro-link');
-    const telaCadastro = document.getElementById('tela-cadastro');
+botaoEntrar.addEventListener('click', (event) => {
+    event.preventDefault();
 
-    cadastroLink.addEventListener('click', () => {
-        event.preventDefault();
+    const podeProsseguir = validarFormulario();
+
+    if (podeProsseguir) {
+        console.log("Login feito com sucesso. Bem vindo(a) explorador! 🛸💜✨");
         telaLogin.classList.remove('selecionado');
-        telaCadastro.classList.add('selecionado');
-    });
+        telaApresentacao.classList.add('selecionado');
+    } else {
+        console.log("Faça seu login! 🛸");
+    }
+});
 
 
-    /* VOLTANDO A TELA DE CADASTRO DO USUÁRIO PARA A TELA DE LOGIN */
-    const linkLogin = document.getElementById('link-login');
-    linkLogin.addEventListener('click', () => {
-        telaCadastro.classList.remove('selecionado');
-        telaLogin.classList.add('selecionado');
-    });
 
-    const btnCadastrar = document.getElementById('btn-cadastrar');
-    btnCadastrar.addEventListener('click', () => {
-        event.preventDefault(); /* impede que a tela recarregue */
+/* MUDANDO A TELA DE LOGIN PARA A DE CADASTRO */
+const linkLogin = document.getElementById('link-login');
+cadastroLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    telaLogin.classList.remove('selecionado');
+    telaCadastro.classList.add('selecionado');
+});
+
+/* MUDANDO DA TELA DE CADASTRO PARA LOGIN */
+linkLogin.addEventListener('click', (event) => {
+    event.preventDefault();
+    telaCadastro.classList.remove('selecionado');
+    telaLogin.classList.add('selecionado');
+});
+
+/* VALIDAÇÃO E NAVEGAÇÃO DO FORMULÁRIO DE CADASTRO */
+const btnCadastrar = document.getElementById('btn-cadastrar');
+const formCadastro = document.getElementById('form-cadastro');
+
+ function validarCadastro() {
+    let isCadastroValido = true; 
+
+    const camposCadastro = document.querySelectorAll('#form-cadastro input');
+    const mensagensErroCadastro = document.querySelectorAll('#form-cadastro .mensagem-erro');
+    
+ 
+ camposCadastro.forEach((input, index) => {
+    if (input.type === 'checkbox') {
+        if (!input.checked) {
+            mensagensErroCadastro[index].classList.add('ativo');
+            isCadastroValido = false;
+        } else {
+            mensagensErroCadastro[index].classList.remove('ativo');
+        }
+    }
+
+    else {
+        if(input.value.trim() === '') {
+            input.classList.add('erro'); 
+            input.classList.remove('certo');
+            mensagensErroCadastro[index].classList.add('ativo');
+            isCadastroValido = false;
+        } else {
+            input.classList.add('certo'); 
+            input.classList.remove('erro');
+            mensagensErroCadastro[index].classList.remove('ativo');
+        }  
+    } 
+ }); 
+ return isCadastroValido;
+};  
+
+btnCadastrar.addEventListener('click', (event) => {
+    event.preventDefault();  
+    const podeProsseguirCadastro = validarCadastro();
+
+    if (podeProsseguirCadastro) {
+        console.log("Cadastro feito com sucesso! 🛸💜"); 
         telaCadastro.classList.remove('selecionado');
         telaApresentacao.classList.add('selecionado');
-    });
+    } else { 
+        console.log("Faça seu cadastro para prosseguir! 🛸");
+     } 
+});    
 
 
     /*  TROCANDO AS TELAS AO CLICK DOS BOTÕES */

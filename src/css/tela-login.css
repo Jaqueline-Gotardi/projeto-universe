@@ -22,7 +22,7 @@
 .login p {
   font-weight: 550;
   width: 100%;
-}
+} 
 
 .usuario,
 .email {
@@ -67,6 +67,13 @@
   transform: scale(1.05);
 }
 
+
+
+
+
+
+
+
 /* mudando o input na validação. . . */
 .mensagem-erro {
   color: #f52e25;
@@ -74,17 +81,23 @@
   display: none;
 }
 
-#formulario .mensagem-erro.ativo {
+.mensagem-erro.ativo {
   display: block;
 }
 
-#formulario input.erro {
+input.erro {
   border: 1.8px solid #f52e25;
 }
 
-#formulario input.certo {
+input.certo {
   border: 1.8px solid #00c220;
 }
+
+
+
+
+
+
 
 .welcome-title {
   font-family: 'Orbitron', sans-serif;
