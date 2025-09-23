@@ -1,6 +1,7 @@
 /* ATENÇÃO ---> Pense no seu código como uma casa: Se você deixa suas chaves (variáveis) em cada cômodo (bloco de código), quando estiver em outro cômodo, não conseguirá encontrá-las. A solução é deixar todas as chaves em um lugar central, como um chaveiro na entrada da casa.
  */
 
+ 
 /* VARIÁVEIS DE BOTÕES E ELEMENTOS GERAIS */
 const botaoEntrar = document.querySelector('.btn-primary');
 const cadastroLink = document.getElementById('cadastro-link');
@@ -253,8 +254,7 @@ const formCadastro = document.getElementById('form-cadastro');
         } else {
             mensagensErroCadastro[index].classList.remove('ativo');
         }
-    }
-
+    } 
     else {
         if(input.value.trim() === '') {
             input.classList.add('erro'); 
@@ -283,6 +283,109 @@ btnCadastrar.addEventListener('click', (event) => {
         console.log("Faça seu cadastro para prosseguir! 🛸");
      } 
 });    
+
+
+
+
+
+
+
+
+/* TRILHA SONORA: INTERAÇÃO COM O BOTÃO PLAY */
+const musicas = ['Conexão cósmica: Frequênica 639Hz',
+                 'Ecos do Espaço Profundo',
+                 'Meditação na Nebulosa',
+                 'Pulsares e Galáxias Distantes',
+                 'O canto dos Planetas',
+                 'Sinfonia do vazio Estelar'
+]; 
+
+const audioPlayer = document.querySelectorAll('.audio-player audio');
+const btnVoltar = document.getElementById('prev-btn');
+const btnPlayPause = document.getElementById('play-pause-btn');
+const btnAvancar = document.getElementById('next-btn');
+
+let musicaAtualIndex = 0;
+
+let isPlaying = true;
+
+function playMusica() {
+    audioPlayer[musicaAtualIndex].play();
+    isPlaying = true;
+
+    btnPlayPause.innerHTML = 'Pause';
+
+    console.log('Tocando música' + musicaAtualIndex);
+}
+
+function pausarMusica() {
+    audioPlayer[musicaAtualIndex].pause();
+    isPlaying = false;
+
+    btnPlayPause.innerHTML = 'Play';
+
+    console.log('Pausando música' + musicaAtualIndex);
+}
+
+btnPlayPause.addEventListener('click', () => {
+
+    if (isPlaying) {
+        pausarMusica();
+    } else {
+        playMusica();
+    };
+});
+
+function avancarMusica() {
+    pausarMusica(); 
+    musicaAtualIndex ++;
+
+    if (musicaAtualIndex > audioPlayer.length -1) {
+        musicaAtualIndex = 0;
+    }
+    playMusica();
+}
+
+function voltarMusica() {
+    pausarMusica();    
+    musicaAtualIndex --;
+
+    if (musicaAtualIndex < 0 ) {
+        musicaAtualIndex = audioPlayer.length -1;
+    }
+    playMusica();
+}
+
+btnAvancar.addEventListener('click', avancarMusica);
+btnVoltar.addEventListener('click', voltarMusica);
+
+/* 
+_Exibir o nome da música:
+1. Você precisa criar uma nova função que pegue o nome da música certa (usando o musicaAtualIndex) e o coloque dentro do <span> com o ID #titulo-musica.
+2. Onde você acha que essa função deve ser chamada? Pense em todos os momentos em que a música pode mudar.
+
+
+_Fazer a barra de progresso funcionar:
+1. Você precisa adicionar um addEventListener para o evento timeupdate em cada um dos seus elementos <audio>.
+2. O evento timeupdate é disparado continuamente (a cada 250 milissegundos) enquanto o áudio está tocando.
+3. Dentro da função que lida com esse evento, você deve calcular a porcentagem de progresso da música (tempo atual / duração total) e usar esse valor para atualizar a largura do seu elemento .progress-bar em CSS.
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /*  TROCANDO AS TELAS AO CLICK DOS BOTÕES */
@@ -912,6 +1015,7 @@ btnCadastrar.addEventListener('click', (event) => {
         secaoVisualizacao.style.display = 'block';
     });
 
+
     /* MUDANDO A TELA PARA TROCAR A SENHA */
     const trocarSenha = document.getElementById('btn-troca-senha');
     const secaoTrocarSenha = document.getElementById('secao-trocar-senha');
@@ -940,4 +1044,4 @@ btnCadastrar.addEventListener('click', (event) => {
         secaoTrocarSenha.classList.remove('selecionado');
         telaPerfilUsuario.classList.add('selecionado');
     });
-});
+}); 
