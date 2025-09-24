@@ -17,7 +17,7 @@
   width: 350px;
   gap: 25px;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  padding: 20px; 
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 191, 255, 0.6);
 }

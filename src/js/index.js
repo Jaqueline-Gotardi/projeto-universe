@@ -1,6 +1,6 @@
 /* ATENÇÃO ---> Pense no seu código como uma casa: Se você deixa suas chaves (variáveis) em cada cômodo (bloco de código), quando estiver em outro cômodo, não conseguirá encontrá-las. A solução é deixar todas as chaves em um lugar central, como um chaveiro na entrada da casa.
  */
-
+ 
  
 /* VARIÁVEIS DE BOTÕES E ELEMENTOS GERAIS */
 const botaoEntrar = document.querySelector('.btn-primary');
@@ -10,6 +10,7 @@ const btnHomeDoMenu = document.getElementById('home-do-menu');
 const btnTutorial = document.getElementById('btn-tutorial');
 const iniciarExploracao = document.getElementById('iniciar-exploracao');
 const btnMenu = document.getElementById('btn-menu');
+const btnVoltarMenu = document.getElementById('btn-voltar-menu');
 const btnInformacoesAstronomicas = document.getElementById('btn-informacoes-astronomicas');
 const btnConstelacoes = document.getElementById('btn-constelacoes');
 const btnHemisferioNorte = document.getElementById('hemisferio-norte');
@@ -245,7 +246,6 @@ const formCadastro = document.getElementById('form-cadastro');
     const camposCadastro = document.querySelectorAll('#form-cadastro input');
     const mensagensErroCadastro = document.querySelectorAll('#form-cadastro .mensagem-erro');
     
- 
  camposCadastro.forEach((input, index) => {
     if (input.type === 'checkbox') {
         if (!input.checked) {
@@ -286,27 +286,22 @@ btnCadastrar.addEventListener('click', (event) => {
 
 
 
-
-
-
-
-
 /* TRILHA SONORA: INTERAÇÃO COM O BOTÃO PLAY */
 const musicas = ['Conexão cósmica: Frequênica 639Hz',
                  'Ecos do Espaço Profundo',
                  'Meditação na Nebulosa',
-                 'Pulsares e Galáxias Distantes',
+                 'Pulsares e Galáxias distantes',
                  'O canto dos Planetas',
                  'Sinfonia do vazio Estelar'
 ]; 
-
+const tituloMusica = document.getElementById('titulo-musica');
 const audioPlayer = document.querySelectorAll('.audio-player audio');
+const barraProgresso = document.querySelector('.progress-outline');
 const btnVoltar = document.getElementById('prev-btn');
 const btnPlayPause = document.getElementById('play-pause-btn');
 const btnAvancar = document.getElementById('next-btn');
 
 let musicaAtualIndex = 0;
-
 let isPlaying = true;
 
 function playMusica() {
@@ -314,6 +309,8 @@ function playMusica() {
     isPlaying = true;
 
     btnPlayPause.innerHTML = 'Pause';
+
+    audioPlayer[musicaAtualIndex].addEventListener('timeupdate', atualizarProgresso);
 
     console.log('Tocando música' + musicaAtualIndex);
 }
@@ -328,7 +325,6 @@ function pausarMusica() {
 }
 
 btnPlayPause.addEventListener('click', () => {
-
     if (isPlaying) {
         pausarMusica();
     } else {
@@ -339,52 +335,47 @@ btnPlayPause.addEventListener('click', () => {
 function avancarMusica() {
     pausarMusica(); 
     musicaAtualIndex ++;
-
     if (musicaAtualIndex > audioPlayer.length -1) {
         musicaAtualIndex = 0;
     }
     playMusica();
+    nomeMusica();
 }
 
 function voltarMusica() {
     pausarMusica();    
     musicaAtualIndex --;
-
     if (musicaAtualIndex < 0 ) {
         musicaAtualIndex = audioPlayer.length -1;
     }
     playMusica();
+    nomeMusica();
 }
-
 btnAvancar.addEventListener('click', avancarMusica);
 btnVoltar.addEventListener('click', voltarMusica);
 
-/* 
-_Exibir o nome da música:
-1. Você precisa criar uma nova função que pegue o nome da música certa (usando o musicaAtualIndex) e o coloque dentro do <span> com o ID #titulo-musica.
-2. Onde você acha que essa função deve ser chamada? Pense em todos os momentos em que a música pode mudar.
 
+/* EXIBIR O NOME DA MÚSICA */
+function nomeMusica() {
+    tituloMusica.innerHTML = musicas[musicaAtualIndex];
+};
 
-_Fazer a barra de progresso funcionar:
-1. Você precisa adicionar um addEventListener para o evento timeupdate em cada um dos seus elementos <audio>.
-2. O evento timeupdate é disparado continuamente (a cada 250 milissegundos) enquanto o áudio está tocando.
-3. Dentro da função que lida com esse evento, você deve calcular a porcentagem de progresso da música (tempo atual / duração total) e usar esse valor para atualizar a largura do seu elemento .progress-bar em CSS.
- */
+const progressContainer = document.querySelector('.progress-container');
 
+/* MOSTRAR BARRA DE PROGRESSO DA MÚSICA */
+function atualizarProgresso() {
+    const musica = audioPlayer[musicaAtualIndex];
+    const porcentagem = (musica.currentTime / musica.duration) * 100;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* VERIFICA O TAMANHO DA TELA PARA DECIDIR SE ATUALIZA A ALTURA OU LARGURA DA BARRA DE PROGRESSO DA MÚSICA */ 
+    if (window.innerWidth <= 768) {
+        barraProgresso.style.width = porcentagem + '%';
+        barraProgresso.style.height = '100%'; 
+    } else {
+        barraProgresso.style.height = porcentagem + '%';
+        barraProgresso.style.width = '100%'; 
+    }
+};
 
 
 
@@ -393,12 +384,6 @@ _Fazer a barra de progresso funcionar:
         event.preventDefault();
             telaApresentacao.classList.remove('selecionado');
             telaMenu.classList.add('selecionado');
-    });
-
-    btnHomeDoMenu.addEventListener('click', (event) => {
-        event.preventDefault();
-        telaMenu.classList.remove('selecionado');
-        telaApresentacao.classList.add('selecionado');
     });
 
     btnTutorial.addEventListener('click', (event) => {
@@ -416,6 +401,11 @@ _Fazer a barra de progresso funcionar:
         telaMenu.classList.remove('selecionado');
         informacoesDoMenu.classList.add('selecionado');
     });
+
+    btnVoltarMenu.addEventListener('click', (event) => {
+        telaMenu.classList.remove('selecionado');
+        telaApresentacao.classList.add('selecionado');
+    })
 
     btnInformacoesAstronomicas.addEventListener('click', (event) => {
         informacoesDoMenu.classList.remove('selecionado');

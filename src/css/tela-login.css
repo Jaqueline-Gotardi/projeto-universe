@@ -1,24 +1,39 @@
 /* ESTILIZAÇÃO DA TRILHA SONORA AQUI */
 .audio-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
   background: #4b125cbe;
-  border: 3px solid darkorchid; 
+  border: 3px solid darkorchid;
   box-shadow: 0 0 30px rgba(118, 59, 219, 0.6);
   font-weight: 600;
-  max-width: 450px;
   position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
   z-index: 1000;
-  padding: 10px 20px;
-  border-radius: 50px; 
+  padding: 15px 10px;
+  border-radius: 20px;
   font-family: 'Orbitron', sans-serif;
+  width: 120px; 
+}
+
+#titulo-musica {
+  color: #fff; 
+  font-size: 14px;
+  text-align: center;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  margin-bottom: 10px;
 }
 
 .player-controles {
-  display: flex; 
-  align-items: center; 
-  gap: 15px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   color: #fff;
 }
 
@@ -27,10 +42,10 @@
   color: #fff;
   border: 2px solid #6c34a2;
   border-radius: 8px;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 8px 10px;
+  font-size: 14px;
   cursor: pointer;
-  margin: 0; 
+  width: 100%;
   box-shadow: 0 0 10px #6c34a2, 0 0 20px #6c34a2 inset;
   transition: .3s ease;
 }
@@ -41,33 +56,27 @@
   transform: scale(1.09);
 }
 
-/* BARRA DE PROGRESSO DAS MÚSICAS */
 .progress-container {
   background-color: #5d1792;
   border-radius: 5px;
   cursor: pointer;
-  height: 8px;
-  width: 100%;
-  margin-bottom: 5px;
+  width: 8px;
+  height: 150px; 
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column-reverse; 
 }
 
 .progress-outline {
   background-color: #c058ff;
   border-radius: 5px;
-  height: 100%;
-  width: 0%;
-  transition: width 0.1s linear;
+  width: 100%;
+  height: 0%; 
+  transition: height 0.1s linear;
 }
 
 
-
-
-
-
-
-
-
-
+/* ESTILIZAÇÃO DA TELA DE LOGIN */
 .tela-login {
   /* display: flex; */
   flex-direction: column;
@@ -152,6 +161,7 @@ input.erro {
 input.certo {
   border: 1.8px solid #00c220;
 }
+/* --------------------------------- */
 
 
 
@@ -318,4 +328,54 @@ input.certo {
 .cadastro-link a:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .audio-player {
+    flex-direction: row;
+    width: 95%;
+    max-width: 470px;
+    top: auto;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    padding: 10px 15px;
+    border-radius: 50px;
+    gap: 10px;
+  }
+
+  .player-controles {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  #titulo-musica {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
+    margin-bottom: 0;
+  }
+
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    margin: 0;
+    flex-direction: row;
+  }
+
+  .progress-outline {
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
+
+  .player-controles button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
 }

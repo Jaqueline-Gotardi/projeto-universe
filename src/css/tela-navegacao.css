@@ -11,7 +11,7 @@
     align-items: center;
     gap: 80px; 
     padding: 20px;
-    position: relative;
+    position: relative; 
     color: #e0f2f7;
 }
 
@@ -21,14 +21,13 @@
     display: flex;
     margin-top: 20px;
     align-items: center;
-    /* MUDANÇAS AQUI: Transformando a barra em um elemento futurista */
-    background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro semi-transparente */
-    border: 2px solid #5D3FD3; /* Borda roxa, mais grossa para destacar */
+    
+    background-color: rgba(0, 0, 0, 0.4); 
+    border: 2px solid #5D3FD3; 
     border-radius: 50px;
     padding: 8px 15px;
     width: 400px;
     max-width: 90%;
-    /* Adicionando o brilho neon para combinar com os botões */
     box-shadow: 0 0 15px #A020F0;
 }
 
@@ -38,9 +37,8 @@
     width: 350px;
     max-width: 90%;
     border: none;
-    /* MUDANÇA AQUI: Alterando a cor do texto para claro e o fundo do input para transparente */
     background-color: transparent;
-    color: #e0f2f7; /* Cor do texto claro */
+    color: #e0f2f7; 
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
 }
@@ -49,8 +47,8 @@
     position: static;
     width: 20px;
     height: 20px;
-    /* MUDANÇA AQUI: Cor da lupa para combinar com o tema */
-    filter: invert(1) brightness(1.2); /* Inverte a cor do ícone para branco/claro */
+   
+    filter: invert(1) brightness(1.2); 
 }
 /* .tela-navegacao .barra {
     justify-content: flex-start;
@@ -126,4 +124,4 @@
     background-color: transparent; 
     box-shadow: 0 0 20px 5px #A020F0;
     border-radius: 10px;
-} */
+} */ 
