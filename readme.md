@@ -2,7 +2,7 @@
 
 💙 **“Explorar o desconhecido é o primeiro passo para criar algo incrível.”**
 
-O **Universe** é um projeto que nasceu lá em 2022, como um protótipo escolar simples feito em PowerPoint e HTML.  
+O **Universe** é um projeto que nasceu lá em 2022, como um protótipo escolar simples feito em HTML, CSS e PowerPoint para agrupar desenhos da tela. Inicialmente, o tema dele era focado totalmente em algo moderno + pegada infantil, até que neste ano (2025) decidi refazê-lo por conta própria, focando em mais funcionalidades e adotando um desing moderno.  
 Hoje, ele evoluiu para um **site completo, interativo e moderno**, desenvolvido com **HTML, CSS e JavaScript puro**, trazendo uma experiência única de exploração pelo espaço. 🌌  
 
 ![preview](src/imagens/tela-responsive.png)
@@ -56,10 +56,10 @@ Tudo isso mantendo o foco na experiência do usuário, e no aprendizado contínu
 
 ## 🛠️ Tecnologias Utilizadas  
 
-- **HTML5** — Estrutura e semântica;
-- **CSS3** — Estilo, animações e tema neon espacial; 
-- **JavaScript (puro)** — Lógica, interatividade e controle das telas;  
-- **Lovart IA** — Geração de imagens do universo;
+- **HTML5**: Estrutura e semântica;
+- **CSS3**: Estilo, animações e tema neon espacial; 
+- **JavaScript (puro)**: Lógica, interatividade e controle das telas;  
+- **Lovart IA**: Geração de imagens do universo;
 
 ---
 
@@ -71,7 +71,7 @@ Tudo isso mantendo o foco na experiência do usuário, e no aprendizado contínu
 
 ## 💙 Créditos e Inspiração  
 
-- Protótipo original criado no **Instituto Federal do Amazonas (IFAM)** — 2022;
+- Protótipo original criado no **Instituto Federal do Amazonas - Campus Eirunepé (IFAM)** -2022;
 - Releitura e desenvolvimento atual por **Jaqueline Gotardi**; 
 
 ---
