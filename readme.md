@@ -5,7 +5,7 @@
 O **Universe** é um projeto que nasceu lá em 2022, como um protótipo escolar simples feito em PowerPoint e HTML.  
 Hoje, ele evoluiu para um **site completo, interativo e moderno**, desenvolvido com **HTML, CSS e JavaScript puro**, trazendo uma experiência única de exploração pelo espaço. 🌌  
 
-![preview](src/images/tela-responsive.png)
+![preview](src/imagens/tela-responsive.png)
 
 ---
 
