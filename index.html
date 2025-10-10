@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  
+    
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
@@ -134,7 +134,7 @@
   
       </form>
     </div>
-  </section>
+  </section> 
 
 
   <section class="tela-principal" id="tela-principal-inicial" >
@@ -150,10 +150,10 @@
 
   <section class="tela-navegacao" id="menu">
     <div class="barra">
-      <input type="text" placeholder="Pesquisar no Universo..." name="Nome" />
-      <img src="./src/imagens/lupa.jpg" class="lupa">
+      <input type="text" id="campo-pesquisa" placeholder="Pesquisar no Universo..." name="Nome" />
+      <img src="./src/imagens/lupa.jpg" class="lupa" id="lupa-pesquisa">
     </div>
-    <div class="informacoes-extras">
+    <div class="informacoes-extras" id="exibicao-da-pesquisa">
       <button type="button" class="btn-cosmic" id="btn-menu">Menu</button>
     </div>
     <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
@@ -360,7 +360,7 @@
       <br><br>
       Observar Centauro é uma missão que te conecta a dois extremos do universo: o ponto mais próximo de nós e uma das maiores concentrações de estrelas em nossa própria galáxia.</p>
     </div>
-  </div>
+  </div> 
     <button type="button" class="botao-voltar botao-opcao-menu" id="btn-voltar-centauro">Voltar</button>
   </section> 
 
@@ -968,7 +968,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   </section>
 
 
-  <!-- NFORMAÇÕES EXTRAS -->
+  <!-- INFORMAÇÕES EXTRAS -->
   <section class="tela-principal"
     style="justify-content: center; align-items: center; flex-direction: column;" id="tela-info-extras">
     <div class="informacoes-extras">
@@ -1175,5 +1175,6 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   
 
   <script src="./src/js/index.js"></script>
+  <script src="./src/js/search.js"></script>
 </body>
 </html>

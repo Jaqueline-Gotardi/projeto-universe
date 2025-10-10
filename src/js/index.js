@@ -1,7 +1,7 @@
 /* ATENÇÃO ---> Pense no seu código como uma casa: Se você deixa suas chaves (variáveis) em cada cômodo (bloco de código), quando estiver em outro cômodo, não conseguirá encontrá-las. A solução é deixar todas as chaves em um lugar central, como um chaveiro na entrada da casa.
- */
- 
- 
+ */ 
+  
+  
 /* VARIÁVEIS DE BOTÕES E ELEMENTOS GERAIS */
 const botaoEntrar = document.querySelector('.btn-primary');
 const cadastroLink = document.getElementById('cadastro-link');
@@ -16,7 +16,7 @@ const btnConstelacoes = document.getElementById('btn-constelacoes');
 const btnHemisferioNorte = document.getElementById('hemisferio-norte');
 const btnUrsaMaior = document.getElementById('btn-ursa-maior');
 const btnVoltarUrsaMaior = document.getElementById('btn-voltar-ursa-maior');
-const btnUrsaMenor = document.getElementById('btn-ursa-menor');
+const btnUrsaMenor = document.getElementById('btn-ursa-menor'); 
 const btnVoltarUrsaMenor = document.getElementById('btn-voltar-ursa-menor');
 const btnAndromeda = document.getElementById('btn-andromeda');
 const btnVoltarAndromeda = document.getElementById('btn-voltar-andromeda');
