@@ -9,7 +9,7 @@ const { URLSearchParams } = require('url'); //lida com parâmetros
 const server = http.createServer((req, res) => {
     res.setHeader('Content-type', 'application/json'); //indica o formato da resposta
 
-    if(req.url.startsWith('/search')) {
+    if(req.url.startsWith('/search')) { 
         res.statusCode = 200;
 
         const queryParams = req.url.split('?')[1]; //para acessar o que depois do "?" da url
