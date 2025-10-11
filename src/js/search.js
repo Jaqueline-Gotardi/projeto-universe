@@ -49,3 +49,7 @@ lupaPesquisa.addEventListener('click', () => {
     }
     buscarDados();
 }); 
+
+
+/* O QUE FALTA FAZER AQUI? */
+// Fazer com que o front não acesse a API diretamente como está acessando agora, ams sim, conduzir ele direto para o arquivo server.js do backend, já que estamos configurando um servidor local :) 
