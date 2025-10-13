@@ -10,6 +10,15 @@ const server = http.createServer((req, res) => {
     res.setHeader('Content-type', 'application/json'); //indica o formato da resposta
 
     if(req.url.startsWith('/search')) { 
+        
+//receber o valor do input
+const resposta = fetch(`https://pt.wikipedia.org/w/api.php?action=query&list=search&srsearch=$&format=json&origin=*`);
+const dados = resposta.JSON;
+res.end(JSON.stringify(dados));
+
+
+//fetch('https://localhost:3000/search?=${valorInput}', { method: 'GET', body: JSON.stringify({title:'title', snippet: 'snippet'})});
+
         res.statusCode = 200;
 
         const queryParams = req.url.split('?')[1]; //para acessar o que depois do "?" da url
