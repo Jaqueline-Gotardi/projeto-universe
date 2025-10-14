@@ -40,24 +40,35 @@ lupaPesquisa.addEventListener('click', () => {
 
 
 
-/* LIGANDO API COM BACKEND: */
+/* LIGANDO API COM BACKEND LOCAL: */
 const campoPesquisa = document.getElementById('campo-pesquisa');
 const lupaPesquisa = document.getElementById('lupa-pesquisa');
 const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa'); 
 
 lupaPesquisa.addEventListener('keydown', () => {
 
-    async function buscarDados() {
+    async function enviarDados() {
           
         try {
+
+            //pega o valor do input
             const valorInput = campoPesquisa.value;
-            valorInput.post
+            //valorInput.post
 
                 //enviar o valor do input para o servidor back
-                const resposta = await fetch('http://localhost:3000/', 
-                    { method: 'POST', body: JSON.stringify({title:'title', snippet: 'snippet'})});
+                const response = await fetch('http://localhost:3000/search', 
+                    { method: 'POST', 
+                        headers: {
+                            'content-type': 'application/json',
+                        },
 
-                const dados = await resposta.json();
+                        //envia o valor em formato JSON
+                        body: JSON.stringify({ valor: valorInput /*title:'title', snippet: 'snippet'*/})
+                    });
+
+                    //console.log(response);
+
+                const dados = await response.json();
                 //console.log(dados);
 
                 //remover o botão de menu quando a pesquisa for realizada
@@ -78,7 +89,7 @@ lupaPesquisa.addEventListener('keydown', () => {
             console.log(`Dados não disponível: ${erro}`);
         }
     }
-    buscarDados();
+    enviarDados();
 });
 
 
