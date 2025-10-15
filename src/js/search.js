@@ -45,8 +45,6 @@ const campoPesquisa = document.getElementById('campo-pesquisa');
 const lupaPesquisa = document.getElementById('lupa-pesquisa');
 const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa'); 
 
-lupaPesquisa.addEventListener('keydown', () => {
-
     async function enviarDados() {
           
         try {
@@ -56,14 +54,12 @@ lupaPesquisa.addEventListener('keydown', () => {
             //valorInput.post
 
                 //enviar o valor do input para o servidor back
-                const response = await fetch('http://localhost:3000/search', 
-                    { method: 'POST', 
-                        headers: {
-                            'content-type': 'application/json',
-                        },
+                const response = await fetch(`http://localhost:3000/search?title=${valorInput}`, 
+                    { method: 'GET', 
+                        //headers: {'content-type': 'application/json',},
 
                         //envia o valor em formato JSON
-                        body: JSON.stringify({ valor: valorInput /*title:'title', snippet: 'snippet'*/})
+                        //body: JSON.stringify({ valor: valorInput /*title:'title', snippet: 'snippet'*/})
                     });
 
                     //console.log(response);
@@ -75,7 +71,8 @@ lupaPesquisa.addEventListener('keydown', () => {
                 btnMenu.classList.remove('btn-menu');
 
                 //PARA EXIBIR A PESQUISA SE O CAMPO FOR PREENCHIDO 
-                const resultado = dados.query.search;
+                //const resultado = dados.query.search;
+                const resultado = dados;
                 let htmlResultados = ''
                 if (resultado.length === 0) {
                     exibicaoDaPesquisa.innerHTML = `<p>Pesquisa não disponível</p>`
@@ -86,14 +83,18 @@ lupaPesquisa.addEventListener('keydown', () => {
                 exibicaoDaPesquisa.innerHTML = htmlResultados;
 
         } catch(erro) {
+            exibicaoDaPesquisa.innerHTML = `<p>Erro ao buscar na API. Tente novamente. </p>`;
             console.log(`Dados não disponível: ${erro}`);
         }
     }
-    enviarDados();
-});
+    //enviarDados();
 
+        lupaPesquisa.addEventListener('click', () => {
+            enviarDados()
+        })
 
-
-
-/* O QUE FALTA FAZER AQUI? */
-// Fazer com que o front não acesse a API diretamente como está acessando agora, mas sim, conduzir ele direto para o arquivo server.js do backend, já que estamos configurando um servidor local :) 
+        campoPesquisa.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                enviarDados();
+        }
+        });
