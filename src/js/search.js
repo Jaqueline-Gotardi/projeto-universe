@@ -2,12 +2,12 @@
 
 const campoPesquisa = document.getElementById('campo-pesquisa');
 const lupaPesquisa = document.getElementById('lupa-pesquisa');
-const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa'); 
+const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa');  
 
 lupaPesquisa.addEventListener('click', () => {
 
     async function buscarDados() {
-          
+           
         try {
             const valorInput = campoPesquisa.value;
 
@@ -36,8 +36,6 @@ lupaPesquisa.addEventListener('click', () => {
     }
     buscarDados();
 }); */
-
-
 
 
 /* LIGANDO API COM BACKEND LOCAL: */
@@ -78,7 +76,7 @@ const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa');
                     exibicaoDaPesquisa.innerHTML = `<p>Pesquisa não disponível</p>`
                 } 
                 resultado.forEach(item => {
-                    htmlResultados += (`<p><strong>${item.title}</strong>: ${item.snippet}</p>`)
+                    htmlResultados += (`<p><strong>${item.title}</strong>: ${item.date_created}=${item.date_created}=${item.location}=${item.description}=${item.description_508}=${item.keywords}=${item.href}</p>`)
                 });
                 exibicaoDaPesquisa.innerHTML = htmlResultados;
 

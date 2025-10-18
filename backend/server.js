@@ -2,9 +2,9 @@
 require('dotenv').config()
 //const apiKey = process.env.API_KEY
 //console.log(process.env)
-
+ 
 const http = require('http'); //cria o servidor
-const { URLSearchParams } = require('url'); //lida com parâmetros
+const { URLSearchParams } = require('url'); //lida com parâmetros 
 
 const server = http.createServer((req, res) => {
     res.setHeader('Content-type', 'application/json'); //indica o formato da resposta
@@ -29,10 +29,17 @@ const server = http.createServer((req, res) => {
         
         const queryParams = req.url.split('?')[1]; //para acessar o que depois do "?" da url
         const params = new URLSearchParams(queryParams);
+
         const title = params.get('title'); //pegando o parâmetro
+        const date_created = params.get('date_created');
+        const location = params.get('location');
+        const description = params.get('description');
+        const description_508 = params.get('description_508');
+        const keywords = params.get('keywords');
+        const href = params.get('href'); 
 
 //receber o valor do input
-const resposta = await fetch(`https://pt.wikipedia.org/w/api.php?action=query&list=search&srsearch=${title}&format=json&origin=*`, {
+const resposta = await fetch(`https://images-api.nasa.gov/search?q=${title}`, {
     method: 'GET',
     //headers: {'content-type': 'application/json',},
     //body: JSON.stringify({valor: valorInput}),
@@ -40,13 +47,20 @@ const resposta = await fetch(`https://pt.wikipedia.org/w/api.php?action=query&li
 
 //transforma a resposta em json 
 const dados = await resposta.json();
-//console.log(dados)
+//console.log(dados.collection.items)
+console.log(JSON.stringify(dados, null, 2))
+//"null, 2" é apenas para deixar as informações mais visíveis
 
-//para filtrar apenas o title
-const resultadosFiltrados = dados.query.search.map(item => ({
-    title: item.title,
-    snippet: item.snippet,
-}))
+//para filtrar o título, descrição e imagem:
+const resultadosFiltrados = dados.collection.items.map(item => ({
+    title: item.data[0].title,
+    date_created: item.data[0].date_created,
+    location: item.data[0].location,
+    description: item.data[0].description,
+    description_508: item.data[0].description_508,
+    keywords: item.data[0].keywords,
+    href: item.links[0].href, 
+})) 
 
 //res.setHeader('Content-type', 'application/json')
 
