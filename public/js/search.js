@@ -111,3 +111,5 @@ const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa');
 
         /* PARA CONCERTAR:
          o Node está bloqueado de fazer conexões HTTPS externas, algo está impedindo o acesso (pode ser o IPv6, proxy, firewall, ou bloqueio na porta 443). */
+         
+         //primeira suspeita: bloqueamento no cors, servidor node rodando na porta 3000 e o live server rodando meu frontend na porta 5001;

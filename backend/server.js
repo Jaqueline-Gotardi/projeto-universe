@@ -1,7 +1,14 @@
+const express = require('express');
+const path = require('path');
+const app = express()
 // É necessário instalar uma biblioteca dotenv para usar o .env, abra seu terminal no vscode msm e digite ('npm i dotenv') para instalar
 require('dotenv').config()
+
+
 //const apiKey = process.env.API_KEY
 //console.log(process.env)
+
+app.use(express.static(path.join(__dirname, '../public')));
  
 const http = require('http'); //cria o servidor
 const { URLSearchParams } = require('url'); //lida com parâmetros 
@@ -10,7 +17,8 @@ const server = http.createServer((req, res) => {
     res.setHeader('Content-type', 'application/json'); //indica o formato da resposta
 
     //para autorizar o navegador a acessar as requisições vindas do Front
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:5501"); //acessar a origem
+    //res.setHeader("Access-Control-Allow-Origin", "http://localhost:5501"); //acessar a origem
+    res.setHeader("Access-Control-Allow-Origin", "*"); //o "*" permite rodar o servidor de qualquer origem
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS"); //acessar os métodos
     res.setHeader("Access-Control-Allow-Headers", "Content-type, Accept, X-Requested-With"); //acessar o cabeçalho
     //res.status(200).end()
@@ -57,7 +65,7 @@ const resultadosFiltrados = dados.collection.items
 //mantém só os itens que têm título + imagem.
 .filter(item => 
     item.data &&
-    item.data[0].title.toLowercase().includes(title.toLowerCase()) &&
+    item.data[0].title.toLowerCase().includes(title.toLowerCase()) &&
     item.links &&
     item.links.some(link => link.render === 'image')
 )
