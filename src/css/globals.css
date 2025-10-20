@@ -288,7 +288,7 @@ section.selecionado {
 }
 
 /* Telas muito pequenas */
-@media (max-width: 320px) {
+@media (max-width: 370px) {
     .content-wrapper {
         padding: 0.5rem;
     }
@@ -309,7 +309,7 @@ section.selecionado {
         font-size: 14px;
     }
 
-    .text h2 {
+    .text h2 { 
         font-size: 18px;
     }
 
@@ -342,3 +342,12 @@ section.selecionado {
         font-size: 0.9em;
     }
 } 
+
+@media (max-width: 340px) {
+    .login-container {
+        max-width: 500px;
+    }
+    .login-form {
+        width: 125%;
+    }
+}

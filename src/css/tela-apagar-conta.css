@@ -116,7 +116,7 @@
     border: none;
     cursor: pointer;
     padding: 0; 
-    margin-bottom: 10px;
+    margin-bottom: 50px; 
     transition: transform 0.3s ease-in-out;
 }
 

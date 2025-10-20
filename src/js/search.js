@@ -63,7 +63,7 @@ const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa');
                     //console.log(response);
 
                 const dados = await response.json();
-                //console.log(dados);
+                console.log(dados);
 
                 //remover o botão de menu quando a pesquisa for realizada
                 btnMenu.classList.remove('btn-menu');
@@ -71,12 +71,22 @@ const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa');
                 //PARA EXIBIR A PESQUISA SE O CAMPO FOR PREENCHIDO 
                 //const resultado = dados.query.search;
                 const resultado = dados;
+                //console.log(resultado)
                 let htmlResultados = ''
                 if (resultado.length === 0) {
                     exibicaoDaPesquisa.innerHTML = `<p>Pesquisa não disponível</p>`
                 } 
                 resultado.forEach(item => {
-                    htmlResultados += (`<p><strong>${item.title}</strong>: ${item.date_created}=${item.date_created}=${item.location}=${item.description}=${item.description_508}=${item.keywords}=${item.href}</p>`)
+                    htmlResultados +=  `
+                    <div class= "resultado-item">
+                        <h3>${item.title}</h3>
+                        <p><strong>📅 Data:</strong>${item.date_created}</p>
+                        <p><strong>📍 Localização:</strong>${item.location}</p>
+                        <p><strong>📝 Descrição:</strong>${item.description}</p>
+                        <img src="${item.href}" alt="${item.title}" style="max-width: 200px; border-radius: 8px;"></img>
+                        </div>`;
+                    
+                    /* (`<p><strong>${item.title}</strong>: ${item.date_created}=${item.date_created}=${item.location}=${item.description}=${item.description_508}=${item.keywords}=${item.href}</p>`) */
                 });
                 exibicaoDaPesquisa.innerHTML = htmlResultados;
 
@@ -96,3 +106,8 @@ const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa');
                 enviarDados();
         }
         });
+
+
+
+        /* PARA CONCERTAR:
+         o Node está bloqueado de fazer conexões HTTPS externas, algo está impedindo o acesso (pode ser o IPv6, proxy, firewall, ou bloqueio na porta 443). */

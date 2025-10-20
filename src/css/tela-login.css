@@ -126,7 +126,7 @@
   padding: 15px;
   width: 50%;
   color: black;
-  font-size: 15px;
+  font-size: 15px; 
   cursor: pointer;
   border-radius: 10px;
   transition: .2s ease-out;
@@ -226,10 +226,18 @@ input.certo {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 3rem;
-  text-align: center;
+  /* text-align: center; */
+  justify-items: center;
   max-width: 400px;
   width: 100%;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 340px) {
+  .login-container {
+    padding: 2rem;
+    max-width: 16rem;
+    position: absolute;
+  }
 }
 
 .welcome-section {
@@ -247,6 +255,11 @@ input.certo {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #fff;
+}
+@media (max-width: 340px) {
+  .welcome-title {
+    font-size: 1rem;
+  }
 }
 
 .login-form {
@@ -301,6 +314,12 @@ input.certo {
   letter-spacing: 1px;
 }
 
+/* @media (max-width:325px) {
+  .btn-cosmic {
+    font-size: 4rem;
+  }
+} */
+
 .btn-primary {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -336,11 +355,11 @@ input.certo {
     width: 95%;
     max-width: 470px;
     top: auto;
-    bottom: 10px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     right: auto;
-    padding: 10px 15px;
+    padding: 8px;
     border-radius: 50px;
     gap: 10px;
   }
@@ -375,7 +394,8 @@ input.certo {
   }
 
   .player-controles button {
-    padding: 8px 12px;
+    /* padding: 8px 12px; */
+    padding: 4px;
     font-size: 12px;
   }
 }
