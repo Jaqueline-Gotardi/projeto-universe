@@ -220,7 +220,6 @@ botaoEntrar.addEventListener('click', (event) => {
 });
 
 
-
 /* MUDANDO A TELA DE LOGIN PARA A DE CADASTRO */
 const linkLogin = document.getElementById('link-login');
 cadastroLink.addEventListener('click', (event) => {
@@ -1004,7 +1003,7 @@ function atualizarProgresso() {
         secaoEdicao.style.display = 'none';
         secaoVisualizacao.style.display = 'block';
     });
-
+ 
 
     /* MUDANDO A TELA PARA TROCAR A SENHA */
     const trocarSenha = document.getElementById('btn-troca-senha');

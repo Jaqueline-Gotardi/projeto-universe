@@ -36,12 +36,12 @@
 
   <!-- ESTRUTURA DA TRILHA SONORA -->
   <div class="audio-player">
-    <audio id="audio-player-1" src="./src/musicas/639-hz-solfeggio-frequency-connect-with-higher-self-spiritual-music-160725.mp3" preload="auto"></audio>
-    <audio id="audio-player-2" src="./src/musicas/69-spazio-ufo-universo-stelle-328185.mp3" preload="auto"></audio>
-    <audio id="audio-player-3" src="./src/musicas/calm-space-music-312291.mp3" preload="auto"></audio>
-    <audio id="audio-player-4" src="./src/musicas/cosmic-universe-planet-galaxy-music-263209.mp3" preload="auto"></audio>
-    <audio id="audio-player-5" src="./src/musicas/universe-planet-cosmic-galaxy-music-263133.mp3" preload="auto"></audio>
-    <audio id="audio-player-6" src="./src/musicas/universe-space-sounds-3595.mp3" preload="auto"></audio>
+    <audio id="audio-player-1" src="./musicas/639-hz-solfeggio-frequency-connect-with-higher-self-spiritual-music-160725.mp3" preload="auto"></audio>
+    <audio id="audio-player-2" src="./musicas/69-spazio-ufo-universo-stelle-328185.mp3" preload="auto"></audio>
+    <audio id="audio-player-3" src="./musicas/calm-space-music-312291.mp3" preload="auto"></audio>
+    <audio id="audio-player-4" src="./musicas/cosmic-universe-planet-galaxy-music-263209.mp3" preload="auto"></audio>
+    <audio id="audio-player-5" src="./musicas/universe-planet-cosmic-galaxy-music-263133.mp3" preload="auto"></audio>
+    <audio id="audio-player-6" src="./musicas/universe-space-sounds-3595.mp3" preload="auto"></audio>
 
     <div class="progress-container">
       <div class="progress-outline"></div>
@@ -53,11 +53,11 @@
         <button id="play-pause-btn">Play</button>
         <button id="next-btn">Avançar</button>
     </div>
-</div> 
+</div>  
 
 
   <!-- TELA DE LOGIN -->
-  <section class="tela-login selecionado" id="tela-login">
+  <section class="tela-login" id="tela-login">
     <div class="space-background login-bg">
       <div class="stars"></div>
       <div class="planets"></div>
@@ -65,7 +65,7 @@
     <div class="content-wrapper">
       <div class="login-container">
         <div class="welcome-section">
-          <img src="src/imagens/astronaut-hero.png" alt="Astronauta" class="astronaut-hero">
+          <img src="./imagens/astronaut-hero.png" alt="Astronauta" class="astronaut-hero">
           <h1 class="welcome-title">Bem vindo(a) ao Universe!</h1>
         </div>
 
@@ -137,6 +137,7 @@
   </section> 
 
 
+  <!-- TELA INICIAR EXPLORAÇÃO -->
   <section class="tela-principal" id="tela-principal-inicial" >
     <div class="text">
       <h2>O que vamos explorar hoje?</h2>
@@ -148,19 +149,28 @@
     </div> 
   </section>
 
-  <section class="tela-navegacao" id="menu">
+
+  <!-- TELA DE MENU  -->
+  <section class="tela-navegacao selecionado" id="menu">
+    <div class="background-menu menu-bg">
+      <div class="stars-menu"></div>
+      <div class="planets-menu"></div>
+    </div> 
+    <div class="faixa">
     <div class="barra">
       <input type="text" id="campo-pesquisa" placeholder="Pesquisar no Universo..." name="Nome" />
-      <img src="./src/imagens/lupa.jpg" class="lupa" id="lupa-pesquisa">
+      <img src="./imagens/lupa.jpg" class="lupa" id="lupa-pesquisa">
     </div>
-    <div class="informacoes-extras" id="exibicao-da-pesquisa">
+    <div class="informacoes-extras">
       <button type="button" class="btn-cosmic" id="btn-menu">Menu</button>
     </div>
     <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
-      <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal" id="btn-voltar-menu">
+      <img src="./imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal" id="btn-voltar-menu">
     </button> 
+    </div>
+    <div id="mostrar-pesquisa"></div>
   </section>
-
+  
 
   <!-- TELA DE TUTORIAL -->
   <section id="tela-tutorial" class="tela-tutorial">
@@ -183,7 +193,7 @@
           </p>
         </div>
 
-        <img src="./src/imagens/jovem-e-dog.jpg" alt="Foto ilustrativa de mim e meu cachorro" class="imagem-adaptavel">
+        <img src="./imagens/jovem-e-dog.jpg" alt="Foto ilustrativa de mim e meu cachorro" class="imagem-adaptavel">
 
         <div class="card">
             <h2 class="titulo-missao">Sua Missão</h2>
@@ -269,7 +279,7 @@
       <div class="stars"></div>
     </div>
     <div class="info-card">
-      <img src="./src/imagens/ursa-maior.png" alt="Constelação Ursa Maior" class="celestial-image">
+      <img src="./imagens/ursa-maior.png" alt="Constelação Ursa Maior" class="celestial-image">
       <h3 class="titulo-missao">Constelação de Ursa Maior</h3>
       <div class="jornada-projeto">
       <p class="descricao">Uma das constelações mais famosas do céu noturno, a Ursa Maior é facilmente reconhecível pelo seu formato icônico, conhecido como "O Grande Carro". Visível durante todo o ano no Hemisfério Norte, ela é um marco no céu, uma das primeiras formações que qualquer explorador aprende a identificar.
@@ -285,7 +295,7 @@
   <section class="tela-eventos-detalhe" id="detalhe-ursa-menor">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
-    <img src="./src/imagens/ursa-menor.png" alt="Constelação Ursa Menor" class="celestial-image">
+    <img src="./imagens/ursa-menor.png" alt="Constelação Ursa Menor" class="celestial-image">
     <h3 class="titulo-missao">Constelação de Ursa Menor</h3>
     <div class="jornada-projeto">
     <p class="descricao">Na vastidão do cosmo, a Ursa Menor se destaca não pelo seu brilho intenso, mas pela sua importância inigualável. Esta constelação, embora menos visível que a sua "irmã" maior, atua como um farol para os navegantes e exploradores, guiando-os através da escuridão. 
@@ -302,7 +312,7 @@
   <section class="tela-eventos-detalhe" id="detalhe-andromeda">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
-    <img src="./src/imagens/andromeda.png" alt="Constelação Andrômeda" class="celestial-image">
+    <img src="./imagens/andromeda.png" alt="Constelação Andrômeda" class="celestial-image">
     <h3 class="titulo-missao">Constelação de Andrômeda</h3>
     <div class="jornada-projeto">
     <p class="descricao">A constelação de Andrômeda é famosa por abrigar um dos objetos mais fascinantes do nosso céu noturno: a Galáxia de Andrômeda (M31). Para um verdadeiro explorador, este é um alvo de missão prioritário. M31 é a nossa vizinha galáctica mais próxima e, de uma perspectiva na Terra, é o objeto mais distante que pode ser visto a olho nu. <br><br>
@@ -318,7 +328,7 @@
   <section class="tela-eventos-detalhe" id="detalhe-cruzeiro-do-sul">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
-    <img src="./src/imagens/cruzeiro-do-sul.png" alt="Constelação Cruzeiro do Sul" class="celestial-image">
+    <img src="./imagens/cruzeiro-do-sul.png" alt="Constelação Cruzeiro do Sul" class="celestial-image">
     <h3 class="titulo-missao">Constelação de Cruzeiro Do Sul</h3>
     <div class="jornada-projeto">
     <p class="descricao">Embora seja a menor das 88 constelações, o Cruzeiro do Sul (ou Crux) tem uma importância colossal para os exploradores do Hemisfério Sul. Esta pequena e distinta constelação atua como um farol, um guia confiável na escuridão do céu.
@@ -334,7 +344,7 @@
   <section class="tela-eventos-detalhe" id="detalhe-fenix">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
-    <img src="./src/imagens/fenix.png" alt="Constelação Fênix" class="celestial-image">
+    <img src="./imagens/fenix.png" alt="Constelação Fênix" class="celestial-image">
     <h3 class="titulo-missao">Constelação de Fênix</h3>
     <div class="jornada-projeto">
     <p class="descricao">No vasto céu do Hemisfério Sul, a constelação Fênix é uma pequena, mas distinta, formação estelar. Nomeada em homenagem a uma figura lendária que representa a renovação, esta constelação foi introduzida no final do século XVI pelo astrônomo Petrus Plancius. <br><br>
@@ -349,7 +359,7 @@
   <section class="tela-eventos-detalhe" id="detalhe-centauro">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
-    <img src="./src/imagens/centauro.png" alt="Constelação Centauro" class="celestial-image">
+    <img src="./imagens/centauro.png" alt="Constelação Centauro" class="celestial-image">
     <h3 class="titulo-missao">Constelação de Centauro</h3>
     <div class="jornada-projeto">
     <p class="descricao">Centauro é uma das maiores e mais brilhantes constelações do Hemisfério Sul, servindo como um guia majestoso para os exploradores. Ela não é apenas notável por seu tamanho, mas por abrigar dois dos objetos mais fascinantes do nosso céu.
@@ -368,7 +378,7 @@
     <section class="tela-eventos-detalhe" id="detalhe-orion">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
-    <img src="./src/imagens/orion.png" alt="Constelação Órion" class="celestial-image">
+    <img src="./imagens/orion.jpg" alt="Constelação Órion" class="celestial-image">
     <h3 class="titulo-missao">Constelação de Órion</h3>
     <div class="jornada-projeto">
     <p class="descricao">Órion, o Caçador, é uma das constelações mais famosas e fáceis de reconhecer no céu. Sua forma imponente é um guia perfeito para qualquer explorador.
@@ -386,7 +396,7 @@
   <section class="tela-eventos-detalhe" id="detalhe-cao-maior">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
-    <img src="./src/imagens/cao-maior.png" alt="Constelação Cão Maior" class="celestial-image">
+    <img src="./imagens/cao-maior.png" alt="Constelação Cão Maior" class="celestial-image">
     <h3 class="titulo-missao">Constelação de Cão Maior</h3>
     <div class="jornada-projeto">
     <p class="descricao">Cão Maior é uma das constelações mais notáveis do céu, facilmente identificável por seu brilho e sua estrela mais proeminente, um guia perfeito para qualquer explorador.
@@ -405,7 +415,7 @@
   <section class="tela-eventos-detalhe" id="detalhe-escorpiao">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
-    <img src="./src/imagens/escorpiao.png" alt="Constelação Escorpião" class="celestial-image">
+    <img src="./imagens/escorpiao.png" alt="Constelação Escorpião" class="celestial-image">
     <h3 class="titulo-missao">Constelação de Escorpião</h3>
     <div class="jornada-projeto">
     <p class="descricao">Escorpião é uma das poucas constelações que realmente se parece com a sua forma. Sua silhueta dramática o torna um alvo perfeito para qualquer explorador.
@@ -446,7 +456,7 @@
   <section class="tela-eventos-detalhe" id="detalhe-eclipse-solar">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/eclipse-solar.png" alt="Eclipse Solar" class="celestial-image">
+    <img src="./imagens/eclipse-solar.png" alt="Eclipse Solar" class="celestial-image">
     
       <h3 class="titulo-missao">Eclipse Solar</h3>
       <div class="jornada-projeto">
@@ -463,7 +473,7 @@ Este alinhamento cósmico perfeito transforma o dia em uma escuridão momentâne
   <section class="tela-eventos-detalhe" id="detalhe-eclipse-lunar">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/eclipse-lunar.png" alt="Eclipse Lunar" class="celestial-image">
+    <img src="./imagens/eclipse-lunar.png" alt="Eclipse Lunar" class="celestial-image">
     
       <h3 class="titulo-missao">Eclipse Lunar</h3>
       <div class="jornada-projeto">
@@ -492,7 +502,7 @@ Observar um eclipse lunar é uma missão que te conecta a um fenômeno de pura e
   <section class="tela-eventos-detalhe" id="detalhe-perseidas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/chuva-de-meteoros-perseidas.png" alt="Chuva de Meteoros Perseidas" class="celestial-image">
+    <img src="./imagens/chuva-de-meteoros-perseidas.png" alt="Chuva de Meteoros Perseidas" class="celestial-image">
     
       <h3 class="titulo-missao">Chuva de Meteoros Perseidas</h3>
       <div class="jornada-projeto">
@@ -511,7 +521,7 @@ Observar as Perseidas é como assistir a fogos de artifício cósmicos, com rast
   <section class="tela-eventos-detalhe" id="detalhe-leonideas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/chuva-de-meteoros-leonideas.png" alt="Chuva de Meteoros Leonídeas" class="celestial-image">
+    <img src="./imagens/chuva-de-meteoros-leonideas.png" alt="Chuva de Meteoros Leonídeas" class="celestial-image">
     
       <h3 class="titulo-missao">Chuva de Meteoros Leonídeas</h3>
       <div class="jornada-projeto">
@@ -530,7 +540,7 @@ Observar as Leônidas é como testemunhar uma tempestade de partículas cósmica
   <section class="tela-eventos-detalhe" id="detalhe-geminideas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/chuva-de-meteoros-geminideas.png" alt="Chuva de Meteoros Geminídeas" class="celestial-image">
+    <img src="./imagens/chuva-de-meteoros-geminideas.png" alt="Chuva de Meteoros Geminídeas" class="celestial-image">
     
       <h3 class="titulo-missao">Chuva de Meteoros Geminídeas</h3>
       <div class="jornada-projeto">
@@ -559,7 +569,7 @@ Observar as Geminídeas é como testemunhar uma tempestade de partículas cósmi
   <section class="tela-eventos-detalhe" id="detalhe-superlua">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/superlua.png" alt="Superlua" class="celestial-image">
+    <img src="./imagens/superlua.png" alt="Superlua" class="celestial-image">
     
       <h3 class="titulo-missao">Superlua</h3>
      
@@ -577,7 +587,7 @@ Observar as Geminídeas é como testemunhar uma tempestade de partículas cósmi
   <section class="tela-eventos-detalhe" id="detalhe-conjuncao">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/conjuncao.png" alt="Conjunção Planetária" class="celestial-image">
+    <img src="./imagens/conjuncao.png" alt="Conjunção Planetária" class="celestial-image">
     
       <h3 class="titulo-missao">Conjunção Planetária</h3>
       <p class="descricao">
@@ -605,7 +615,7 @@ Evento que convida os exploradores a se conectar com o movimento e a beleza do n
   <section class="tela-eventos-detalhe" id="detalhe-cometas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/cometas.png" alt="Cometas" class="celestial-image">
+    <img src="./imagens/cometas.png" alt="Cometas" class="celestial-image">
       <h3 class="titulo-missao">Cometas</h3>
       <p class="descricao">
         Os cometas são objetos fascinantes, verdadeiras "bolas de neve sujas" compostas por gelo, poeira e rocha. <strong>Eles viajam por longas órbitas a partir das regiões mais frias e distantes do nosso sistema solar. O espetáculo de um cometa acontece quando ele se aproxima do Sol e o calor faz com que seu gelo evapore, criando uma vasta atmosfera e uma cauda brilhante de gás e poeira.</strong>
@@ -622,7 +632,7 @@ Observá-los te conecta a um pedaço de história cósmica em movimento, um verd
   <section class="tela-eventos-detalhe" id="detalhe-supernovas">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/supernovas.png" alt="Supernovas" class="celestial-image">
+    <img src="./imagens/supernovas.png" alt="Supernovas" class="celestial-image">
     
       <h3 class="titulo-missao">Supernovas</h3>
       <p class="descricao">
@@ -640,7 +650,7 @@ Observá-la te conecta com o ciclo da vida e morte de uma estrela, um evento que
   <section class="tela-eventos-detalhe" id="detalhe-agrupamentos">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/agrupamentos-estelares.png" alt="Agrupamentos Estelares" class="celestial-image">
+    <img src="./imagens/agrupamentos-estelares.png" alt="Agrupamentos Estelares" class="celestial-image">
     
       <h3 class="titulo-missao">Agrupamentos Estelares</h3>
       <p class="descricao">
@@ -680,7 +690,7 @@ Observar isto te conecta com uma união de populações cósmicas.
   <section class="tela-eventos-detalhe" id="detalhe-espiral">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/galaxia-espiral.png" alt="Galáxia Espiral" class="celestial-image">
+    <img src="./imagens/galaxia-espiral.png" alt="Galáxia Espiral" class="celestial-image">
     
       <h3 class="titulo-criadores">Galáxia Espiral</h3>
       <p class="descricao">
@@ -696,7 +706,7 @@ Observar isto te conecta com a história de estrelas jovens e vibrantes que form
   <section class="tela-eventos-detalhe" id="detalhe-eliptica">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/galaxia-eliptica.png" alt="Galáxia Elíptica" class="celestial-image">
+    <img src="./imagens/galaxia-eliptica.png" alt="Galáxia Elíptica" class="celestial-image">
     
       <h3 class="titulo-criadores">Galáxia Elíptica</h3>
       <p class="descricao">
@@ -711,7 +721,7 @@ Observar isto te conecta com a história de estrelas antigas e maduras que forma
   <section class="tela-eventos-detalhe" id="detalhe-irregular">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/galaxia-irregular.png" alt="Galáxia Irregular" class="celestial-image">
+    <img src="./imagens/galaxia-irregular.png" alt="Galáxia Irregular" class="celestial-image">
     
       <h3 class="titulo-criadores">Galáxia Irregular</h3>
       <p class="descricao">
@@ -736,7 +746,7 @@ Observar isto te conecta com a história de estrelas antigas e maduras que forma
   <section class="tela-eventos-detalhe" id="detalhe-via-lactea">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/galaxia-via-lactea.png" alt="Galáxia Via Láctea" class="celestial-image">
+    <img src="./imagens/galaxia-via-lactea.png" alt="Galáxia Via Láctea" class="celestial-image">
     
       <h3 class="titulo-criadores">Via Láctea</h3>
       <p class="descricao">
@@ -751,7 +761,7 @@ Observar isto te conecta com a sua missão mais importante: desvendar os segredo
   <section class="tela-eventos-detalhe" id="detalhe-andromeda-galaxia">
     <div class="space-background"><div class="stars"></div></div>
    <div class="info-card">
-    <img src="./src/imagens/galaxia-andromeda.png" alt="Galáxia de Andrômeda" class="celestial-image">
+    <img src="./imagens/galaxia-andromeda.png" alt="Galáxia de Andrômeda" class="celestial-image">
     
       <h3 class="titulo-criadores">Galáxia de Andrômeda</h3>
       <p class="descricao">
@@ -766,7 +776,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-eventos-detalhe" id="detalhe-triangulo">
     <div class="space-background"><div class="stars"></div></div>
     <div class="info-card">
-    <img src="./src/imagens/galaxia-triangulo.png" alt="Galáxia do Triângulo (M33)" class="celestial-image">
+    <img src="./imagens/galaxia-triangulo.png" alt="Galáxia do Triângulo (M33)" class="celestial-image">
       <h3 class="titulo-criadores">Galáxia do Triângulo (M33)</h3>
       <p class="descricao">
         A Galáxia do Triângulo <strong>é a terceira maior da nossa família de galáxias e uma das maiores fábricas de estrelas do universo local.</strong> Ela é uma galáxia espiral menor e compacta, com um diâmetro de cerca de 60.000 anos-luz e cerca de 40 bilhões de estrelas. Sua alta taxa de nascimento de novas estrelas a torna um dos alvos mais fascinantes para a sua missão de exploração.
@@ -800,7 +810,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-eventos-detalhe" id="detalhe-sol">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
-    <img src="./src/imagens/sol.png" alt="Sol" class="celestial-image">
+    <img src="./imagens/sol.png" alt="Sol" class="celestial-image">
       <h3 class="titulo-missao">Sol</h3>
       <p class="descricao">
         O Sol é a estrela no centro do nosso Sistema Solar e a principal fonte de luz e energia para a vida na Terra.
@@ -816,7 +826,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-eventos-detalhe" id="detalhe-mercurio">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
-    <img src="./src/imagens/mercurio.png" alt="Mercurio" class="celestial-image">
+    <img src="./imagens/mercurio.png" alt="Mercurio" class="celestial-image">
       <h3 class="titulo-missao">Mercurio</h3>
       <p class="descricao">
         Sua superfície é um ambiente inóspito, repleto de crateras de impacto, o que o faz parecer muito com a Lua. A
@@ -832,7 +842,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-eventos-detalhe" id="detalhe-venus">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
-    <img src="./src/imagens/venus.png" alt="Venus" class="celestial-image">
+    <img src="./imagens/venus.png" alt="Venus" class="celestial-image">
       <h3 class="titulo-missao">Vênus</h3>
       <p class="descricao">
         Vênus é o segundo planeta a partir do Sol e o mais próximo da Terra. É conhecido como a "estrela da manhã" ou
@@ -850,8 +860,8 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
       <div class="terra-lua-container">
-        <img src="./src/imagens/terra.png" class="celestial-image" alt="Terra">
-        <img src="./src/imagens/lua.png" class="celestial-image" alt="Lua">
+        <img src="./imagens/terra.png" class="celestial-image" alt="Terra">
+        <img src="./imagens/lua.png" class="celestial-image" alt="Lua">
       </div>
       <h3 class="titulo-missao">Terra</h3>
       <p class="descricao">
@@ -870,7 +880,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-eventos-detalhe" id="detalhe-marte">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
-    <img src="./src/imagens/marte.png" alt="Marte" class="celestial-image">
+    <img src="./imagens/marte.png" alt="Marte" class="celestial-image">
       <h3 class="titulo-missao">Marte</h3>
       <p class="descricao">
         Marte é o quarto planeta a partir do Sol e é amplamente conhecido como o "planeta vermelho" por sua coloração
@@ -887,7 +897,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-eventos-detalhe" id="detalhe-jupiter">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
-    <img src="./src/imagens/jupiter.png" alt="Jupiter" class="celestial-image">
+    <img src="./imagens/jupiter.png" alt="Jupiter" class="celestial-image">
       <h3 class="titulo-missao">Júpiter</h3>
       <p class="descricao">
         Júpiter, o maior planeta do Sistema Solar, um gigante gasoso com mais que o dobro da massa de todos os outros
@@ -906,7 +916,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-eventos-detalhe" id="detalhe-saturno">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
-    <img src="./src/imagens/saturno.png" alt="Saturno" class="celestial-image">
+    <img src="./imagens/saturno.png" alt="Saturno" class="celestial-image">
       <h3 class="titulo-missao">Saturno</h3>
       <p class="descricao">
         Saturno é o sexto planeta a partir do Sol, e o segundo maior do nosso Sistema Solar. Ele é famoso por seu
@@ -923,7 +933,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-eventos-detalhe" id="detalhe-urano">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
-    <img src="./src/imagens/urano.png" alt="Urano" class="celestial-image">
+    <img src="./imagens/urano.png" alt="Urano" class="celestial-image">
       <h3 class="titulo-missao">Urano</h3>
       <p class="descricao">
         Urano é o sétimo planeta a partir do Sol, um gigante de gelo que se destaca por sua cor azul-esverdeada, causada
@@ -939,7 +949,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-eventos-detalhe" id="detalhe-netuno">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
-    <img src="./src/imagens/netuno.png" alt="Netuno" class="celestial-image">
+    <img src="./imagens/netuno.png" alt="Netuno" class="celestial-image">
       <h3 class="titulo-missao">Netuno</h3>
       <p class="descricao">
         Netuno é o oitavo e último planeta do nosso Sistema Solar, um gigante de gelo conhecido por sua cor azul-escura
@@ -956,7 +966,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-eventos-detalhe" class="screen active" id="detalhe-plutao">
     <div class="aurora-background"></div>
     <div class="info-card" style="position:relative; z-index:1;">
-      <img src="./src/imagens/plutao.png" alt="Plutão" class="celestial-image">
+      <img src="./imagens/plutao.png" alt="Plutão" class="celestial-image">
         <h3 class="titulo-missao">Plutão</h3>
         <p class="descricao">
           Plutão foi considerado o nono planeta do Sistema Solar por 76 anos, mas foi reclassificado como um planeta anão em 2006.
@@ -992,7 +1002,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   
         <div class="conteudo-perfil">
           <div class="perfil-foto">
-            <img src="./src/imagens/avatar-padrao.png" alt="Foto de perfil" id="foto-perfil-img" class="foto-perfil">
+            <img src="./imagens/avatar-padrao.png" alt="Foto de perfil" id="foto-perfil-img" class="foto-perfil">
           </div>
   
           <div class="perfil-info">
@@ -1020,7 +1030,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
 
           <div class="campo-foto-edicao">
             <label for="input-foto-perfil-edicao" class="label-foto">
-              <img src="./src/imagens/avatar-padrao.png" alt="Foto de perfil atual" class="foto-perfil-preview" id="foto-perfil-preview-edicao">
+              <img src="./imagens/avatar-padrao.png" alt="Foto de perfil atual" class="foto-perfil-preview" id="foto-perfil-preview-edicao">
               <span>Trocar Foto</span>
             </label>
             <input type="file" id="input-foto-perfil-edicao" accept="image/*" style="display: none;">
@@ -1102,7 +1112,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     
     <div class="card">
       <div class="imagem-perfil">
-        <img src="./src/imagens/Giliany.jpg" alt="Foto de Perfil de Giliany">
+        <img src="./imagens/Giliany.jpg" alt="Foto de Perfil de Giliany">
       </div>
       <div class="informacoes-perfil">
         <h2 class="nome-criador">Giliany Do Carmo</h2>
@@ -1122,7 +1132,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
 
     <div class="card">
       <div class="imagem-perfil">
-        <img src="./src/imagens/jaque.jpg" alt="Foto de Perfil de Jaqueline">
+        <img src="./imagens/jaque.jpg" alt="Foto de Perfil de Jaqueline">
       </div>
       <div class="informacoes-perfil">
         <h2 class="nome-criador">Jaqueline Gotardi</h2>
@@ -1145,7 +1155,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
     </div>
   </div>
   <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
-    <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal" id="btn-voltar-criadores">
+    <img src="./imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal" id="btn-voltar-criadores">
   </button>
 </section>
 
@@ -1154,7 +1164,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
   <section class="tela-apagar-conta" id="detalhe-apagar-conta">
     <div class="container-conteudo">
       <figure class="astronauta">
-        <img src="./src/imagens/nauta-triste.png" alt="Astronauta triste, pensando em você">
+        <img src="./imagens/nauta-triste.png" alt="Astronauta triste, pensando em você">
       </figure>
       <div class="painel-confirmacao">
         <p class="mensagem-persuasiva">Atenção, Agente Espacial. Sua jornada de exploração está em risco de ser
@@ -1169,7 +1179,7 @@ Observar isto te conecta com uma viagem no tempo e nos prepara para o encontro q
       </div>
     </div>
     <button type="button" class="botao-retorno-home" aria-label="Voltar para a página inicial">
-      <img src="./src/imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal" id="btn-voltar-apagar-conta">
+      <img src="./imagens/casinha.png" class="icone-home" alt="Ícone de casa, para retornar ao menu principal" id="btn-voltar-apagar-conta">
     </button>
   </section>
   

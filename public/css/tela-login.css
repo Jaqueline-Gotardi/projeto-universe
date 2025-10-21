@@ -170,6 +170,8 @@ input.certo {
   font-weight: 700;
 }
 
+
+/* Stars Animation */
 .space-background {
   position: absolute;
   top: 0;
@@ -183,7 +185,6 @@ input.certo {
   background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #2d1b69 100%); 
 }
 
-/* Stars Animation */
 .stars {
   position: absolute;
   width: 100%;
@@ -208,6 +209,7 @@ input.certo {
     transform: translateY(-100px);
   }
 }
+/* ---------------------------------------------------------------- */
 
 .content-wrapper {
   position: relative;
