@@ -65,17 +65,15 @@ A API é gratuita, então use com moderação, para não exceder o limite de req
 
 ---
 
-🖌️ Melhorias Recentes
+## 🖌️ Melhorias Recentes
 
-Layout Dinâmico: quando a pesquisa é exibida, os elementos mudam para row, deixando a experiência mais imersiva.
+1. Layout Dinâmico: quando a pesquisa é exibida, os elementos mudam para row, deixando a experiência mais imersiva.
 
-Animação de Fundo: ativada junto com os resultados, trazendo vida ao menu.
+2. Animação de Fundo: ativada junto com os resultados, trazendo vida ao menu.
 
-Responsividade: melhorias iniciais implementadas, ainda ajustando telas menores aos poucos.
+3. Responsividade: melhorias iniciais implementadas, ainda ajustando telas menores aos poucos.
 
-Integração com API da NASA: traz imagens e informações reais do cosmos.
-
-Amanhã será gravado um vídeo mostrando pesquisas reais no projeto, e você poderá conferir os resultados diretamente lá. 🎥✨
+4. Integração com API da NASA: traz imagens e informações reais do cosmos.
 
 ---
 
@@ -90,13 +88,13 @@ Durante o desenvolvimento, aprimorei habilidades como:
 - Lógica condicional com `if`;    
 - Criação de telas conectadas por JavaScript;  
 
-Além disso, aprendi muito sobre **design de interface**, **consistência visual** e **experiência do usuário (UX)** — usando o **Lovart IA** para gerar imagens temáticas que reforçam o clima espacial. 🌠  
+Além disso, aprendi muito sobre **design de interface**, **consistência visual** e **experiência do usuário (UX)**, usando o **Lovart IA** para gerar imagens temáticas que reforçam o clima espacial. 🌠  
 
 ---
 
 ## 💭 Próximas Explorações  
 
-O projeto ainda não possui backend, mas planejo incluir:  
+Planejo incluir:  
 - Integração com **banco de dados**;  
 - Implementaçã de automação; 
 - Simulação **3D interativa**; 
@@ -111,7 +109,7 @@ Tudo isso mantendo o foco na experiência do usuário, e no aprendizado contínu
 - **CSS3**: Estilo, animações e tema neon espacial; 
 - **JavaScript (puro)**: Lógica, interatividade e controle das telas;  
 - **Lovart IA**: Geração de imagens do universo;
-
+- **Node.Js**: Para Backend local;
 ---
 
 ## 🌌 Acesse o Projeto  
