@@ -8,6 +8,8 @@ require('dotenv').config()
 //const apiKey = process.env.API_KEY
 //console.log(process.env)
 
+
+//acessandoa pasta public, pra iniciar a conexão do front com o back local
 app.use(express.static(path.join(__dirname, '../public')));
  
 const http = require('http'); //cria o servidor
