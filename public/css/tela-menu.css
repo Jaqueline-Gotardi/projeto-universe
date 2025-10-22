@@ -1,4 +1,4 @@
-.tela-menu {
+/* .tela-menu {
     background-image: url('../imagens/Fundo_Universo_Puro_Escuro-fotor-enhance-2025091323703.jpg');
     background-size: cover;
     background-position: center;
@@ -9,6 +9,23 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+} */
+
+.tela-menu {
+    /* display: flex;  */
+     background-image: url('../imagens/Fundo_Espacial_UI_Astronauta-fotor-enhance-20250914133357.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: #0f2549; */
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 80px; 
+    padding: 20px; */
+    /* position: relative;  */
+    color: #e0f2f7;
 }
  
 .nauta-menu {
@@ -20,6 +37,15 @@
     margin-bottom: 20%; 
 }
 
+.faixa:not(.pesquisa-ativa) {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+} 
+
 .informacoes-extras {
     display: flex;
     flex-direction: column;
@@ -27,10 +53,80 @@
     justify-content: center;
 }
 
+/* .tela-menu .botao-retorno-home,
+.tela-menu .icone-home {
+    padding-bottom: 50px;
+}
+ */
+.tela-menu .icone-home {
+    width: 70px;
+    height: auto;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+    background-color: transparent;
+    border-radius: 0;
+    /* padding: 18px; */
+}
+
 @media (max-width: 768px) {
+    .faixa:not(.pesquisa-ativa) {
+        display: flex;
+        flex-direction: column;
+    }
     .tela-menu .guia-menu { 
         width: 350px;
     }
+}
+
+/* Celulares pequenos */
+@media (max-width: 420px) {
+.faixa.pesquisa-ativa .informacoes-extras,
+  .faixa:not(.pesquisa-ativa) .informacoes-extras {
+    width: 90%;
+  }
+    .tela-menu .guia-menu { 
+        width: 280px;
+    }
+    .faixa.pesquisa-ativa .informacoes-extras {
+        max-width: 180px;
+    }
+    .tela-menu .icone-home {
+        width: 35px;
+    }
+    .resultado-item {
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
+
+/* Celulares muito pequenos (Galaxy A06, LG) */
+@media (max-width: 360px) {
+    .tela-menu .guia-menu { 
+        width: 240px;
+    }
+    .faixa.pesquisa-ativa .tela-menu.informacoes-extras {
+        max-width: 150px;
+    }
+    .tela-menu .icone-home {
+        width: 30px;
+    }
+    .resultado-item {
+        padding: 8px;
+    }
+    .faixa.pesquisa-ativa #btn-menu,
+    .faixa:not(.pesquisa-ativa) #btn-menu {
+    width: 90px;
+    font-size: 0.7rem;
+  }
+  .audio-player {
+    width: 85%;
+    padding: 6px;
+    gap: 6px;
+  }
+
+  #titulo-musica {
+    font-size: 10px;
+    max-width: 100px;
+  }
 }
 
 @media (max-width: 365px) {
@@ -41,6 +137,27 @@
 
 
 /* MUDAR A ESTRUTURA DA TELA DE MENU */
+.resultado-item {
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  gap: 10px;
+  /* z-index: 1; */
+  position: relative;
+  border-radius: 10px;
+  max-width: 800px; 
+  width: 100%; 
+  margin: 20px auto; 
+  box-sizing: border-box; 
+}
+
+.resultado-item img {
+    max-width: 500px;
+}
+
 .faixa.pesquisa-ativa {
     display: flex;  /* deixa um ao lado do outro */
     flex-direction: row;
@@ -53,25 +170,70 @@
     gap: 35px;  
     /* margin: 10px; */
 } 
-.faixa.faixa.pesquisa-ativa  .informacoes-extras {
+
+.faixa.pesquisa-ativa  .informacoes-extras {
     max-width: 220px;
 }
-
-.faixa.faixa.pesquisa-ativa .icone-home {
+.faixa.pesquisa-ativa .icone-home {
     width: 40px;
 }
 
+@media (max-width: 768px) {
+  .faixa.pesquisa-ativa {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .resultado-item {
+    max-width: 600px; 
+    width: 90%; 
+  }
+  .resultado-item img {
+  max-width: 100%; 
+}
+}
+@media (min-width: 768px) {
+    .faixa.pesquisa-ativa {
+        flex: 1;
+        flex-direction: row;
+        /* display: flex; */
+    }
+.faixa.pesquisa-ativa #btn-menu {
+    order: 1;
+}
+
+.faixa.pesquisa-ativa .barra {
+    order: 2;
+}
+
+.faixa.pesquisa-ativa .icone-home {
+    order: 3;
+}
+}  
+
+
+
+/* ADICIONANDO ANIMAÇÃO QUANDO A PESQUISA FOR EXIBIDA */
 .background-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 0; 
+  display: none;
 }
+
+.faixa,
+.informacoes-extras,
+.botao-retorno-home {
+  position: relative; 
+  z-index: 1;
+}
+
 
 .menu-bg {
   background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #2d1b69 100%); 
+  /* animation:  sparkle 3s linear infinite; */
 } 
 
 .stars-menu {
@@ -86,19 +248,25 @@
     radial-gradient(2px 2px at 160px 30px, #ddd, transparent);
   background-repeat: repeat;
   background-size: 200px 100px;
+  animation:  sparkle 3s linear infinite;
 }
 
 .planets-menu {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.2), transparent 70%);
+ /*  background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.2), transparent 70%); */
+  animation:  sparkle 3s linear infinite;
 }
 
-.background-menu .starts-menu.ativa,
+.background-menu.ativa {
+    display: block;
+}
+
+/* .background-menu .starts-menu.ativa,
 .background-menu .planets-menu.ativa {
     animation:  sparkle 3s linear infinite;
-}
+} */
 
 @keyframes sparkle {
   from {

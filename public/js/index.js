@@ -82,7 +82,7 @@ const btnViaLactea = document.getElementById('btn-via-lactea');
 const btnVoltarViaLactea = document.getElementById('btn-voltar-via-lactea');
 const btnGalaxiaAndromeda = document.getElementById('btn-galaxia-andromeda');
 const btnVoltarGalaxiaAndromeda = document.getElementById('btn-voltar-galaxia-andromeda');
-const btnTriangulo = document.getElementById('btn-triangulo-m33');
+const btnTriangulo = document.getElementById('btn-triangulo-m33'); 
 const btnVoltarTriangulo = document.getElementById('btn-voltar-triangulo');
 const btnVoltarGalaxiasFamosas = document.getElementById('btn-voltar-galaxias-famosas');
 const btnVoltarGalaxias = document.getElementById('btn-voltar-galaxias');
@@ -217,7 +217,7 @@ botaoEntrar.addEventListener('click', (event) => {
     } else {
         console.log("Faça seu login! 🛸");
     }
-});
+}); 
 
 
 /* MUDANDO A TELA DE LOGIN PARA A DE CADASTRO */

@@ -15,7 +15,8 @@
     color: #e0f2f7;
 }
 
-.tela-navegacao .barra {
+.tela-navegacao .barra,
+.tela-menu .barra {
     justify-content: flex-start;
     position: static;
     display: flex;
@@ -27,11 +28,12 @@
     border-radius: 50px;
     padding: 8px 15px;
     width: 400px;
-    max-width: 90%;
+    max-width: 90%; 
     box-shadow: 0 0 15px #A020F0;
 }
 
-.tela-navegacao input {
+.tela-navegacao input,
+.tela-menu input {
     height: 35px;
     outline: none;
     width: 350px;
@@ -93,7 +95,7 @@
     border: 2px solid rgba(255, 255, 255, 0.7);
     font-size: 20px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 10px; 
     width: 300px;
     padding: 20px;
 }

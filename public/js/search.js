@@ -80,14 +80,14 @@ async function enviarDados() {
     }
     resultado.forEach((item) => {
       htmlResultados += `
-      <div class= "resultado-item" style= "background-color: #121212; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px; gap: 10px;">
+      <div class= "resultado-item" style= "padding: 40px;">
       <h3 style= "font-family: Orbitron">${item.title}</h3>
       <br>
       <p style= "font-family: Space mono"><strong>📅 Data:</strong>${item.date_created}</p>
       <p style= "font-family: Space mono"><strong>📍 Localização:</strong>${item.location}</p>
-      <p style= "font-family: Space mono; max-width: 600px; 
-  width: 90%; margin: 0 auto; "><strong>📝 Descrição:</strong>${item.description}</p>
-      <img src="${item.href}" alt="${item.title}" style="max-width: 500px; border-radius: 8px;"></img>
+      <p style= "font-family: Space mono; max-width: 500px; 
+  width: 90%; margin: 0 auto;"><strong>📝 Descrição:</strong>${item.description}</p>
+      <img src="${item.href}" alt="${item.title}" style="border-radius: 8px;"></img>
       </div>
       <br><br>`;
 
@@ -96,14 +96,22 @@ async function enviarDados() {
     mostrarPesquisa.innerHTML = htmlResultados;
 
     /* PARA EXIBIR A PESQUISA EMBAIXO E COLOCAR O MENU, BARRA DE PESQUISA E A CASINHA EM LINHA HORIZONTAL */
+    const bgMenu = document.querySelector('.background-menu');
+    const faixa = document.getElementById('faixa');
     if (resultado.length > 0) {
-        document.querySelector('.faixa').classList.add('pesquisa-ativa')
-        const elementos = document.querySelectorAll('.login-bg, .stars, .planets');
-        elementos.forEach(el => el.classList.add('ativa'));
+      document.getElementById('tela-login').style.display = 'none';
+        document.querySelector('.faixa').classList.add('pesquisa-ativa'); //exibindo pesquisa
+        bgMenu.classList.add('ativa');
+        bgMenu.querySelectorAll('.background-menu, .menu-bg, .stars-menu, .planets-menu').forEach(el => el.classList.add('ativa'));
+        /* const elementos = document.querySelectorAll('.background-menu, .menu-bg, .stars-menu, .planets-menu');
+        elementos.forEach(el => el.classList.add('ativa')); */
     } else {
-        document.querySelector('.faixa').classList.remove('pesquisa-ativa')
-        const elementos = document.querySelectorAll('.login-bg, .stars, .planets');
-        elementos.forEach(el => el.classList.remove('ativa'));
+        document.querySelector('.faixa').classList.remove('pesquisa-ativa');
+        bgMenu.classList.remove('ativa');
+        bgMenu.querySelectorAll('.background-menu, .menu-bg, .stars-menu, .planets-menu').forEach(el => el.classList.remove('ativa'));
+        faixa.classList.remove('pesquisa-ativa');
+        /* const elementos = document.querySelectorAll('.background-menu, .menu-bg, .stars-menu, .planets-menu');
+        elementos.forEach(el => el.classList.remove('ativa')); */
     } 
  
   } catch (erro) {
