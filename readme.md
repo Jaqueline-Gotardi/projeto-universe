@@ -7,11 +7,14 @@ Hoje, ele evoluiu para um **site completo, interativo e moderno**, desenvolvido 
 
 ![preview](src/imagens/tela-responsive.png)
 
+[🔗 Acesse o Universe no GitHub Pages](https://jaqueline-gotardi.github.io/projeto-universe/)  
+[🔗 Repositório no GitHub](https://github.com/Jaqueline-Gotardi/projeto-universe)  
 ---
 
 ## 🌠 Sobre o Projeto  
 
-O **Universe** é uma jornada digital por constelações, planetas, galáxias e fenômenos astronômicos.  
+O **Universe** é uma jornada digital por constelações, planetas, galáxias e fenômenO Universe é uma **jornada digital pelo cosmos**, explorando constelações, planetas, galáxias e fenômenos astronômicos. Cada tela foi pensada para oferecer uma experiência **visualmente imersiva** e **conectada à curiosidade de explorar o desconhecido**.
+os astronômicos.  
 Cada tela foi pensada para oferecer uma experiência envolvente, visualmente imersiva e conectada à curiosidade de explorar o desconhecido.  
 
 O projeto conta com:  
@@ -25,6 +28,56 @@ O projeto conta com:
 - **Tela de Criadores**: destacando o trabalho original de 2022 e a nova versão atualizada.  
 - **Tela de Apagar Conta**: com mensagem personalizada e interação dinâmica.  
 - **Trilha Sonora Espacial**: o usuário pode ouvir até 5 músicas-tema durante a navegação. 🎶  
+- **Pesquisa Integrada com API da NASA:** resultados filtrados, com imagem, descrição, data e localização.  
+
+---
+
+## 💻 Backend Local
+
+O projeto agora possui **backend local** para consumir a **API gratuita da NASA**.  
+Isso permite trazer resultados reais do universo diretamente para o seu navegador.  
+
+### Como rodar o backend na sua máquina
+
+1. Clone o repositório:  
+```bash
+git clone https://github.com/Jaqueline-Gotardi/projeto-universe.git
+```
+
+2. Entre na pasta do backend:
+```bash
+cd projeto-universe/backend
+```
+
+3. Instale as dependências:
+```bash
+npm install
+```
+
+4. Rode o servidor local:
+```bash
+node server.js
+```
+
+5. O servidor vai iniciar em:
+```http://localhost:3000```
+
+OBS: Abra o *index.html* do frontend no navegador (Github Pages ou Live Server)
+A API é gratuita, então use com moderação, para não exceder o limite de requisições. É apenas para fins de estudo.
+
+---
+
+🖌️ Melhorias Recentes
+
+Layout Dinâmico: quando a pesquisa é exibida, os elementos mudam para row, deixando a experiência mais imersiva.
+
+Animação de Fundo: ativada junto com os resultados, trazendo vida ao menu.
+
+Responsividade: melhorias iniciais implementadas, ainda ajustando telas menores aos poucos.
+
+Integração com API da NASA: traz imagens e informações reais do cosmos.
+
+Amanhã será gravado um vídeo mostrando pesquisas reais no projeto, e você poderá conferir os resultados diretamente lá. 🎥✨
 
 ---
 
@@ -46,8 +99,8 @@ Além disso, aprendi muito sobre **design de interface**, **consistência visual
 ## 💭 Próximas Explorações  
 
 O projeto ainda não possui backend, mas planejo incluir:  
-- Integração com **API** ou **banco de dados**;  
-- Implementação de **IA e automação (n8n)** na barra de pesquisa; 
+- Integração com **banco de dados**;  
+- Implementaçã de automação; 
 - Simulação **3D interativa**; 
 
 Tudo isso mantendo o foco na experiência do usuário, e no aprendizado contínuo, 1% melhor por dia. 💙  
@@ -77,7 +130,7 @@ Tudo isso mantendo o foco na experiência do usuário, e no aprendizado contínu
 ---
 
 🕵️‍♀️ **Missão em andamento...**  
-Mais telas, sons, códigos e constelações a caminho. . .
+Mais descobertas estão a caminho. . .
 
 ---
 
