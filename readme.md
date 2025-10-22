@@ -7,8 +7,6 @@ Hoje, ele evoluiu para um **site completo, interativo e moderno**, desenvolvido 
 
 ![preview](src/imagens/tela-responsive.png)
 
-[🔗 Acesse o Universe no GitHub Pages](https://jaqueline-gotardi.github.io/projeto-universe/)  
-[🔗 Repositório no GitHub](https://github.com/Jaqueline-Gotardi/projeto-universe)  
 ---
 
 ## 🌠 Sobre o Projeto  
