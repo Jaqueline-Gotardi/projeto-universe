@@ -1,16 +1,3 @@
-/* .tela-menu {
-    background-image: url('../imagens/Fundo_Universo_Puro_Escuro-fotor-enhance-2025091323703.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-} */
-
 .tela-menu {
     /* display: flex;  */
      background-image: url('../imagens/Fundo_Espacial_UI_Astronauta-fotor-enhance-20250914133357.jpg');
@@ -22,9 +9,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* gap: 80px; 
-    padding: 20px; */
-    /* position: relative;  */
     color: #e0f2f7;
 }
  
@@ -53,18 +37,12 @@
     justify-content: center;
 }
 
-/* .tela-menu .botao-retorno-home,
-.tela-menu .icone-home {
-    padding-bottom: 50px;
-}
- */
 .tela-menu .icone-home {
     width: 70px;
     height: auto;
     filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
     background-color: transparent;
     border-radius: 0;
-    /* padding: 18px; */
 }
 
 @media (max-width: 768px) {
@@ -143,9 +121,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 20px; */
   gap: 10px;
-  /* z-index: 1; */
   position: relative;
   border-radius: 10px;
   max-width: 800px; 
@@ -165,10 +141,7 @@
     align-items: center;
     background-image: none;
     padding: 10px;
-    /* background-color: #121212; */
-    /* height: 100vh; */
     gap: 35px;  
-    /* margin: 10px; */
 } 
 
 .faixa.pesquisa-ativa  .informacoes-extras {
@@ -195,7 +168,6 @@
     .faixa.pesquisa-ativa {
         flex: 1;
         flex-direction: row;
-        /* display: flex; */
     }
 .faixa.pesquisa-ativa #btn-menu {
     order: 1;
@@ -209,7 +181,6 @@
     order: 3;
 }
 }  
-
 
 
 /* ADICIONANDO ANIMAÇÃO QUANDO A PESQUISA FOR EXIBIDA */
@@ -230,10 +201,8 @@
   z-index: 1;
 }
 
-
 .menu-bg {
   background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #2d1b69 100%); 
-  /* animation:  sparkle 3s linear infinite; */
 } 
 
 .stars-menu {
@@ -255,18 +224,12 @@
   position: absolute;
   width: 100%;
   height: 100%;
- /*  background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.2), transparent 70%); */
   animation:  sparkle 3s linear infinite;
 }
 
 .background-menu.ativa {
     display: block;
 }
-
-/* .background-menu .starts-menu.ativa,
-.background-menu .planets-menu.ativa {
-    animation:  sparkle 3s linear infinite;
-} */
 
 @keyframes sparkle {
   from {
@@ -276,80 +239,3 @@
     transform: translateY(-100px);
   }
 }
-
-/* .tela-navegacao.navegacao-ativa {
-    background-image: none;
-} */
-
-/* .mostrar-pesquisa {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    background-color: #121212;
-}  */
-
-
-/* .botao-opcao-menu { 
-    padding: 20px;
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    transition: 0.2s ease-out;
-    font-weight: 500; 
-    font-family: 'Orbitron', sans-serif;
-} */
-
-/* .tela-menu .botao-voltar {
-    width: 200px;
-    display: flex;
-    justify-self: center;
-    justify-content: center;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(63, 63, 63, 0.516);
-    transition: 0.2s ease-out;
-} */
-
-/* .tela-menu .botao-opcao:hover,
-.tela-menu .botao-voltar:hover {
-    backlground-color: deepskyblue;
-    transform: scale(1.05);
-    color: black;
-}  */
-
-/* .tela-navegacao .btn-menu:hover {
-    background-color: rgb(227, 248, 255);
-    transform: scale(1.05);
-} */
-
-/* .botao-voltar {
-    font-family: 'Orbitron', sans-serif; 
-    padding: 15px 25px; 
-    width: 200px; 
-    max-width: 70%;
-    font-size: 1rem;
-    border-radius: 10px; 
-    cursor: pointer;
-    background: #3D214E; 
-    border: 1px solid #A020F0;
-    color: #e0f2f7;
-    transition: all 0.3s ease-in-out;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;   
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 0 10px #A020F0; 
-    margin-top: auto; 
-} */
-
-/* .botao-voltar:hover {
-    background: #A020F0; 
-    transform: translateY(-2px) scale(1.02); 
-    box-shadow: 0 0 18px #A020F0; 
-    border-color: #e0f2f7;
-}  */
