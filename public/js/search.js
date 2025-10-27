@@ -61,11 +61,11 @@ async function enviarDados() {
 
     //PARA EXIBIR A PESQUISA SE O CAMPO FOR PREENCHIDO
     const resultado = dados;
-    //console.log(resultado)
+    //console.log(resultado) 
     let htmlResultados = "";
     if (resultado.length === 0) {
       mostrarPesquisa.innerHTML = `<p>Pesquisa não disponível</p>`;
-    }
+    } 
     resultado.forEach((item) => {
       htmlResultados += `
       <div class= "resultado-item" style= "padding: 40px;">

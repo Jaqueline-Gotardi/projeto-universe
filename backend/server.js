@@ -3,9 +3,7 @@ const path = require('path');
 const app = express()
 // É necessário instalar uma biblioteca dotenv para usar o .env (arquivo deve conter sua chave api, caso precise de uma), abra seu terminal no vscode msm e digite ('npm i dotenv') para instalar
 require('dotenv').config()
-    
- 
-//const apiKey = process.env.API_KEY
+//const apiKey = process.env.API_KEY 
 //console.log(process.env)
 
 //acessando a pasta public, pra iniciar a conexão do front com o back local
@@ -32,16 +30,44 @@ const server = http.createServer((req, res) => {
     } 
 
     async function receberDados() {
+
+        const queryParams = req.url.split('?')[1]; //para acessar o que vem depois do "?" da url
+        const params = new URLSearchParams(queryParams);
+        const title = params.get('title') || ''; //pegando o parâmetro
+        const q = title?.trim();
+        const isMars = /mars|marte|curiosity|perseverance/i.test(q) //verifica se o termo buscado menciona Marte ou rovers, pra decidir qual api chamar...
+        const date = new Date().toISOString().split('T')[0];
+
+
+        if (isMars) {
+            const respostaComChave = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${date}&api_key=${process.env.API_KEY}`,)
+
+            const dadosComChave = await respostaComChave.json();
+            console.log(JSON.stringify(dadosComChave, null, 2));
+
+            //transforma os dados da NASA num formato que o front entende.
+            const resultadosComChave = dadosComChave.photos.map(item => ({
+                title: `${item.rover.name}`,
+                date_created: item.earth_date || 'Sem data', //fallback
+                location: 'Mars',
+                description: `Photo taken by ${item.rover.name}, camera ${item.camera.full_name}`,
+                href: item.img_src,
+}));
+        res.statusCode = 200;
+        res.end(JSON.stringify(resultadosComChave));
+
+        } else {
+
         
     if(req.url.startsWith('/search')) { 
         
-        const queryParams = req.url.split('?')[1]; //para acessar o que vem depois do "?" da url
-        const params = new URLSearchParams(queryParams);
+        //const queryParams = req.url.split('?')[1]; //para acessar o que vem depois do "?" da url
+        //const params = new URLSearchParams(queryParams);
 
-        const title = params.get('title'); //pegando o parâmetro
+        //const title = params.get('title'); //pegando o parâmetro
 
 //receber o valor do input
-const resposta = await fetch(`https://images-api.nasa.gov/search?q=${title}`, {
+const resposta = await fetch(`https://images-api.nasa.gov/search?q=${title}`,{
     method: 'GET',
 });
 
@@ -76,6 +102,7 @@ const resultadosFiltrados = dados.collection.items
     res.end(JSON.stringify({error: 'Pane no sistema, tente novamente daqui a 15 minutos'}));
     }
 }
+    }
 receberDados();
 })
 
