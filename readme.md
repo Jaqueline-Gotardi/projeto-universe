@@ -92,7 +92,7 @@ Além disso, aprendi muito sobre **design de interface**, **consistência visual
 
 ---
 
-## 💭 Próximas Explorações  
+## 💭 Próximas Explorações (apenas idéias)  
 
 Planejo incluir:  
 - Integração com **banco de dados**;  
