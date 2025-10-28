@@ -16,7 +16,7 @@ lupaPesquisa.addEventListener('click', () => {
                 //console.log(dados);
 
                 //remover o botão de menu quando a pesquisa for realizada
-                btnMenu.classList.remove('btn-menu');
+                btnMenu.classList.remove('btn-menu'); 
 
                 //PARA EXIBIR A PESQUISA SE O CAMPO FOR PREENCHIDO 
                 const resultado = dados.query.search;
@@ -34,6 +34,7 @@ lupaPesquisa.addEventListener('click', () => {
     }
     buscarDados();
 }); */
+
 
 /* LIGANDO API COM BACKEND LOCAL: */
 const campoPesquisa = document.getElementById("campo-pesquisa");
