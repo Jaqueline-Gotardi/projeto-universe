@@ -2,7 +2,7 @@
 
 const campoPesquisa = document.getElementById('campo-pesquisa');
 const lupaPesquisa = document.getElementById('lupa-pesquisa');
-const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa');  
+const exibicaoDaPesquisa = document.getElementById('exibicao-da-pesquisa');   
 
 lupaPesquisa.addEventListener('click', () => {
 
@@ -66,8 +66,13 @@ async function enviarDados() {
     let htmlResultados = "";
     if (resultado.length === 0) {
       mostrarPesquisa.innerHTML = `<p>Pesquisa não disponível</p>`;
-    } 
+    }  
+    //AQUI VOCE PRECISA GARANTIR QUE OS DADOS SÃO ITERADOS CORRETAMENTE
     resultado.forEach((item) => {
+
+      //O CAMPO 'SOURCE' É OPCIONAL, MAS AJUDA A VER DE QUAL API VEIO O RESULTADO
+      //const sourceLabel = item.source ? `[Origem: ${item.source}]` : '';
+
       htmlResultados += `
       <div class= "resultado-item" style= "padding: 40px;">
       <h3 style= "font-family: Orbitron">${item.title}</h3>
