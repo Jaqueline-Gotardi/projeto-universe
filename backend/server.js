@@ -12,6 +12,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 const http = require('http'); //cria o servidor
 const { URLSearchParams } = require('url'); //lida com parâmetros 
 const { error } = require('console');
+//const { error } = require('console');
 /* const { stringify } = require('querystring');
 const { error } = require('console'); */
 
@@ -46,8 +47,11 @@ const server = http.createServer((req, res) => {
                 //busca dados na api Epic
                 console.log('Tentado API epic. . .')
             const respostaComChave = await fetch(`https://api.nasa.gov/EPIC/api/natural/all?&api_key=${process.env.API_KEY}`);
-            
 
+            if (!respostaComChave.ok) {
+                throw new Error(`Resposta da API EPIC falhou com status: ${respostaComChave.status}`)
+            }
+            
             const dadosComChave = await respostaComChave.json();
             //console.log(JSON.stringify(dadosComChave, null, 2));
             //"null, 2" é apenas para deixar as informações mais visíveis
@@ -101,7 +105,6 @@ resultadosFinais.push(...resultadosGratutitosFiltrados);
         console.log('Erro an API Images:', erro);
     }
 
-
     if(resultadosFinais.length > 0) {
         res.statusCode = 200;
         res.end(JSON.stringify(resultadosFinais));
@@ -124,3 +127,10 @@ if (req.url.startsWith('/search')) {
 server.listen(3000, () => { 
     console.log('Servidor em execução em http://localhost:3000/');
 });
+
+
+
+/* PQ EPIC NÃO FUNCIONA? PQ ELA FOI ARQUIVADA, OU SEJA, DESCONTINUADA
+   1. API MARS: NÃO FUNCIONOU. . .
+   2. API EPIC: TMB NÃO. . .
+   3. AGORA TENTAREI A API EARTHDATA GIBS. . . */
