@@ -67,13 +67,56 @@ async function enviarDados() {
     if (resultado.length === 0) {
       mostrarPesquisa.innerHTML = `<p>Pesquisa não disponível</p>`;
     }  
-    //AQUI VOCE PRECISA GARANTIR QUE OS DADOS SÃO ITERADOS CORRETAMENTE
-    resultado.forEach((item) => {
 
-      //O CAMPO 'SOURCE' É OPCIONAL, MAS AJUDA A VER DE QUAL API VEIO O RESULTADO
-      //const sourceLabel = item.source ? `[Origem: ${item.source}]` : '';
+
+    const apodItem = resultado.find(item => item.source === 'APOD');
+    const outrosItens = resultado.filter(item => item.source === 'IMAGES');
+
+    if (apodItem) {
+      let mediaHTML = '';
+
+      //verificar se é vídeo ou imagem
+      const isVideo = apodItem.href.includes('youtube.com') || apodItem.href.includes('vimeo.com');
+
+      if (isVideo) {
+        //trocar o 'watch?v=' por 'embed/' para que o video do youtube funcione dentro do iframe (a ser exibido no front. . .)
+        const embedUrl = apodItem.href.replace('watch?v=' , 'embed/')
+        mediaHTML = `
+        <iframe class= "media-apod" 
+        width:100% 
+        height="400" 
+        src="${embedUrl}" 
+        frameborder="0" 
+        allowfullscreen style="border-radius:8px;">
+        </iframe>`;
+      } else {
+        //se não for vídeo, é imagem. . .
+        mediaHTML = `<img class="media-apod"
+                          src="${apodItem.href}"
+                          alt="${apodItem.title}"
+                          style="border-radius:8px;">
+                    />`
+      }
 
       htmlResultados += `
+      <div class= "resultado-item" 
+      style= "padding: 40px; border: 2px solid #adb5db; border-radius: 10px; margin-bottom: 30px;">
+      <h2 style= "font-family: Orbitron; color: #abd5db;">🌌Imagem do dia (APOD)🌌</h2>
+      <h3 style= "font-family: Orbitron">${apodItem.title}</h3>
+      <p style= "font-family: Space mono"><strong>📅 Data:</strong>${apodItem.date_created}</p>
+      ${mediaHTML}
+      <p style= "font-family: Space mono"><strong>📍 Localização:</strong>${apodItem.location}</p>
+      <p style= "font-family: Space mono; max-width: 800px; 
+  width: 90%; margin: 20px auto;"><strong>📝 Descrição:</strong>${apodItem.description}</p>
+      </div>
+      <hr style= "margin: 40px 0;">
+      <br><br>`;
+    }
+
+    //verificar se tem itens na API IMAGES
+    if (outrosItens.length > 0) {
+      outrosItens.forEach((item => {
+        htmlResultados += `
       <div class= "resultado-item" style= "padding: 40px;">
       <h3 style= "font-family: Orbitron">${item.title}</h3>
       <br>
@@ -84,8 +127,12 @@ async function enviarDados() {
       <img src="${item.href}" alt="${item.title}" style="border-radius: 8px;"></img>
       </div>
       <br><br>`;
-    });
+      })
+    )};
+
+    //para exibir o resultado da API APOD e API IMAGES
     mostrarPesquisa.innerHTML = htmlResultados;
+
 
     /* PARA EXIBIR A PESQUISA EMBAIXO E COLOCAR O MENU, BARRA DE PESQUISA E A CASINHA EM LINHA HORIZONTAL */
     const bgMenu = document.querySelector('.background-menu');
@@ -108,13 +155,15 @@ async function enviarDados() {
 }
 //enviarDados();
 
+
+
 lupaPesquisa.addEventListener("click", () => {
-  enviarDados();
+  enviarDados(); //chama a função a cada click na tecla Enter
 });
 
 campoPesquisa.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
-    enviarDados();
+    enviarDados(); //chama a função a cada click na lupa da barra de pesquisa
   }
 });
 

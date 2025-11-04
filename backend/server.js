@@ -11,8 +11,6 @@ app.use(express.static(path.join(__dirname, '../public')));
  
 const http = require('http'); //cria o servidor
 const { URLSearchParams } = require('url'); //lida com parâmetros 
-const { error } = require('console');
-//const { error } = require('console');
 /* const { stringify } = require('querystring');
 const { error } = require('console'); */
 
@@ -40,7 +38,7 @@ const server = http.createServer((req, res) => {
         const q = title?.trim();
         const isAPOD = /APOD|foto do dia|astronomia/i.test(q) || q.length === 0; //verifica se o campo está vazio ou se tem o termo APOD, para chamar a API
 
-        let resultadosFinais = []; //array q vai guardar todos os resultados  (apod + gratuita)
+        let resultadosFinais = []; //array q vai guardar todos os resultados (apod + gratuita)
 
 
         //BUSCAR DADOS NA API APOD
@@ -60,7 +58,7 @@ const server = http.createServer((req, res) => {
             if (dadosComChave.url) { 
                 console.log('Dados encontrados na APOD. Formatando e adicionando. . .')
 
-                const resultadoAPOD = [{
+                const resultadosDaApod = [{
                     source: 'APOD',
                     title:dadosComChave.title || 'Sem título (APOD)',
                     date_created: dadosComChave.date || 'Sem data',
@@ -70,7 +68,7 @@ const server = http.createServer((req, res) => {
                     href: dadosComChave.media_type === 'image' ? dadosComChave.hdurl || dadosComChave.url : dadosComChave.url
                 }];
 
-                resultadosFinais.push(...resultadoAPOD);
+                resultadosFinais.push(...resultadosDaApod);
             } else {
                 console.log('APOD não retornou dados concretos. Seguindo para a gratuita. . .')
             }
@@ -88,7 +86,7 @@ const server = http.createServer((req, res) => {
         const dadosGratuitos = await respostaGratuita.json();
 
         //filtra e formata resultados da API grátis (a que não usa chave)
-                const resultadosGratuitosFiltrados = dadosGratuitos.collection.items //cada API tem sua própria 'estrutura'
+                const resultadosDaImages = dadosGratuitos.collection.items //cada API tem sua própria 'estrutura'
             .filter(item => 
             item.data &&  
             item.links &&
@@ -103,7 +101,7 @@ const server = http.createServer((req, res) => {
     description: item.data[0].description || 'Sem descrição', //fallback
     href: item.links.find(link => link.render === 'image').href //fallback
 }));
-resultadosFinais.push(...resultadosGratuitosFiltrados);
+resultadosFinais.push(...resultadosDaImages);
     } catch (erro){
         console.log('Erro na API Images:', erro);
     }
@@ -117,9 +115,10 @@ resultadosFinais.push(...resultadosGratuitosFiltrados);
     }
 }
 
+//se começar com /search vai chamar a função. . .
 if (req.url.startsWith('/search')) {
     receberDados();
-} else {
+} else { //senão vai dar status 404 (servidor não conseguiu achar a página ou url inserida)
     res.statusCode = 404;
     res.end(JSON.stringify({error: 'Rota não encontrada.'}))
 }
@@ -136,4 +135,5 @@ server.listen(3000, () => {
 /* PQ EPIC NÃO FUNCIONA? PQ ELA FOI ARQUIVADA, OU SEJA, DESCONTINUADA
    1. API MARS: NÃO FUNCIONOU. . .
    2. API EPIC: TMB NÃO. . .
-   3. AGORA TENTAREI A API EARTHDATA GIBS. . . */
+   3. AGORA TENTAREI A API EARTHDATA GIBS. . .(desisti pq seria complexa demais)
+   4. API APOD (mais simples de implementar) */
