@@ -38,46 +38,49 @@ const server = http.createServer((req, res) => {
         const params = new URLSearchParams(queryParams);
         const title = params.get('title') || ''; //pegando o parâmetro
         const q = title?.trim();
-        const isEpic = /earth|terra|epic/i.test(q) //verifica o termo buscado pra decidir qual api chamar...
+        const isAPOD = /APOD|foto do dia|astronomia/i.test(q) || q.length === 0; //verifica se o campo está vazio ou se tem o termo APOD, para chamar a API
 
-        let resultadosFinais = []; //array q vai guardar todos os resultados  (epic + gratuita)
+        let resultadosFinais = []; //array q vai guardar todos os resultados  (apod + gratuita)
 
-        if (isEpic) {
+
+        //BUSCAR DADOS NA API APOD
+        if (isAPOD) {
             try {
-                //busca dados na api Epic
-                console.log('Tentado API epic. . .')
-            const respostaComChave = await fetch(`https://api.nasa.gov/EPIC/api/natural/all?&api_key=${process.env.API_KEY}`);
+                console.log('Tentando API APOD. . .')
+            const respostaComChave = await fetch(`https://api.nasa.gov/planetary/apod?&api_key=${process.env.API_KEY}`);
 
             if (!respostaComChave.ok) {
-                throw new Error(`Resposta da API EPIC falhou com status: ${respostaComChave.status}`)
+                throw new Error(`Resposta da API APOD falhou com status: ${respostaComChave.status}`)
             }
             
             const dadosComChave = await respostaComChave.json();
             //console.log(JSON.stringify(dadosComChave, null, 2));
             //"null, 2" é apenas para deixar as informações mais visíveis
 
-            //se vier vazio ou não for um array, tenta fallback (API gratuita)
-            if (Array.isArray(dadosComChave) && dadosComChave.length > 0) { //para mostrar apenas 5
-                console.log('Dados encontrados na EPIC. Formatando e adicionando. . .')
+            if (dadosComChave.url) { 
+                console.log('Dados encontrados na APOD. Formatando e adicionando. . .')
 
-                const resultadosComChave = dadosComChave.map(item => ({
-                    source: 'EPIC',
-                    title: item.caption || 'Sem título (epic)',
-                    date_created: item.date || 'Sem data',
-                    location: 'Earth',
-                    description: item.caption || 'Sem descrição',
-                    href: `https://epic.gsfc.nasa.gov/archive/natural/${item.date.split(' ')[0].replace(/-/g,'/')}/png/${item.image}.png`
-                }));
-                resultadosFinais.push(...resultadosComChave);
+                const resultadoAPOD = [{
+                    source: 'APOD',
+                    title:dadosComChave.title || 'Sem título (APOD)',
+                    date_created: dadosComChave.date || 'Sem data',
+                    location: 'Espaço',
+                    description: dadosComChave.explanation || 'Sem descrição',
+                    //href: `https://epic.gsfc.nasa.gov/archive/natural/${item.date.split(' ')[0].replace(/-/g,'/')}/png/${item.image}.png`
+                    href: dadosComChave.media_type === 'image' ? dadosComChave.hdurl || dadosComChave.url : dadosComChave.url
+                }];
+
+                resultadosFinais.push(...resultadoAPOD);
             } else {
-                console.log('EPIC não retornou dados para a data. Seguindo para a gratuita.')
+                console.log('APOD não retornou dados concretos. Seguindo para a gratuita. . .')
             }
         } catch (erro) {
-            console.log('Erro ao acessar API EPIC (mas seguindo para a API gratuita):', erro)
+            console.log('Erro ao acessar API APOD (mas seguindo para a API gratuita):', erro)
         }
     }
 
 
+    //BUSCAR DADOS NA API GRATUITA. . .
     try {
         console.log('Chamando API NASA Images (Gratuita)...')
         //receber o valor do input
@@ -85,7 +88,7 @@ const server = http.createServer((req, res) => {
         const dadosGratuitos = await respostaGratuita.json();
 
         //filtra e formata resultados da API grátis (a que não usa chave)
-                const resultadosGratutitosFiltrados = dadosGratuitos.collection.items //cada API tem sua própria 'estrutura'
+                const resultadosGratuitosFiltrados = dadosGratuitos.collection.items //cada API tem sua própria 'estrutura'
             .filter(item => 
             item.data &&  
             item.links &&
@@ -100,9 +103,9 @@ const server = http.createServer((req, res) => {
     description: item.data[0].description || 'Sem descrição', //fallback
     href: item.links.find(link => link.render === 'image').href //fallback
 }));
-resultadosFinais.push(...resultadosGratutitosFiltrados);
+resultadosFinais.push(...resultadosGratuitosFiltrados);
     } catch (erro){
-        console.log('Erro an API Images:', erro);
+        console.log('Erro na API Images:', erro);
     }
 
     if(resultadosFinais.length > 0) {
