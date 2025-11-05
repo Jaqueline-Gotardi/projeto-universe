@@ -64,7 +64,6 @@ const server = http.createServer((req, res) => {
                     date_created: dadosComChave.date || 'Sem data',
                     location: 'Espaço',
                     description: dadosComChave.explanation || 'Sem descrição',
-                    //href: `https://epic.gsfc.nasa.gov/archive/natural/${item.date.split(' ')[0].replace(/-/g,'/')}/png/${item.image}.png`
                     href: dadosComChave.media_type === 'image' ? dadosComChave.hdurl || dadosComChave.url : dadosComChave.url
                 }];
 
@@ -83,10 +82,11 @@ const server = http.createServer((req, res) => {
         console.log('Chamando API NASA Images (Gratuita)...')
         //receber o valor do input
         const respostaGratuita = await fetch(`https://images-api.nasa.gov/search?q=${title}`);
+
         const dadosGratuitos = await respostaGratuita.json();
 
         //filtra e formata resultados da API grátis (a que não usa chave)
-                const resultadosDaImages = dadosGratuitos.collection.items //cada API tem sua própria 'estrutura'
+            const resultadosDaImages = dadosGratuitos.collection.items //cada API tem sua própria 'estrutura'
             .filter(item => 
             item.data &&  
             item.links &&
